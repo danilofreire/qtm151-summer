@@ -1,5 +1,5 @@
 ---
-title: "QTM 151: Introduction to Statistical Computing II"
+title: "QTM 151 - Introduction to Statistical Computing II"
 ---
 
 Welcome to [QTM151 - Introduction to Statistical Computing
