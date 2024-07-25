@@ -1,8 +1,9 @@
 ---
-title: "QTM151 Tutorials"
+title: "Tutorials"
 ---
 
-This folder contains several tutorials for the QTM151 course. Below you will find a list of available tutorials with links to both PDF and QMD versions where applicable.
+Below you will find a list of available tutorials with instructions on how to
+install and use the tools we will be using in class. 
 
 ## Available Tutorials
 
@@ -15,10 +16,12 @@ PDF versions of the tutorials are also available on GitHub: <https://github.com/
 
 ## Additional Resources
 
-- `article-template.latex`: A LaTeX template for articles
-- `python-postgresql-example.ipynb`: A Jupyter Notebook with a PostgreSQL example
-- `testing-ipython`: A Jupyter Notebook for showing Markdown and code cells
-- `testing-anaconda.py`: A Python script for testing Anaconda installation
-- `.gitignore`: Git configuration file to specify intentionally untracked files
+- [python-postgresql-example.ipynb](python-postgresql-example.ipynb): A Jupyter Notebook with a PostgreSQL example
+- [testing-ipython.ipynb](testing-ipython.ipynb): A Jupyter Notebook for showing Markdown and code cells
+- [testing-anaconda.py](testing-anaconda.py): A Python script for testing Anaconda installation
 
-For any questions or issues regarding these tutorials, please open an issue in the main repository or email me at [danilo.freire@emory.edu](mailto:danilo.freire@emory.edu). I hope you like the tutorials and find them useful! 
+For any questions or issues regarding these tutorials, please [open a GitHub
+issue](https://github.com/danilofreire/qtm151/issues), [submit a pull
+request](https://github.com/danilofreire/qtm151/pulls), or [create a discussion
+post](https://github.com/danilofreire/qtm151/discussions). I hope you like the
+tutorials and find them useful! 

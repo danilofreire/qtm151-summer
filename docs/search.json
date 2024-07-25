@@ -359,23 +359,23 @@
   {
     "objectID": "tutorials/tutorials.html",
     "href": "tutorials/tutorials.html",
-    "title": "QTM151 Tutorials",
+    "title": "Tutorials",
     "section": "",
-    "text": "This folder contains several tutorials for the QTM151 course. Below you will find a list of available tutorials with links to both PDF and QMD versions where applicable."
+    "text": "Below you will find a list of available tutorials with instructions on how to install and use the tools we will be using in class."
   },
   {
     "objectID": "tutorials/tutorials.html#available-tutorials",
     "href": "tutorials/tutorials.html#available-tutorials",
-    "title": "QTM151 Tutorials",
+    "title": "Tutorials",
     "section": "Available Tutorials",
     "text": "Available Tutorials\n\n01 - VSCode and Anaconda Tutorial\n02 - Jupyter Notebook and Markdown Tutorial\n03 - GitHub Tutorial\n04 - PostgreSQL Tutorial\n\nPDF versions of the tutorials are also available on GitHub: https://github.com/danilofreire/qtm151/tree/main/tutorials."
   },
   {
     "objectID": "tutorials/tutorials.html#additional-resources",
     "href": "tutorials/tutorials.html#additional-resources",
-    "title": "QTM151 Tutorials",
+    "title": "Tutorials",
     "section": "Additional Resources",
-    "text": "Additional Resources\n\narticle-template.latex: A LaTeX template for articles\npython-postgresql-example.ipynb: A Jupyter Notebook with a PostgreSQL example\ntesting-ipython: A Jupyter Notebook for showing Markdown and code cells\ntesting-anaconda.py: A Python script for testing Anaconda installation\n.gitignore: Git configuration file to specify intentionally untracked files\n\nFor any questions or issues regarding these tutorials, please open an issue in the main repository or email me at danilo.freire@emory.edu. I hope you like the tutorials and find them useful!"
+    "text": "Additional Resources\n\npython-postgresql-example.ipynb: A Jupyter Notebook with a PostgreSQL example\ntesting-ipython.ipynb: A Jupyter Notebook for showing Markdown and code cells\ntesting-anaconda.py: A Python script for testing Anaconda installation\n\nFor any questions or issues regarding these tutorials, please open a GitHub issue, submit a pull request, or create a discussion post. I hope you like the tutorials and find them useful!"
   },
   {
     "objectID": "syllabus.html",
