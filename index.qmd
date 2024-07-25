@@ -3,8 +3,8 @@ title: "QTM 151: Introduction to Statistical Computing II"
 ---
 
 Welcome to [QTM151 - Introduction to Statistical Computing
-II!](https://github.com/danilofreire/qtm151) This repository contains all the
-materials for the course, including lectures, assignments, quizzes, and
+II!](https://github.com/danilofreire/qtm151) This website contains links to all
+the materials for the course, including lectures, assignments, quizzes, and
 tutorials.
 
 ## Course Overview
@@ -16,7 +16,9 @@ research, and database management.
 
 ## Repository Structure
 
-The [course's GitHub repository](https://github.com/danilofreire/qtm151) is organised as follows:
+While this website provides an overview of the course materials, the primary
+source of content is the course's GitHub repository at
+<https://github.com/danilofreire/qtm151>. The repository is organised as follows:
 
 - [`assignments/`](https://github.com/danilofreire/qtm151/tree/main/assigments): Contains all course assignments
 - [`lectures/`](https://github.com/danilofreire/qtm151/tree/main/lectures): Includes lecture materials and code
@@ -36,8 +38,6 @@ the navigation bar above.
 The course covers the following main topics, with corresponding lecture
 materials available in the [lectures
 folder](https://github.com/danilofreire/qtm151/tree/main/lectures):
-
-## Lectures
 
 1. Lecture 01: [Welcome to QTM 151 - Introduction](https://danilofreire.github.io/qtm151/lectures/lecture-01/01-introduction.html)
 2. Lecture 02: [GitHub Review](https://danilofreire.github.io/qtm151/lectures/lecture-02/02-github-review.html) and [Introduction to Jupyter Notebooks](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-02/02-jupyter.ipynb)
@@ -70,7 +70,7 @@ Each lecture folder contains a Jupyter notebook (.ipynb) with code examples and
 explanations, along with any additional resources or datasets used in the
 lecture.
 
-## Assignments and Quizzes
+### Assignments and Quizzes
 
 Throughout the course, students will complete various assignments and quizzes
 to reinforce their learning. These will be posted in the respective
@@ -81,19 +81,23 @@ Canvas. Please refer to the syllabus for due dates and submission guidelines.
 
 ### Tutorials
 
-The [`tutorials/`](https://github.com/danilofreire/qtm151/tree/main/tutorials)
+The [`tutorials/`](tutorials/tutorials.qmd)
 folder contains step-by-step guides for various tools and techniques used in
 the course. These include:
 
-- [VSCode and Anaconda Tutorial](https://github.com/danilofreire/qtm151/blob/main/tutorials/01-vscode-anaconda-tutorial.pdf)
-- [Jupyter Notebook and Markdown Tutorial](https://github.com/danilofreire/qtm151/blob/main/tutorials/02-jupyter-markdown-tutorial.pdf)
-- [GitHub Tutorial](https://github.com/danilofreire/qtm151/blob/main/tutorials/03-github-tutorial.pdf)
-- [PostgreSQL Tutorial](https://github.com/danilofreire/qtm151/blob/main/tutorials/04-postgresql-tutorial.pdf)
+- [VSCode and Anaconda Tutorial](tutorials/01-vscode-anaconda-tutorial.qmd)
+- [Jupyter Notebook and Markdown Tutorial](tutorials/02-jupyter-markdown-tutorial.qmd)
+- [GitHub Tutorial](tutorials/03-github-tutorial.qmd)
+- [PostgreSQL Tutorial](tutorials/04-postgresql-tutorial.qmd)
 
 ## Course Requirements
 
-- Prerequisites: None, only willingness to learn and explore new tools :smiley:
-- Software: [Anaconda distribution of Python 3.x](https://www.anaconda.com/), [VS Code](https://code.visualstudio.com/), [PostgreSQL](https://www.postgresql.org/), [GitHub Desktop](https://github.com/apps/desktop)
+- Prerequisites: None, only willingness to learn and explore new tools!
+- Software: [Anaconda distribution of Python 3.x](https://www.anaconda.com/),
+  [VS Code](https://code.visualstudio.com/),
+  [PostgreSQL](https://www.postgresql.org/), and [GitHub Desktop](https://github.com/apps/desktop)
+- Please also create an educational account on
+  [GitHub](https://education.github.com/)
 
 ## Grading
 
@@ -162,7 +166,9 @@ the instructor as soon as possible.
 If you encounter any issues with the course materials or have questions about the content, please:
 
 1. Check the [course syllabus](https://github.com/danilofreire/qtm151/blob/main/syllabus.pdf) and this README for relevant information
-2. Review the [lecture materials](https://github.com/danilofreire/qtm151/tree/main/lectures) and [tutorials](https://github.com/danilofreire/qtm151/tree/main/tutorials) in the repository
+2. Review the [lecture materials](lectures/lectures.qmd) and
+   [tutorials](tutorials/tutorials.qmd) either in the repository or on the
+   course website
 3. Consult with your classmates or post in the [course discussion forum](https://github.com/danilofreire/qtm151/discussions)
 4. Attend office hours or schedule an appointment with the instructor
 
