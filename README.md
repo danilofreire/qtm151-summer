@@ -26,10 +26,10 @@ The `_quarto.yml` file contains the configuration for the website, including
 the theme, the title, and the navigation bar. The website files are in the
 `docs/` folder, as it is one of the easiest ways to host a website on GitHub. I
 also added a `.nojekyll` file to the root of the repository to prevent GitHub
-from processing the website as a Jekyll project. 
+from processing the website as a Jekyll project.
 
-I then built the website with `quarto render` and pushed the changes to the
-`gh-pages` branch.
+I then built the website with `quarto render docs/` and pushed the changes to the
+`gh-pages` branch with `git push origin gh-pages`.
 
 For further information on how to build a website with Quarto, please refer to
 <https://quarto.org/docs/websites/>.
