@@ -151,28 +151,28 @@
     "href": "index.html",
     "title": "QTM 151 - Introduction to Statistical Computing II",
     "section": "",
-    "text": "Welcome to QTM151 - Introduction to Statistical Computing II! This website contains links to all the materials for the course, including lectures, assignments, quizzes, and tutorials."
+    "text": "Welcome to QTM151 - Introduction to Statistical Computing II! This course is designed to introduce students to the fundamentals of statistical computing, with a focus on data manipulation, analysis, and visualisation using Python and SQL. Please have a look at the course syllabus and the lecture schedule for more information. A brief overview of the course content is provided below."
   },
   {
     "objectID": "index.html#course-overview",
     "href": "index.html#course-overview",
     "title": "QTM 151 - Introduction to Statistical Computing II",
-    "section": "Course Overview",
-    "text": "Course Overview\nThis course is designed to introduce students to statistical computing techniques using Python and SQL. It builds upon the foundational knowledge from QTM150 and focuses on practical applications of data analysis, reproducible research, and database management."
+    "section": "",
+    "text": "Welcome to QTM151 - Introduction to Statistical Computing II! This course is designed to introduce students to the fundamentals of statistical computing, with a focus on data manipulation, analysis, and visualisation using Python and SQL. Please have a look at the course syllabus and the lecture schedule for more information. A brief overview of the course content is provided below."
   },
   {
     "objectID": "index.html#repository-structure",
     "href": "index.html#repository-structure",
     "title": "QTM 151 - Introduction to Statistical Computing II",
     "section": "Repository Structure",
-    "text": "Repository Structure\nWhile this website provides an overview of the course materials, the primary source of content is the course’s GitHub repository at https://github.com/danilofreire/qtm151. The repository is organised as follows:\n\nassignments/: Contains all course assignments\nlectures/: Includes lecture materials and code\nquizzes/: Quiz materials\ntutorials/: Step-by-step guides for the tools used in the course\nREADME.md: This file, providing an overview of the course and repository\nsyllabus.pdf: Course syllabus in PDF format\n\nNote: The links will take you to the respective folders or files in the repository, not to this website. You can find links for the rendered content in the navigation bar above."
+    "text": "Repository Structure\nWhile this website provides an overview of the course materials, the primary source of content is the course’s GitHub repository at https://github.com/danilofreire/qtm151. The repository is organised as follows:\n\nassignments/: Contains all course assignments\nlectures/: Includes lecture materials and code\nquizzes/: Quiz materials\ntutorials/: Step-by-step guides for the tools used in the course\nsyllabus.pdf: Course syllabus in PDF format\n\nPlease also refer to the Discussion tab on the repository for any questions or comments: https://github.com/danilofreire/qtm151/discussions.\nNote: The links will take you to the respective folders or files in the repository, not on this website. You can find links for the rendered content in the navigation bar above."
   },
   {
     "objectID": "index.html#course-content",
     "href": "index.html#course-content",
     "title": "QTM 151 - Introduction to Statistical Computing II",
     "section": "Course Content",
-    "text": "Course Content\n\nLectures\nThe course covers the following main topics, with corresponding lecture materials available in the lectures folder:\n\nLecture 01: Welcome to QTM 151 - Introduction\nLecture 02: GitHub Review and Introduction to Jupyter Notebooks\nLecture 03: Variables and Lists\nLecture 04: Mathematical Operations, Arrays, and Random Numbers\nLecture 05: Boolean Variables and If/Else Statements\nLecture 06: While Loops and For Loops\nLecture 07: Applications 1: Simulation Studies\nLecture 08: Functions and Arguments\nLecture 09: Global and Local Variables\nLecture 10: Quiz 01: Application 02 - Operations over Multiple Datasets (6%)\nLecture 11: Subsetting Data\nLecture 12: Application 03: Linear Models\nLecture 13: Creating and Replacing Variables\nLecture 14: Quiz 2: Application 4: Random Assignment (6%)\nLecture 15: Aggregating Data\nLecture 16: Merging Data\nLecture 17: Introduction to SQL\nLecture 18: Quiz 3: Application 5: Practicing Chaining (6%)\nLecture 19: Import SQL Data into Python\nLecture 20: Merging Tables in SQL\nLecture 21: Time Series Analysis\nLecture 22: Quiz 4: Application 6: Practice SQL Queries (6%)\nLecture 23: Pivot Tables\nLecture 24: Quiz 5: Application 8: Time Data, Panel Data, and Plots (6%)\nLecture 25: Manipulating Text Data\nLecture 26: Advanced Plots\n\nEach lecture folder contains a Jupyter notebook (.ipynb) with code examples and explanations, along with any additional resources or datasets used in the lecture.\n\n\nAssignments and Quizzes\nThroughout the course, students will complete various assignments and quizzes to reinforce their learning. These will be posted in the respective assignments/ and quizzes/ folders as the course progresses. We will also announce these in class and on Canvas. Please refer to the syllabus for due dates and submission guidelines.\n\n\nTutorials\nThe tutorials/ folder contains step-by-step guides for various tools and techniques used in the course. These include:\n\nVSCode and Anaconda Tutorial\nJupyter Notebook and Markdown Tutorial\nGitHub Tutorial\nPostgreSQL Tutorial"
+    "text": "Course Content\n\nLectures\nWe will meet every Monday and Wednesday from 16:00 to 16:50 at XXXXX. Please check the course schedule for the full list of topics and dates. Lecture materials are available in the lectures folder in the repository.\nEach folder contains an HTML presentation or a Jupyter notebook (.ipynb) with code examples and explanations, along with any additional resources or datasets used in the lecture.\n\n\nAssignments and Quizzes\nThroughout the course, students will complete various assignments and quizzes to reinforce their learning. These will be posted in the respective assignments/ and quizzes/ folders as the course progresses. We will also announce these in class and on Canvas. Please refer to the syllabus or the lecture schedule for due dates and submission guidelines.\n\n\nTutorials\nThe tutorials/ tab contains step-by-step guides for various tools and techniques used in the course. Please have a look at these resources to help you get started.\nPDF versions of the course materials are also available in the repository."
   },
   {
     "objectID": "index.html#course-requirements",
@@ -193,7 +193,7 @@
     "href": "index.html#course-policies-and-expectations",
     "title": "QTM 151 - Introduction to Statistical Computing II",
     "section": "Course Policies and Expectations",
-    "text": "Course Policies and Expectations\nFor detailed information on course policies, grading criteria, attendance requirements, and academic integrity guidelines, please refer to the syllabus.pdf file in the repository root."
+    "text": "Course Policies and Expectations\nFor detailed information on course policies, grading criteria, attendance requirements, and academic integrity guidelines, please refer to the syllabus in the repository or on the course website."
   },
   {
     "objectID": "index.html#suggested-resources",
@@ -207,7 +207,7 @@
     "href": "index.html#contact-information",
     "title": "QTM 151 - Introduction to Statistical Computing II",
     "section": "Contact Information",
-    "text": "Contact Information\n\nInstructor: Danilo Freire\nEmail: danilo.freire@emory.edu\nOffice Hours: At your convenience, please schedule an appointment via email."
+    "text": "Contact Information\n\nName: Danilo Freire\nContact: danilo.freire@emory.edu, https://emory.zoom.us/j/XXXXXX, or Canvas Inbox\nOffice Hours: By appointment, please email me to schedule a meeting"
   },
   {
     "objectID": "index.html#academic-integrity",
@@ -228,7 +228,7 @@
     "href": "index.html#getting-help",
     "title": "QTM 151 - Introduction to Statistical Computing II",
     "section": "Getting Help",
-    "text": "Getting Help\nIf you encounter any issues with the course materials or have questions about the content, please:\n\nCheck the course syllabus and this README for relevant information\nReview the lecture materials and tutorials either in the repository or on the course website\nConsult with your classmates or post in the course discussion forum\nAttend office hours or schedule an appointment with the instructor"
+    "text": "Getting Help\nIf you encounter any issues with the course materials or have questions about the content, please:\n\nCheck the course syllabus for relevant information\nReview the lecture materials and tutorials either in the repository or on the course website\nConsult with your classmates or post in the course discussion forum\nAttend office hours or schedule an appointment with the instructor"
   },
   {
     "objectID": "index.html#contributing-to-the-repository",
@@ -375,7 +375,7 @@
     "href": "tutorials/tutorials.html#additional-resources",
     "title": "Tutorials",
     "section": "Additional Resources",
-    "text": "Additional Resources\n\npython-postgresql-example.ipynb: A Jupyter Notebook with a PostgreSQL example\ntesting-ipython.ipynb: A Jupyter Notebook for showing Markdown and code cells\ntesting-anaconda.py: A Python script for testing Anaconda installation\n\nFor any questions or issues regarding these tutorials, please open a GitHub issue, submit a pull request, or create a discussion post. I hope you like the tutorials and find them useful!"
+    "text": "Additional Resources\n\nFurther examples\n\npython-postgresql-example.ipynb: A Jupyter Notebook with a PostgreSQL example\ntesting-ipython.ipynb: A Jupyter Notebook for showing Markdown and code cells\ntesting-anaconda.py: A Python script for testing Anaconda installation\n\n\n\nSuggested Books\n\nPython for Data Analysis by Wes McKinney\nElements of Data Science by Allen Downey\nAutomate the Boring Stuff with Python by Al Sweigart\nPython for Everybody by Charles Severance\nSQL for Data Scientists by Renee M. P. Teate\n\n\n\nOnline Courses\n\nCoursera: Python for Everybody Specialisation\nedX: Python Basics for Data Science\nCodecademy: Learn Python\nDataCamp: Introduction to SQL\nCoursera: SQL for Data Science\n\n\n\nDocumentation\n\nPython Documentation\nPandas Documentation\nPostgreSQL Documentation\nSQLBolt\nGithub Guides\n\nFor any questions or issues regarding these tutorials, please open a GitHub issue, submit a pull request, or create a discussion post.\nPlease do not forget that, in addition to the tutorials here, the course syllabus also contains a list of recommended weekly readings and additional resources.\nI hope you like the tutorials and find them useful!"
   },
   {
     "objectID": "syllabus.html",

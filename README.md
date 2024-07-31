@@ -1,4 +1,4 @@
-# QTM 151 - Introduction to Statistical Computing 
+# QTM 151 - Introduction to Statistical Computing
 
 This branch hosts the website for the course [QTM 151 - Introduction to
 Statistical Computing](http://danilofreire.github.io/qtm151) at [Emory
