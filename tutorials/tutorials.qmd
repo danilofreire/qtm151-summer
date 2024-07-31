@@ -53,7 +53,7 @@ request](https://github.com/danilofreire/qtm151/pulls), or [create a discussion
 post](https://github.com/danilofreire/qtm151/discussions). 
 
 Please do not forget that, in addition to the tutorials here, the [course
-syllabus](http://localhost:5861/syllabus.html#course-outline-and-suggested-readings)
+syllabus](https://danilofreire.github.io/qtm151/syllabus.html#course-outline-and-suggested-readings)
 also contains a list of recommended weekly readings and additional resources.
 
 I hope you like the

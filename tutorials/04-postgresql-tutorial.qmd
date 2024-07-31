@@ -49,7 +49,7 @@ macOS and Linux users will need to download pgAdmin separately. Once installed, 
 
 ![Downloading pgAdmin: <https://www.pgadmin.org/download>.](images/pgadmin-download.png)
 
-![Installing pgAdmin.]{images/pgadmin-install.png}
+![Installing pgAdmin.](images/pgadmin-install.png)
 
 # Setting Up a Database and Creating a Table
 
@@ -264,7 +264,7 @@ df = pd.read_sql_query('SELECT * FROM students', con=engine)
 print(df)
 ```
 
-![Converting PostgreSQL data to a Pandas DataFrame in Jupyter Notebook.]{images/postgresql-pandas-jupyter.png}
+![Converting PostgreSQL data to a Pandas DataFrame in Jupyter Notebook.](images/postgresql-pandas-jupyter.png)
 
 Now you can perform all sorts of data manipulation and analysis on the `DataFrame` using `pandas`!
 
