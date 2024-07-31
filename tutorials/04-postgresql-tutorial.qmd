@@ -1,14 +1,12 @@
 ---
 title: "PostgreSQL Tutorial"
-author: 
-  - Danilo Freire
 jupyter: python3
 highlight-style: arrow
 format: 
     html:
       toc: true
       toc-depth: 2
-      number-sections: true
+      number-sections: false
 editor:
   render-on-save: true
 ---
@@ -29,17 +27,17 @@ One of the key advantages of PostgreSQL is its extensibility. Developers can def
 
 Installing PostgreSQL is straightforward. The software is available for all major operating systems, including Windows, macOS, and Linux. You can download the installer from the [official website](https://www.postgresql.org/download/). The installation process is similar to installing any other software on your computer. Just choose the default settings, and you should be good to go.
 
-![Downloading PostgreSQL: \url{https://www.postgresql.org/download}.]{images/postgresql-download.png}
+![Downloading PostgreSQL: <https://www.postgresql.org/download>.](images/postgresql-download.png)
 
 During the installation, you may have to set a password for the default user, `postgres`. Make sure to remember this password, as you will need it to connect to the database later. You will also need to choose a port number for the database server. The default port is `5432`, and while you can change it, it is recommended to keep the default setting.
 
-![Setting a password for PostgreSQL.]{images/postgresql-password.png}
+![Setting a password for PostgreSQL.](images/postgresql-password.png)
 
-![Choosing a port number for PostgreSQL.]{images/postgresql-port.png}
+![Choosing a port number for PostgreSQL.](images/postgresql-port.png)
 
 If the installation is successful, you should see a message indicating that PostgreSQL has been installed on your computer. When you launch the application, you will see a window with options to start, stop, or restart the database server. 
 
-![PostgreSQL installed successfully.]{images/postgresql-admin.png}
+![PostgreSQL installed successfully.](images/postgresql-admin.png)
 
 # Installing pgAdmin
 
@@ -49,7 +47,7 @@ Windows users will have the option to install pgAdmin as part of the PostgreSQL 
 
 macOS and Linux users will need to download pgAdmin separately. Once installed, you can launch pgAdmin from the Applications folder on macOS or from the terminal on Linux.
 
-![Downloading pgAdmin: \url{https://www.pgadmin.org/download}.]{images/pgadmin-download.png}
+![Downloading pgAdmin: <https://www.pgadmin.org/download>.](images/pgadmin-download.png)
 
 ![Installing pgAdmin.]{images/pgadmin-install.png}
 
@@ -57,27 +55,27 @@ macOS and Linux users will need to download pgAdmin separately. Once installed, 
 
 Now it is to create a database and test it with a simple table. First, make sure you have PostgreSQL running on your computer. Please run the PostgreSQL application and start the database server. You can also check if the server is running by looking at the system tray on Windows or the status bar on macOS.
 
-![PostgreSQL server running.]{images/postgresql-running.png}
+![PostgreSQL server running.](images/postgresql-running.png)
 
-![PostgreSQL server status on macOS status bar (top).]{images/postgresql-status.png}
+![PostgreSQL server status on macOS status bar (top).](images/postgresql-status.png)
 
 Then you can create a new table in the database using pgAdmin. Please open pgAdmin and click on "Add New Server". You will need to enter the connection details for the database server, including the host, port, username, and password. The host is usually `localhost`, and the port is `5432`. The username is `postgres`, and the password is the one you set during the installation process. Once you have entered the connection details, click "Save" to connect to the database server.
 
-![Adding a new server in pgAdmin.]{images/pgadmin-server.png}
+![Adding a new server in pgAdmin.](images/pgadmin-server.png)
 
-![Connection details for the database server.]{images/pgadmin-connection01.png}
+![Connection details for the database server.](images/pgadmin-connection01.png)
 
-![Connection details for the database server.]{images/pgadmin-connection02.png}
+![Connection details for the database server.](images/pgadmin-connection02.png)
 
 You should see a screen like the one below, with the server connected on the left-hand side. Right-click on the server and select "Create" > "Database" to create a new database. You can name the database `tutorial` and click "Save" to create it.
 
-![Creating a new database in pgAdmin.]{images/pgadmin-database.png}
+![Creating a new database in pgAdmin.](images/pgadmin-database.png)
 
-![Naming the new database.]{images/pgadmin-database-name.png}
+![Naming the new database.](images/pgadmin-database-name.png)
 
 If you have made it this far, congratulations! You have successfully set up a PostgreSQL database on your computer. Now let us create a table in the `tutorial` database. Right-click on the `tutorial` database and select "Query Tool" to open a new query window. You can write SQL queries in this window to interact with the database.
 
-![Opening a new query window in pgAdmin.]{images/pgadmin-query.png}
+![Opening a new query window in pgAdmin.](images/pgadmin-query.png)
 
 In the query window, you can write the following SQL query to create a new table called `students` with three columns: `id`, `name`, and `age`. The `id` column is a serial variable (a series of numbers), and it is the primary key for the table. A primary key is a unique identifier for each row in the table. The `name` column is a text field, and the `age` column is an integer (a number).
 
@@ -97,27 +95,27 @@ SELECT * FROM students;
 
 Click on the "Execute" button to run the query, or press `F5` on your keyboard. You will see the results of the query in the lower panel of the query window. The three `INSERT` statements add three rows to the `students` table with the names `Alice`, `Bob`, and `Charlie`, and their respective ages. The `SELECT` statement retrieves all the rows from the `students` table and shows the three rows you just inserted. 
 
-![Creating a new table in pgAdmin.]{images/pgadmin-table.png}
+![Creating a new table in pgAdmin.](images/pgadmin-table.png)
 
 You can also find the table `students` under the `tutorial` database on the left-hand side of the pgAdmin window. Click on `tutorial`, then on `Schemas`, `public`, and finally on `Tables` to see the `students` table. You can right-click on the table and select "View/Edit Data" to see the rows you inserted. You will also see the query you just ran in the "History" tab.
 
-![Viewing the query history in pgAdmin.]{images/pgadmin-history.png}
+![Viewing the query history in pgAdmin.](images/pgadmin-history.png)
 
 # Using the VS Code Extension
 
 You can also install the [VS Code extension for PostgreSQL](https://marketplace.visualstudio.com/items?itemName=ckolkman.vscode-postgres) to interact with the database directly from the editor. This extension provides a graphical interface for managing databases, tables, and queries. You can install it from the VS Code marketplace by searching for "PostgreSQL". Please **do not** install the extension [made by Microsoft](https://marketplace.visualstudio.com/items?itemName=ms-ossdata.vscode-postgresql&ssr=false), as it is not actively maintained. The extension does not fully replace pgAdmin, but it is a convenient way to run queries and view the results without leaving the editor.
 
-![VS Code extension for PostgreSQL.]{images/vscode-postgresql.png}
+![VS Code extension for PostgreSQL.](images/vscode-postgresql.png)
 
 After you have installed the extension, you need to connect VS Code to the database server by clicking on the "PostgreSQL" icon in the sidebar (it looks like an elephant). Then click on the + sign in the new tab ("Add Connection"). You will need to enter the connection details for the server, including the host, port, username, and password. Once you have entered the details, click "Connect" to establish a connection to the server. In this case, the username is `postgres`, the password is the one you set during the installation process, the host is `localhost`, and the port is `5432`. The database is called `tutorial`. You will find the `student` table by clicking on `tutorial` and then on `public`.
 
-![Connecting to the database server in VS Code.]{images/vscode-connection00.png}
+![Connecting to the database server in VS Code.](images/vscode-connection00.png)
 
-![Connection details for the database server.]{images/vscode-connection01.png}
+![Connection details for the database server.](images/vscode-connection01.png)
 
-![Connection details for the database server.]{images/vscode-connection02.png}
+![Connection details for the database server.](images/vscode-connection02.png)
 
-![Connection details for the database server.]{images/vscode-connection03.png}
+![Connection details for the database server.](images/vscode-connection03.png)
 
 You are ready to run queries in VS Code. Click with the right button on the `students` table and select "New Query" to open a new query window. You can write the same SQL queries you used in pgAdmin to interact with the `students` table. As with pgAdmin, you run the queries by pressing `F5` on your keyboard. For example:
 
@@ -128,11 +126,11 @@ WHERE name = 'Bob';
 
 This query retrieves all rows from the `students` table where the name is `Bob`. In our case, it will show one row. You can see the results of the query in the lower panel of the query window.
 
-![Running a query in VS Code.]{images/vscode-query00.png}
+![Running a query in VS Code.](images/vscode-query00.png)
 
-![New Query in VS Code.]{images/vscode-query01.png}
+![New Query in VS Code.](images/vscode-query01.png)
 
-![Query results in VS Code.]{images/vscode-query02.png}
+![Query results in VS Code.](images/vscode-query02.png)
 
 # Basic SQL Queries
 

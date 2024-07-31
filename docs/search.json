@@ -7,11 +7,144 @@
     "text": "Copyright (c) 2024 Danilo Freire\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\n\n\n Back to top"
   },
   {
-    "objectID": "lectures/lecture-01/hello_world.html",
-    "href": "lectures/lecture-01/hello_world.html",
-    "title": "Hello World in Python using a Jupyter Notebook",
+    "objectID": "lectures/lecture-01/LICENSE.html",
+    "href": "lectures/lecture-01/LICENSE.html",
+    "title": "MIT License",
     "section": "",
-    "text": "print('Hello, World!')\n\nHello, World!\n\n\n\nprint('Name')\n\nName\n\n\n\n\n\n Back to top"
+    "text": "Copyright (c) 2024 Danilo Freire\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "lectures/lecture-01/01-introduction.html#lecture-overview",
+    "href": "lectures/lecture-01/01-introduction.html#lecture-overview",
+    "title": "QTM 151 - Introduction to Statistical Computing II",
+    "section": "Lecture Overview",
+    "text": "Lecture Overview\n\n\nIntroduction\nMotivation\nClass Logistics\nComputing Set up"
+  },
+  {
+    "objectID": "lectures/lecture-01/01-introduction.html#course-materials",
+    "href": "lectures/lecture-01/01-introduction.html#course-materials",
+    "title": "QTM 151 - Introduction to Statistical Computing II",
+    "section": "Course Materials",
+    "text": "Course Materials\nImportant Links\n\n Course repository: https://github.com/danilofreire/qtm151\n Course website: https://danilofreire.github.io/qtm151\nThis course is hosted on GitHub, where you will find lecture materials, code samples, our discussion space, assignments, and final project instructions. Canvas will be used for course management, including assignment submissions, grades, and announcements. Please familiarise yourself with both platforms, and reach out if you have any questions.\n\n\n\n\n\n\nNote\n\n\nPlease remember to check the course website regularly for updates and announcements."
+  },
+  {
+    "objectID": "lectures/lecture-01/01-introduction.html#instructor",
+    "href": "lectures/lecture-01/01-introduction.html#instructor",
+    "title": "QTM 151 - Introduction to Statistical Computing II",
+    "section": "Instructor",
+    "text": "Instructor\nA bit about me\n\n\n\n\n danilo.freire@emory.edu\n https://calendly.com/danilofreire/office-hours\n https://danilofreire.github.io/\n\n\n\n Visiting Assistant Professor in the QTM\n MA from the Graduate Institute Geneva, PhD from King’s College London, Postdoc at Brown University, Senior Lecturer at the University of Lincoln, UK.\n Research interests: computational social science, experimental methods, policy evaluation, political violence, organised crime."
+  },
+  {
+    "objectID": "lectures/lecture-01/01-introduction.html#my-teaching-philosophy",
+    "href": "lectures/lecture-01/01-introduction.html#my-teaching-philosophy",
+    "title": "QTM 151 - Introduction to Statistical Computing II",
+    "section": "My teaching philosophy",
+    "text": "My teaching philosophy\nWhat you can expect from me\n\n\nI love teaching and aim to make learning fun\nClasses where students participate are the best\nHands-on activities help you learn better\nI am always available to help and answer questions. And I mean it\nYour feedback helps me improve my teaching. Please let me know what is working and what is not"
+  },
+  {
+    "objectID": "lectures/lecture-01/01-introduction.html#teaching-assistants",
+    "href": "lectures/lecture-01/01-introduction.html#teaching-assistants",
+    "title": "QTM 151 - Introduction to Statistical Computing II",
+    "section": "Teaching assistants",
+    "text": "Teaching assistants\n\n\nThe teaching assistants for this course will be confirmed soon\nThey will be answering questions during our lectures and holding office hours (see Canvas or the course website for office hours information)\nThey will also be grading your assignments and quizzes (with my oversight)\nWe are all here to help you! So feel free to ask questions during class, office hours, or via email 😊"
+  },
+  {
+    "objectID": "lectures/lecture-01/01-introduction.html#office-hours-what-for-and-what-not-for",
+    "href": "lectures/lecture-01/01-introduction.html#office-hours-what-for-and-what-not-for",
+    "title": "QTM 151 - Introduction to Statistical Computing II",
+    "section": "Office hours: What for and what not for",
+    "text": "Office hours: What for and what not for\n\n\nWhat office hours are meant for:\n\nApplying tools in practice\nDiscussion of issues related to the assignments\nBoosting your knowledge of data science\n\n\n\n\nWhat these sessions are not meant for:\n\nSolving the assignments for you\nTaking care of developing your coding skills"
+  },
+  {
+    "objectID": "lectures/lecture-01/01-introduction.html#class-etiquette",
+    "href": "lectures/lecture-01/01-introduction.html#class-etiquette",
+    "title": "QTM 151 - Introduction to Statistical Computing II",
+    "section": "Class etiquette",
+    "text": "Class etiquette\n\n\n\nCoding can be tough and push you out of your comfort zone. If the course pace is too fast, let us know. I expect your commitment, but I do not want anyone to fail\nYou are all keen on data science, but your backgrounds vary. That is great! Some sessions might be more engaging than others. If you are bored, help others or explore new data science areas\nAlways be respectful to each other\nAsk questions whenever you need to!"
+  },
+  {
+    "objectID": "lectures/lecture-01/01-introduction.html#why-python",
+    "href": "lectures/lecture-01/01-introduction.html#why-python",
+    "title": "QTM 151 - Introduction to Statistical Computing II",
+    "section": "Why Python",
+    "text": "Why Python\nThe world’s most popular programming language"
+  },
+  {
+    "objectID": "lectures/lecture-01/01-introduction.html#why-python-1",
+    "href": "lectures/lecture-01/01-introduction.html#why-python-1",
+    "title": "QTM 151 - Introduction to Statistical Computing II",
+    "section": "Why Python",
+    "text": "Why Python\nGreat community and easy to learn\n\n\nThere are thousands of Python user groups worldwide\nThe Python community is very active and welcoming! \n\n\nJava:\n\n\npublic class Welcome {\n    public static void main(String[] args) {\n        System.out.println(\"Welcome to QTM151!\");\n    }\n}\n\n\nPython:\n\n\nprint(\"Welcome to QTM151!\")"
+  },
+  {
+    "objectID": "lectures/lecture-01/01-introduction.html#why-python-2",
+    "href": "lectures/lecture-01/01-introduction.html#why-python-2",
+    "title": "QTM 151 - Introduction to Statistical Computing II",
+    "section": "Why Python",
+    "text": "Why Python\nSalaries are good!"
+  },
+  {
+    "objectID": "lectures/lecture-01/01-introduction.html#why-sql",
+    "href": "lectures/lecture-01/01-introduction.html#why-sql",
+    "title": "QTM 151 - Introduction to Statistical Computing II",
+    "section": "Why SQL",
+    "text": "Why SQL\nThe world’s most popular database language\n\n\n\nSQL is the standard language for relational database management systems\nEasy to learn\nStandardised\nManage huge amounts of data\nWidely used in industry\nGreat for data analysis"
+  },
+  {
+    "objectID": "lectures/lecture-01/01-introduction.html#why-sql-1",
+    "href": "lectures/lecture-01/01-introduction.html#why-sql-1",
+    "title": "QTM 151 - Introduction to Statistical Computing II",
+    "section": "Why SQL",
+    "text": "Why SQL\nSalaries are good too!"
+  },
+  {
+    "objectID": "lectures/lecture-01/01-introduction.html#course-objectives",
+    "href": "lectures/lecture-01/01-introduction.html#course-objectives",
+    "title": "QTM 151 - Introduction to Statistical Computing II",
+    "section": "Course Objectives",
+    "text": "Course Objectives\n\nPerform basic operations and write functions in Python\nConduct data wrangling and manipulate data using Python libraries such as Pandas\nMerge and manage databases using SQL\nCreate visualisations to effectively communicate data insights\nImplement linear models and understand the principles of time series analysis\nUse Jupyter Notebooks for reproducible research\nDevelop problem-solving skills relevant to data analysis and statistical computing"
+  },
+  {
+    "objectID": "lectures/lecture-01/01-introduction.html#grades-and-late-policy",
+    "href": "lectures/lecture-01/01-introduction.html#grades-and-late-policy",
+    "title": "QTM 151 - Introduction to Statistical Computing II",
+    "section": "Grades and Late Policy",
+    "text": "Grades and Late Policy\n\n\n\n\nAssignments (x10): 50%​\n\nPractice class concepts​\n\nQuizzes (x5): 30%​\n\nQuestions are given in advance​\nData is provided in the class​\n\nFinal Project: 20%​\n\nWill provide guidelines on Canvas​ and GitHub\nDue at the end of the semester​\n\nMidsemester Survey: +0.5% (Extra)\nEnd of semester Survey: +0.5% (Extra)\n\n\n\n\n\nAll materials will be available on the course website​ and GitHub​ repository\nLate assignments will automatically be graded for half-credit​\nTo account for unforeseen circumstances, we will drop the worst assignment and the worst quiz​\nWatch out for the assignments to install software. You will need these to be able to use the lectures notes"
+  },
+  {
+    "objectID": "lectures/lecture-01/01-introduction.html#our-class-in-a-nutshell",
+    "href": "lectures/lecture-01/01-introduction.html#our-class-in-a-nutshell",
+    "title": "QTM 151 - Introduction to Statistical Computing II",
+    "section": "Our Class in a Nutshell",
+    "text": "Our Class in a Nutshell"
+  },
+  {
+    "objectID": "lectures/lecture-01/01-introduction.html#installing-python-using-anaconda",
+    "href": "lectures/lecture-01/01-introduction.html#installing-python-using-anaconda",
+    "title": "QTM 151 - Introduction to Statistical Computing II",
+    "section": "Installing Python using Anaconda",
+    "text": "Installing Python using Anaconda\nAnaconda has (almost) all the libraries we need\n\n\nFollow the instructions on our GitHub repository\nWe are using Anaconda virtual environments for this class (I will cover this in more detail next class)​\nFor now: Anaconda comes with a Python installation​\n\n\n\nQuestions?"
+  },
+  {
+    "objectID": "lectures/lecture-01/01-introduction.html#installing-vscode-and-connecting-anaconda",
+    "href": "lectures/lecture-01/01-introduction.html#installing-vscode-and-connecting-anaconda",
+    "title": "QTM 151 - Introduction to Statistical Computing II",
+    "section": "Installing VSCode and Connecting Anaconda​",
+    "text": "Installing VSCode and Connecting Anaconda​\n\n\nFollow the instructions Installing Visual Studio Code and Connecting it with Anaconda from GitHub\nFor now: know that “base” is the Anaconda virtual environment that comes by default with the installation​\nThe next step is to check if the connection between VSCode and Anaconda worked -&gt; the Python: Select Interpreter option should include Python (“base”)​\nNext step: we will create a new folder for the QTM151 course and download our virtual GitHub folder and opening it in VSCode"
+  },
+  {
+    "objectID": "lectures/lecture-01/01-introduction.html#jupyter-notebooks",
+    "href": "lectures/lecture-01/01-introduction.html#jupyter-notebooks",
+    "title": "QTM 151 - Introduction to Statistical Computing II",
+    "section": "Jupyter Notebooks",
+    "text": "Jupyter Notebooks\n\n\n\n\nWe will use Jupyter Notebooks for our classes. We have a tutorial on how to use them too\nJupyter Notebooks are a great way to combine code, text, and visualisations\nIt is encouraged that you bring your laptop to class\nLecture notes are designed to be follow-along. There will be many “try it yourself” exercises throughout the lectures!"
+  },
+  {
+    "objectID": "lectures/lecture-01/01-introduction.html#next-class",
+    "href": "lectures/lecture-01/01-introduction.html#next-class",
+    "title": "QTM 151 - Introduction to Statistical Computing II",
+    "section": "Next Class",
+    "text": "Next Class\n\n\nDon’t worry if you are not able to follow along with the installation instructions. We will have time to do this next class\nWe will start with the basics of Jupyter Notebooks\nWe will also cover the basics of Anaconda and VSCode\nPlease remember to check the course repository, mainly the tutorials: https://github.com/danilofreire/qtm151\nAnd please do not forget:\n\nCoding ability can be developed\nAcademic skills and abilities are acquired through hard work, mistakes, and perseverance. Coding is no different\nMy only goal here is that you learn the material. Please ask me questions! 😊"
   },
   {
     "objectID": "lectures/lecture-02/02-jupyter.html",
@@ -73,92 +206,92 @@
     "objectID": "tutorials/01-vscode-anaconda-tutorial.html#for-windows-users",
     "href": "tutorials/01-vscode-anaconda-tutorial.html#for-windows-users",
     "title": "Installing VS Code and Connecting it with Anaconda",
-    "section": "3.1 For Windows Users",
-    "text": "3.1 For Windows Users\n\nRun the “VSCodeUserSetup-{version}.exe” file.\n\n\n\n\nWindows Installation\n\n\n\nAccept the license agreement and click “Next”.\n\n\n\n\nLicense Agreement\n\n\n\nChoose the installation location (default is recommended) and click “Next”.\n\n\n\n\nInstallation Location\n\n\n\nSelect additional tasks if desired (e.g., adding “Open with Code” action) and click “Next”.\n\n\n\n\nAdditional Tasks\n\n\n\nClick “Install” to begin the installation process.\n\n\n\n\nInstallation Progress"
+    "section": "For Windows Users",
+    "text": "For Windows Users\n\nRun the “VSCodeUserSetup-{version}.exe” file.\n\n\n\n\nWindows Installation\n\n\n\nAccept the license agreement and click “Next”.\n\n\n\n\nLicense Agreement\n\n\n\nChoose the installation location (default is recommended) and click “Next”.\n\n\n\n\nInstallation Location\n\n\n\nSelect additional tasks if desired (e.g., adding “Open with Code” action) and click “Next”.\n\n\n\n\nAdditional Tasks\n\n\n\nClick “Install” to begin the installation process.\n\n\n\n\nInstallation Progress"
   },
   {
     "objectID": "tutorials/01-vscode-anaconda-tutorial.html#for-macos-users",
     "href": "tutorials/01-vscode-anaconda-tutorial.html#for-macos-users",
     "title": "Installing VS Code and Connecting it with Anaconda",
-    "section": "3.2 For macOS Users",
-    "text": "3.2 For macOS Users\n\nOpen the downloaded .zip file and drag the VS Code application to the Applications folder.\n\n\n\n\nUnzip file\n\n\n\n\n\nDrag to Applications folder"
+    "section": "For macOS Users",
+    "text": "For macOS Users\n\nOpen the downloaded .zip file and drag the VS Code application to the Applications folder.\n\n\n\n\nUnzip file\n\n\n\n\n\nDrag to Applications folder"
   },
   {
     "objectID": "tutorials/01-vscode-anaconda-tutorial.html#for-linux-users",
     "href": "tutorials/01-vscode-anaconda-tutorial.html#for-linux-users",
     "title": "Installing VS Code and Connecting it with Anaconda",
-    "section": "3.3 For Linux Users",
-    "text": "3.3 For Linux Users\n\nFollow the distribution-specific instructions provided on the VS Code website."
+    "section": "For Linux Users",
+    "text": "For Linux Users\n\nFollow the distribution-specific instructions provided on the VS Code website."
   },
   {
     "objectID": "tutorials/01-vscode-anaconda-tutorial.html#launch-vs-code",
     "href": "tutorials/01-vscode-anaconda-tutorial.html#launch-vs-code",
     "title": "Installing VS Code and Connecting it with Anaconda",
-    "section": "3.4 Launch VS Code",
-    "text": "3.4 Launch VS Code\n\nAfter installation, launch VS Code.\nYou should see the welcome screen with options to start a new project or open existing files.\n\n\n\n\nVS Code Welcome Screen"
+    "section": "Launch VS Code",
+    "text": "Launch VS Code\n\nAfter installation, launch VS Code.\nYou should see the welcome screen with options to start a new project or open existing files.\n\n\n\n\nVS Code Welcome Screen"
   },
   {
     "objectID": "tutorials/01-vscode-anaconda-tutorial.html#getting-started",
     "href": "tutorials/01-vscode-anaconda-tutorial.html#getting-started",
     "title": "Installing VS Code and Connecting it with Anaconda",
-    "section": "3.5 Getting Started",
-    "text": "3.5 Getting Started\nMicrosoft has published a series of introductory videos to help you get started with VS Code. You can also read the official documentation for more detailed information."
+    "section": "Getting Started",
+    "text": "Getting Started\nMicrosoft has published a series of introductory videos to help you get started with VS Code. You can also read the official documentation for more detailed information."
   },
   {
     "objectID": "tutorials/01-vscode-anaconda-tutorial.html#download-anaconda",
     "href": "tutorials/01-vscode-anaconda-tutorial.html#download-anaconda",
     "title": "Installing VS Code and Connecting it with Anaconda",
-    "section": "4.1 Download Anaconda",
-    "text": "4.1 Download Anaconda\n\nVisit the Anaconda website: https://www.anaconda.com/products/distribution. You can skip the registration if you prefer.\n\n\n\n\nAnaconda Website\n\n\n\nClick on the “Download” button for your operating system.\n\n\n\n\nDownload Anaconda"
+    "section": "Download Anaconda",
+    "text": "Download Anaconda\n\nVisit the Anaconda website: https://www.anaconda.com/products/distribution. You can skip the registration if you prefer.\n\n\n\n\nAnaconda Website\n\n\n\nClick on the “Download” button for your operating system.\n\n\n\n\nDownload Anaconda"
   },
   {
     "objectID": "tutorials/01-vscode-anaconda-tutorial.html#for-windows-users-1",
     "href": "tutorials/01-vscode-anaconda-tutorial.html#for-windows-users-1",
     "title": "Installing VS Code and Connecting it with Anaconda",
-    "section": "4.2 For Windows Users",
-    "text": "4.2 For Windows Users\n\nChoose “Just Me” for the installation type (recommended).\n\n\n\n\nAnaconda Installation\n\n\n\nSelect the installation location (default is fine).\n\n\n\n\nAnaconda Installation\n\n\n\nIn the “Advanced Options” section, check “Add Anaconda to my PATH environment variable” and “Register Anaconda as my default Python”.\n\n\n\n\nAdvanced Options"
+    "section": "For Windows Users",
+    "text": "For Windows Users\n\nChoose “Just Me” for the installation type (recommended).\n\n\n\n\nAnaconda Installation\n\n\n\nSelect the installation location (default is fine).\n\n\n\n\nAnaconda Installation\n\n\n\nIn the “Advanced Options” section, check “Add Anaconda to my PATH environment variable” and “Register Anaconda as my default Python”.\n\n\n\n\nAdvanced Options"
   },
   {
     "objectID": "tutorials/01-vscode-anaconda-tutorial.html#for-macos-users-1",
     "href": "tutorials/01-vscode-anaconda-tutorial.html#for-macos-users-1",
     "title": "Installing VS Code and Connecting it with Anaconda",
-    "section": "4.3 For macOS Users",
-    "text": "4.3 For macOS Users\n\nOpen the downloaded .pkg file and follow the installation instructions. You can install Anaconda for all users.\n\n\n\n\nAnaconda Installation\n\n\n\nFollow the on-screen instructions, accepting the default options.\n\n\n\n\nAnaconda Installation"
+    "section": "For macOS Users",
+    "text": "For macOS Users\n\nOpen the downloaded .pkg file and follow the installation instructions. You can install Anaconda for all users.\n\n\n\n\nAnaconda Installation\n\n\n\nFollow the on-screen instructions, accepting the default options.\n\n\n\n\nAnaconda Installation"
   },
   {
     "objectID": "tutorials/01-vscode-anaconda-tutorial.html#for-linux-users-1",
     "href": "tutorials/01-vscode-anaconda-tutorial.html#for-linux-users-1",
     "title": "Installing VS Code and Connecting it with Anaconda",
-    "section": "4.4 For Linux Users",
-    "text": "4.4 For Linux Users\n\nPlease follow the distribution-specific instructions provided on the Anaconda website."
+    "section": "For Linux Users",
+    "text": "For Linux Users\n\nPlease follow the distribution-specific instructions provided on the Anaconda website."
   },
   {
     "objectID": "tutorials/01-vscode-anaconda-tutorial.html#verify-anaconda-installation",
     "href": "tutorials/01-vscode-anaconda-tutorial.html#verify-anaconda-installation",
     "title": "Installing VS Code and Connecting it with Anaconda",
-    "section": "4.5 Verify Anaconda Installation",
-    "text": "4.5 Verify Anaconda Installation\n\nOpen a new terminal or command prompt. On VS Code, you can do it by clicking on “Terminal” &gt; “New Terminal” in the top menu.\nType conda --version and press Enter. You should see the Conda version number.\nType python --version and press Enter. You should see the Python version installed by Anaconda.\n\n\n\n\nVerify Anaconda Installation"
+    "section": "Verify Anaconda Installation",
+    "text": "Verify Anaconda Installation\n\nOpen a new terminal or command prompt. On VS Code, you can do it by clicking on “Terminal” &gt; “New Terminal” in the top menu.\nType conda --version and press Enter. You should see the Conda version number.\nType python --version and press Enter. You should see the Python version installed by Anaconda.\n\n\n\n\nVerify Anaconda Installation"
   },
   {
     "objectID": "tutorials/01-vscode-anaconda-tutorial.html#install-the-python-and-jupyer-extensions-in-vs-code",
     "href": "tutorials/01-vscode-anaconda-tutorial.html#install-the-python-and-jupyer-extensions-in-vs-code",
     "title": "Installing VS Code and Connecting it with Anaconda",
-    "section": "5.1 Install the Python and Jupyer Extensions in VS Code:",
-    "text": "5.1 Install the Python and Jupyer Extensions in VS Code:\n\nOpen VS Code and click on the Extensions view icon on the left sidebar (it looks like four squares). Search for “Python” in the search bar.\n\n\n\n\nPython Extension in VS Code\n\n\n\nFind the official Python extension by Microsoft and click “Install”.\nPlease also install the Jupyter extension for VS Code to work with Jupyter notebooks.\n\n\n\n\nJupyter Extension in VS Code"
+    "section": "Install the Python and Jupyer Extensions in VS Code:",
+    "text": "Install the Python and Jupyer Extensions in VS Code:\n\nOpen VS Code and click on the Extensions view icon on the left sidebar (it looks like four squares). Search for “Python” in the search bar.\n\n\n\n\nPython Extension in VS Code\n\n\n\nFind the official Python extension by Microsoft and click “Install”.\nPlease also install the Jupyter extension for VS Code to work with Jupyter notebooks.\n\n\n\n\nJupyter Extension in VS Code"
   },
   {
     "objectID": "tutorials/01-vscode-anaconda-tutorial.html#select-the-anaconda-python-interpreter",
     "href": "tutorials/01-vscode-anaconda-tutorial.html#select-the-anaconda-python-interpreter",
     "title": "Installing VS Code and Connecting it with Anaconda",
-    "section": "5.2 Select the Anaconda Python Interpreter:",
-    "text": "5.2 Select the Anaconda Python Interpreter:\n\nCreate a Python file in VS Code. Click on the “New File” button in the top left corner and save it with a .py extension.\n\n\n\n\nNew Python File in VS Code\n\n\n\nInclude the following code in the file:\n\n\nimport sys\nprint(sys.version)\nprint(sys.executable)\n\n\nSave the file again. Here I saved it as testing-anaconda.py.\n\n\n\n\nSave Python File in VS Code\n\n\n\nPress Ctrl+Shift+P (Windows/Linux) or Cmd+Shift+P (macOS) to open the Command Palette.\n\n\n\n\nCommand Palette in VS Code\n\n\n\nType “Python: Select Interpreter” and select it from the list.\n\n\n\n\nSelect Python Interpreter\n\n\n\nChoose the Anaconda Python interpreter from the list. It should be labelled something like “Python 3.x.x (‘base’) Conda”."
+    "section": "Select the Anaconda Python Interpreter:",
+    "text": "Select the Anaconda Python Interpreter:\n\nCreate a Python file in VS Code. Click on the “New File” button in the top left corner and save it with a .py extension.\n\n\n\n\nNew Python File in VS Code\n\n\n\nInclude the following code in the file:\n\n\nimport sys\nprint(sys.version)\nprint(sys.executable)\n\n\nSave the file again. Here I saved it as testing-anaconda.py.\n\n\n\n\nSave Python File in VS Code\n\n\n\nPress Ctrl+Shift+P (Windows/Linux) or Cmd+Shift+P (macOS) to open the Command Palette.\n\n\n\n\nCommand Palette in VS Code\n\n\n\nType “Python: Select Interpreter” and select it from the list.\n\n\n\n\nSelect Python Interpreter\n\n\n\nChoose the Anaconda Python interpreter from the list. It should be labelled something like “Python 3.x.x (‘base’) Conda”."
   },
   {
     "objectID": "tutorials/01-vscode-anaconda-tutorial.html#verify-the-connection",
     "href": "tutorials/01-vscode-anaconda-tutorial.html#verify-the-connection",
     "title": "Installing VS Code and Connecting it with Anaconda",
-    "section": "5.3 Verify the Connection:",
-    "text": "5.3 Verify the Connection:\n\nPlease click on the “Run” button at the top right corner of the editor to execute the code in your .py file. Select “Run Current File in Dedicated Terminal”\n\n\n\n\nRun Python File in VS Code\n\n\n\nThe output should show the Anaconda Python version and its location.\n\n\n\n\nPython Output in VS Code"
+    "section": "Verify the Connection:",
+    "text": "Verify the Connection:\n\nPlease click on the “Run” button at the top right corner of the editor to execute the code in your .py file. Select “Run Current File in Dedicated Terminal”\n\n\n\n\nRun Python File in VS Code\n\n\n\nThe output should show the Anaconda Python version and its location.\n\n\n\n\nPython Output in VS Code"
   },
   {
     "objectID": "index.html",
@@ -262,71 +395,71 @@
     "objectID": "tutorials/02-jupyter-markdown-tutorial.html#what-is-jupyter-notebook",
     "href": "tutorials/02-jupyter-markdown-tutorial.html#what-is-jupyter-notebook",
     "title": "Jupyter Notebook and Markdown Tutorial",
-    "section": "2.1 What is Jupyter Notebook?",
-    "text": "2.1 What is Jupyter Notebook?\nJupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations, and narrative text. Jupyter Notebook supports over 40 programming languages, including Python, R, and Julia. Jupyter Notebook is widely used in data science, machine learning, scientific computing, and other fields.\nJupyter Notebooks provide an interactive development environment that allows you to write and execute code, see the results immediately, and create reproducible analyses. Jupyter Notebooks are organized into cells, which can contain code, text, equations, or visualisations. You can run individual cells or the entire notebook, and you can save your work as a notebook file (.ipynb) that can be shared with others."
+    "section": "What is Jupyter Notebook?",
+    "text": "What is Jupyter Notebook?\nJupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations, and narrative text. Jupyter Notebook supports over 40 programming languages, including Python, R, and Julia. Jupyter Notebook is widely used in data science, machine learning, scientific computing, and other fields.\nJupyter Notebooks provide an interactive development environment that allows you to write and execute code, see the results immediately, and create reproducible analyses. Jupyter Notebooks are organized into cells, which can contain code, text, equations, or visualisations. You can run individual cells or the entire notebook, and you can save your work as a notebook file (.ipynb) that can be shared with others."
   },
   {
     "objectID": "tutorials/02-jupyter-markdown-tutorial.html#creating-a-new-notebook",
     "href": "tutorials/02-jupyter-markdown-tutorial.html#creating-a-new-notebook",
     "title": "Jupyter Notebook and Markdown Tutorial",
-    "section": "2.2 Creating a New Notebook",
-    "text": "2.2 Creating a New Notebook\nFirst, please make sure you have Python, Jupyter Notebook, and VSCode installed on your computer. If you do not have these installed, please refer to the VSCode and Anaconda Tutorial for instructions on how to install them.\nTo create a new Jupyter Notebook in VSCode, please go to the tab “File” &gt; “New File”. You will see a prompt in the middle of the screen. Select the option “Jupyter Notebook”.\n\n\n\nCreating a new Jupyter Notebook in VSCode.\n\n\nA new Jupyter Notebook will be created with the file extension .ipynb. You can rename the notebook by clicking on the notebook name at the top of the screen. An empty notebook will look like this:\n\n\n\nAn empty Jupyter Notebook.\n\n\nPlease do not forget to select the Python interpreter that you want to use for the notebook. You can do this by clicking on the Python version at the top right corner of the screen. A prompt will appear, and you can select the Python interpreter that you want to use (in this case, Anacoda’s “base”).\n\n\n\nSelecting the Python interpreter for the notebook.\n\n\nTo create a chunk of Python code click on “+ Code.” You will get an empty gray box which has Python on the lower-right corner. You can type Python code in this box and run it by clicking on the “Run” button on the left side of the box. You can also run the code by pressing “Shift + Enter” on your keyboard.\n\n\n\nA code cell in a Jupyter Notebook.\n\n\nHere you should enter the Python commands. For example, type the following lines of code in the code cell:\n\nprint(\"Welcome to QTM 151!\")\n\nx = 5\ny = 10\nz = x + y\nprint(z)\n\nThe results of the code will be displayed below the code cell. In this case, the output will be:\n\n\n\nOutput of the code cell.\n\n\nTo create a text cell click on “+ Markdown.” You will get an empty white box where you can type text. We will cover Markdown in more detail in the next section. But for now, you can type the following text in the Markdown cell:\n# Welcome to QTM 151!\n\nThis is a Jupyter Notebook. You can write *text*, **equations**, and `code` \nin [this notebook](https://github.com/danilofreire/qtm151/blob/main/tutorials/testing-ipython.ipynb). \nThe text will be displayed in the text cell like this:\n\n\n\nA text cell in a Jupyter Notebook.\n\n\nYou can run the text cell by clicking the “Run” button on the left side of the box or by pressing “Shift + Enter” on your keyboard. The first text block shows how the text looks before running the cell, and the second block shows how it looks after running the cell. Just double click on the space where the text is to edit the Markdown block. This is should open the gray box again."
+    "section": "Creating a New Notebook",
+    "text": "Creating a New Notebook\nFirst, please make sure you have Python, Jupyter Notebook, and VSCode installed on your computer. If you do not have these installed, please refer to the VSCode and Anaconda Tutorial for instructions on how to install them.\nTo create a new Jupyter Notebook in VSCode, please go to the tab “File” &gt; “New File”. You will see a prompt in the middle of the screen. Select the option “Jupyter Notebook”.\n\n\n\nCreating a new Jupyter Notebook in VSCode.\n\n\nA new Jupyter Notebook will be created with the file extension .ipynb. You can rename the notebook by clicking on the notebook name at the top of the screen. An empty notebook will look like this:\n\n\n\nAn empty Jupyter Notebook.\n\n\nPlease do not forget to select the Python interpreter that you want to use for the notebook. You can do this by clicking on the Python version at the top right corner of the screen. A prompt will appear, and you can select the Python interpreter that you want to use (in this case, Anacoda’s “base”).\n\n\n\nSelecting the Python interpreter for the notebook.\n\n\nTo create a chunk of Python code click on “+ Code.” You will get an empty gray box which has Python on the lower-right corner. You can type Python code in this box and run it by clicking on the “Run” button on the left side of the box. You can also run the code by pressing “Shift + Enter” on your keyboard.\n\n\n\nA code cell in a Jupyter Notebook.\n\n\nHere you should enter the Python commands. For example, type the following lines of code in the code cell:\n\nprint(\"Welcome to QTM 151!\")\n\nx = 5\ny = 10\nz = x + y\nprint(z)\n\nThe results of the code will be displayed below the code cell. In this case, the output will be:\n\n\n\nOutput of the code cell.\n\n\nTo create a text cell click on “+ Markdown.” You will get an empty white box where you can type text. We will cover Markdown in more detail in the next section. But for now, you can type the following text in the Markdown cell:\n# Welcome to QTM 151!\n\nThis is a Jupyter Notebook. You can write *text*, **equations**, and `code` \nin [this notebook](https://github.com/danilofreire/qtm151/blob/main/tutorials/testing-ipython.ipynb). \nThe text will be displayed in the text cell like this:\n\n\n\nA text cell in a Jupyter Notebook.\n\n\nYou can run the text cell by clicking the “Run” button on the left side of the box or by pressing “Shift + Enter” on your keyboard. The first text block shows how the text looks before running the cell, and the second block shows how it looks after running the cell. Just double click on the space where the text is to edit the Markdown block. This is should open the gray box again."
   },
   {
     "objectID": "tutorials/02-jupyter-markdown-tutorial.html#why-use-markdown",
     "href": "tutorials/02-jupyter-markdown-tutorial.html#why-use-markdown",
     "title": "Jupyter Notebook and Markdown Tutorial",
-    "section": "3.1 Why Use Markdown?",
-    "text": "3.1 Why Use Markdown?\nMarkdown is a great way to format text because it is simple, easy to learn, and widely supported. You can use Markdown to create headings, lists, tables, equations, and figures in your documents. Markdown is used in many different applications, including Jupyter Notebook, GitHub, and Slack. Learning Markdown will help you create well-formatted documents that are easy to read and share."
+    "section": "Why Use Markdown?",
+    "text": "Why Use Markdown?\nMarkdown is a great way to format text because it is simple, easy to learn, and widely supported. You can use Markdown to create headings, lists, tables, equations, and figures in your documents. Markdown is used in many different applications, including Jupyter Notebook, GitHub, and Slack. Learning Markdown will help you create well-formatted documents that are easy to read and share."
   },
   {
     "objectID": "tutorials/02-jupyter-markdown-tutorial.html#headings",
     "href": "tutorials/02-jupyter-markdown-tutorial.html#headings",
     "title": "Jupyter Notebook and Markdown Tutorial",
-    "section": "3.2 Headings",
-    "text": "3.2 Headings\nYou can create headings using the # symbol. For example, # Heading 1 creates a first-level heading, ## Heading 2 creates a second-level heading, and so on. You can create up to six levels of headings using the # symbol.\n# Heading 1\n## Heading 2\n### Heading 3"
+    "section": "Headings",
+    "text": "Headings\nYou can create headings using the # symbol. For example, # Heading 1 creates a first-level heading, ## Heading 2 creates a second-level heading, and so on. You can create up to six levels of headings using the # symbol.\n# Heading 1\n## Heading 2\n### Heading 3"
   },
   {
     "objectID": "tutorials/02-jupyter-markdown-tutorial.html#lists",
     "href": "tutorials/02-jupyter-markdown-tutorial.html#lists",
     "title": "Jupyter Notebook and Markdown Tutorial",
-    "section": "3.3 Lists",
-    "text": "3.3 Lists\nTo create an ordered list with nested unordered sub-items in Markdown, you can write the following code:\n1. This is an ordered list.\n2. This is the second item in the ordered list.\n  - This is a sub-item in the unordered list.\n    - This is a sub-sub-item in the unordered list.\n\nThis is an ordered list.\nThis is the second item in the ordered list.\n\nThis is a sub-item in the unordered list.\n\nThis is a sub-sub-item in the unordered list.\n\n\n\nYou can also create unordered lists:\n- This is an unordered list.\n- This is the second item in the unordered list.\n  - This is a sub-item in the unordered list.\n\nThis is an unordered list.\nThis is the second item in the unordered list.\n\nThis is a sub-item in the unordered list."
+    "section": "Lists",
+    "text": "Lists\nTo create an ordered list with nested unordered sub-items in Markdown, you can write the following code:\n1. This is an ordered list.\n2. This is the second item in the ordered list.\n  - This is a sub-item in the unordered list.\n    - This is a sub-sub-item in the unordered list.\n\nThis is an ordered list.\nThis is the second item in the ordered list.\n\nThis is a sub-item in the unordered list.\n\nThis is a sub-sub-item in the unordered list.\n\n\n\nYou can also create unordered lists:\n- This is an unordered list.\n- This is the second item in the unordered list.\n  - This is a sub-item in the unordered list.\n\nThis is an unordered list.\nThis is the second item in the unordered list.\n\nThis is a sub-item in the unordered list."
   },
   {
     "objectID": "tutorials/02-jupyter-markdown-tutorial.html#tables",
     "href": "tutorials/02-jupyter-markdown-tutorial.html#tables",
     "title": "Jupyter Notebook and Markdown Tutorial",
-    "section": "3.4 Tables",
-    "text": "3.4 Tables\nYou can create tables using the | symbol. For example:\nTable: Your Caption \n\n| A            | New              | Table          |\n|:-------------|:----------------:|---------------:|\n|left-aligned  |centre-aligned    |right-aligned   |\n|*italics*     |~~strikethrough~~ |**boldface**    |\n\nYour Caption\n\n\nA\nNew\nTable\n\n\n\n\nleft-aligned\ncentre-aligned\nright-aligned\n\n\nitalics\nstrikethrough\nboldface\n\n\n\nThe : symbols in the second row of the table determine the alignment of the text in each column. You can use left, center, or right to align the text."
+    "section": "Tables",
+    "text": "Tables\nYou can create tables using the | symbol. For example:\nTable: Your Caption \n\n| A            | New              | Table          |\n|:-------------|:----------------:|---------------:|\n|left-aligned  |centre-aligned    |right-aligned   |\n|*italics*     |~~strikethrough~~ |**boldface**    |\n\nYour Caption\n\n\nA\nNew\nTable\n\n\n\n\nleft-aligned\ncentre-aligned\nright-aligned\n\n\nitalics\nstrikethrough\nboldface\n\n\n\nThe : symbols in the second row of the table determine the alignment of the text in each column. You can use left, center, or right to align the text."
   },
   {
     "objectID": "tutorials/02-jupyter-markdown-tutorial.html#creating-markdown-tables-from-pandas-dataframes-in-jupyter-notebooks",
     "href": "tutorials/02-jupyter-markdown-tutorial.html#creating-markdown-tables-from-pandas-dataframes-in-jupyter-notebooks",
     "title": "Jupyter Notebook and Markdown Tutorial",
-    "section": "3.5 Creating Markdown Tables from Pandas DataFrames in Jupyter Notebooks",
-    "text": "3.5 Creating Markdown Tables from Pandas DataFrames in Jupyter Notebooks\nWhen working with pandas DataFrames, you can convert them into Markdown tables for better presentation. The method is also relatively simple. Here is how to do it:\n\n3.5.1 Prerequisites\nEnsure you have the following installed:\n\nJupyter Notebook\npandas\ntabulate (for enhanced table formatting)\n\nJupyter Notebook and pandas are included in the Anaconda distribution. You can install tabulate using conda install in your terminal. If you are using VS Code, you can open a terminal by clicking on “Terminal” &gt; “New Terminal” in the top menu. Then run the following command:\nconda install tabulate\n\n\n3.5.2 Basic Method: Using pandas.DataFrame.to_markdown()\npandas provides a built-in method to_markdown() for converting DataFrames to Markdown tables.\n\n3.5.2.1 Step 1: Import pandas and create a DataFrame\nYou can create a dataframe by passing a dictionary to the pd.DataFrame() constructor:\n\n# If necessary, install pandas and tabulate \n# You should have pandas installed if you installed Anaconda, \n# but if you do not, you can install both with the following terminal command:\n# conda install pandas tabulate\n\n# Import pandas\nimport pandas as pd\nfrom tabulate import tabulate\n\n# Create a sample DataFrame\ndata = {\n    \"Name\": [\"Alice\", \"Bob\", \"Charlie\"],\n    \"Age\": [25, 30, 35],\n    \"City\": [\"New York\", \"London\", \"Paris\"]\n}\ndf = pd.DataFrame(data)\n\n\n\n3.5.2.2 Step 2: Convert DataFrame to Markdown\nThen you just need to call the to_markdown() method on the DataFrame:\n\n# Print the DataFrame as a Markdown table, excluding the index\nmarkdown_table = df.to_markdown(index=False)\nprint(markdown_table)\n\nThis will output:\n| Name    | Age  | City     |\n|:--------|-----:|:---------|\n| Alice   |   25 | New York |\n| Bob     |   30 | London   |\n| Charlie |   35 | Paris    |\n\n\n3.5.2.3 Step 3: Display in Jupyter Notebook\nTo display the Markdown table in a Jupyter Notebook cell, use the display() function from the IPython.display module:\n\n# You should also have the IPython package installed if you installed Anaconda\n# If not, you can install it with\n# conda install ipython\n\n# Import the Markdown display class. \n# This is what allows us to display Markdown in Jupyter Notebooks \nfrom IPython.display import display, Markdown\n\n# Display the Markdown table\ndisplay(Markdown(markdown_table))\n\nThis will render a nicely formatted table in your notebook:\n\n\n\nMarkdown table in a Jupyter Notebook.\n\n\n\n\n\n3.5.3 Advanced Formatting\nYou can customise the Markdown table using various parameters of to_markdown():\n\n# Customising the Markdown table using the to_markdown() method\nmarkdown_table = df.to_markdown(\n    index=False,  # Don't include index\n    tablefmt=\"pipe\",  # Use pipe format\n    floatfmt=\".2f\",  # Format floats to 2 decimal places\n    headers=[\"Name\", \"Age (Years)\", \"City\"],  # Custom headers\n    colalign=(\"left\", \"center\", \"right\")  # Align columns\n)\ndisplay(Markdown(markdown_table))\n\n\n\n3.5.4 Using tabulate for Enhanced Formatting\nThe tabulate library offers even more formatting options. While they are not necessary for basic tables, they can be useful for more complex tables. In our course, you will probably not need them, but I will show you how to use them for your reference. Please check their documentation for more information.\n\nfrom tabulate import tabulate\n\nmarkdown_table = tabulate(df, headers='keys', tablefmt='pipe', showindex=False)\ndisplay(Markdown(markdown_table))\n\n\n\n3.5.5 Best Practices\n\nIndex: Consider whether you need the index in your table. Often, it is cleaner to exclude it using index=False.\nFormatting: Use floatfmt to control decimal places for numerical data.\nHeaders: Customize headers for clarity, especially if your DataFrame column names are not user-friendly.\nTable Format: Experiment with different tablefmt options to find the most suitable for your needs.\nLarge DataFrames: For large DataFrames, consider displaying only a subset of rows or columns to maintain readability.\n\n\n\n3.5.6 Example: Comprehensive Table Creation\nHere is a more comprehensive example incorporating various best practices:\n\n# Import necessary packages\nimport pandas as pd\nfrom IPython.display import display, Markdown\nfrom tabulate import tabulate\n\n# Create a sample DataFrame\ndata = {\n    \"Product\": [\"Laptop\", \"Smartphone\", \"Tablet\"],\n    \"Price\": [999.99, 599.50, 299.75],\n    \"Stock\": [50, 100, 75],\n    \"Rating\": [4.5, 4.8, 4.2]\n}\ndf = pd.DataFrame(data)\n\n# Create a formatted Markdown table\nmarkdown_table = tabulate(\n    df,\n    headers=[\"Product Name\", \"Price ($)\", \"Stock Quantity\", \"Customer Rating\"],\n    tablefmt=\"pipe\", # Format as Markdown table\n    floatfmt=(\".2f\", \".2f\", \"d\", \".1f\"),\n    showindex=False, # Don't show the index (row numbers)\n    numalign=\"right\", # Align numbers to the right\n    stralign=\"left\" # Align strings (text, first column) to the left\n)\n\n# Display the table in the notebook\ndisplay(Markdown(\"### Product Inventory Summary\"))\ndisplay(Markdown(markdown_table))\n\nThis will produce a well-formatted table with custom headers, appropriate number formatting, and a title.\n\n\n\nComprehensive Markdown table in a Jupyter Notebook."
+    "section": "Creating Markdown Tables from Pandas DataFrames in Jupyter Notebooks",
+    "text": "Creating Markdown Tables from Pandas DataFrames in Jupyter Notebooks\nWhen working with pandas DataFrames, you can convert them into Markdown tables for better presentation. The method is also relatively simple. Here is how to do it:\n\nPrerequisites\nEnsure you have the following installed:\n\nJupyter Notebook\npandas\ntabulate (for enhanced table formatting)\n\nJupyter Notebook and pandas are included in the Anaconda distribution. You can install tabulate using conda install in your terminal. If you are using VS Code, you can open a terminal by clicking on “Terminal” &gt; “New Terminal” in the top menu. Then run the following command:\nconda install tabulate\n\n\nBasic Method: Using pandas.DataFrame.to_markdown()\npandas provides a built-in method to_markdown() for converting DataFrames to Markdown tables.\n\nStep 1: Import pandas and create a DataFrame\nYou can create a dataframe by passing a dictionary to the pd.DataFrame() constructor:\n\n# If necessary, install pandas and tabulate \n# You should have pandas installed if you installed Anaconda, \n# but if you do not, you can install both with the following terminal command:\n# conda install pandas tabulate\n\n# Import pandas\nimport pandas as pd\nfrom tabulate import tabulate\n\n# Create a sample DataFrame\ndata = {\n    \"Name\": [\"Alice\", \"Bob\", \"Charlie\"],\n    \"Age\": [25, 30, 35],\n    \"City\": [\"New York\", \"London\", \"Paris\"]\n}\ndf = pd.DataFrame(data)\n\n\n\nStep 2: Convert DataFrame to Markdown\nThen you just need to call the to_markdown() method on the DataFrame:\n\n# Print the DataFrame as a Markdown table, excluding the index\nmarkdown_table = df.to_markdown(index=False)\nprint(markdown_table)\n\nThis will output:\n| Name    | Age  | City     |\n|:--------|-----:|:---------|\n| Alice   |   25 | New York |\n| Bob     |   30 | London   |\n| Charlie |   35 | Paris    |\n\n\nStep 3: Display in Jupyter Notebook\nTo display the Markdown table in a Jupyter Notebook cell, use the display() function from the IPython.display module:\n\n# You should also have the IPython package installed if you installed Anaconda\n# If not, you can install it with\n# conda install ipython\n\n# Import the Markdown display class. \n# This is what allows us to display Markdown in Jupyter Notebooks \nfrom IPython.display import display, Markdown\n\n# Display the Markdown table\ndisplay(Markdown(markdown_table))\n\nThis will render a nicely formatted table in your notebook:\n\n\n\nMarkdown table in a Jupyter Notebook.\n\n\n\n\n\nAdvanced Formatting\nYou can customise the Markdown table using various parameters of to_markdown():\n\n# Customising the Markdown table using the to_markdown() method\nmarkdown_table = df.to_markdown(\n    index=False,  # Don't include index\n    tablefmt=\"pipe\",  # Use pipe format\n    floatfmt=\".2f\",  # Format floats to 2 decimal places\n    headers=[\"Name\", \"Age (Years)\", \"City\"],  # Custom headers\n    colalign=(\"left\", \"center\", \"right\")  # Align columns\n)\ndisplay(Markdown(markdown_table))\n\n\n\nUsing tabulate for Enhanced Formatting\nThe tabulate library offers even more formatting options. While they are not necessary for basic tables, they can be useful for more complex tables. In our course, you will probably not need them, but I will show you how to use them for your reference. Please check their documentation for more information.\n\nfrom tabulate import tabulate\n\nmarkdown_table = tabulate(df, headers='keys', tablefmt='pipe', showindex=False)\ndisplay(Markdown(markdown_table))\n\n\n\nBest Practices\n\nIndex: Consider whether you need the index in your table. Often, it is cleaner to exclude it using index=False.\nFormatting: Use floatfmt to control decimal places for numerical data.\nHeaders: Customize headers for clarity, especially if your DataFrame column names are not user-friendly.\nTable Format: Experiment with different tablefmt options to find the most suitable for your needs.\nLarge DataFrames: For large DataFrames, consider displaying only a subset of rows or columns to maintain readability.\n\n\n\nExample: Comprehensive Table Creation\nHere is a more comprehensive example incorporating various best practices:\n\n# Import necessary packages\nimport pandas as pd\nfrom IPython.display import display, Markdown\nfrom tabulate import tabulate\n\n# Create a sample DataFrame\ndata = {\n    \"Product\": [\"Laptop\", \"Smartphone\", \"Tablet\"],\n    \"Price\": [999.99, 599.50, 299.75],\n    \"Stock\": [50, 100, 75],\n    \"Rating\": [4.5, 4.8, 4.2]\n}\ndf = pd.DataFrame(data)\n\n# Create a formatted Markdown table\nmarkdown_table = tabulate(\n    df,\n    headers=[\"Product Name\", \"Price ($)\", \"Stock Quantity\", \"Customer Rating\"],\n    tablefmt=\"pipe\", # Format as Markdown table\n    floatfmt=(\".2f\", \".2f\", \"d\", \".1f\"),\n    showindex=False, # Don't show the index (row numbers)\n    numalign=\"right\", # Align numbers to the right\n    stralign=\"left\" # Align strings (text, first column) to the left\n)\n\n# Display the table in the notebook\ndisplay(Markdown(\"### Product Inventory Summary\"))\ndisplay(Markdown(markdown_table))\n\nThis will produce a well-formatted table with custom headers, appropriate number formatting, and a title.\n\n\n\nComprehensive Markdown table in a Jupyter Notebook."
   },
   {
     "objectID": "tutorials/02-jupyter-markdown-tutorial.html#equations",
     "href": "tutorials/02-jupyter-markdown-tutorial.html#equations",
     "title": "Jupyter Notebook and Markdown Tutorial",
-    "section": "3.6 Equations",
-    "text": "3.6 Equations\nYou can create equations using the $$ symbol. For example in Equation 1, we have the formula for the standard deviation of a population:\n$$\n\\sigma = \\sqrt{\\frac{\\sum_{i=1}^{N} (x_i - \\mu)^2}{N}}\n$$ {#eq-stddev}\n\\[\n\\sigma = \\sqrt{\\frac{\\sum_{i=1}^{N} (x_i - \\mu)^2}{N}}\n\\tag{1}\\]\nYou can also create equations inline by using the $ symbol. For example, $\\alpha = \\beta + \\gamma$ will render as \\(\\alpha = \\beta + \\gamma\\). To learn more about how to write equations in using Markdown, you can refer to the Overleaf documentation."
+    "section": "Equations",
+    "text": "Equations\nYou can create equations using the $$ symbol. For example in Equation 1, we have the formula for the standard deviation of a population:\n$$\n\\sigma = \\sqrt{\\frac{\\sum_{i=1}^{N} (x_i - \\mu)^2}{N}}\n$$ {#eq-stddev}\n\\[\n\\sigma = \\sqrt{\\frac{\\sum_{i=1}^{N} (x_i - \\mu)^2}{N}}\n\\tag{1}\\]\nYou can also create equations inline by using the $ symbol. For example, $\\alpha = \\beta + \\gamma$ will render as \\(\\alpha = \\beta + \\gamma\\). To learn more about how to write equations in using Markdown, you can refer to the Overleaf documentation."
   },
   {
     "objectID": "tutorials/02-jupyter-markdown-tutorial.html#figures",
     "href": "tutorials/02-jupyter-markdown-tutorial.html#figures",
     "title": "Jupyter Notebook and Markdown Tutorial",
-    "section": "3.7 Figures",
-    "text": "3.7 Figures\nYou can include figures in your document using the ![Caption](path/to/image.png){#fig-label} syntax. For example:\n![This is a figure caption.](path/to/image.png){#fig-label}\nThis will include the image path/to/image.png in your document with the caption “This is a figure caption.” You can refer to the figure using the label fig-label, but this is optional.\nIf you are creating plots on Jupyter Notebook, the graphs will appear after the code cell that generates them."
+    "section": "Figures",
+    "text": "Figures\nYou can include figures in your document using the ![Caption](path/to/image.png){#fig-label} syntax. For example:\n![This is a figure caption.](path/to/image.png){#fig-label}\nThis will include the image path/to/image.png in your document with the caption “This is a figure caption.” You can refer to the figure using the label fig-label, but this is optional.\nIf you are creating plots on Jupyter Notebook, the graphs will appear after the code cell that generates them."
   },
   {
     "objectID": "tutorials/02-jupyter-markdown-tutorial.html#citations",
     "href": "tutorials/02-jupyter-markdown-tutorial.html#citations",
     "title": "Jupyter Notebook and Markdown Tutorial",
-    "section": "3.8 Citations",
-    "text": "3.8 Citations\nAlthough Markdown has excellent reference support with BibTeX files, there is no reliable way to include citations automatically in Jupyter Notebooks. The two packages I know that manage citations, cite2c and Jupyterlab Citation Manager, are not ideal. The first has not been maintained for years, while the second is not ready for most uses. Therefore, I suggest simply copying the citation from Google Scholar and pasting it into a Markdown cell titled “References” at the end of your document. The same approach applies for inline citations."
+    "section": "Citations",
+    "text": "Citations\nAlthough Markdown has excellent reference support with BibTeX files, there is no reliable way to include citations automatically in Jupyter Notebooks. The two packages I know that manage citations, cite2c and Jupyterlab Citation Manager, are not ideal. The first has not been maintained for years, while the second is not ready for most uses. Therefore, I suggest simply copying the citation from Google Scholar and pasting it into a Markdown cell titled “References” at the end of your document. The same approach applies for inline citations."
   },
   {
     "objectID": "tutorials/02-jupyter-markdown-tutorial.html#footnotes",
@@ -560,137 +693,18 @@
     "text": "Removing cloned and forked repositories\n\n\nIf you cloned or forked a repository and no longer need it, you can delete the local copy​\nDeleting the local copy does not affect the remote repository​\nYou can also delete the remote repository if you have write access to it​ (be careful!)"
   },
   {
-    "objectID": "lectures/lecture-01/01-introduction.html#lecture-overview",
-    "href": "lectures/lecture-01/01-introduction.html#lecture-overview",
-    "title": "QTM 151 - Introduction to Statistical Computing II",
-    "section": "Lecture Overview",
-    "text": "Lecture Overview\n\n\nIntroduction\nMotivation\nClass Logistics\nComputing Set up"
+    "objectID": "lectures/lecture-02/LICENSE.html",
+    "href": "lectures/lecture-02/LICENSE.html",
+    "title": "MIT License",
+    "section": "",
+    "text": "Copyright (c) 2024 Danilo Freire\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\n\n\n Back to top"
   },
   {
-    "objectID": "lectures/lecture-01/01-introduction.html#course-materials",
-    "href": "lectures/lecture-01/01-introduction.html#course-materials",
-    "title": "QTM 151 - Introduction to Statistical Computing II",
-    "section": "Course Materials",
-    "text": "Course Materials\nImportant Links\n\n Course repository: https://github.com/danilofreire/qtm151\n Course website: https://danilofreire.github.io/qtm151\nThis course is hosted on GitHub, where you will find lecture materials, code samples, our discussion space, assignments, and final project instructions. Canvas will be used for course management, including assignment submissions, grades, and announcements. Please familiarise yourself with both platforms, and reach out if you have any questions.\n\n\n\n\n\n\nNote\n\n\nPlease remember to check the course website regularly for updates and announcements."
-  },
-  {
-    "objectID": "lectures/lecture-01/01-introduction.html#instructor",
-    "href": "lectures/lecture-01/01-introduction.html#instructor",
-    "title": "QTM 151 - Introduction to Statistical Computing II",
-    "section": "Instructor",
-    "text": "Instructor\nA bit about me\n\n\n\n\n danilo.freire@emory.edu\n https://calendly.com/danilofreire/office-hours\n https://danilofreire.github.io/\n\n\n\n Visiting Assistant Professor in the QTM\n MA from the Graduate Institute Geneva, PhD from King’s College London, Postdoc at Brown University, Senior Lecturer at the University of Lincoln, UK.\n Research interests: computational social science, experimental methods, policy evaluation, political violence, organised crime."
-  },
-  {
-    "objectID": "lectures/lecture-01/01-introduction.html#my-teaching-philosophy",
-    "href": "lectures/lecture-01/01-introduction.html#my-teaching-philosophy",
-    "title": "QTM 151 - Introduction to Statistical Computing II",
-    "section": "My teaching philosophy",
-    "text": "My teaching philosophy\nWhat you can expect from me\n\n\nI love teaching and aim to make learning fun\nClasses where students participate are the best\nHands-on activities help you learn better\nI am always available to help and answer questions. And I mean it\nYour feedback helps me improve my teaching. Please let me know what is working and what is not"
-  },
-  {
-    "objectID": "lectures/lecture-01/01-introduction.html#teaching-assistants",
-    "href": "lectures/lecture-01/01-introduction.html#teaching-assistants",
-    "title": "QTM 151 - Introduction to Statistical Computing II",
-    "section": "Teaching assistants",
-    "text": "Teaching assistants\n\n\nThe teaching assistants for this course will be confirmed soon\nThey will be answering questions during our lectures and holding office hours (see Canvas or the course website for office hours information)\nThey will also be grading your assignments and quizzes (with my oversight)\nWe are all here to help you! So feel free to ask questions during class, office hours, or via email 😊"
-  },
-  {
-    "objectID": "lectures/lecture-01/01-introduction.html#office-hours-what-for-and-what-not-for",
-    "href": "lectures/lecture-01/01-introduction.html#office-hours-what-for-and-what-not-for",
-    "title": "QTM 151 - Introduction to Statistical Computing II",
-    "section": "Office hours: What for and what not for",
-    "text": "Office hours: What for and what not for\n\n\nWhat office hours are meant for:\n\nApplying tools in practice\nDiscussion of issues related to the assignments\nBoosting your knowledge of data science\n\n\n\n\nWhat these sessions are not meant for:\n\nSolving the assignments for you\nTaking care of developing your coding skills"
-  },
-  {
-    "objectID": "lectures/lecture-01/01-introduction.html#class-etiquette",
-    "href": "lectures/lecture-01/01-introduction.html#class-etiquette",
-    "title": "QTM 151 - Introduction to Statistical Computing II",
-    "section": "Class etiquette",
-    "text": "Class etiquette\n\n\n\nCoding can be tough and push you out of your comfort zone. If the course pace is too fast, let us know. I expect your commitment, but I do not want anyone to fail\nYou are all keen on data science, but your backgrounds vary. That is great! Some sessions might be more engaging than others. If you are bored, help others or explore new data science areas\nAlways be respectful to each other\nAsk questions whenever you need to!"
-  },
-  {
-    "objectID": "lectures/lecture-01/01-introduction.html#why-python",
-    "href": "lectures/lecture-01/01-introduction.html#why-python",
-    "title": "QTM 151 - Introduction to Statistical Computing II",
-    "section": "Why Python",
-    "text": "Why Python\nThe world’s most popular programming language"
-  },
-  {
-    "objectID": "lectures/lecture-01/01-introduction.html#why-python-1",
-    "href": "lectures/lecture-01/01-introduction.html#why-python-1",
-    "title": "QTM 151 - Introduction to Statistical Computing II",
-    "section": "Why Python",
-    "text": "Why Python\nGreat community and easy to learn\n\n\nThere are thousands of Python user groups worldwide\nThe Python community is very active and welcoming! \n\n\nJava:\n\n\npublic class Welcome {\n    public static void main(String[] args) {\n        System.out.println(\"Welcome to QTM151!\");\n    }\n}\n\n\nPython:\n\n\nprint(\"Welcome to QTM151!\")"
-  },
-  {
-    "objectID": "lectures/lecture-01/01-introduction.html#why-python-2",
-    "href": "lectures/lecture-01/01-introduction.html#why-python-2",
-    "title": "QTM 151 - Introduction to Statistical Computing II",
-    "section": "Why Python",
-    "text": "Why Python\nSalaries are good!"
-  },
-  {
-    "objectID": "lectures/lecture-01/01-introduction.html#why-sql",
-    "href": "lectures/lecture-01/01-introduction.html#why-sql",
-    "title": "QTM 151 - Introduction to Statistical Computing II",
-    "section": "Why SQL",
-    "text": "Why SQL\nThe world’s most popular database language\n\n\n\nSQL is the standard language for relational database management systems\nEasy to learn\nStandardised\nManage huge amounts of data\nWidely used in industry\nGreat for data analysis"
-  },
-  {
-    "objectID": "lectures/lecture-01/01-introduction.html#why-sql-1",
-    "href": "lectures/lecture-01/01-introduction.html#why-sql-1",
-    "title": "QTM 151 - Introduction to Statistical Computing II",
-    "section": "Why SQL",
-    "text": "Why SQL\nSalaries are good too!"
-  },
-  {
-    "objectID": "lectures/lecture-01/01-introduction.html#course-objectives",
-    "href": "lectures/lecture-01/01-introduction.html#course-objectives",
-    "title": "QTM 151 - Introduction to Statistical Computing II",
-    "section": "Course Objectives",
-    "text": "Course Objectives\n\nPerform basic operations and write functions in Python\nConduct data wrangling and manipulate data using Python libraries such as Pandas\nMerge and manage databases using SQL\nCreate visualisations to effectively communicate data insights\nImplement linear models and understand the principles of time series analysis\nUse Jupyter Notebooks for reproducible research\nDevelop problem-solving skills relevant to data analysis and statistical computing"
-  },
-  {
-    "objectID": "lectures/lecture-01/01-introduction.html#grades-and-late-policy",
-    "href": "lectures/lecture-01/01-introduction.html#grades-and-late-policy",
-    "title": "QTM 151 - Introduction to Statistical Computing II",
-    "section": "Grades and Late Policy",
-    "text": "Grades and Late Policy\n\n\n\n\nAssignments (x10): 50%​\n\nPractice class concepts​\n\nQuizzes (x5): 30%​\n\nQuestions are given in advance​\nData is provided in the class​\n\nFinal Project: 20%​\n\nWill provide guidelines on Canvas​ and GitHub\nDue at the end of the semester​\n\nMidsemester Survey: +0.5% (Extra)\nEnd of semester Survey: +0.5% (Extra)\n\n\n\n\n\nAll materials will be available on the course website​ and GitHub​ repository\nLate assignments will automatically be graded for half-credit​\nTo account for unforeseen circumstances, we will drop the worst assignment and the worst quiz​\nWatch out for the assignments to install software. You will need these to be able to use the lectures notes"
-  },
-  {
-    "objectID": "lectures/lecture-01/01-introduction.html#our-class-in-a-nutshell",
-    "href": "lectures/lecture-01/01-introduction.html#our-class-in-a-nutshell",
-    "title": "QTM 151 - Introduction to Statistical Computing II",
-    "section": "Our Class in a Nutshell",
-    "text": "Our Class in a Nutshell"
-  },
-  {
-    "objectID": "lectures/lecture-01/01-introduction.html#installing-python-using-anaconda",
-    "href": "lectures/lecture-01/01-introduction.html#installing-python-using-anaconda",
-    "title": "QTM 151 - Introduction to Statistical Computing II",
-    "section": "Installing Python using Anaconda",
-    "text": "Installing Python using Anaconda\nAnaconda has (almost) all the libraries we need\n\n\nFollow the instructions on our GitHub repository\nWe are using Anaconda virtual environments for this class (I will cover this in more detail next class)​\nFor now: Anaconda comes with a Python installation​\n\n\n\nQuestions?"
-  },
-  {
-    "objectID": "lectures/lecture-01/01-introduction.html#installing-vscode-and-connecting-anaconda",
-    "href": "lectures/lecture-01/01-introduction.html#installing-vscode-and-connecting-anaconda",
-    "title": "QTM 151 - Introduction to Statistical Computing II",
-    "section": "Installing VSCode and Connecting Anaconda​",
-    "text": "Installing VSCode and Connecting Anaconda​\n\n\nFollow the instructions Installing Visual Studio Code and Connecting it with Anaconda from GitHub\nFor now: know that “base” is the Anaconda virtual environment that comes by default with the installation​\nThe next step is to check if the connection between VSCode and Anaconda worked -&gt; the Python: Select Interpreter option should include Python (“base”)​\nNext step: we will create a new folder for the QTM151 course and download our virtual GitHub folder and opening it in VSCode"
-  },
-  {
-    "objectID": "lectures/lecture-01/01-introduction.html#jupyter-notebooks",
-    "href": "lectures/lecture-01/01-introduction.html#jupyter-notebooks",
-    "title": "QTM 151 - Introduction to Statistical Computing II",
-    "section": "Jupyter Notebooks",
-    "text": "Jupyter Notebooks\n\n\n\n\nWe will use Jupyter Notebooks for our classes. We have a tutorial on how to use them too\nJupyter Notebooks are a great way to combine code, text, and visualisations\nIt is encouraged that you bring your laptop to class\nLecture notes are designed to be follow-along. There will be many “try it yourself” exercises throughout the lectures!"
-  },
-  {
-    "objectID": "lectures/lecture-01/01-introduction.html#next-class",
-    "href": "lectures/lecture-01/01-introduction.html#next-class",
-    "title": "QTM 151 - Introduction to Statistical Computing II",
-    "section": "Next Class",
-    "text": "Next Class\n\n\nDon’t worry if you are not able to follow along with the installation instructions. We will have time to do this next class\nWe will start with the basics of Jupyter Notebooks\nWe will also cover the basics of Anaconda and VSCode\nPlease remember to check the course repository, mainly the tutorials: https://github.com/danilofreire/qtm151\nAnd please do not forget:\n\nCoding ability can be developed\nAcademic skills and abilities are acquired through hard work, mistakes, and perseverance. Coding is no different\nMy only goal here is that you learn the material. Please ask me questions! 😊"
+    "objectID": "lectures/lecture-01/hello_world.html",
+    "href": "lectures/lecture-01/hello_world.html",
+    "title": "Hello World in Python using a Jupyter Notebook",
+    "section": "",
+    "text": "print('Hello, World!')\n\nHello, World!\n\n\n\nprint('Name')\n\nName\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "lectures/lectures.html",

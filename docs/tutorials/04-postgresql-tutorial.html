@@ -6,7 +6,6 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Danilo Freire">
 
 <title>QTM 151 – PostgreSQL Tutorial</title>
 <style>
@@ -163,15 +162,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul class="collapse">
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">1</span> Introduction</a></li>
-  <li><a href="#why-postgresql" id="toc-why-postgresql" class="nav-link" data-scroll-target="#why-postgresql"><span class="header-section-number">2</span> Why PostgreSQL?</a></li>
-  <li><a href="#installing-postgresql" id="toc-installing-postgresql" class="nav-link" data-scroll-target="#installing-postgresql"><span class="header-section-number">3</span> Installing PostgreSQL</a></li>
-  <li><a href="#installing-pgadmin" id="toc-installing-pgadmin" class="nav-link" data-scroll-target="#installing-pgadmin"><span class="header-section-number">4</span> Installing pgAdmin</a></li>
-  <li><a href="#setting-up-a-database-and-creating-a-table" id="toc-setting-up-a-database-and-creating-a-table" class="nav-link" data-scroll-target="#setting-up-a-database-and-creating-a-table"><span class="header-section-number">5</span> Setting Up a Database and Creating a Table</a></li>
-  <li><a href="#using-the-vs-code-extension" id="toc-using-the-vs-code-extension" class="nav-link" data-scroll-target="#using-the-vs-code-extension"><span class="header-section-number">6</span> Using the VS Code Extension</a></li>
-  <li><a href="#basic-sql-queries" id="toc-basic-sql-queries" class="nav-link" data-scroll-target="#basic-sql-queries"><span class="header-section-number">7</span> Basic SQL Queries</a></li>
-  <li><a href="#integrating-postgresql-with-python-with-psycopg2" id="toc-integrating-postgresql-with-python-with-psycopg2" class="nav-link" data-scroll-target="#integrating-postgresql-with-python-with-psycopg2"><span class="header-section-number">8</span> Integrating PostgreSQL with Python with <code>psycopg2</code></a></li>
-  <li><a href="#converting-postgresql-data-to-a-pandas-dataframe" id="toc-converting-postgresql-data-to-a-pandas-dataframe" class="nav-link" data-scroll-target="#converting-postgresql-data-to-a-pandas-dataframe"><span class="header-section-number">9</span> Converting PostgreSQL Data to a <code>pandas DataFrame</code></a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#why-postgresql" id="toc-why-postgresql" class="nav-link" data-scroll-target="#why-postgresql">Why PostgreSQL?</a></li>
+  <li><a href="#installing-postgresql" id="toc-installing-postgresql" class="nav-link" data-scroll-target="#installing-postgresql">Installing PostgreSQL</a></li>
+  <li><a href="#installing-pgadmin" id="toc-installing-pgadmin" class="nav-link" data-scroll-target="#installing-pgadmin">Installing pgAdmin</a></li>
+  <li><a href="#setting-up-a-database-and-creating-a-table" id="toc-setting-up-a-database-and-creating-a-table" class="nav-link" data-scroll-target="#setting-up-a-database-and-creating-a-table">Setting Up a Database and Creating a Table</a></li>
+  <li><a href="#using-the-vs-code-extension" id="toc-using-the-vs-code-extension" class="nav-link" data-scroll-target="#using-the-vs-code-extension">Using the VS Code Extension</a></li>
+  <li><a href="#basic-sql-queries" id="toc-basic-sql-queries" class="nav-link" data-scroll-target="#basic-sql-queries">Basic SQL Queries</a></li>
+  <li><a href="#integrating-postgresql-with-python-with-psycopg2" id="toc-integrating-postgresql-with-python-with-psycopg2" class="nav-link" data-scroll-target="#integrating-postgresql-with-python-with-psycopg2">Integrating PostgreSQL with Python with <code>psycopg2</code></a></li>
+  <li><a href="#converting-postgresql-data-to-a-pandas-dataframe" id="toc-converting-postgresql-data-to-a-pandas-dataframe" class="nav-link" data-scroll-target="#converting-postgresql-data-to-a-pandas-dataframe">Converting PostgreSQL Data to a <code>pandas DataFrame</code></a></li>
   </ul>
 <div class="toc-actions"><ul class="collapse"><li><a href="https://github.com/danilofreire/qtm151/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -187,12 +186,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Danilo Freire </p>
-          </div>
-  </div>
     
   
     
@@ -203,47 +196,112 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="introduction" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Introduction</h1>
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
 <p>Here we will learn how to use <a href="https://www.postgresql.org/">PostgreSQL</a>, a powerful object-relational database system. The tutorial has instructions for installing PostgreSQL on your computer, using <a href="https://code.visualstudio.com/">VS Code</a> as a client, and writing SQL queries to interact with the database. It also includes a section on how to integrate PostgreSQL with Python via the <a href="https://www.psycopg.org/">psycopg2</a> library.</p>
 </section>
-<section id="why-postgresql" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Why PostgreSQL?</h1>
+<section id="why-postgresql" class="level1">
+<h1>Why PostgreSQL?</h1>
 <p>PostgreSQL is an interface for interacting with databases<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. It is free, open-source, and widely used in both academia and industry. PostgreSQL has been maintained for <a href="https://www.postgresql.org/docs/current/history.html">more than 35 years</a>, and it supports <a href="https://www.postgresql.org/docs/current/datatype.html">many data types</a>, such as integers, text, dates, currencies, and arrays. It also supports <a href="https://dev.to/arctype/advanced-postgresql-features-a-guide-5dl0">advanced features</a> like full-text search, JSON, XML data types, and geospatial data types.</p>
 <p>One of the key advantages of PostgreSQL is its extensibility. Developers can define custom data types and functions, and <a href="https://www.postgresql.org/about/">even write code in different programming languages</a> without needing to recompile the database. This makes it easy to integrate with <a href="https://www.freecodecamp.org/news/postgresql-in-python/">Python</a> or <a href="https://cran.r-project.org/web/packages/RPostgreSQL/index.html">R</a>, which is particularly useful for data analysis and machine learning tasks.</p>
 </section>
-<section id="installing-postgresql" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> Installing PostgreSQL</h1>
+<section id="installing-postgresql" class="level1">
+<h1>Installing PostgreSQL</h1>
 <p>Installing PostgreSQL is straightforward. The software is available for all major operating systems, including Windows, macOS, and Linux. You can download the installer from the <a href="https://www.postgresql.org/download/">official website</a>. The installation process is similar to installing any other software on your computer. Just choose the default settings, and you should be good to go.</p>
-<p>![Downloading PostgreSQL: .]{images/postgresql-download.png}</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/postgresql-download.png" class="img-fluid figure-img"></p>
+<figcaption>Downloading PostgreSQL: <a href="https://www.postgresql.org/download" class="uri">https://www.postgresql.org/download</a>.</figcaption>
+</figure>
+</div>
 <p>During the installation, you may have to set a password for the default user, <code>postgres</code>. Make sure to remember this password, as you will need it to connect to the database later. You will also need to choose a port number for the database server. The default port is <code>5432</code>, and while you can change it, it is recommended to keep the default setting.</p>
-<p>![Setting a password for PostgreSQL.]{images/postgresql-password.png}</p>
-<p>![Choosing a port number for PostgreSQL.]{images/postgresql-port.png}</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/postgresql-password.png" class="img-fluid figure-img"></p>
+<figcaption>Setting a password for PostgreSQL.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/postgresql-port.png" class="img-fluid figure-img"></p>
+<figcaption>Choosing a port number for PostgreSQL.</figcaption>
+</figure>
+</div>
 <p>If the installation is successful, you should see a message indicating that PostgreSQL has been installed on your computer. When you launch the application, you will see a window with options to start, stop, or restart the database server.</p>
-<p>![PostgreSQL installed successfully.]{images/postgresql-admin.png}</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/postgresql-admin.png" class="img-fluid figure-img"></p>
+<figcaption>PostgreSQL installed successfully.</figcaption>
+</figure>
+</div>
 </section>
-<section id="installing-pgadmin" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> Installing pgAdmin</h1>
+<section id="installing-pgadmin" class="level1">
+<h1>Installing pgAdmin</h1>
 <p>Another popular tool for managing PostgreSQL databases is <a href="https://www.pgadmin.org/">pgAdmin</a>. It is a web-based interface that allows you to create, edit, and delete databases, tables, and queries. You can download pgAdmin from the <a href="https://www.pgadmin.org/download/">official website</a>. The installation process is similar to installing PostgreSQL, and you can choose the default settings.</p>
 <p>Windows users will have the option to install pgAdmin as part of the PostgreSQL installation process. If you choose this option, pgAdmin will be installed automatically, and you can access it from the Start menu.</p>
 <p>macOS and Linux users will need to download pgAdmin separately. Once installed, you can launch pgAdmin from the Applications folder on macOS or from the terminal on Linux.</p>
-<p>![Downloading pgAdmin: .]{images/pgadmin-download.png}</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pgadmin-download.png" class="img-fluid figure-img"></p>
+<figcaption>Downloading pgAdmin: <a href="https://www.pgadmin.org/download" class="uri">https://www.pgadmin.org/download</a>.</figcaption>
+</figure>
+</div>
 <p>![Installing pgAdmin.]{images/pgadmin-install.png}</p>
 </section>
-<section id="setting-up-a-database-and-creating-a-table" class="level1" data-number="5">
-<h1 data-number="5"><span class="header-section-number">5</span> Setting Up a Database and Creating a Table</h1>
+<section id="setting-up-a-database-and-creating-a-table" class="level1">
+<h1>Setting Up a Database and Creating a Table</h1>
 <p>Now it is to create a database and test it with a simple table. First, make sure you have PostgreSQL running on your computer. Please run the PostgreSQL application and start the database server. You can also check if the server is running by looking at the system tray on Windows or the status bar on macOS.</p>
-<p>![PostgreSQL server running.]{images/postgresql-running.png}</p>
-<p>![PostgreSQL server status on macOS status bar (top).]{images/postgresql-status.png}</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/postgresql-running.png" class="img-fluid figure-img"></p>
+<figcaption>PostgreSQL server running.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/postgresql-status.png" class="img-fluid figure-img"></p>
+<figcaption>PostgreSQL server status on macOS status bar (top).</figcaption>
+</figure>
+</div>
 <p>Then you can create a new table in the database using pgAdmin. Please open pgAdmin and click on “Add New Server”. You will need to enter the connection details for the database server, including the host, port, username, and password. The host is usually <code>localhost</code>, and the port is <code>5432</code>. The username is <code>postgres</code>, and the password is the one you set during the installation process. Once you have entered the connection details, click “Save” to connect to the database server.</p>
-<p>![Adding a new server in pgAdmin.]{images/pgadmin-server.png}</p>
-<p>![Connection details for the database server.]{images/pgadmin-connection01.png}</p>
-<p>![Connection details for the database server.]{images/pgadmin-connection02.png}</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pgadmin-server.png" class="img-fluid figure-img"></p>
+<figcaption>Adding a new server in pgAdmin.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pgadmin-connection01.png" class="img-fluid figure-img"></p>
+<figcaption>Connection details for the database server.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pgadmin-connection02.png" class="img-fluid figure-img"></p>
+<figcaption>Connection details for the database server.</figcaption>
+</figure>
+</div>
 <p>You should see a screen like the one below, with the server connected on the left-hand side. Right-click on the server and select “Create” &gt; “Database” to create a new database. You can name the database <code>tutorial</code> and click “Save” to create it.</p>
-<p>![Creating a new database in pgAdmin.]{images/pgadmin-database.png}</p>
-<p>![Naming the new database.]{images/pgadmin-database-name.png}</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pgadmin-database.png" class="img-fluid figure-img"></p>
+<figcaption>Creating a new database in pgAdmin.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pgadmin-database-name.png" class="img-fluid figure-img"></p>
+<figcaption>Naming the new database.</figcaption>
+</figure>
+</div>
 <p>If you have made it this far, congratulations! You have successfully set up a PostgreSQL database on your computer. Now let us create a table in the <code>tutorial</code> database. Right-click on the <code>tutorial</code> database and select “Query Tool” to open a new query window. You can write SQL queries in this window to interact with the database.</p>
-<p>![Opening a new query window in pgAdmin.]{images/pgadmin-query.png}</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pgadmin-query.png" class="img-fluid figure-img"></p>
+<figcaption>Opening a new query window in pgAdmin.</figcaption>
+</figure>
+</div>
 <p>In the query window, you can write the following SQL query to create a new table called <code>students</code> with three columns: <code>id</code>, <code>name</code>, and <code>age</code>. The <code>id</code> column is a serial variable (a series of numbers), and it is the primary key for the table. A primary key is a unique identifier for each row in the table. The <code>name</code> column is a text field, and the <code>age</code> column is an integer (a number).</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">CREATE</span> <span class="kw">TABLE</span> students (</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">id</span> SERIAL <span class="kw">PRIMARY</span> <span class="kw">KEY</span>,</span>
@@ -257,29 +315,79 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> <span class="op">*</span> <span class="kw">FROM</span> students;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Click on the “Execute” button to run the query, or press <code>F5</code> on your keyboard. You will see the results of the query in the lower panel of the query window. The three <code>INSERT</code> statements add three rows to the <code>students</code> table with the names <code>Alice</code>, <code>Bob</code>, and <code>Charlie</code>, and their respective ages. The <code>SELECT</code> statement retrieves all the rows from the <code>students</code> table and shows the three rows you just inserted.</p>
-<p>![Creating a new table in pgAdmin.]{images/pgadmin-table.png}</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pgadmin-table.png" class="img-fluid figure-img"></p>
+<figcaption>Creating a new table in pgAdmin.</figcaption>
+</figure>
+</div>
 <p>You can also find the table <code>students</code> under the <code>tutorial</code> database on the left-hand side of the pgAdmin window. Click on <code>tutorial</code>, then on <code>Schemas</code>, <code>public</code>, and finally on <code>Tables</code> to see the <code>students</code> table. You can right-click on the table and select “View/Edit Data” to see the rows you inserted. You will also see the query you just ran in the “History” tab.</p>
-<p>![Viewing the query history in pgAdmin.]{images/pgadmin-history.png}</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pgadmin-history.png" class="img-fluid figure-img"></p>
+<figcaption>Viewing the query history in pgAdmin.</figcaption>
+</figure>
+</div>
 </section>
-<section id="using-the-vs-code-extension" class="level1" data-number="6">
-<h1 data-number="6"><span class="header-section-number">6</span> Using the VS Code Extension</h1>
+<section id="using-the-vs-code-extension" class="level1">
+<h1>Using the VS Code Extension</h1>
 <p>You can also install the <a href="https://marketplace.visualstudio.com/items?itemName=ckolkman.vscode-postgres">VS Code extension for PostgreSQL</a> to interact with the database directly from the editor. This extension provides a graphical interface for managing databases, tables, and queries. You can install it from the VS Code marketplace by searching for “PostgreSQL”. Please <strong>do not</strong> install the extension <a href="https://marketplace.visualstudio.com/items?itemName=ms-ossdata.vscode-postgresql&amp;ssr=false">made by Microsoft</a>, as it is not actively maintained. The extension does not fully replace pgAdmin, but it is a convenient way to run queries and view the results without leaving the editor.</p>
-<p>![VS Code extension for PostgreSQL.]{images/vscode-postgresql.png}</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/vscode-postgresql.png" class="img-fluid figure-img"></p>
+<figcaption>VS Code extension for PostgreSQL.</figcaption>
+</figure>
+</div>
 <p>After you have installed the extension, you need to connect VS Code to the database server by clicking on the “PostgreSQL” icon in the sidebar (it looks like an elephant). Then click on the + sign in the new tab (“Add Connection”). You will need to enter the connection details for the server, including the host, port, username, and password. Once you have entered the details, click “Connect” to establish a connection to the server. In this case, the username is <code>postgres</code>, the password is the one you set during the installation process, the host is <code>localhost</code>, and the port is <code>5432</code>. The database is called <code>tutorial</code>. You will find the <code>student</code> table by clicking on <code>tutorial</code> and then on <code>public</code>.</p>
-<p>![Connecting to the database server in VS Code.]{images/vscode-connection00.png}</p>
-<p>![Connection details for the database server.]{images/vscode-connection01.png}</p>
-<p>![Connection details for the database server.]{images/vscode-connection02.png}</p>
-<p>![Connection details for the database server.]{images/vscode-connection03.png}</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/vscode-connection00.png" class="img-fluid figure-img"></p>
+<figcaption>Connecting to the database server in VS Code.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/vscode-connection01.png" class="img-fluid figure-img"></p>
+<figcaption>Connection details for the database server.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/vscode-connection02.png" class="img-fluid figure-img"></p>
+<figcaption>Connection details for the database server.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/vscode-connection03.png" class="img-fluid figure-img"></p>
+<figcaption>Connection details for the database server.</figcaption>
+</figure>
+</div>
 <p>You are ready to run queries in VS Code. Click with the right button on the <code>students</code> table and select “New Query” to open a new query window. You can write the same SQL queries you used in pgAdmin to interact with the <code>students</code> table. As with pgAdmin, you run the queries by pressing <code>F5</code> on your keyboard. For example:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> <span class="op">*</span> <span class="kw">FROM</span> students</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">WHERE</span> name <span class="op">=</span> <span class="st">'Bob'</span>;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>This query retrieves all rows from the <code>students</code> table where the name is <code>Bob</code>. In our case, it will show one row. You can see the results of the query in the lower panel of the query window.</p>
-<p>![Running a query in VS Code.]{images/vscode-query00.png}</p>
-<p>![New Query in VS Code.]{images/vscode-query01.png}</p>
-<p>![Query results in VS Code.]{images/vscode-query02.png}</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/vscode-query00.png" class="img-fluid figure-img"></p>
+<figcaption>Running a query in VS Code.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/vscode-query01.png" class="img-fluid figure-img"></p>
+<figcaption>New Query in VS Code.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/vscode-query02.png" class="img-fluid figure-img"></p>
+<figcaption>Query results in VS Code.</figcaption>
+</figure>
+</div>
 </section>
-<section id="basic-sql-queries" class="level1" data-number="7">
-<h1 data-number="7"><span class="header-section-number">7</span> Basic SQL Queries</h1>
+<section id="basic-sql-queries" class="level1">
+<h1>Basic SQL Queries</h1>
 <p>Now that you have created a table in the database, you can write SQL queries to interact with it. SQL is an easy language to learn, and it is very similar to English. Here are some of the basic commands you can use to query the <code>students</code> table:</p>
 <ul>
 <li><code>SELECT</code>: Retrieves data from the table.</li>
@@ -322,8 +430,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>You can run these queries in the query window in pgAdmin to see the results. There is no need to re-create the <code>students</code> table, as it is already in the <code>tutorial</code> database. You can also experiment with different queries to get a better understanding of how SQL works.</p>
 <p>We will learn how to write SQL queries throughout the course, so do not worry if you are not familiar with them yet. The key is to practice and experiment with different queries to see how they work. You can also find many tutorials and resources online to help you learn SQL. My suggestions are <a href="https://www.w3schools.com/sql/">W3Schools</a>, <a href="https://sqlzoo.net/">SQLZoo</a>, and <a href="https://www.khanacademy.org/computing/computer-programming/sql">Khan Academy</a>. However, feel free to find YouTube videos, online courses, or books that suit your learning style.</p>
 </section>
-<section id="integrating-postgresql-with-python-with-psycopg2" class="level1" data-number="8">
-<h1 data-number="8"><span class="header-section-number">8</span> Integrating PostgreSQL with Python with <code>psycopg2</code></h1>
+<section id="integrating-postgresql-with-python-with-psycopg2" class="level1">
+<h1>Integrating PostgreSQL with Python with <code>psycopg2</code></h1>
 <p>In this tutorial, I will show you two ways to integrate PostgreSQL with Python. The first method is using the <code>psycopg2</code> library, which is a PostgreSQL adapter for Python. The second method, which I find more convenient, is using the <code>sqlalchemy</code> library to convert the results of a PostgreSQL query to a <code>pandas DataFrame</code>.</p>
 <p>Let us start with the <code>psycopg2</code> library. First, you need to install the library using <code>conda</code>:</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> install psycopg2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -366,8 +474,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a>conn.close()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>This code connects to the <code>tutorial</code> database on <code>localhost</code> using the <code>psycopg2</code> library. It runs a query to select all rows from the <code>students</code> table and prints the results. You can run this code in a Python script or a Jupyter notebook to interact with the database from Python. You can find a Jupyter Notebook with this code in the <a href="https://github.com/danilofreire/qtm151/tree/main/tutorials">GitHub repository</a>.</p>
 </section>
-<section id="converting-postgresql-data-to-a-pandas-dataframe" class="level1" data-number="9">
-<h1 data-number="9"><span class="header-section-number">9</span> Converting PostgreSQL Data to a <code>pandas DataFrame</code></h1>
+<section id="converting-postgresql-data-to-a-pandas-dataframe" class="level1">
+<h1>Converting PostgreSQL Data to a <code>pandas DataFrame</code></h1>
 <p><a href="https://pandas.pydata.org/">Pandas</a> is the go-to library for data manipulation in Python, and it is extensively used in data science and machine learning projects. So it is important to know how to convert the results of a PostgreSQL query to a Pandas DataFrame. Fortunately, <code>pandas</code> already has a method to do this, and you can use it in conjunction with the <code>sqlalchemy</code> library.</p>
 <p>You need to install the <code>pandas</code> and <code>sqlalchemy</code> libraries using <code>conda</code>, then connect to the database using the <code>create_engine</code> function from <code>sqlalchemy</code>. The format of the connection string, in general, is <code>postgresql://username:password@host:port/database</code>. In our case, the username is <code>postgres</code>, the password is the one you set during the installation process (as I did not set any, the field is empty), the host is <code>localhost</code>, the port is <code>5432</code>, and the database is <code>tutorial</code>.</p>
 <p>After connecting to the database, you can run a query using the <code>read_sql_query</code> function from <code>pandas</code> to convert the results to a Pandas DataFrame. This is how the code looks like:</p>

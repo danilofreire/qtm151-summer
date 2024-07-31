@@ -6,7 +6,6 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Danilo Freire">
 
 <title>QTM 151 – Jupyter Notebook and Markdown Tutorial</title>
 <style>
@@ -192,25 +191,25 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul class="collapse">
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">1</span> Introduction</a></li>
-  <li><a href="#introduction-to-jupyter-notebook" id="toc-introduction-to-jupyter-notebook" class="nav-link" data-scroll-target="#introduction-to-jupyter-notebook"><span class="header-section-number">2</span> Introduction to Jupyter Notebook</a>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#introduction-to-jupyter-notebook" id="toc-introduction-to-jupyter-notebook" class="nav-link" data-scroll-target="#introduction-to-jupyter-notebook">Introduction to Jupyter Notebook</a>
   <ul class="collapse">
-  <li><a href="#what-is-jupyter-notebook" id="toc-what-is-jupyter-notebook" class="nav-link" data-scroll-target="#what-is-jupyter-notebook"><span class="header-section-number">2.1</span> What is Jupyter Notebook?</a></li>
-  <li><a href="#creating-a-new-notebook" id="toc-creating-a-new-notebook" class="nav-link" data-scroll-target="#creating-a-new-notebook"><span class="header-section-number">2.2</span> Creating a New Notebook</a></li>
+  <li><a href="#what-is-jupyter-notebook" id="toc-what-is-jupyter-notebook" class="nav-link" data-scroll-target="#what-is-jupyter-notebook">What is Jupyter Notebook?</a></li>
+  <li><a href="#creating-a-new-notebook" id="toc-creating-a-new-notebook" class="nav-link" data-scroll-target="#creating-a-new-notebook">Creating a New Notebook</a></li>
   </ul></li>
-  <li><a href="#introduction-to-markdown" id="toc-introduction-to-markdown" class="nav-link" data-scroll-target="#introduction-to-markdown"><span class="header-section-number">3</span> Introduction to Markdown</a>
+  <li><a href="#introduction-to-markdown" id="toc-introduction-to-markdown" class="nav-link" data-scroll-target="#introduction-to-markdown">Introduction to Markdown</a>
   <ul class="collapse">
-  <li><a href="#why-use-markdown" id="toc-why-use-markdown" class="nav-link" data-scroll-target="#why-use-markdown"><span class="header-section-number">3.1</span> Why Use Markdown?</a></li>
-  <li><a href="#headings" id="toc-headings" class="nav-link" data-scroll-target="#headings"><span class="header-section-number">3.2</span> Headings</a></li>
-  <li><a href="#lists" id="toc-lists" class="nav-link" data-scroll-target="#lists"><span class="header-section-number">3.3</span> Lists</a></li>
-  <li><a href="#tables" id="toc-tables" class="nav-link" data-scroll-target="#tables"><span class="header-section-number">3.4</span> Tables</a></li>
-  <li><a href="#creating-markdown-tables-from-pandas-dataframes-in-jupyter-notebooks" id="toc-creating-markdown-tables-from-pandas-dataframes-in-jupyter-notebooks" class="nav-link" data-scroll-target="#creating-markdown-tables-from-pandas-dataframes-in-jupyter-notebooks"><span class="header-section-number">3.5</span> Creating Markdown Tables from Pandas DataFrames in Jupyter Notebooks</a></li>
-  <li><a href="#equations" id="toc-equations" class="nav-link" data-scroll-target="#equations"><span class="header-section-number">3.6</span> Equations</a></li>
-  <li><a href="#figures" id="toc-figures" class="nav-link" data-scroll-target="#figures"><span class="header-section-number">3.7</span> Figures</a></li>
-  <li><a href="#citations" id="toc-citations" class="nav-link" data-scroll-target="#citations"><span class="header-section-number">3.8</span> Citations</a></li>
-  <li><a href="#footnotes" id="toc-footnotes" class="nav-link" data-scroll-target="#footnotes"><span class="header-section-number">3.9</span> Footnotes</a></li>
+  <li><a href="#why-use-markdown" id="toc-why-use-markdown" class="nav-link" data-scroll-target="#why-use-markdown">Why Use Markdown?</a></li>
+  <li><a href="#headings" id="toc-headings" class="nav-link" data-scroll-target="#headings">Headings</a></li>
+  <li><a href="#lists" id="toc-lists" class="nav-link" data-scroll-target="#lists">Lists</a></li>
+  <li><a href="#tables" id="toc-tables" class="nav-link" data-scroll-target="#tables">Tables</a></li>
+  <li><a href="#creating-markdown-tables-from-pandas-dataframes-in-jupyter-notebooks" id="toc-creating-markdown-tables-from-pandas-dataframes-in-jupyter-notebooks" class="nav-link" data-scroll-target="#creating-markdown-tables-from-pandas-dataframes-in-jupyter-notebooks">Creating Markdown Tables from Pandas DataFrames in Jupyter Notebooks</a></li>
+  <li><a href="#equations" id="toc-equations" class="nav-link" data-scroll-target="#equations">Equations</a></li>
+  <li><a href="#figures" id="toc-figures" class="nav-link" data-scroll-target="#figures">Figures</a></li>
+  <li><a href="#citations" id="toc-citations" class="nav-link" data-scroll-target="#citations">Citations</a></li>
+  <li><a href="#footnotes" id="toc-footnotes" class="nav-link" data-scroll-target="#footnotes">Footnotes</a></li>
   </ul></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">4</span> Conclusion</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
   </ul>
 <div class="toc-actions"><ul class="collapse"><li><a href="https://github.com/danilofreire/qtm151/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -226,12 +225,6 @@ window.Quarto = {
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Danilo Freire </p>
-          </div>
-  </div>
     
   
     
@@ -242,20 +235,20 @@ window.Quarto = {
 </header>
 
 
-<section id="introduction" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Introduction</h1>
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
 <p>This tutorial will introduce you to <a href="https://jupyter.org/documentation">Jupyter Notebook</a> and <a href="https://www.markdownguide.org/">Markdown</a>. Jupyter Notebook is an interactive computing platform that allows users to create and share documents that contain live code, equations, visualisations, and narrative text. Markdown is a lightweight markup language that is used to format text, and can be used for everything - websites, documents, notes, books, presentations, email messages, and technical documentation. Even WhatsApp and Facebook Messenger use Markdown to format messages. So if you have already italicised a word or made a text bold on WhatsApp, you have used Markdown!</p>
 <p>This tutorial is divided into two parts. The first part will introduce you to Jupyter Notebook and show you how to create a new notebook, run code cells, and format text cells using Markdown. The second part will provide a more in-depth look at Markdown and show you how to create headings, lists, links, images, and tables.</p>
 </section>
-<section id="introduction-to-jupyter-notebook" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Introduction to Jupyter Notebook</h1>
-<section id="what-is-jupyter-notebook" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="what-is-jupyter-notebook"><span class="header-section-number">2.1</span> What is Jupyter Notebook?</h2>
+<section id="introduction-to-jupyter-notebook" class="level1">
+<h1>Introduction to Jupyter Notebook</h1>
+<section id="what-is-jupyter-notebook" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-jupyter-notebook">What is Jupyter Notebook?</h2>
 <p><a href="https://jupyter.org/documentation">Jupyter Notebook</a> is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations, and narrative text. Jupyter Notebook supports over 40 programming languages, including <a href="https://python.org">Python</a>, <a href="https://www.r-project.org/">R</a>, and <a href="https://julialang.org/">Julia</a>. Jupyter Notebook is widely used in data science, machine learning, scientific computing, and other fields.</p>
 <p>Jupyter Notebooks provide an interactive development environment that allows you to write and execute code, see the results immediately, and create reproducible analyses. Jupyter Notebooks are organized into cells, which can contain code, text, equations, or visualisations. You can run individual cells or the entire notebook, and you can save your work as a notebook file (<code>.ipynb</code>) that can be shared with others.</p>
 </section>
-<section id="creating-a-new-notebook" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="creating-a-new-notebook"><span class="header-section-number">2.2</span> Creating a New Notebook</h2>
+<section id="creating-a-new-notebook" class="level2">
+<h2 class="anchored" data-anchor-id="creating-a-new-notebook">Creating a New Notebook</h2>
 <p>First, please make sure you have Python, Jupyter Notebook, and VSCode installed on your computer. If you do not have these installed, please refer to the <a href="https://github.com/danilofreire/qtm151/blob/main/tutorials/01-vscode-anaconda-tutorial.pdf">VSCode and Anaconda Tutorial</a> for instructions on how to install them.</p>
 <p>To create a new Jupyter Notebook in VSCode, please go to the tab “File” &gt; “New File”. You will see a prompt in the middle of the screen. Select the option “Jupyter Notebook”.</p>
 <div class="quarto-figure quarto-figure-center">
@@ -286,7 +279,7 @@ window.Quarto = {
 </figure>
 </div>
 <p>Here you should enter the Python commands. For example, type the following lines of code in the code cell:</p>
-<div id="b3befc2e" class="cell" data-execution_count="1">
+<div id="2e435588" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Welcome to QTM 151!"</span>)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">5</span></span>
@@ -316,21 +309,21 @@ in [this notebook](https://github.com/danilofreire/qtm151/blob/main/tutorials/te
 <p>You can run the text cell by clicking the “Run” button on the left side of the box or by pressing “Shift + Enter” on your keyboard. The first text block shows how the text looks before running the cell, and the second block shows how it looks after running the cell. Just double click on the space where the text is to edit the Markdown block. This is should open the gray box again.</p>
 </section>
 </section>
-<section id="introduction-to-markdown" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> Introduction to Markdown</h1>
-<section id="why-use-markdown" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="why-use-markdown"><span class="header-section-number">3.1</span> Why Use Markdown?</h2>
+<section id="introduction-to-markdown" class="level1">
+<h1>Introduction to Markdown</h1>
+<section id="why-use-markdown" class="level2">
+<h2 class="anchored" data-anchor-id="why-use-markdown">Why Use Markdown?</h2>
 <p>Markdown is a great way to format text because it is simple, easy to learn, and widely supported. You can use Markdown to create headings, lists, tables, equations, and figures in your documents. Markdown is used in many different applications, including Jupyter Notebook, GitHub, and Slack. Learning Markdown will help you create well-formatted documents that are easy to read and share.</p>
 </section>
-<section id="headings" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="headings"><span class="header-section-number">3.2</span> Headings</h2>
+<section id="headings" class="level2">
+<h2 class="anchored" data-anchor-id="headings">Headings</h2>
 <p>You can create headings using the <code>#</code> symbol. For example, <code># Heading 1</code> creates a first-level heading, <code>## Heading 2</code> creates a second-level heading, and so on. You can create up to six levels of headings using the <code>#</code> symbol.</p>
 <pre class="{markdown}"><code># Heading 1
 ## Heading 2
 ### Heading 3</code></pre>
 </section>
-<section id="lists" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="lists"><span class="header-section-number">3.3</span> Lists</h2>
+<section id="lists" class="level2">
+<h2 class="anchored" data-anchor-id="lists">Lists</h2>
 <p>To create an ordered list with nested unordered sub-items in Markdown, you can write the following code:</p>
 <pre class="{markdown}"><code>1. This is an ordered list.
 2. This is the second item in the ordered list.
@@ -358,8 +351,8 @@ in [this notebook](https://github.com/danilofreire/qtm151/blob/main/tutorials/te
 </ul></li>
 </ul>
 </section>
-<section id="tables" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="tables"><span class="header-section-number">3.4</span> Tables</h2>
+<section id="tables" class="level2">
+<h2 class="anchored" data-anchor-id="tables">Tables</h2>
 <p>You can create tables using the <code>|</code> symbol. For example:</p>
 <pre class="{markdown}"><code>Table: Your Caption 
 
@@ -391,11 +384,11 @@ in [this notebook](https://github.com/danilofreire/qtm151/blob/main/tutorials/te
 </table>
 <p>The <code>:</code> symbols in the second row of the table determine the alignment of the text in each column. You can use <code>left</code>, <code>center</code>, or <code>right</code> to align the text.</p>
 </section>
-<section id="creating-markdown-tables-from-pandas-dataframes-in-jupyter-notebooks" class="level2" data-number="3.5">
-<h2 data-number="3.5" class="anchored" data-anchor-id="creating-markdown-tables-from-pandas-dataframes-in-jupyter-notebooks"><span class="header-section-number">3.5</span> Creating Markdown Tables from Pandas DataFrames in Jupyter Notebooks</h2>
+<section id="creating-markdown-tables-from-pandas-dataframes-in-jupyter-notebooks" class="level2">
+<h2 class="anchored" data-anchor-id="creating-markdown-tables-from-pandas-dataframes-in-jupyter-notebooks">Creating Markdown Tables from Pandas DataFrames in Jupyter Notebooks</h2>
 <p>When working with pandas DataFrames, you can convert them into Markdown tables for better presentation. The method is also relatively simple. Here is how to do it:</p>
-<section id="prerequisites" class="level3" data-number="3.5.1">
-<h3 data-number="3.5.1" class="anchored" data-anchor-id="prerequisites"><span class="header-section-number">3.5.1</span> Prerequisites</h3>
+<section id="prerequisites" class="level3">
+<h3 class="anchored" data-anchor-id="prerequisites">Prerequisites</h3>
 <p>Ensure you have the following installed:</p>
 <ol type="1">
 <li>Jupyter Notebook</li>
@@ -405,13 +398,13 @@ in [this notebook](https://github.com/danilofreire/qtm151/blob/main/tutorials/te
 <p>Jupyter Notebook and <code>pandas</code> are included in the Anaconda distribution. You can install <code>tabulate</code> using <code>conda install</code> in your terminal. If you are using VS Code, you can open a terminal by clicking on “Terminal” &gt; “New Terminal” in the top menu. Then run the following command:</p>
 <pre class="{markdown}"><code>conda install tabulate</code></pre>
 </section>
-<section id="basic-method-using-pandas.dataframe.to_markdown" class="level3" data-number="3.5.2">
-<h3 data-number="3.5.2" class="anchored" data-anchor-id="basic-method-using-pandas.dataframe.to_markdown"><span class="header-section-number">3.5.2</span> Basic Method: Using <code>pandas.DataFrame.to_markdown()</code></h3>
+<section id="basic-method-using-pandas.dataframe.to_markdown" class="level3">
+<h3 class="anchored" data-anchor-id="basic-method-using-pandas.dataframe.to_markdown">Basic Method: Using <code>pandas.DataFrame.to_markdown()</code></h3>
 <p><code>pandas</code> provides a built-in method <code>to_markdown()</code> for converting DataFrames to Markdown tables.</p>
-<section id="step-1-import-pandas-and-create-a-dataframe" class="level4" data-number="3.5.2.1">
-<h4 data-number="3.5.2.1" class="anchored" data-anchor-id="step-1-import-pandas-and-create-a-dataframe"><span class="header-section-number">3.5.2.1</span> Step 1: Import pandas and create a DataFrame</h4>
+<section id="step-1-import-pandas-and-create-a-dataframe" class="level4">
+<h4 class="anchored" data-anchor-id="step-1-import-pandas-and-create-a-dataframe">Step 1: Import pandas and create a DataFrame</h4>
 <p>You can create a dataframe by passing a dictionary to the <code>pd.DataFrame()</code> constructor:</p>
-<div id="f31e4057" class="cell" data-execution_count="2">
+<div id="7be29509" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># If necessary, install pandas and tabulate </span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="co"># You should have pandas installed if you installed Anaconda, </span></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="co"># but if you do not, you can install both with the following terminal command:</span></span>
@@ -430,10 +423,10 @@ in [this notebook](https://github.com/danilofreire/qtm151/blob/main/tutorials/te
 <span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame(data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="step-2-convert-dataframe-to-markdown" class="level4" data-number="3.5.2.2">
-<h4 data-number="3.5.2.2" class="anchored" data-anchor-id="step-2-convert-dataframe-to-markdown"><span class="header-section-number">3.5.2.2</span> Step 2: Convert DataFrame to Markdown</h4>
+<section id="step-2-convert-dataframe-to-markdown" class="level4">
+<h4 class="anchored" data-anchor-id="step-2-convert-dataframe-to-markdown">Step 2: Convert DataFrame to Markdown</h4>
 <p>Then you just need to call the <code>to_markdown()</code> method on the DataFrame:</p>
-<div id="cedf2f46" class="cell" data-execution_count="3">
+<div id="2a0241fb" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Print the DataFrame as a Markdown table, excluding the index</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>markdown_table <span class="op">=</span> df.to_markdown(index<span class="op">=</span><span class="va">False</span>)</span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(markdown_table)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -445,10 +438,10 @@ in [this notebook](https://github.com/danilofreire/qtm151/blob/main/tutorials/te
 | Bob     |   30 | London   |
 | Charlie |   35 | Paris    |</code></pre>
 </section>
-<section id="step-3-display-in-jupyter-notebook" class="level4" data-number="3.5.2.3">
-<h4 data-number="3.5.2.3" class="anchored" data-anchor-id="step-3-display-in-jupyter-notebook"><span class="header-section-number">3.5.2.3</span> Step 3: Display in Jupyter Notebook</h4>
+<section id="step-3-display-in-jupyter-notebook" class="level4">
+<h4 class="anchored" data-anchor-id="step-3-display-in-jupyter-notebook">Step 3: Display in Jupyter Notebook</h4>
 <p>To display the Markdown table in a Jupyter Notebook cell, use the <code>display()</code> function from the <code>IPython.display</code> module:</p>
-<div id="d1ff83bf" class="cell" data-execution_count="4">
+<div id="d2f6d72b" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># You should also have the IPython package installed if you installed Anaconda</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="co"># If not, you can install it with</span></span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="co"># conda install ipython</span></span>
@@ -469,10 +462,10 @@ in [this notebook](https://github.com/danilofreire/qtm151/blob/main/tutorials/te
 </div>
 </section>
 </section>
-<section id="advanced-formatting" class="level3" data-number="3.5.3">
-<h3 data-number="3.5.3" class="anchored" data-anchor-id="advanced-formatting"><span class="header-section-number">3.5.3</span> Advanced Formatting</h3>
+<section id="advanced-formatting" class="level3">
+<h3 class="anchored" data-anchor-id="advanced-formatting">Advanced Formatting</h3>
 <p>You can customise the Markdown table using various parameters of <code>to_markdown()</code>:</p>
-<div id="0683da32" class="cell" data-execution_count="5">
+<div id="f6e7e08e" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Customising the Markdown table using the to_markdown() method</span></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>markdown_table <span class="op">=</span> df.to_markdown(</span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>    index<span class="op">=</span><span class="va">False</span>,  <span class="co"># Don't include index</span></span>
@@ -484,18 +477,18 @@ in [this notebook](https://github.com/danilofreire/qtm151/blob/main/tutorials/te
 <span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>display(Markdown(markdown_table))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="using-tabulate-for-enhanced-formatting" class="level3" data-number="3.5.4">
-<h3 data-number="3.5.4" class="anchored" data-anchor-id="using-tabulate-for-enhanced-formatting"><span class="header-section-number">3.5.4</span> Using tabulate for Enhanced Formatting</h3>
+<section id="using-tabulate-for-enhanced-formatting" class="level3">
+<h3 class="anchored" data-anchor-id="using-tabulate-for-enhanced-formatting">Using tabulate for Enhanced Formatting</h3>
 <p>The <code>tabulate</code> library offers even more formatting options. While they are not necessary for basic tables, they can be useful for more complex tables. In our course, you will probably not need them, but I will show you how to use them for your reference. Please check their <a href="https://pypi.org/project/tabulate/">documentation</a> for more information.</p>
-<div id="7731f25f" class="cell" data-execution_count="6">
+<div id="b3ace498" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> tabulate <span class="im">import</span> tabulate</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>markdown_table <span class="op">=</span> tabulate(df, headers<span class="op">=</span><span class="st">'keys'</span>, tablefmt<span class="op">=</span><span class="st">'pipe'</span>, showindex<span class="op">=</span><span class="va">False</span>)</span>
 <span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>display(Markdown(markdown_table))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="best-practices" class="level3" data-number="3.5.5">
-<h3 data-number="3.5.5" class="anchored" data-anchor-id="best-practices"><span class="header-section-number">3.5.5</span> Best Practices</h3>
+<section id="best-practices" class="level3">
+<h3 class="anchored" data-anchor-id="best-practices">Best Practices</h3>
 <ol type="1">
 <li><p><strong>Index</strong>: Consider whether you need the index in your table. Often, it is cleaner to exclude it using <code>index=False</code>.</p></li>
 <li><p><strong>Formatting</strong>: Use <code>floatfmt</code> to control decimal places for numerical data.</p></li>
@@ -504,10 +497,10 @@ in [this notebook](https://github.com/danilofreire/qtm151/blob/main/tutorials/te
 <li><p><strong>Large DataFrames</strong>: For large DataFrames, consider displaying only a subset of rows or columns to maintain readability.</p></li>
 </ol>
 </section>
-<section id="example-comprehensive-table-creation" class="level3" data-number="3.5.6">
-<h3 data-number="3.5.6" class="anchored" data-anchor-id="example-comprehensive-table-creation"><span class="header-section-number">3.5.6</span> Example: Comprehensive Table Creation</h3>
+<section id="example-comprehensive-table-creation" class="level3">
+<h3 class="anchored" data-anchor-id="example-comprehensive-table-creation">Example: Comprehensive Table Creation</h3>
 <p>Here is a more comprehensive example incorporating various best practices:</p>
-<div id="4858f68d" class="cell" data-execution_count="7">
+<div id="2bd868e2" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import necessary packages</span></span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython.display <span class="im">import</span> display, Markdown</span>
@@ -546,8 +539,8 @@ in [this notebook](https://github.com/danilofreire/qtm151/blob/main/tutorials/te
 </div>
 </section>
 </section>
-<section id="equations" class="level2" data-number="3.6">
-<h2 data-number="3.6" class="anchored" data-anchor-id="equations"><span class="header-section-number">3.6</span> Equations</h2>
+<section id="equations" class="level2">
+<h2 class="anchored" data-anchor-id="equations">Equations</h2>
 <p>You can create equations using the <code>$$</code> symbol. For example in <a href="#eq-stddev" class="quarto-xref">Equation&nbsp;1</a>, we have the formula for the standard deviation of a population:</p>
 <pre class="{markdown}"><code>$$
 \sigma = \sqrt{\frac{\sum_{i=1}^{N} (x_i - \mu)^2}{N}}
@@ -557,24 +550,24 @@ $$ {#eq-stddev}</code></pre>
 \tag{1}\]</span></span></p>
 <p>You can also create equations inline by using the <code>$</code> symbol. For example, <code>$\alpha = \beta + \gamma$</code> will render as <span class="math inline">\(\alpha = \beta + \gamma\)</span>. To learn more about how to write equations in using Markdown, you can refer to the <a href="https://www.overleaf.com/learn/latex/List_of_Greek_letters_and_math_symbols">Overleaf documentation</a>.</p>
 </section>
-<section id="figures" class="level2" data-number="3.7">
-<h2 data-number="3.7" class="anchored" data-anchor-id="figures"><span class="header-section-number">3.7</span> Figures</h2>
+<section id="figures" class="level2">
+<h2 class="anchored" data-anchor-id="figures">Figures</h2>
 <p>You can include figures in your document using the <code>![Caption](path/to/image.png){#fig-label}</code> syntax. For example:</p>
 <pre class="{markdown}"><code>![This is a figure caption.](path/to/image.png){#fig-label}</code></pre>
 <p>This will include the image <code>path/to/image.png</code> in your document with the caption “This is a figure caption.” You can refer to the figure using the label <code>fig-label</code>, but this is optional.</p>
 <p>If you are creating plots on Jupyter Notebook, the graphs will appear after the code cell that generates them.</p>
 </section>
-<section id="citations" class="level2" data-number="3.8">
-<h2 data-number="3.8" class="anchored" data-anchor-id="citations"><span class="header-section-number">3.8</span> Citations</h2>
+<section id="citations" class="level2">
+<h2 class="anchored" data-anchor-id="citations">Citations</h2>
 <p>Although Markdown has excellent reference support with <a href="https://en.wikipedia.org/wiki/BibTeX">BibTeX files</a>, there is no reliable way to include citations automatically in Jupyter Notebooks. The two packages I know that manage citations, <a href="https://github.com/takluyver/cite2c">cite2c</a> and <a href="https://github.com/krassowski/jupyterlab-citation-manager">Jupyterlab Citation Manager</a>, are not ideal. The first has not been maintained for years, while the second is not ready for most uses. Therefore, I suggest simply copying the citation from Google Scholar and pasting it into a Markdown cell titled “References” at the end of your document. The same approach applies for inline citations.</p>
 </section>
-<section id="footnotes" class="level2" data-number="3.9">
-<h2 data-number="3.9" class="anchored" data-anchor-id="footnotes"><span class="header-section-number">3.9</span> Footnotes</h2>
+<section id="footnotes" class="level2">
+<h2 class="anchored" data-anchor-id="footnotes">Footnotes</h2>
 <p>Jupyter and Markdown support inline footnotes<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. To create a footnote, simply add a caret and brackets with a label inside, like this: <code>[^label]</code>. Then, you can define the footnote content anywhere in the document using the same label followed by a colon<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>. I usually include them at the end of a paragraph. Jupyter will automatically number and format your footnotes for you.</p>
 </section>
 </section>
-<section id="conclusion" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> Conclusion</h1>
+<section id="conclusion" class="level1">
+<h1>Conclusion</h1>
 <p>I hope you find this tutorial helpful and that you can use Jupyter Notebook and Markdown to create beautiful documents. If you have any questions or feedback, please feel free to reach out to me. Happy coding! :)</p>
 
 

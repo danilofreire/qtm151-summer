@@ -1,15 +1,13 @@
 ---
 title: "GitHub Tutorial"
 lang: en-GB
-author: 
-  - Danilo Freire
 jupyter: python3
 highlight-style: arrow
 format: 
     html:
       toc: true
       toc-depth: 2
-      number-sections: true
+      number-sections: false
 editor:
   render-on-save: true
 ---
@@ -38,11 +36,11 @@ We will use GitHub extensively in our course. So it is important that you become
 
 3. **Download and install GitHub Desktop**. You can download GitHub Desktop from <https://desktop.github.com/>. GitHub Desktop is a graphical user interface (GUI) for Git that makes it easier to work with repositories. It is available for Windows and macOS. You can also use the command line if you prefer, but GitHub Desktop is more user-friendly and will be used in this tutorial.
 
-![GitHub Desktop]{images/github-desktop.png}
+![GitHub Desktop](images/github-desktop.png)
 
 After you install GitHub Desktop, you will need to sign in with your GitHub account. This will allow you to work with your repositories. Then you should see the following screen:
 
-![GitHub Desktop Sign In]{images/github-desktop-signin.png}
+![GitHub Desktop Sign In](images/github-desktop-signin.png)
 
 Now you are ready to start using Git and GitHub. Let us move on to the next step.
 
@@ -50,9 +48,9 @@ Now you are ready to start using Git and GitHub. Let us move on to the next step
 
 The course materials are available on GitHub at <https://github.com/danilofreire/qtm151>. You should "fork" the repository to your account. This will create a copy of the repository in your account that you can modify and push changes to. Please click on the top-right corner of the repository page and select "Fork".
 
-![Fork the Repository]{images/github-fork.png}
+![Fork the Repository](images/github-fork.png)
 
-![Create a Copy of the Repository]{images/github-fork02.png}
+![Create a Copy of the Repository](images/github-fork02.png)
 
 You will be asked to make your own copy of the lecture notes. You can add any name you like. I
 recommend you use the name same name I used for the repository (`qtm151`). This will make it easier to follow the instructions in the tutorials. Click on "Create fork".
@@ -65,17 +63,17 @@ Please open GitHub Desktop and click on the "Clone a Repository from the Interne
 
 ![Click on Clone a Repository from the Internet.](images/github-clone01.png)
 
-![Click on URL and Paste the Repository URL. Then click on Clone.]{images/github-clone02.png}
+![Click on URL and Paste the Repository URL. Then click on Clone.](images/github-clone02.png)
 
-![Cloning]{images/github-clone03.png}
+![Cloning](images/github-clone03.png)
 
 Then select "To contribute to the parent project" and click on "Continue". This option allows you to keep updating your lecture notes from the instructor's repository. The other option creates a local copy that has no links to the original repository. If you accidentally choose this option, you will not be able to see any changes. To reverse: (a) remove the repository on your computer (by right-clicking on the repository on Github dekstop), (b) manually delete the directory, (c) go back to Step 2.
 
-![Cloning]{images/github-clone04.png}
+![Cloning](images/github-clone04.png)
 
 *And you are done!* You now have a local copy of the course materials on your computer that you can work with. You can open the repository in VS Code by clicking on "Repository" > "Open in Visual Studio Code". This will open the repository in VS Code, where you can edit and manage your code.
 
-![Open in Visual Studio Code]{images/github-open-vscode.png}
+![Open in Visual Studio Code](images/github-open-vscode.png)
 
 # How to Add Changes to Your Repository
 
@@ -83,25 +81,25 @@ Now that you have the course materials on your computer, let us go over some of 
 
 1. *A programmer makes some changes to their files*: In the photo you can see that I have made many changes to a few files. GitHub Desktop will show you the changes you made to your files. You can see the changes in the "Changes" tab.
 
-![Changes]{images/github-desktop-changes.png}
+![Changes](images/github-desktop-changes.png)
 
 You can also see the history of your changes in the "History" tab. This will show you all the commits you have made to your repository. The green lines indicate the changes you made, and the red lines indicate the changes you removed.
 
-![History]{images/github-desktop-history.png}
+![History](images/github-desktop-history.png)
 
 2. *The programmer commits the changes*: After making changes to your files, you need to commit them to your local repository. This creates a snapshot of your changes that you can revert to later if needed. To commit changes, open GitHub Desktop and you will see the changes you made. Write a summary of the changes in the "Summary" box and click on "Commit to main"[^main]. It is always a good idea to write a descriptive summary of your changes so that you can easily track them later.
 
 [^main]: The default branch in GitHub is called `main`. This is the branch where you will make most of your changes. You can create other branches if you want to work on different features or bug fixes.
 
-![Commit Changes]{images/github-desktop-commit.png}
+![Commit Changes](images/github-desktop-commit.png)
 
 As you can see, I have committed the changes I made to the files. You can see the commit message in the "History" tab. This will allow you to track the changes you made to your files.
 
-![Commit Message]{images/github-desktop-commit02.png}
+![Commit Message](images/github-desktop-commit02.png)
 
 3. *The programmer pushes the changes to GitHub*: After committing your changes to your local repository, you need to push them to GitHub. This will update the remote repository with the changes you made. To push changes, click on "Repository" > "Push" in GitHub Desktop. This will push your changes to GitHub. 
 
-![Push or Fetch Changes]{images/github-desktop-push.png}
+![Push or Fetch Changes](images/github-desktop-push.png)
 
 As you can also see, there are two options: "Push" and "Fetch". "Push" will push your changes to GitHub, while "Fetch" will fetch ("download") changes from GitHub. You can use "Fetch" to update your local repository with the changes from GitHub. We will cover this in more detail in the next section.
 
@@ -114,7 +112,7 @@ The course materials will be updated regularly with new content, bug fixes, and 
    - "main" is usually the name given to the primary version of your repository.
    - *Note*: You can create different branches to work on different features or bug fixes. This allows you to work on different parts of your codebase without affecting the main branch. You can then merge the changes from the different branches into the main branch when you are ready.
 
-![Update from Upstream]{images/github-desktop-update.png}
+![Update from Upstream](images/github-desktop-update.png)
 
 **Some practical advice**:
 

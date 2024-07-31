@@ -1,15 +1,13 @@
 ---
 title: "Installing VS Code and Connecting it with Anaconda"
 lang: en-GB
-author: 
-  - Danilo Freire
 jupyter: python3
 highlight-style: arrow
 format: 
     html:
       toc: true
       toc-depth: 1
-      number-sections: true
+      number-sections: false
 editor:
   render-on-save: true
 ---
