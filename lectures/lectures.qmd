@@ -12,7 +12,8 @@ folder in our course repository](https://github.com/danilofreire/qtm151/tree/mai
   Introduction](https://danilofreire.github.io/qtm151/lectures/lecture-01/01-introduction.html).
   Please make sure to install the necessary software for the course by
   following the [Course Tutorials: How to Install Anaconda, Jupyter, PostgreSQL, VSCode, and
-  Open a Free Educational Account on GitHub](https://https://danilofreire.github.io/qtm151/tutorials/tutorials.html).
+  Open a Free Educational Account on
+  GitHub](https://danilofreire.github.io/qtm151/tutorials/tutorials.html).
 
 - Monday, September 02: Labour Day (no class)
 
