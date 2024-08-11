@@ -260,9 +260,6 @@ print("Welcome to QTM151!")
   - Will provide guidelines on Canvas​ and GitHub
   - Due at the end of the semester​
 
-- Midsemester Survey: [+0.5% (Extra)]{.alert}
-
-- End of semester Survey: [+0.5% (Extra)]{.alert}
 :::
 :::
 

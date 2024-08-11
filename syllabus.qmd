@@ -4,11 +4,11 @@ title: "QTM 151 - Introduction to Statistical Computing II"
 
 # Course Description
 
-Welcome to [QTM 151](https://github.com/danilofreire/qtm151)! This is an introductory course designed to equip students with essential skills in data analysis and statistical computing using Python and SQL. It is tailored for students with little to no prior programming experience who are eager to develop computational proficiency for data-driven decision making. 
+Welcome to [QTM 151](https://github.com/danilofreire/qtm151)! This course introduces students to data analysis and statistical computing using Python and SQL. It is ideal for those with little or no programming experience who want to develop skills for data-driven decision making.
 
-Throughout the semester, we will cover version control for collaborative coding, Jupyter Notebooks for reproducible research, Python programming fundamentals, data wrangling and merging in SQL, data visualisation, and introductions to linear modelling and time series analysis.
+Over the semester, we will cover version control for collaborative coding, Jupyter Notebooks for reproducible research, Python programming basics, data wrangling and merging in SQL, data visualisation, and introductions to linear modelling and time series analysis.
 
-By working with real-world datasets and problems, students will gain hands-on experience using these tools and methods to extract insights from data. This course will develop technical skills and critical thinking needed to solve complex data challenges. Upon completion, students will be prepared for advanced coursework in quantitative methods and data science.
+Students will work with real-world datasets and problems, gaining practical experience in using these tools to extract insights from data. The course aims to develop both technical skills and critical thinking needed for complex data challenges. By the end, students will be ready for advanced study in quantitative methods and data science.
 
 # Learning Objectives
 
@@ -81,7 +81,7 @@ Upon every individual who is a part of Emory University falls the responsibility
 
 # Artificial Intelligence
 
-Students have to submit ten problem sets and complete five in-class quizzes. You are allowed to use AI to assist with your assignments, **but you are not allowed to use AI during class quizzes**. I recommend using [GitHub Copilot](https://copilot.github.com/) to generate code snippets, as it is free for students and provides good suggestions and explanations. [Claude](https://claude.ai), [ChatGPT](https://chat.openai.com), and [Perplexity AI](https://perplexity.ai) are also good tools. I am available to provide support and assistance with these tools during office hours or by appointment. However, please note that any errors or omissions resulting from the use of AI tools are your responsibility. Do not rely solely on AI to complete your assignments; you must always double-check your work. Remember to cite all sources used in your problem sets and projects, including AI tools. Please include a note at the end of any document indicating that AI was used in its development.
+Students have to submit ten problem sets and complete five in-class quizzes. You are allowed to use AI to assist with your assignments. I recommend using [GitHub Copilot](https://copilot.github.com/) to generate code snippets, as it is free for students and provides good suggestions and explanations. [Claude](https://claude.ai), [ChatGPT](https://chat.openai.com), and [Perplexity AI](https://perplexity.ai) are also good tools. I am available to provide support and assistance with these tools during office hours or by appointment. However, please note that any errors or omissions resulting from the use of AI tools are your responsibility. Do not rely solely on AI to complete your assignments; you must always double-check your work. Remember to cite all sources used in your problem sets and projects, including AI tools. Please include a note at the end of any document indicating that AI was used in its development.
 
 # Special Needs and Accessibility Services
 
@@ -98,8 +98,6 @@ Emory University welcomes students from around the country and the world, and th
 **Class Quizzes (30%).** Students will also take five in-class quizzes throughout the semester. These quizzes will be based on the lectures from the previous weeks. They will be designed to test your understanding of the material and your ability to apply the concepts to new problems. Quizzes will be open-book and open-notes, and students have 50 minutes to complete them. You are **not** allowed to use AI tools. They are individual assessments, and students are not allowed to discuss the questions with their colleagues in class. 
 
 **Final Project (20%).** The final project will consist of a short report, created using Jupyter and using one of the datasets shared on the course [GitHub repository](https://github.com/danilofreire/qtm151/tree/main/final-project). Further instructions will be provided in class. The final project will be due on the last day of class.
-
-**Mid-Semester and End-of-Semester Evaluations (0.5% each, bonus).** Students will be asked to complete a mid-semester and end-of-semester evaluation of the course. These evaluations are anonymous and will be used to improve the course in future semesters. Students who complete both evaluations will receive a 1% bonus on their final grade.
 
 # Grading Scale
 

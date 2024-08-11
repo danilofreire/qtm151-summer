@@ -109,7 +109,7 @@
     "href": "lectures/lecture-01/01-introduction.html#grades-and-late-policy",
     "title": "QTM 151 - Introduction to Statistical Computing II",
     "section": "Grades and Late Policy",
-    "text": "Grades and Late Policy\n\n\n\n\nAssignments (x10): 50%​\n\nPractice class concepts​\n\nQuizzes (x5): 30%​\n\nQuestions are given in advance​\nData is provided in the class​\n\nFinal Project: 20%​\n\nWill provide guidelines on Canvas​ and GitHub\nDue at the end of the semester​\n\nMidsemester Survey: +0.5% (Extra)\nEnd of semester Survey: +0.5% (Extra)\n\n\n\n\n\nAll materials will be available on the course website​ and GitHub​ repository\nLate assignments will automatically be graded for half-credit​\nTo account for unforeseen circumstances, we will drop the worst assignment and the worst quiz​\nWatch out for the assignments to install software. You will need these to be able to use the lectures notes"
+    "text": "Grades and Late Policy\n\n\n\n\nAssignments (x10): 50%​\n\nPractice class concepts​\n\nQuizzes (x5): 30%​\n\nQuestions are given in advance​\nData is provided in the class​\n\nFinal Project: 20%​\n\nWill provide guidelines on Canvas​ and GitHub\nDue at the end of the semester​\n\n\n\n\n\n\nAll materials will be available on the course website​ and GitHub​ repository\nLate assignments will automatically be graded for half-credit​\nTo account for unforeseen circumstances, we will drop the worst assignment and the worst quiz​\nWatch out for the assignments to install software. You will need these to be able to use the lectures notes"
   },
   {
     "objectID": "lectures/lecture-01/01-introduction.html#our-class-in-a-nutshell",
@@ -298,14 +298,14 @@
     "href": "index.html",
     "title": "QTM 151 - Introduction to Statistical Computing II",
     "section": "",
-    "text": "Welcome to QTM151 - Introduction to Statistical Computing II! This course is designed to introduce students to the fundamentals of statistical computing, with a focus on data manipulation, analysis, and visualisation using Python and SQL. Please have a look at the course syllabus and the lecture schedule for more information. A brief overview of the course content is provided below."
+    "text": "Welcome to QTM 151! This course introduces students to data analysis and statistical computing using Python and SQL. Please have a look at the course syllabus and the lecture schedule for more information. A brief overview of the course content is provided below."
   },
   {
     "objectID": "index.html#course-overview",
     "href": "index.html#course-overview",
     "title": "QTM 151 - Introduction to Statistical Computing II",
     "section": "",
-    "text": "Welcome to QTM151 - Introduction to Statistical Computing II! This course is designed to introduce students to the fundamentals of statistical computing, with a focus on data manipulation, analysis, and visualisation using Python and SQL. Please have a look at the course syllabus and the lecture schedule for more information. A brief overview of the course content is provided below."
+    "text": "Welcome to QTM 151! This course introduces students to data analysis and statistical computing using Python and SQL. Please have a look at the course syllabus and the lecture schedule for more information. A brief overview of the course content is provided below."
   },
   {
     "objectID": "index.html#contact-information",
@@ -340,7 +340,7 @@
     "href": "index.html#grading",
     "title": "QTM 151 - Introduction to Statistical Computing II",
     "section": "Grading",
-    "text": "Grading\n\nAssignments: 50%\nClass Quizzes: 30%\nFinal Project: 20%\nMid-semester and end-of-semester evaluations: 0.5% each, bonus"
+    "text": "Grading\n\nAssignments: 50%\nClass Quizzes: 30%\nFinal Project: 20%"
   },
   {
     "objectID": "index.html#course-policies-and-expectations",
@@ -508,7 +508,7 @@
     "href": "syllabus.html",
     "title": "QTM 151 - Introduction to Statistical Computing II",
     "section": "",
-    "text": "Welcome to QTM 151! This is an introductory course designed to equip students with essential skills in data analysis and statistical computing using Python and SQL. It is tailored for students with little to no prior programming experience who are eager to develop computational proficiency for data-driven decision making.\nThroughout the semester, we will cover version control for collaborative coding, Jupyter Notebooks for reproducible research, Python programming fundamentals, data wrangling and merging in SQL, data visualisation, and introductions to linear modelling and time series analysis.\nBy working with real-world datasets and problems, students will gain hands-on experience using these tools and methods to extract insights from data. This course will develop technical skills and critical thinking needed to solve complex data challenges. Upon completion, students will be prepared for advanced coursework in quantitative methods and data science."
+    "text": "Welcome to QTM 151! This course introduces students to data analysis and statistical computing using Python and SQL. It is ideal for those with little or no programming experience who want to develop skills for data-driven decision making.\nOver the semester, we will cover version control for collaborative coding, Jupyter Notebooks for reproducible research, Python programming basics, data wrangling and merging in SQL, data visualisation, and introductions to linear modelling and time series analysis.\nStudents will work with real-world datasets and problems, gaining practical experience in using these tools to extract insights from data. The course aims to develop both technical skills and critical thinking needed for complex data challenges. By the end, students will be ready for advanced study in quantitative methods and data science."
   },
   {
     "objectID": "syllabus.html#suggested-books",

@@ -4,14 +4,7 @@ title: "QTM 151 - Introduction to Statistical Computing II"
 
 ## Course Overview
 
-Welcome to [QTM151 - Introduction to Statistical Computing
-II!](https://github.com/danilofreire/qtm151) This course is designed to
-introduce students to the fundamentals of statistical computing, with a focus
-on data manipulation, analysis, and visualisation using Python and SQL. Please
-have a look at [the course
-syllabus](https://danilofreire.github.io/qtm151/syllabus.html) and the [lecture
-schedule](https://danilofreire.github.io/qtm151/lectures/lectures.html) for
-more information. A brief overview of the course content is provided below.
+Welcome to [QTM 151](https://github.com/danilofreire/qtm151)! This course introduces students to data analysis and statistical computing using Python and SQL. Please have a look at [the course syllabus](https://danilofreire.github.io/qtm151/syllabus.html) and the [lecture schedule](https://danilofreire.github.io/qtm151/lectures/lectures.html) for more information. A brief overview of the course content is provided below.
 
 ## Contact Information
 
@@ -88,7 +81,6 @@ repository](https://github.com/danilofreire/qtm151/tree/main/tutorials).
 - Assignments: 50%
 - Class Quizzes: 30%
 - Final Project: 20%
-- Mid-semester and end-of-semester evaluations: 0.5% each, bonus
 
 ## Course Policies and Expectations
 
