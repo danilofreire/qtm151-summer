@@ -43,7 +43,7 @@ editor:
 - [Visual Studio Code](https://code.visualstudio.com/) (Code editor)
 
 - Please check the tutorials on the course repository: <https://github.com/danilofreire/qtm151/tutorials>. They will help you with the installation and setup of the software. 
-- You can also get help from the [Student Tech Support](https://ats.emory.edu/sdl/StudentTechnologySupport/index.html)
+- You can also get help from [Student Tech Support](https://ats.emory.edu/sdl/StudentTechnologySupport/index.html)
 - If you have any questions, please let us know!
 :::
 

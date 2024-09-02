@@ -508,7 +508,7 @@
     "href": "lectures/lecture-02/02-github-review.html#software-installation",
     "title": "GitHub Review",
     "section": "Software Installation",
-    "text": "Software Installation\nWhat we will use in this course\n\n\nFirst, please remember to create a GitHub account if you do not have one yet: https://education.github.com/pack. Use your Emory email address to get the GitHub Student Developer Pack for free. Then install the following software:\nAnaconda (Python distribution)\nGitHub Desktop (Git user interface)\nVisual Studio Code (Code editor)\nPlease check the tutorials on the course repository: https://github.com/danilofreire/qtm151/tutorials. They will help you with the installation and setup of the software.\nYou can also get help from the Student Tech Support\nIf you have any questions, please let us know!"
+    "text": "Software Installation\nWhat we will use in this course\n\n\nFirst, please remember to create a GitHub account if you do not have one yet: https://education.github.com/pack. Use your Emory email address to get the GitHub Student Developer Pack for free. Then install the following software:\nAnaconda (Python distribution)\nGitHub Desktop (Git user interface)\nVisual Studio Code (Code editor)\nPlease check the tutorials on the course repository: https://github.com/danilofreire/qtm151/tutorials. They will help you with the installation and setup of the software.\nYou can also get help from Student Tech Support\nIf you have any questions, please let us know!"
   },
   {
     "objectID": "lectures/lecture-02/02-github-review.html#how-to-access-and-edit-a-remote-repository",
