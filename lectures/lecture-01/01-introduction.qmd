@@ -78,8 +78,6 @@ Please remember to check the course website regularly for updates and announceme
 ::: {style="font-size: 26px;"}
 `r fa('envelope')` [danilo.freire@emory.edu](mailto:danilo.freire@emory.edu)
 
-`r fa('calendar')` <https://calendly.com/danilofreire/office-hours>
-
 `r fa('globe')` <https://danilofreire.github.io/>
 :::
 :::
