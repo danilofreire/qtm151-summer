@@ -9,9 +9,8 @@ Welcome to [QTM 151](https://github.com/danilofreire/qtm151)! This course introd
 ## Contact Information
 
 - **Name**: Danilo Freire
-- **Contact**: <danilo.freire@emory.edu>, <https://emory.zoom.us/j/XXXXXX>, or [Canvas
-  Inbox](https://canvas.emory.edu)
-- **Office Hours**: By appointment, please email me to schedule a meeting
+- **Contact**: <danilo.freire@emory.edu>
+- **Office Hours**: By appointment at your convenience, please email me to schedule a meeting
 
 ## Repository Structure
 
@@ -21,7 +20,6 @@ source of content is the course's GitHub repository at
 
 - [`assignments/`](https://github.com/danilofreire/qtm151/tree/main/assigments): Contains all course assignments
 - [`lectures/`](https://github.com/danilofreire/qtm151/tree/main/lectures): Includes lecture materials and code
-- [`quizzes/`](https://github.com/danilofreire/qtm151/tree/main/quizzes): Quiz materials
 - [`tutorials/`](https://github.com/danilofreire/qtm151/tree/main/tutorials): Step-by-step guides for the tools used in the course
 - [`syllabus.pdf`](https://github.com/danilofreire/qtm151/blob/main/syllabus.pdf): Course syllabus in PDF format
 
@@ -50,10 +48,9 @@ used in the lecture.
 ### Assignments and Quizzes
 
 Throughout the course, students will complete various assignments and quizzes
-to reinforce their learning. These will be posted in the respective
+to reinforce their learning. These will be posted in the
 [`assignments/`](https://github.com/danilofreire/qtm151/tree/main/assigments)
-and [`quizzes/`](https://github.com/danilofreire/qtm151/tree/main/quizzes)
-folders as the course progresses. We will also announce these in class and on
+folder as the course progresses. We will also announce these in class and on
 Canvas. Please refer to the syllabus or the lecture schedule for due dates and
 submission guidelines.
 
@@ -63,7 +60,7 @@ The [`tutorials/`](tutorials/tutorials.qmd) tab contains step-by-step guides
 for various tools and techniques used in the course. Please have a look at
 these resources to help you get started. 
 
-PDF versions of the course materials are also [available in the
+PDF versions of the tutorials are also [available in the
 repository](https://github.com/danilofreire/qtm151/tree/main/tutorials). 
 
 ## Course Requirements

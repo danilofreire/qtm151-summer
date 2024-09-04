@@ -655,21 +655,21 @@
     "href": "index.html#contact-information",
     "title": "QTM 151 - Introduction to Statistical Computing II",
     "section": "Contact Information",
-    "text": "Contact Information\n\nName: Danilo Freire\nContact: danilo.freire@emory.edu, https://emory.zoom.us/j/XXXXXX, or Canvas Inbox\nOffice Hours: By appointment, please email me to schedule a meeting"
+    "text": "Contact Information\n\nName: Danilo Freire\nContact: danilo.freire@emory.edu\nOffice Hours: By appointment at your convenience, please email me to schedule a meeting"
   },
   {
     "objectID": "index.html#repository-structure",
     "href": "index.html#repository-structure",
     "title": "QTM 151 - Introduction to Statistical Computing II",
     "section": "Repository Structure",
-    "text": "Repository Structure\nWhile this website provides an overview of the course materials, the primary source of content is the course’s GitHub repository at https://github.com/danilofreire/qtm151. The repository is organised as follows:\n\nassignments/: Contains all course assignments\nlectures/: Includes lecture materials and code\nquizzes/: Quiz materials\ntutorials/: Step-by-step guides for the tools used in the course\nsyllabus.pdf: Course syllabus in PDF format\n\nPlease also refer to the Discussion tab on the repository for any questions or comments: https://github.com/danilofreire/qtm151/discussions.\nNote: The links will take you to the respective folders or files in the repository, not on this website. You can find links for the rendered content in the navigation bar above."
+    "text": "Repository Structure\nWhile this website provides an overview of the course materials, the primary source of content is the course’s GitHub repository at https://github.com/danilofreire/qtm151. The repository is organised as follows:\n\nassignments/: Contains all course assignments\nlectures/: Includes lecture materials and code\ntutorials/: Step-by-step guides for the tools used in the course\nsyllabus.pdf: Course syllabus in PDF format\n\nPlease also refer to the Discussion tab on the repository for any questions or comments: https://github.com/danilofreire/qtm151/discussions.\nNote: The links will take you to the respective folders or files in the repository, not on this website. You can find links for the rendered content in the navigation bar above."
   },
   {
     "objectID": "index.html#course-content",
     "href": "index.html#course-content",
     "title": "QTM 151 - Introduction to Statistical Computing II",
     "section": "Course Content",
-    "text": "Course Content\n\nLectures\nWe will meet every Monday and Wednesday from 16:00 to 16:50 at XXXXX. Please check the course schedule for the full list of topics and dates. Lecture materials are available in the lectures folder in the repository.\nEach folder contains an HTML presentation or a Jupyter notebook (.ipynb) with code examples and explanations, along with any additional resources or datasets used in the lecture.\n\n\nAssignments and Quizzes\nThroughout the course, students will complete various assignments and quizzes to reinforce their learning. These will be posted in the respective assignments/ and quizzes/ folders as the course progresses. We will also announce these in class and on Canvas. Please refer to the syllabus or the lecture schedule for due dates and submission guidelines.\n\n\nTutorials\nThe tutorials/ tab contains step-by-step guides for various tools and techniques used in the course. Please have a look at these resources to help you get started.\nPDF versions of the course materials are also available in the repository."
+    "text": "Course Content\n\nLectures\nWe will meet every Monday and Wednesday from 16:00 to 16:50 at XXXXX. Please check the course schedule for the full list of topics and dates. Lecture materials are available in the lectures folder in the repository.\nEach folder contains an HTML presentation or a Jupyter notebook (.ipynb) with code examples and explanations, along with any additional resources or datasets used in the lecture.\n\n\nAssignments and Quizzes\nThroughout the course, students will complete various assignments and quizzes to reinforce their learning. These will be posted in the assignments/ folder as the course progresses. We will also announce these in class and on Canvas. Please refer to the syllabus or the lecture schedule for due dates and submission guidelines.\n\n\nTutorials\nThe tutorials/ tab contains step-by-step guides for various tools and techniques used in the course. Please have a look at these resources to help you get started.\nPDF versions of the tutorials are also available in the repository."
   },
   {
     "objectID": "index.html#course-requirements",
