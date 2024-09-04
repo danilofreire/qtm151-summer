@@ -34,8 +34,10 @@ the navigation bar above.
 
 ### Lectures
 
-We will meet every Monday and Wednesday from 16:00 to 16:50 at
-[XXXXX](https://quantitative.emory.edu). Please check the [course
+We will meet every Monday and Wednesday from 16:00 to 16:50 in the
+[Anthropology Building,
+303](https://emap.fmd.emory.edu/website/campus/index.htm#?queryzoom=Yes&Query=(bldg='1460')).
+Please check the [course
 schedule](https://danilofreire.github.io/qtm151/lectures/lectures.html) for the
 full list of topics and dates. Lecture materials are available in the [lectures
 folder](https://github.com/danilofreire/qtm151/tree/main/lectures) in the

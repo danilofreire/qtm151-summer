@@ -57,7 +57,8 @@ This course is designed to be self-contained, providing all the necessary resour
 
 # Course Information
 
-We will meet every Monday and Wednesday from 16:00 to 16:50 at [XXXXX](https://quantitative.emory.edu). It is important that you read the materials before class. All information about the course is available on the course's GitHub repository at <https://github.com/danilofreire/qtm151>. While I will try to adhere to the course schedule as much as possible, I also want to adapt to your learning pace and style. The syllabus and course plan may change in the semester. Again, please check [the course repository](https://github.com/danilofreire/qtm151) regularly to check for updates. I will also announce any changes in class and via email.
+
+We will meet every Monday and Wednesday from 16:00 to 16:50 in the [Anthropology Building, 303](https://emap.fmd.emory.edu/website/campus/index.htm#?queryzoom=Yes&Query=(bldg='1460')). It is important that you read the materials before class. All information about the course is available on the course's GitHub repository at <https://github.com/danilofreire/qtm151>. While I will try to adhere to the course schedule as much as possible, I also want to adapt to your learning pace and style. The syllabus and course plan may change in the semester. Again, please check [the course repository](https://github.com/danilofreire/qtm151) regularly to check for updates. I will also announce any changes in class and via email.
 
 # Software
 
