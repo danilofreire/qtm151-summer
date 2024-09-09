@@ -12,6 +12,15 @@ Welcome to [QTM 151](https://github.com/danilofreire/qtm151)! This course introd
 - **Contact**: <danilo.freire@emory.edu>
 - **Office Hours**: By appointment at your convenience, please email me to schedule a meeting
 
+## Teaching Assistants
+
+- Chloe Zhao (2593352), <chloe.zhao@emory.edu> (undergraduate TA)
+- Sean Jeon (2550044), <sean.jeon@emory.edu> (undergraduate TA)
+- Satvik Elayavalli (2491008), <satvik.elayavalli@emory.edu> (undergraduate TA)
+- Zhengyi Ou (2600960), <zhengyi.ou@emory.edu> (graduate grader)
+- Lee (June) Yun (2451522), <june.yun@emory.edu> (graduate grader)
+- Chengle (Lydia) Zhang (2462921), <lydia.zhang2@emory.edu> (graduate grader)
+
 ## Repository Structure
 
 While this website provides an overview of the course materials, the primary
