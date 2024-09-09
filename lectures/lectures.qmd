@@ -30,7 +30,7 @@ folder in our course repository](https://github.com/danilofreire/qtm151/tree/mai
 - Monday, September 09: Lecture 03: Variables and Lists. [IPython Notebook](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-03/03-variables-lists.ipynb), [Lecture Slides](https://rawcdn.githack.com/danilofreire/qtm151/4c85d539a1a386e76a2e105625b780d44830dc2d/lectures/lecture-03/03-variables-lists.html)
   - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=9d9db161-5a1e-44e9-9c76-d06959e8979d&hostId=05eb977d-4f8a-440e-9e45-95212b29d103).
 
-- Wednesday, September 11: [Lecture 04: Mathematical Operations, Arrays, and Random Numbers](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-04/04-maths-arrays-random.ipynb)
+- Wednesday, September 11: Lecture 04: Mathematical Operations, Arrays, and Random Numbers. [IPython Notebook](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-04/04-maths-arrays-random.ipynb). [Lecture Slides](https://rawcdn.githack.com/danilofreire/qtm151/c972c0e31ff8b65cdc8b59f510d2831eaf13ef41/lectures/lecture-04/04-maths-arrays-random.html)
   - **Assignment 01 due (5%)**
   - **Assignment 02:** [Problem Set 02](https://github.com/danilofreire/qtm151/blob/main/assignments/02-assignment.ipynb)
 
