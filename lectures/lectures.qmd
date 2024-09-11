@@ -20,6 +20,7 @@ materials available in the [lectures folder in our course repository](https://gi
   - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=9d9db161-5a1e-44e9-9c76-d06959e8979d&hostId=05eb977d-4f8a-440e-9e45-95212b29d103).
 
 - Wednesday, September 11: Lecture 04: Mathematical Operations, Arrays, and Random Numbers. [Jupyter Notebook](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-04/04-maths-arrays-random.ipynb), [Lecture Slides](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-04/04-maths-arrays-random.html)
+  - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=271358de-fa9b-4fd0-8846-c18c72e81cc7&hostId=05eb977d-4f8a-440e-9e45-95212b29d103)
   - **Assignment 01 due (5%)**
   - **Assignment 02:** [Problem Set 02](https://github.com/danilofreire/qtm151/blob/main/assignments/02-assignment.ipynb)
 
