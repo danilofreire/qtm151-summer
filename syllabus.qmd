@@ -132,7 +132,7 @@ Weekly suggested readings:
 ### Wednesday, September 04:
 
 - [Lecture 02: GitHub Review](https://danilofreire.github.io/qtm151/lectures/lecture-02/02-github-review.html), [Introduction to Jupyter Notebooks](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-02/02-jupyter.ipynb).
-- Extra lecture: [Lecture slides](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-02/02-github-jupyter.html#/title-slide).  [Video recording](https://emory-my.sharepoint.com/:v:/g/personal/dafreir_emory_edu/EaTyfePUASBJlUyB-0HuGKkB9YyPc0kS3DARtdAzVst8PQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=5BO5Zi).
+- Extra lecture: [Lecture Slides](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-02/02-github-jupyter.html#/title-slide).  [Video Recording](https://emory-my.sharepoint.com/:v:/g/personal/dafreir_emory_edu/EaTyfePUASBJlUyB-0HuGKkB9YyPc0kS3DARtdAzVst8PQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=5BO5Zi).
 - **Assignment 01:** [Problem Set 01](https://github.com/danilofreire/qtm151/blob/main/assignments/01-assignment.ipynb).
 
 Weekly suggested readings:
@@ -147,11 +147,11 @@ Weekly suggested readings:
 
 ### Monday September 09:
 
--  Lecture 03: Variables and Lists. [IPython notebook](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-03/03-variables-lists.ipynb). [Lecture slides](https://rawcdn.githack.com/danilofreire/qtm151/4c85d539a1a386e76a2e105625b780d44830dc2d/lectures/lecture-03/03-variables-lists.html)
+-  Lecture 03: Variables and Lists. [Jupyter Notebook](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-03/03-variables-lists.ipynb). [Lecture Slides](https://rawcdn.githack.com/danilofreire/qtm151/4c85d539a1a386e76a2e105625b780d44830dc2d/lectures/lecture-03/03-variables-lists.html)
 
 ### Wednesday, September 11:
 
-- Lecture 04: [Mathematical Operations, Arrays, and Random Numbers](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-04/04-maths-arrays-random.ipynb).
+- Lecture 04: Mathematical Operations, Arrays, and Random Numbers. [Jupyter Notebook](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-04/04-maths-arrays-random.ipynb).
 - **Assignment 01 due (5%).**
 - **Assignment 02:** [Problem Set 02](https://github.com/danilofreire/qtm151/blob/main/assignments/02-assignment.ipynb).
 
