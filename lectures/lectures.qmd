@@ -24,7 +24,7 @@ materials available in the [lectures folder in our course repository](https://gi
   - **Assignment 01 due (5%)**
   - **Assignment 02:** [Problem Set 02](https://github.com/danilofreire/qtm151/blob/main/assignments/02-assignment.ipynb)
 
-- Monday, September 16: Lecture 05: Boolean Variables and If/Else Statements. [Jupyter Notebook](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-05/05-boolean-if-else.ipynb)
+- Monday, September 16: Lecture 05: Boolean Variables and If/Else Statements. [Jupyter Notebook](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-05/05-boolean-if-else.ipynb), [Lecture Slides](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-05/05-boolean-if-else.html).
 
 - Wednesday, September 18: [Lecture 06: While Loops and For Loops](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-06/06-while-for.ipynb)
   - **Assignment 02 due (5%)**

@@ -166,7 +166,7 @@ Weekly suggested readings:
 
 ### Monday, September 16:
 
-- Lecture 05: [Boolean Variables and If/Else Statements](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-05/05-boolean-if-else.ipynb).
+- Lecture 05: Boolean Variables and If/Else Statements. [Jupyter Notebook](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-05/05-boolean-if-else.ipynb), [Lecture Slides](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-05/05-boolean-if-else.html).
 
 ### Wednesday, September 18:
 
