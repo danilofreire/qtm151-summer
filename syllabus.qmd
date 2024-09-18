@@ -170,7 +170,7 @@ Weekly suggested readings:
 
 ### Wednesday, September 18:
 
-- Lecture 06: [While Loops and For Loops](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-06/06-while-for.ipynb).
+- Lecture 06: While Loops and For Loops. [Jupyter Notebook](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-06/06-while-for.ipynb), [Lecture Slides](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-06/06-while-for.html)
 - **Assignment 02 due (5%).**
 - **Assignment 03:** [Problem Set 03](https://github.com/danilofreire/qtm151/blob/main/assignments/03-assignment.ipynb).
 
