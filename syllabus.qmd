@@ -188,7 +188,7 @@ Weekly suggested readings:
 
 ### Monday, September 23:
 
-- Lecture 07: [Applications 1: Simulation Studies](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-07/07-applications-simulation.ipynb).
+- Lecture 07: Applications 1: Simulation Studies. [Jupyter Notebook](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-07/07-applications-simulation.ipynb). [Lecture Slides](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-07/07-applications-simulation.html).
 
 ### Wednesday, September 25:
 
