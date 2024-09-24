@@ -33,9 +33,10 @@ materials available in the [lectures folder in our course repository](https://gi
   - **Assignment 03:** [Problem Set 03](https://github.com/danilofreire/qtm151/blob/main/assignments/03-assignment.ipynb)
 
 - Monday, September 23: Lecture 07: Applications 1: Simulation Studies. [Jupyter Notebook](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-07/07-applications-simulation.ipynb). [Lecture Slides](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-07/07-applications-simulation.html).
-  - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=857d136c-31dc-458c-9d3d-ce987f4ef6f2&hostId=05eb977d-4f8a-440e-9e45-95212b29d103)
+  - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=857d136c-31dc-458c-9d3d-ce987f4ef6f2&hostId=05eb977d-4f8a-440e-9e45-95212b29d103).
 
-- Wednesday, September 25: [Lecture 08: Functions and Arguments](https://danilofreire.github.io/qtm151/lectures/lecture-08/08-functions-arguments.ipynb)
+- Wednesday, September 25: Lecture 08: Functions and Arguments. [Jupyter Notebook](https://danilofreire.github.io/qtm151/lectures/lecture-08/08-functions-arguments.ipynb). [Lecture Slides](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-08/08-functions-arguments.html)
+  - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=94eb5781-33ec-4d12-a1bd-0382c96a05c3&hostId=05eb977d-4f8a-440e-9e45-95212b29d103).
   - **Assignment 03 due (5%)**
   - **Assignment 04:** [Problem Set 04](https://github.com/danilofreire/qtm151/blob/main/assignments/04-assignment.ipynb)
 
