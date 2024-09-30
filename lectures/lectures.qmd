@@ -35,12 +35,12 @@ materials available in the [lectures folder in our course repository](https://gi
 - Monday, September 23: Lecture 07: Applications 1: Simulation Studies. [Jupyter Notebook](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-07/07-applications-simulation.ipynb). [Lecture Slides](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-07/07-applications-simulation.html).
   - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=857d136c-31dc-458c-9d3d-ce987f4ef6f2&hostId=05eb977d-4f8a-440e-9e45-95212b29d103).
 
-- Wednesday, September 25: Lecture 08: Functions and Arguments. [Jupyter Notebook](https://danilofreire.github.io/qtm151/lectures/lecture-08/08-functions-arguments.ipynb). [Lecture Slides](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-08/08-functions-arguments.html)
+- Wednesday, September 25: Lecture 08: Functions and Arguments. [Jupyter Notebook](https://danilofreire.github.io/qtm151/lectures/lecture-08/08-functions-arguments.ipynb). [Lecture Slides](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-08/08-functions-arguments.html).
   - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=94eb5781-33ec-4d12-a1bd-0382c96a05c3&hostId=05eb977d-4f8a-440e-9e45-95212b29d103).
   - **Assignment 03 due (5%)**
   - **Assignment 04:** [Problem Set 04](https://github.com/danilofreire/qtm151/blob/main/assignments/04-assignment.ipynb)
 
-- Monday, September 30: [Lecture 09: Global and Local Variables](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-09/09-global-local.ipynb)
+- Monday, September 30: Lecture 09: Global and Local Variables. [Jupyter Notebook](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-09/09-global-local.ipynb). [Lecture Slides](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-09/09-global-local.html).
   - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=e5422be1-4423-436b-9d99-895879b4d906&hostId=05eb977d-4f8a-440e-9e45-95212b29d103)
 
 - Wednesday, October 02: [Lecture 10: Quiz 01: Application 02 - Operations over Multiple Datasets (6%)](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-10/10-operations-multiple-datasets.ipynb)
