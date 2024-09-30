@@ -41,6 +41,7 @@ materials available in the [lectures folder in our course repository](https://gi
   - **Assignment 04:** [Problem Set 04](https://github.com/danilofreire/qtm151/blob/main/assignments/04-assignment.ipynb)
 
 - Monday, September 30: [Lecture 09: Global and Local Variables](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-09/09-global-local.ipynb)
+  - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=e5422be1-4423-436b-9d99-895879b4d906&hostId=05eb977d-4f8a-440e-9e45-95212b29d103)
 
 - Wednesday, October 02: [Lecture 10: Quiz 01: Application 02 - Operations over Multiple Datasets (6%)](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-10/10-operations-multiple-datasets.ipynb)
   - **Assignment 05:** [Problem Set 05](https://github.com/danilofreire/qtm151/blob/main/assignments/05-assignment.ipynb)
