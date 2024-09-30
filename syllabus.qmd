@@ -206,6 +206,7 @@ Weekly suggested readings:
 ### Monday, September 30:
 
 - Lecture 09: [Global and Local Variables](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-09/09-global-local.ipynb).
+  - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=e5422be1-4423-436b-9d99-895879b4d906&hostId=05eb977d-4f8a-440e-9e45-95212b29d103)
 
 ### Wednesday, October 02:
 
