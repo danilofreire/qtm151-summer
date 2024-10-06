@@ -48,7 +48,7 @@ materials available in the [lectures folder in our course repository](https://gi
 
 - Friday, October 04: **Assignment 04 due (5%)**
 
-- Monday, October 07: [Lecture 11: Subsetting Data](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-11/11-subsetting-data.ipynb)
+- Monday, October 07: Lecture 11: Subsetting Data. [Jupyter Notebook](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-11/11-subsetting-data.ipynb). [Lecture Slides](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-11/11-subsetting-data.html)
 
 - Wednesday, October 09: [Lecture 12: Application 03: Linear Models](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-12/12-linear-models.ipynb)
   - **Assignment 05 due (5%)**
