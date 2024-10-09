@@ -53,7 +53,7 @@ materials available in the [lectures folder in our course repository](https://gi
 - Wednesday, October 09: Lecture 12: Application 03: Linear Models. [Jupyter Notebook](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-12/12-linear-models.ipynb). [Lecture Slides](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-12/12-linear-models.html).
   - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=3c58a2b9-4137-4723-a1d0-08beb8b018d5&hostId=05eb977d-4f8a-440e-9e45-95212b29d103)
   - **Assignment 05 due (5%)**
-  - **Assignment 06:** [Problem Set 06](https://github.com/danilofreire/qtm151/blob/main/assignments/06-assignment.ipynb)
+  - **Assignment 06:** [Problem Set 06](https://github.com/danilofreire/qtm151/tree/main/assignments/06-assignment)
 
 - Monday, October 14: Fall Break (no class)
 
