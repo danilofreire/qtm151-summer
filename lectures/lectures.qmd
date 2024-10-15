@@ -57,7 +57,7 @@ materials available in the [lectures folder in our course repository](https://gi
 
 - Monday, October 14: Fall Break (no class)
 
-- Wednesday, October 16: [Lecture 13: Creating and Replacing Variables](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-13/13-creating-replacing-variables.ipynb)
+- Wednesday, October 16: Lecture 13: Replacing and Recoding Variables. [Jupyter Notebook](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-13/13-creating-replacing-variables.ipynb). [Lecture Slides](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-13/13-replacing-recoding-variables.html).
   - **Assignment 06 due (5%)**
   - **Assignment 07:** [Problem Set 07](https://github.com/danilofreire/qtm151/blob/main/assignments/07-assignment.ipynb)
 
