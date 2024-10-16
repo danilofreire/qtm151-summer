@@ -28,11 +28,11 @@ The course assessment consists of ten assignments, five in-class quizzes, and a 
 
 - Wednesday, October 09: 
   - **Assignment 05 due (5%)**
-  - **Assignment 06:** [Problem Set 06](https://github.com/danilofreire/qtm151/blob/main/assignments/06-assignment.ipynb)
+  - **Assignment 06:** [Problem Set 06](https://github.com/danilofreire/qtm151/tree/main/assignments/06-assignment)
 
 - Wednesday, October 16: 
   - **Assignment 06 due (5%)**
-  - **Assignment 07:** [Problem Set 07](https://github.com/danilofreire/qtm151/blob/main/assignments/07-assignment.ipynb)
+  - **Assignment 07:** [Problem Set 07](https://github.com/danilofreire/qtm151/tree/main/assignments/07-assignment)
 
 - Wednesday, October 23: 
   - **Assignment 07 due (5%)**
