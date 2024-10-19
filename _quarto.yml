@@ -23,6 +23,8 @@ website:
         text: Tutorials
       - href: assignments/assignments.qmd
         text: Assignments
+      - href: https://danilofreire.github.io/qtm151/jupyter
+        text: Jupyter Lite
       - href: LICENSE.html
   page-footer: 
     left: "Copyright 2024, Danilo Freire. The content of this site is licensed under the [MIT License](LICENSE.qmd)." 
