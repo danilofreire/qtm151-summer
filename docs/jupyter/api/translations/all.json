@@ -12,6 +12,14 @@
       "displayName": "French (France)",
       "nativeName": "Fran\u00e7ais (France)"
     },
+    "ja_JP": {
+      "displayName": "Japanese (Japan)",
+      "nativeName": "\u65e5\u672c\u8a9e (\u65e5\u672c)"
+    },
+    "ko_KR": {
+      "displayName": "Korean (South Korea)",
+      "nativeName": "\ud55c\uad6d\uc5b4 (\ub300\ud55c\ubbfc\uad6d)"
+    },
     "pt_BR": {
       "displayName": "Portuguese (Brazil)",
       "nativeName": "Portugu\u00eas (Brasil)"
