@@ -277,7 +277,7 @@ Weekly suggested readings:
 
 ### Monday, October 28:
 
-- Lecture 16: [Merging Data](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-16/16-merging-data.ipynb).
+- Lecture 16: Merging Data. [Jupyter Notebook](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-16/16-merging-data.ipynb). [Lecture Slides](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-16/16-merging-data.html).
 
 ### Wednesday, October 30:
 
