@@ -67,12 +67,14 @@ materials available in the [lectures folder in our course repository](https://gi
   - **Assignment 07 due (5%)**
   - **Assignment 08:** [Problem Set 08](https://github.com/danilofreire/qtm151/blob/main/assignments/08-assignment.ipynb)
 
-- Monday, October 28: [Lecture 16: Merging Data](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-16/16-merging-data.ipynb)
+- Monday, October 28: Lecture 16: Merging Data. [Jupyter Notebook](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-16/16-merging-data.ipynb). [Lecture Slides](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-16/16-merging-data.html).
+ - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=2f7a071d-61d4-4069-bed3-ff283a7bd1c3&hostId=05eb977d-4f8a-440e-9e45-95212b29d103)
 
 - Wednesday, October 30: [Lecture 17: Introduction to SQL](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-17/17-introduction-sql.ipynb)
-  - **Assignment 08 due (5%)**
   - **Assignment 09:** [Problem Set 09](https://github.com/danilofreire/qtm151/blob/main/assignments/09-assignment.ipynb)
   - **Instructions for the Final Project:** [Final Project](https://github.com/danilofreire/qtm151/blob/main/final-project)
+
+- Friday, November 01: **Assignment 08 due (5%)**
 
 - Monday, November 04: [Lecture 18: Quiz 3: Application 5: Practicing Chaining (6%)](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-18/18-chaining.ipynb)
 
