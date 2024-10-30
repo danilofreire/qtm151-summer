@@ -70,7 +70,8 @@ materials available in the [lectures folder in our course repository](https://gi
 - Monday, October 28: Lecture 16: Merging Data. [Jupyter Notebook](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-16/16-merging-data.ipynb). [Lecture Slides](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-16/16-merging-data.html).
   - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=2f7a071d-61d4-4069-bed3-ff283a7bd1c3&hostId=05eb977d-4f8a-440e-9e45-95212b29d103)
 
-- Wednesday, October 30: [Lecture 17: Introduction to SQL](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-17/17-introduction-sql.ipynb)
+- Wednesday, October 30: Lecture 17: Introduction to SQL. [SQL file](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-17/17-introduction-sql.sql). [Lecture Slides](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-17/17-introduction-sql.html).
+  - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=be2a60bb-9c17-49d0-b291-a916be65d5f5&hostId=05eb977d-4f8a-440e-9e45-95212b29d103)
   - **Assignment 09:** [Problem Set 09](https://github.com/danilofreire/qtm151/blob/main/assignments/09-assignment.ipynb)
   - **Instructions for the Final Project:** [Final Project](https://github.com/danilofreire/qtm151/blob/main/final-project)
 
