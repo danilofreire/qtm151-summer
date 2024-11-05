@@ -92,7 +92,7 @@ materials available in the [lectures folder in our course repository](https://gi
 
 - Wednesday, November 20: [Lecture 23: Pivot Tables](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-23/23-pivot-tables.ipynb)
 
-- Monday, November 25: [Lecture 24: Manipulating Text Data](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-24/24-text-data.ipynb) [Lecture 24: Quiz 5: Application 8: Time Data, Panel Data, and Plots (6%)](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-24/24-time-panel-plots.ipynb)
+- Monday, November 25: [Lecture 24: Manipulating Text Data](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-24/24-text-data.ipynb)
 
 - Wednesday, November 27: Thanksgiving Break (no class)
 
