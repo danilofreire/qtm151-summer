@@ -351,13 +351,13 @@ Weekly suggested readings:
 
 ### Monday, November 25:
 
-- Lecture 24: [**Quiz 5: Application 8: Time Data, Panel Data, and Plots (6%)**](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-24/24-time-panel-plots.ipynb).
+- Lecture 24: [Manipulating Text Data](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-24/24-text-data.ipynb).
 
 ### Wednesday, November 27: Thanksgiving Break (no class)
 
 ### Monday, December 02:
 
-- Lecture 25: [Manipulating Text Data](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-25/25-text-data.ipynb).
+- Lecture 25: [**Quiz 5: Application 8: Time Data, Panel Data, and Plots (6%)**](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-25/25-time-panel-plots.ipynb).
 
 ### Wednesday, December 04:
 
