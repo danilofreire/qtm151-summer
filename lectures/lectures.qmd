@@ -79,7 +79,7 @@ materials available in the [lectures folder in our course repository](https://gi
 
 - Monday, November 04: [Lecture 18: Quiz 3: Application 5: Practicing Chaining (6%)](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-18/18-chaining.ipynb)
 
-- Wednesday, November 06: [Lecture 19: Import SQL Data into Python](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-19/19-sql-python.ipynb)
+- Wednesday, November 06: Lecture 19: Import SQL Data into Python. [Jupyter Notebook](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-19/19-sql-python.ipynb). [Lecture Slides](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-19/19-sql-python.html).
   - **Assignment 09 due (5%)**
   - **Assignment 10:** [Problem Set 10](https://github.com/danilofreire/qtm151/blob/main/assignments/10-assignment.ipynb)
 
