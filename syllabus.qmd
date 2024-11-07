@@ -305,7 +305,7 @@ Weekly suggested readings:
 
 - Lecture 19: Import SQL Data into Python. [Jupyter Notebook](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-19/19-sql-python.ipynb). [Lecture Slides](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-19/19-sql-python.html).
 - **Assignment 09 due (5%).**
-- **Assignment 10:** [Problem Set 10](https://github.com/danilofreire/qtm151/blob/main/assignments/10-assignment.ipynb).
+- **Assignment 10:** [Problem Set 10](https://github.com/danilofreire/qtm151/tree/main/assignments/10-assignment).
 
 Weekly suggested readings:
 

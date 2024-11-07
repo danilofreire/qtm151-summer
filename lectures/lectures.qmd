@@ -81,7 +81,7 @@ materials available in the [lectures folder in our course repository](https://gi
 
 - Wednesday, November 06: Lecture 19: Import SQL Data into Python. [Jupyter Notebook](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-19/19-sql-python.ipynb). [Lecture Slides](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-19/19-sql-python.html).
   - **Assignment 09 due (5%)**
-  - **Assignment 10:** [Problem Set 10](https://github.com/danilofreire/qtm151/blob/main/assignments/10-assignment.ipynb)
+  - **Assignment 10:** [Problem Set 10](https://github.com/danilofreire/qtm151/tree/main/assignments/10-assignment)
 
 - Monday, November 11: [Lecture 20: Merging Tables in SQL](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-20/20-sql-merging.ipynb)
 
