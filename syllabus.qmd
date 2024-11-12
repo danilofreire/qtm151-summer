@@ -323,7 +323,7 @@ Weekly suggested readings:
 
 ### Wednesday, November 13:
 
-- Lecture 21: [Time Series Analysis](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-21/21-time-series.ipynb).
+- Lecture 21: Time Series Analysis. [Jupyter Notebook](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-21/21-time-series.ipynb). [Lecture Slides](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-21/21-time-series.html).
 - **Assignment 10 due (5%).**
 
 Weekly suggested readings:

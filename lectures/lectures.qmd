@@ -86,7 +86,7 @@ materials available in the [lectures folder in our course repository](https://gi
 - Monday, November 11: Lecture 20: Merging Tables in SQL. [Jupyter Notebook](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-20/20-sql-merging.ipynb). [Lecture Slides](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-20/20-sql-merging.html).
   - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=6e601286-2112-4bdb-b2da-609dce9d8a26&hostId=05eb977d-4f8a-440e-9e45-95212b29d103).
 
-- Wednesday, November 13: [Lecture 21: Time Series Analysis](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-21/21-time-series.ipynb)
+- Wednesday, November 13: Lecture 21: Time Series Analysis. [Jupyter Notebook](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-21/21-time-series.ipynb). [Lecture Slides](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-21/21-time-series.html).
   - **Assignment 10 due (5%)**
 
 - Monday, November 18: [Lecture 22: Quiz 4: Application 6: Practice SQL Queries (6%)](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-22/22-sql-queries.ipynb)
