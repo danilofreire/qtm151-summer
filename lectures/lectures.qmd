@@ -89,7 +89,7 @@ materials available in the [lectures folder in our course repository](https://gi
 - Wednesday, November 13: Lecture 21: Time Series Analysis. [Jupyter Notebook](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-21/21-time-series.ipynb). [Lecture Slides](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-21/21-time-series.html).
   - **Assignment 10 due (5%)**
 
-- Monday, November 18: [Lecture 22: Quiz 4: Application 6: Practice SQL Queries (6%)](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-22/22-sql-queries.ipynb)
+- Monday, November 18: [Lecture 22: Quiz 4: Application 6: Practice SQL Queries (6%)](https://github.com/danilofreire/qtm151-quiz04)
 
 - Wednesday, November 20: [Lecture 23: Pivot Tables](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-23/23-pivot-tables.ipynb)
 

@@ -335,7 +335,7 @@ Weekly suggested readings:
 
 ### Monday, November 18:
 
-- Lecture 22: [**Quiz 4: Application 6: Practice SQL Queries (6%)**](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-22/22-sql-queries.ipynb).
+- Lecture 22: [**Quiz 4: Application 6: Practice SQL Queries (6%)**](https://github.com/danilofreire/qtm151-quiz04).
 
 ### Wednesday, November 20:
 
