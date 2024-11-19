@@ -91,7 +91,7 @@ materials available in the [lectures folder in our course repository](https://gi
 
 - Monday, November 18: [Lecture 22: Quiz 4: Application 6: Practice SQL Queries (6%)](https://github.com/danilofreire/qtm151-quiz04)
 
-- Wednesday, November 20: [Lecture 23: Pivot Tables](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-23/23-pivot-tables.ipynb)
+- Wednesday, November 20: Lecture 23: Pivot Tables. [Jupyter Notebook](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-23/23-pivot-tables.ipynb). [Lecture Slides](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-23/23-pivot-tables.html).
 
 - Monday, November 25: [Lecture 24: Manipulating Text Data](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-24/24-text-data.ipynb)
 
