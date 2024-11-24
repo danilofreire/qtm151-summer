@@ -99,7 +99,7 @@ materials available in the [lectures folder in our course repository](https://gi
 
 - Monday, December 02: [Lecture 25: Quiz 5: Application 8: Time Data, Panel Data, and Plots (6%)](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-25/25-time-panel-plots.ipynb)
 
-- Wednesday, December 04: [Lecture 26: Advanced Plots](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-26/26-advanced-plots.ipynb)
+- Wednesday, December 04: Drop-in session for the final project (no readings).
 
 - Monday, December 09: **Final Project due (20%)**
 

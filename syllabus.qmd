@@ -362,7 +362,7 @@ Weekly suggested readings:
 
 ### Wednesday, December 04:
 
-- Lecture 26: [Advanced Plots](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-26/26-advanced-plots.ipynb).
+- Lecture 26: Drop-in Session for the Final Project. No readings.
 
 Weekly suggested readings:
 
