@@ -352,7 +352,7 @@ Weekly suggested readings:
 
 ### Monday, November 25:
 
-- Lecture 24: [Manipulating Text Data](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-24/24-text-data.ipynb).
+- Lecture 24: Manipulating Text Data. [Jupyter Notebook](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-24/24-text-data.ipynb). [Lecture Slides](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-24/24-text-data.html).
 
 ### Wednesday, November 27: Thanksgiving Break (no class)
 
