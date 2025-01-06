@@ -42,16 +42,35 @@ documentation](https://jupyterlite.readthedocs.io/en/latest/), I made several
 adjustments to ensure functionality. Much of it was trial and error, as the
 documentation is still in development.
 
-I began by creating a `jupyter/` folder within the existing `docs/` directory,
-as I had built the website in the latter. Next, I modified the
-`requirements.txt` file to include all packages used in the notebooks and
-installed them using `pip install -r requirements.txt`. I also created a file
-named `overrides.json` with specific configurations.
+The main issue I had was that I use the `docs/` folder to build the Quarto
+website, and every time I rebuilt the whole website with `quarto render`, the
+`jupyter` folder was deleted. But the commands below solve the issue by
+rebuilding the JupyterLite page after the Quarto website is built:
+
+```bash
+quarto render
+mkdir -p docs/jupyter 
+cp -r jupyter/* docs/jupyter
+cd docs/jupyter
+pip install -r requirements.txt
+jupyter lite build
+mv _output/* ./
+```
+
+JupyterLite should be ready to be published on GitHub Pages. The
+following commands will push the changes to the repository:
+
+```bash
+git add ../../docs/jupyter -f
+git commit -m "update JupyterLite page"
+git push
+```
 
 After that, I executed `jupyter lite build` to generate the Jupyter Lite
 environment. I then transferred the contents of the `_output/` folder to the
 `jupyter/` folder. To finalise the process, I pushed all changes to the
-`gh-pages` branch using `git push origin gh-pages`.
+`gh-pages` branch using `git push origin gh-pages`. The page is available at
+<https://danilofreire.github.io/qtm151/jupyter>.
 
 ## Contributing
 
