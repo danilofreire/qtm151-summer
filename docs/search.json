@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "lectures/LICENSE.html",
-    "href": "lectures/LICENSE.html",
-    "title": "MIT License",
-    "section": "",
-    "text": "Copyright (c) 2024 Danilo Freire\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\n\n\n Back to top"
-  },
-  {
     "objectID": "LICENSE.html",
     "href": "LICENSE.html",
     "title": "MIT License",
@@ -147,6 +140,34 @@
     "text": "Verify the Connection:\n\nPlease click on the “Run” button at the top right corner of the editor to execute the code in your .py file. Select “Run Current File in Dedicated Terminal”\n\n\n\n\nRun Python File in VS Code\n\n\n\nThe output should show the Anaconda Python version and its location.\n\n\n\n\nPython Output in VS Code"
   },
   {
+    "objectID": "lectures.html",
+    "href": "lectures.html",
+    "title": "Lectures",
+    "section": "",
+    "text": "The course covers the following main topics, with corresponding lecture materials available in the lectures folder in our course repository:"
+  },
+  {
+    "objectID": "lectures.html#schedule",
+    "href": "lectures.html#schedule",
+    "title": "Lectures",
+    "section": "Schedule",
+    "text": "Schedule\n\nWednesday, August 28: Lecture 01: Welcome to QTM 151 - Introduction. Please make sure to install the necessary software for the course by following the Course Tutorials: How to Install Anaconda, Jupyter, PostgreSQL, VSCode, and Open a Free Educational Account on GitHub.\nMonday, September 02: Labour Day (no class)\nWednesday, September 04: Lecture 02: GitHub Review, Introduction to Jupyter Notebooks.\n\nExtra lecture: Lecture slides. Video recording.\nAssignment 01: Problem Set 01\n\nMonday, September 09: Lecture 03: Variables and Lists. Jupyter Notebook, Lecture Slides.\n\nKahoot Quiz.\n\nWednesday, September 11: Lecture 04: Mathematical Operations, Arrays, and Random Numbers. Jupyter Notebook, Lecture Slides\n\nKahoot Quiz\nAssignment 01 due (5%)\nAssignment 02: Problem Set 02\n\nMonday, September 16: Lecture 05: Boolean Variables and If/Else Statements. Jupyter Notebook, Lecture Slides.\n\nKahoot Quiz.\n\nWednesday, September 18: Lecture 06: While Loops and For Loops. Jupyter Notebook, Lecture Slides\n\nKahoot Quiz\nAssignment 02 due (5%)\nAssignment 03: Problem Set 03\n\nMonday, September 23: Lecture 07: Applications 1: Simulation Studies. Jupyter Notebook. Lecture Slides.\n\nKahoot Quiz.\n\nWednesday, September 25: Lecture 08: Functions and Arguments. Jupyter Notebook. Lecture Slides.\n\nKahoot Quiz.\nAssignment 03 due (5%)\nAssignment 04: Problem Set 04\n\nMonday, September 30: Lecture 09: Global and Local Variables. Jupyter Notebook. Lecture Slides.\n\nKahoot Quiz\n\nWednesday, October 02: Lecture 10: Quiz 01: Application 02 - Operations over Multiple Datasets (6%)\n\nAssignment 05: Problem Set 05\n\nFriday, October 04: Assignment 04 due (5%)\nMonday, October 07: Lecture 11: Subsetting Data. Jupyter Notebook. Lecture Slides.\nWednesday, October 09: Lecture 12: Application 03: Linear Models. Jupyter Notebook. Lecture Slides.\n\nKahoot Quiz\nAssignment 05 due (5%)\nAssignment 06: Problem Set 06\n\nMonday, October 14: Fall Break (no class)\nWednesday, October 16: Lecture 13: Replacing and Recoding Variables. Jupyter Notebook. Lecture Slides.\n\nAssignment 06 due (5%)\nAssignment 07: Problem Set 07\n\nMonday, October 21: Lecture 14: Quiz 2: Application 4: Random Assignment (6%)\nWednesday, October 23: Lecture 15: Aggregating Data. Jupyter Notebook. Lecture Slides.\n\nAssignment 07 due (5%)\nAssignment 08: Problem Set 08\n\nMonday, October 28: Lecture 16: Merging Data. Jupyter Notebook. Lecture Slides.\n\nKahoot Quiz\n\nWednesday, October 30: Lecture 17: Introduction to SQL. SQL file. Lecture Slides.\n\nKahoot Quiz\nAssignment 09: Problem Set 09\nInstructions for the Final Project: Final Project\n\nFriday, November 01: Assignment 08 due (5%)\nMonday, November 04: Lecture 18: Quiz 3: Application 5: Practicing Chaining (6%)\nWednesday, November 06: Lecture 19: Import SQL Data into Python. Jupyter Notebook. Lecture Slides.\n\nAssignment 09 due (5%)\nAssignment 10: Problem Set 10\n\nMonday, November 11: Lecture 20: Merging Tables in SQL. Jupyter Notebook. Lecture Slides.\n\nKahoot Quiz.\n\nWednesday, November 13: Lecture 21: Time Series Analysis. Jupyter Notebook. Lecture Slides.\n\nAssignment 10 due (5%)\n\nMonday, November 18: Lecture 22: Quiz 4: Application 6: Practice SQL Queries (6%)\nWednesday, November 20: Lecture 23: Pivot Tables. Jupyter Notebook. Lecture Slides.\nMonday, November 25: Lecture 24: Manipulating Text Data. Jupyter Notebook. Lecture Slides.\nWednesday, November 27: Thanksgiving Break (no class)\nMonday, December 02: Lecture 25: Quiz 5: Application 8: Time Data, Panel Data, and Plots (6%)\nWednesday, December 04: Drop-in session for the final project (no readings).\nMonday, December 09: Final Project due (20%)\n\nEach lecture folder contains an HTML file or a Jupyter notebook (.ipynb) with code examples and explanations, along with any additional resources or datasets used in the lecture."
+  },
+  {
+    "objectID": "assignments.html",
+    "href": "assignments.html",
+    "title": "Assignments",
+    "section": "",
+    "text": "The course assessment consists of ten assignments, five in-class quizzes, and a final project. Each assignment is worth 5% of your final grade (50%), while each quiz contributes 6% (30%). The final project accounts for the remaining 20% of your grade. All assignments for the course can be found in this section."
+  },
+  {
+    "objectID": "assignments.html#schedule",
+    "href": "assignments.html#schedule",
+    "title": "Assignments",
+    "section": "Schedule",
+    "text": "Schedule\n\nWednesday, September 04:\n\nAssignment 01: Problem Set 01\n\nWednesday, September 11:\n\nAssignment 01 due (5%)\nAssignment 02: Problem Set 02\n\nWednesday, September 18:\n\nAssignment 02 due (5%)\nAssignment 03: Problem Set 03\n\nWednesday, September 25:\n\nAssignment 03 due (5%)\nAssignment 04: Problem Set 04\n\nWednesday, October 02:\n\nAssignment 05: Problem Set 05\n\nFriday, October 04: Assignment 04 due (5%)\nWednesday, October 09:\n\nAssignment 05 due (5%)\nAssignment 06: Problem Set 06\n\nWednesday, October 16:\n\nAssignment 06 due (5%)\nAssignment 07: Problem Set 07\n\nWednesday, October 23:\n\nAssignment 07 due (5%)\nAssignment 08: Problem Set 08\n\nWednesday, October 30:\n\nAssignment 08 due (5%)\nAssignment 09: Problem Set 09\nInstructions for the Final Project: Final Project\n\nWednesday, November 06:\n\nAssignment 09 due (5%)\nAssignment 10: Problem Set 10\n\nWednesday, November 13:\n\nAssignment 10 due (5%)\n\nMonday, December 09: Final Project due (20%)"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "QTM 151 - Introduction to Statistical Computing II",
@@ -168,39 +189,32 @@
     "text": "Contact Information\n\nName: Danilo Freire\nContact: danilo.freire@emory.edu\nOffice Hours: By appointment at your convenience, please email me to schedule a meeting"
   },
   {
-    "objectID": "index.html#teaching-assistants",
-    "href": "index.html#teaching-assistants",
-    "title": "QTM 151 - Introduction to Statistical Computing II",
-    "section": "Teaching Assistants",
-    "text": "Teaching Assistants\n\nChloe Zhao (2593352), chloe.zhao@emory.edu (undergraduate TA)\nSean Jeon (2550044), sean.jeon@emory.edu (undergraduate TA)\nSatvik Elayavalli (2491008), satvik.elayavalli@emory.edu (undergraduate TA)\nZhengyi Ou (2600960), zhengyi.ou@emory.edu (graduate grader)\nLee (June) Yun (2451522), june.yun@emory.edu (graduate grader)\nChengle (Lydia) Zhang (2462921), lydia.zhang2@emory.edu (graduate grader)"
-  },
-  {
     "objectID": "index.html#repository-structure",
     "href": "index.html#repository-structure",
     "title": "QTM 151 - Introduction to Statistical Computing II",
     "section": "Repository Structure",
-    "text": "Repository Structure\nWhile this website provides an overview of the course materials, the primary source of content is the course’s GitHub repository at https://github.com/danilofreire/qtm151. The repository is organised as follows:\n\nassignments/: Contains all course assignments\nlectures/: Includes lecture materials and code\ntutorials/: Step-by-step guides for the tools used in the course\nsyllabus.pdf: Course syllabus in PDF format\n\nPlease also refer to the Discussion tab on the repository for any questions or comments: https://github.com/danilofreire/qtm151/discussions.\nNote: The links will take you to the respective folders or files in the repository, not on this website. You can find links for the rendered content in the navigation bar above."
+    "text": "Repository Structure\nWhile this website provides an overview of the course materials, the primary source of content is the course’s GitHub repository at https://github.com/danilofreire/qtm151-summer. The repository is organised as follows:\n\nassignments/: Contains all course assignments\nlectures/: Includes lecture materials and code\ntutorials/: Step-by-step guides for the tools used in the course\nsyllabus.pdf: Course syllabus in PDF format\n\nPlease also refer to the Discussion tab on the repository for any questions or comments: https://github.com/danilofreire/qtm151-summer/discussions.\nNote: The links will take you to the respective folders or files in the repository, not on this website. You can find links for the rendered content in the navigation bar above."
   },
   {
     "objectID": "index.html#course-content",
     "href": "index.html#course-content",
     "title": "QTM 151 - Introduction to Statistical Computing II",
     "section": "Course Content",
-    "text": "Course Content\n\nLectures\nWe will meet every Monday and Wednesday from 16:00 to 16:50 in the Anthropology Building, 303. Please check the course schedule for the full list of topics and dates. Lecture materials are available in the lectures folder in the repository.\nEach folder contains an HTML presentation or a Jupyter notebook (.ipynb) with code examples and explanations, along with any additional resources or datasets used in the lecture.\n\n\nAssignments and Quizzes\nThroughout the course, students will complete various assignments and quizzes to reinforce their learning. These will be posted in the assignments/ folder as the course progresses. We will also announce these in class and on Canvas. Please refer to the syllabus or the lecture schedule for due dates and submission guidelines.\n\n\nTutorials\nThe tutorials/ tab contains step-by-step guides for various tools and techniques used in the course. Please have a look at these resources to help you get started.\nPDF versions of the tutorials are also available in the repository."
+    "text": "Course Content\n\nLectures\nWe will meet every weekday from May 13th to May 30th, 2025 from 11:30 AM to 12:50 PM. Our meetings will be online via Zoom. The link is https://emory.zoom.us/j/1234567890 (please check the course website for the correct link). Please check the course schedule for the full list of topics and dates. Lecture materials are available in the lectures folder in the repository.\nEach folder contains an HTML presentation or a Jupyter notebook (.ipynb) with code examples and explanations, along with any additional resources or datasets used in the lecture.\n\n\nAssignments and Quizzes\nThroughout the course, students will complete various assignments and quizzes to reinforce their learning. The assignments will be posted in the assignments/ folder as the course progresses. The quizzes will be available as separate GitHub repositories. We will also announce these in class and on Canvas. Please refer to the syllabus or the lecture schedule for due dates and submission guidelines.\n\n\nTutorials\nThe tutorials/ tab contains step-by-step guides for various tools and techniques used in the course. Please have a look at these resources to help you get started.\nPDF versions of the tutorials are also available in the repository."
   },
   {
     "objectID": "index.html#course-requirements",
     "href": "index.html#course-requirements",
     "title": "QTM 151 - Introduction to Statistical Computing II",
     "section": "Course Requirements",
-    "text": "Course Requirements\n\nPrerequisites: None, only willingness to learn and explore new tools!\nSoftware: Anaconda distribution of Python 3.x, VS Code, PostgreSQL, and GitHub Desktop\nPlease also create an educational account on GitHub"
+    "text": "Course Requirements\n\nPrerequisites: None, only willingness to learn and explore new tools!\nSoftware: Anaconda distribution of Python 3.x, VS Code, SQLite, and GitHub Desktop\nPlease also create an educational account on GitHub"
   },
   {
     "objectID": "index.html#grading",
     "href": "index.html#grading",
     "title": "QTM 151 - Introduction to Statistical Computing II",
     "section": "Grading",
-    "text": "Grading\n\nAssignments: 50%\nClass Quizzes: 30%\nFinal Project: 20%"
+    "text": "Grading\n\nAssignments: 50%\nClass Quizzes: 50%"
   },
   {
     "objectID": "index.html#course-policies-and-expectations",
@@ -236,27 +250,6 @@
     "title": "QTM 151 - Introduction to Statistical Computing II",
     "section": "License",
     "text": "License\nThis repository is licensed under the MIT License. You are free to use, modify, and distribute the materials as needed, with appropriate attribution to the original source.\n\nWe look forward to an engaging and productive semester! Good luck, and happy coding! :smiley:"
-  },
-  {
-    "objectID": "assignments/assignments.html",
-    "href": "assignments/assignments.html",
-    "title": "Assignments",
-    "section": "",
-    "text": "The course assessment consists of ten assignments, five in-class quizzes, and a final project. Each assignment is worth 5% of your final grade (50%), while each quiz contributes 6% (30%). The final project accounts for the remaining 20% of your grade. All assignments for the course can be found in this section."
-  },
-  {
-    "objectID": "assignments/assignments.html#schedule",
-    "href": "assignments/assignments.html#schedule",
-    "title": "Assignments",
-    "section": "Schedule",
-    "text": "Schedule\n\nWednesday, September 04:\n\nAssignment 01: Problem Set 01\n\nWednesday, September 11:\n\nAssignment 01 due (5%)\nAssignment 02: Problem Set 02\n\nWednesday, September 18:\n\nAssignment 02 due (5%)\nAssignment 03: Problem Set 03\n\nWednesday, September 25:\n\nAssignment 03 due (5%)\nAssignment 04: Problem Set 04\n\nWednesday, October 02:\n\nAssignment 05: Problem Set 05\n\nFriday, October 04: Assignment 04 due (5%)\nWednesday, October 09:\n\nAssignment 05 due (5%)\nAssignment 06: Problem Set 06\n\nWednesday, October 16:\n\nAssignment 06 due (5%)\nAssignment 07: Problem Set 07\n\nWednesday, October 23:\n\nAssignment 07 due (5%)\nAssignment 08: Problem Set 08\n\nWednesday, October 30:\n\nAssignment 08 due (5%)\nAssignment 09: Problem Set 09\nInstructions for the Final Project: Final Project\n\nWednesday, November 06:\n\nAssignment 09 due (5%)\nAssignment 10: Problem Set 10\n\nWednesday, November 13:\n\nAssignment 10 due (5%)\n\nMonday, December 09: Final Project due (20%)"
-  },
-  {
-    "objectID": "assignments/LICENSE.html",
-    "href": "assignments/LICENSE.html",
-    "title": "MIT License",
-    "section": "",
-    "text": "Copyright (c) 2024 Danilo Freire\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\n\n\n Back to top"
   },
   {
     "objectID": "tutorials/python-postgresql-example.html",
@@ -411,19 +404,5 @@
     "title": "QTM 151 - Introduction to Statistical Computing II",
     "section": "Additional Resources",
     "text": "Additional Resources\n\nPython Documentation\nPandas Documentation\nPostgreSQL Documentation\nSQLBolt\nDataLemur for SQL interview practice\nGithub Guides"
-  },
-  {
-    "objectID": "lectures/lectures.html",
-    "href": "lectures/lectures.html",
-    "title": "Lectures",
-    "section": "",
-    "text": "The course covers the following main topics, with corresponding lecture materials available in the lectures folder in our course repository:"
-  },
-  {
-    "objectID": "lectures/lectures.html#schedule",
-    "href": "lectures/lectures.html#schedule",
-    "title": "Lectures",
-    "section": "Schedule",
-    "text": "Schedule\n\nWednesday, August 28: Lecture 01: Welcome to QTM 151 - Introduction. Please make sure to install the necessary software for the course by following the Course Tutorials: How to Install Anaconda, Jupyter, PostgreSQL, VSCode, and Open a Free Educational Account on GitHub.\nMonday, September 02: Labour Day (no class)\nWednesday, September 04: Lecture 02: GitHub Review, Introduction to Jupyter Notebooks.\n\nExtra lecture: Lecture slides. Video recording.\nAssignment 01: Problem Set 01\n\nMonday, September 09: Lecture 03: Variables and Lists. Jupyter Notebook, Lecture Slides.\n\nKahoot Quiz.\n\nWednesday, September 11: Lecture 04: Mathematical Operations, Arrays, and Random Numbers. Jupyter Notebook, Lecture Slides\n\nKahoot Quiz\nAssignment 01 due (5%)\nAssignment 02: Problem Set 02\n\nMonday, September 16: Lecture 05: Boolean Variables and If/Else Statements. Jupyter Notebook, Lecture Slides.\n\nKahoot Quiz.\n\nWednesday, September 18: Lecture 06: While Loops and For Loops. Jupyter Notebook, Lecture Slides\n\nKahoot Quiz\nAssignment 02 due (5%)\nAssignment 03: Problem Set 03\n\nMonday, September 23: Lecture 07: Applications 1: Simulation Studies. Jupyter Notebook. Lecture Slides.\n\nKahoot Quiz.\n\nWednesday, September 25: Lecture 08: Functions and Arguments. Jupyter Notebook. Lecture Slides.\n\nKahoot Quiz.\nAssignment 03 due (5%)\nAssignment 04: Problem Set 04\n\nMonday, September 30: Lecture 09: Global and Local Variables. Jupyter Notebook. Lecture Slides.\n\nKahoot Quiz\n\nWednesday, October 02: Lecture 10: Quiz 01: Application 02 - Operations over Multiple Datasets (6%)\n\nAssignment 05: Problem Set 05\n\nFriday, October 04: Assignment 04 due (5%)\nMonday, October 07: Lecture 11: Subsetting Data. Jupyter Notebook. Lecture Slides.\nWednesday, October 09: Lecture 12: Application 03: Linear Models. Jupyter Notebook. Lecture Slides.\n\nKahoot Quiz\nAssignment 05 due (5%)\nAssignment 06: Problem Set 06\n\nMonday, October 14: Fall Break (no class)\nWednesday, October 16: Lecture 13: Replacing and Recoding Variables. Jupyter Notebook. Lecture Slides.\n\nAssignment 06 due (5%)\nAssignment 07: Problem Set 07\n\nMonday, October 21: Lecture 14: Quiz 2: Application 4: Random Assignment (6%)\nWednesday, October 23: Lecture 15: Aggregating Data. Jupyter Notebook. Lecture Slides.\n\nAssignment 07 due (5%)\nAssignment 08: Problem Set 08\n\nMonday, October 28: Lecture 16: Merging Data. Jupyter Notebook. Lecture Slides.\n\nKahoot Quiz\n\nWednesday, October 30: Lecture 17: Introduction to SQL. SQL file. Lecture Slides.\n\nKahoot Quiz\nAssignment 09: Problem Set 09\nInstructions for the Final Project: Final Project\n\nFriday, November 01: Assignment 08 due (5%)\nMonday, November 04: Lecture 18: Quiz 3: Application 5: Practicing Chaining (6%)\nWednesday, November 06: Lecture 19: Import SQL Data into Python. Jupyter Notebook. Lecture Slides.\n\nAssignment 09 due (5%)\nAssignment 10: Problem Set 10\n\nMonday, November 11: Lecture 20: Merging Tables in SQL. Jupyter Notebook. Lecture Slides.\n\nKahoot Quiz.\n\nWednesday, November 13: Lecture 21: Time Series Analysis. Jupyter Notebook. Lecture Slides.\n\nAssignment 10 due (5%)\n\nMonday, November 18: Lecture 22: Quiz 4: Application 6: Practice SQL Queries (6%)\nWednesday, November 20: Lecture 23: Pivot Tables. Jupyter Notebook. Lecture Slides.\nMonday, November 25: Lecture 24: Manipulating Text Data. Jupyter Notebook. Lecture Slides.\nWednesday, November 27: Thanksgiving Break (no class)\nMonday, December 02: Lecture 25: Quiz 5: Application 8: Time Data, Panel Data, and Plots (6%)\nWednesday, December 04: Drop-in session for the final project (no readings).\nMonday, December 09: Final Project due (20%)\n\nEach lecture folder contains an HTML file or a Jupyter notebook (.ipynb) with code examples and explanations, along with any additional resources or datasets used in the lecture."
   }
 ]
