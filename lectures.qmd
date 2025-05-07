@@ -12,6 +12,6 @@ materials available in the [lectures folder in our course repository](https://gi
 
 - Wednesday, May 14: [Lecture 02: Jupyter Notebooks, Packages, Variables, and Lists](https://raw.githack.com/danilofreire/qtm151-summer/main/lectures/lecture-02/02-jupyter-variables.html).
 
-- Thursday, May 15: [Lecture 03: Data Types, Dictionaries, and Functions](https://raw.githack.com/danilofreire/qtm151-summer/main/lectures/lecture-03/03-data-types.html).
+- Thursday, May 15: [Lecture 03: Maths Operations, Arrays, and Boolean Logic](https://raw.githack.com/danilofreire/qtm151-summer/main/lectures/lecture-03/03-maths-boolean.html).
 
 Each lecture folder contains an HTML file or a Jupyter notebook (`.ipynb`) with code examples and explanations, along with any additional resources or datasets used in the lecture.
