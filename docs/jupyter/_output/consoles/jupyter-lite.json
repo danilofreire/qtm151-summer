@@ -1,0 +1,11 @@
+{
+  "jupyter-config-data": {
+    "appUrl": "/consoles",
+    "faviconUrl": "./favicon.ico",
+    "fullStaticUrl": "../build",
+    "notebookPage": "consoles",
+    "settingsUrl": "../build/schemas",
+    "themesUrl": "./build/themes"
+  },
+  "jupyter-lite-schema-version": 0
+}
