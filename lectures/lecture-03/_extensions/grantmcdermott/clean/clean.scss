@@ -19,7 +19,7 @@ $presentation-heading-font: "Noto Sans", sans-serif !default;
 // Include Fira Code for monospace font
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
 $font-family-monospace: "Fira Code", monospace !default;
-$monospace-font-size: 0.9em; // Reduce monospace font size
+$monospace-font-size: 1em; // Reduce monospace font size
 
 $presentation-heading-color: $jet !default;
 $presentation-heading-font-weight: lighter;
@@ -46,8 +46,8 @@ $selection-bg: #2d4563 !default;
   margin-top: 1.25em;
 }
 
-.reveal .slides section code {
-  font-size: 0.95em;
+.reveal .slides section pre code {
+  font-size:1.3em;
   color: $accent;
 }
 

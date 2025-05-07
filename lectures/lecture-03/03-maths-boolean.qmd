@@ -1,0 +1,756 @@
+---
+title: QTM 151 - Introduction to Statistical Computing II
+subtitle: Lecture 03 - Maths Operations, Arrays, and Boolean Logic
+author:
+  - name: Danilo Freire
+    orcid: 0000-0002-4712-6810
+    email: danilo.freire@emory.edu
+    affiliations: Emory University
+format:
+  clean-revealjs:
+    self-contained: true
+    footer: "[Maths with NumPy](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-04/04-maths-arrays-random.html)"
+transition: slide
+transition-speed: default
+scrollable: true
+engine: jupyter
+editor:
+  render-on-save: true
+---
+
+# Welcome to another lecture! 😊 {background-color="#2d4563"}
+
+# Brief recap 📚 {background-color="#2d4563"}
+
+## Today's agenda 
+### Introducing NumPy, `random`, and Boolean logic
+
+:::{style="margin-top: 30px; font-size: 22px;"}
+:::{.columns}
+:::{.column width="50%"}
+- First, a brief overview of [NumPy](https://numpy.org)
+- [NumPy](https://numpy.org) (short for "Numerical Python") is a library that provides support for large, multi-dimensional arrays and matrices
+- [An array](https://numpy.org/doc/stable/user/absolute_beginners.html) is [a collection of numbers that are arranged in a regular grid]{.alert} (vector, matrix, high-dimensional array - tensors)
+- In simpler terms, NumPy arrays are a "super-powered list of numbers"
+- NumPy is the backbone of many other libraries in Python, such as `pandas` and `scikit-learn`
+- We will also learn about the `random` module, which generates random numbers
+:::
+
+:::{.column width="50%"}
+- Then, we will learn about [Boolean logic](https://en.wikipedia.org/wiki/Boolean_data_type)
+- Discuss the importance of [conditional statements in programming](https://en.wikipedia.org/wiki/Conditional_(computer_programming))
+- Understand how to use [conditional statements in Python](https://www.w3schools.com/python/python_conditions.asp)
+- Explore the `if`, `elif`, and `else` statements
+- Practice writing conditional statements in Python
+
+:::{style="text-align: center;"}
+![](figures/boolean02.png){width="90%"}
+:::
+:::
+:::
+:::
+
+# Let's get started! 🚀 {background-color="#2d4563"}
+
+## Importing NumPy and Matplotlib
+
+:::{style="margin-top: 40px; font-size: 26px;"}
+:::{.columns}
+:::{.column width="50%"}
+- As usual, we start by importing the libraries we will use
+- NumPy has several functions
+- For instance, $ln(x), e^x, sin(x), cos(x), \sqrt{x}$
+- Remember that exponentiation in Python is done using `**`, not `^`
+
+<br>
+
+- You can check a list of NumPy functions [here](https://numpy.org/doc/stable/reference/routines.math.html) (there are many!)
+:::
+
+:::{.column width="50%"}
+```{python}
+#| echo: true
+#| eval: true
+# Importing packages
+import numpy as np
+import matplotlib.pyplot as plt
+
+# log(x): logarithm with base "e"
+# exp(x): Euler constant power of "x"
+# sin(x): sine of x
+# cos(x): cosine of x
+# We're substituting x = 1
+print(np.log(1))
+print(np.exp(1))
+print(np.sin(1))
+print(np.cos(1))
+print(np.sqrt(1))
+```
+:::
+::: 
+:::
+
+## Try it yourself! 🧠 {#sec-functions}
+
+:::{style="margin-top: 40px; font-size: 26px;"}
+- Create a new variable, $x = 5$
+- Compute $\pi x^2$
+- Compute $\frac{1}{\sqrt{2\pi}}e^{-x^2}$
+  - This is the probability density function of the standard normal distribution (don't worry if you don't know what it is yet! 🤓)
+
+- Don't forget how to exponentiate in Python 😉 
+
+```{python}
+#| echo: true
+#| eval: true
+x = 10
+x ** 5
+
+# Not x^5
+``` 
+- [[Appendix 01]{.button}](#sec-appendix-01)
+:::
+
+# Vector arrays with NumPy 📊 {background-color="#2d4563"}
+
+## Creating arrays from lists
+
+:::{style="margin-top: 40px; font-size: 32px;"}
+- NumPy arrays are created using the `np.array()` function
+- We can create arrays from lists
+- We can also create arrays with a sequence of numbers using `np.arange()`
+- We can create arrays with zeros or ones using `np.zeros()` and `np.ones()`
+- And we're going to learn all of this in this lecture! 🤓
+:::
+
+## Creating arrays from lists
+
+:::{style="margin-top: 40px; font-size: 23px;"}
+:::{.columns}
+:::{.column width="50%"}
+- Create an array from a list
+
+- $a = \begin{pmatrix} 1 \\ 2 \\ 3 \end{pmatrix}$
+- $b = \begin{pmatrix} 0 \\ 1 \\ 0\end{pmatrix}$
+- $c = \begin{pmatrix} 10 \\ 100 \\ 1000 \\ 2000 \\ 5000 \end{pmatrix}$
+- $d = \begin{pmatrix} 4 \\ 2 \end{pmatrix}$
+:::
+
+:::{.column width="50%"}
+```{python}
+#| echo: true
+#| eval: true
+vec_a  = np.array([1,2,3])
+vec_b  = np.array([0,1,0])
+vec_c  = np.array([10,100,1000,2000,5000])
+vec_d  = np.array([4,2])
+```
+:::
+:::
+:::
+
+## Accessing an element of an array
+
+:::{style="margin-top: 40px; font-size: 26px;"}
+- We can access elements of an array using square brackets `[]`
+- Remember that Python is zero-indexed
+  
+- Access the first and the third element of $a$
+```{python}
+#| echo: true
+#| eval: true
+print(vec_a)
+print(vec_a[0])
+print(vec_a[2])
+``` 
+:::
+
+## Operations with a single array and a scalar
+
+:::{style="margin-top: 40px; font-size: 26px;"}
+:::{.columns}
+:::{.column width="50%"}
+- We can perform operations with a single array and a scalar
+- For instance, we can add or multiply a scalar to an array
+
+<br>
+
+- Add 2 to each element of $a$
+- $a + 2 = \begin{pmatrix} a_1 + 2 \\ a_2 + 2 \\ a_3 + 2 \end{pmatrix}$
+:::
+
+:::{.column width="50%"}
+```{python}
+#| echo: true
+#| eval: true
+# Print the original array
+print(vec_a)
+
+# Adding 2 to each element of a
+print(vec_a + 2)
+```
+
+- A scalar refers to either an int or float
+- We can do many common operations with 
+
+```{python}
+#| echo: true
+#| eval: true 
+print(vec_a * 2)
+print(vec_a / 2)
+print(vec_a + 2)
+print(vec_a ** 2)
+```
+:::
+:::
+:::
+
+## Element-by-element addition between two arrays of the same size
+
+:::{style="margin-top: 30px; font-size: 26px;"}
+$a + b = \begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix} +$
+$\begin{pmatrix} b_1 \\ b_2 \\ b_3 \end{pmatrix} =$
+$\begin{pmatrix} a_1 + b_1 \\ a_2 + b_2 \\ a_3 + b_3 \end{pmatrix}$
+
+```{python}
+#| echo: true
+#| eval: true 
+print(vec_a)
+print(vec_b)
+
+# When you add two arrays of the same size,
+# Python adds the individual elements in each position
+print(vec_a + vec_b)
+```
+:::
+
+## Element-by-element multiplication between two arrays of the same size
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+$a * b = \begin{pmatrix} a_1 * b_1 \\ a_2 * b_2 \\ a_3 * b_3 \end{pmatrix}$
+
+```{python}
+#| echo: true
+#| eval: true
+print(vec_a)
+print(vec_b)
+
+# When you multiply two arrays of the same size,
+# Python multiplies the individual elements in each position
+print(vec_a * vec_b)
+
+# We can do other similar element-by-element operations
+# such as subtraction, and division.
+print(vec_a - vec_b)
+print(vec_a / vec_b)
+```
+:::
+
+# Summary statistics 📊 {background-color="#2d4563"}
+
+## Summary statistics of an array
+
+:::{style="margin-top: 40px; font-size: 26px;"}
+- NumPy provides several functions to compute summary statistics of an array
+- For instance, we can compute the mean, median, standard deviation, variance, minimum, and maximum
+- We can also compute the sum, product, and cumulative sum
+
+<br>
+
+```{python}
+#| echo: true
+#| eval: true
+print(np.mean(vec_a))
+print(np.std(vec_a))
+print(np.min(vec_a))
+print(np.median(vec_a))
+print(np.max(vec_a))
+```
+:::
+
+## Try it yourself! 🧠 {#sec-summary} 
+
+:::{style="margin-top: 40px; font-size: 26px;"}
+- Compute the mean of:
+
+$e = \begin{pmatrix} 10 \\ 8 \\ 15 \\ 0 \\ 24 \end{pmatrix}$
+
+- [[Appendix 02]{.button}](#sec-appendix-02)
+:::
+
+## Common pitfall
+### Make sure that the arrays are of the same size!
+
+:::{style="margin-top: 40px; font-size: 24px;"}
+```{python}
+#| echo: true
+#| eval: true
+print(vec_a)
+print(vec_c)
+
+# Print the shape of the arrays
+print(vec_a.shape)
+print(vec_c.shape)
+```
+
+```{python}
+#| echo: true
+#| eval: false 
+# When you add two arrays of different sizes,
+# Python will raise an error
+print(vec_a + vec_c)
+```
+
+```{verbatim}
+Traceback (most recent call last):
+  File "<python-input-10>", line 1, in <module>
+    print(vec_a + vec_c)
+          ~~~~~~^~~~~~~
+ValueError: operands could not be broadcast together with shapes (3,) (5,) 
+>>> 
+```
+:::
+
+# Questions? {background-color="#2d4563"}
+
+# Random numbers with Python 🎲 {background-color="#2d4563"}
+
+## Generating random numbers
+
+:::{style="margin-top: 40px; font-size: 24px;"}
+:::{.columns}
+:::{.column width="40%"}
+- Why randomness?
+  - Simulate different scenarios: high risk or low risk
+  - Study properties of a complex system and/or estimator
+  - In medicine, randomly assign subjects to treatment or control
+  - In finance, simulate stock prices
+  - In sports, simulate outcomes of games, etc
+:::
+
+:::{.column width="60%"}
+- This code creates a vector of random variables generated from a normal distribution 
+- It has the mean "loc" (location) and standard deviation "scale"
+- The number of distinct variabels is "size"
+
+```{python}
+#| echo: true
+#| eval: true
+
+# Generate 10 random variables 
+# from a normal distribution
+# with mean = 0 and sd = 1
+randomvar_a = np.random.normal(loc=0, scale=1, size=10)
+print(randomvar_a)
+```
+:::
+:::
+:::
+
+## Random numbers differ every time!
+
+:::{style="margin-top: 40px; font-size: 30px;"}
+- Avoid this problem by drawing from a "pregenerated" set.
+- This is called a seed, and it is set using `np.random.seed()`
+- This allows for [reproducibility](https://en.wikipedia.org/wiki/Reproducibility) of results
+
+```{python}
+#| echo: true
+#| eval: true
+np.random.seed(151)
+
+random_var_b = np.random.normal(loc=0, scale=1, size=10)
+print(random_var_b)
+```
+:::
+
+## Compute a histogram with the results
+
+:::{style="margin-top: 40px; font-size: 26px;"}
+- We can use the `plt.hist()` function to compute a histogram
+
+```{python}
+#| echo: true
+#| eval: true
+
+# Create a histogram of the random variable
+randomvar_x = np.random.normal(loc=0, scale=1, size=1000)
+
+plt.hist(x = randomvar_x)
+plt.xlabel("Variable a")
+plt.ylabel("Frequency")
+plt.title("Histogram of random variable a")
+plt.show()
+```
+:::
+
+## Try it yourself! {#sec-histogram}
+
+:::{style="margin-top: 40px; font-size: 26px;"}
+- Try this again with $size = 100, 1000, 10000$ and see how the histogram changes 
+:::
+
+# Boolean logic 🧠 {background-color="#2d4563"}
+
+## Boolean logic
+### A bit of history
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+:::{.columns}
+:::{.column width="50%"}
+- Named after [George Boole](https://en.wikipedia.org/wiki/George_Boole), a British mathematician and philosopher
+- [Boole's work on logic](https://en.wikipedia.org/wiki/Boolean_algebra) laid the foundation for modern computer science
+- Boolean logic is a branch of algebra that deals with [true and false values](https://en.wikipedia.org/wiki/Boolean_data_type)
+- It is useful for computer programming because it is based on [binary](https://en.wikipedia.org/wiki/Binary_number) values
+- In Python, Boolean values are `True` and `False`
+- We use them to [make decisions]{.alert} in our code
+:::
+
+:::{.column width="50%"}
+![](figures/boole.jpg){width="100%"}
+:::
+:::
+:::
+
+# Testing expressions with text 🐍 {background-color="#2d4563"} 
+
+## True and False values
+
+:::{style="margin-top: 30px; font-size: 22px;"}
+- We can test whether two values are equal using the `==` operator ([two equal signs]{.alert})
+- For example, `5 == 5` returns `True`
+- We can also test whether two values are not equal using the `!=` operator ([exclamation mark followed by an equal sign]{.alert})
+- Let's see how this works in Python
+
+- First, let's load the `matplotlib` and `numpy` libraries
+
+```{python}
+#| echo: true
+#| eval: true 
+import matplotlib.pyplot as plt
+import numpy as np
+
+# You can compare two strings by using a double "equal sign"
+# This can be useful if you're trying to evaluate whether data was entered correctly
+
+"Is this the real life?" == "is this just fantasy?" 
+```
+
+Note: the [order of the strings matter]{.alert}!
+
+```{python}
+#| echo: true
+#| eval: true
+"ab" == "ba" 
+```
+:::
+
+## True and False values
+
+:::{style="margin-top: 30px; font-size: 26px;"}
+- Equality of strings is most useful when you're comparing an unknown variable to a benchmark 
+
+- Below, try switching the value of `any_questions`
+
+```{python}
+#| echo: true
+#| eval: true 
+any_questions = "no"
+print(any_questions == "no")
+```
+
+:::{.fragment .fade-in}
+```{python}
+#| echo: true
+#| eval: true
+any_questions = "yes" 
+print(any_questions == "no")
+```
+:::
+:::
+
+## Test for the presence of keywords in a sentence (`in` operator)
+
+:::{style="margin-top: 30px; font-size: 23px;"}
+- We can test whether a keyword is present in a sentence or a list using the `in` operator
+- For example, `"apple" in "I like apples"` returns `True`
+- Let's see how this works in Python
+
+:::{.fragment .fade-in}
+```{python}
+#| echo: true
+#| eval: true
+"apple" in "I like apples"
+```
+:::
+
+:::{.fragment .fade-in}
+```{python}
+#| echo: true
+#| eval: true
+keyword = "economic"
+sentence = "The Federal Reserve makes forecasts about many economic outcomes"
+
+keyword in sentence
+
+# Try changing the keyword!
+```
+:::
+
+:::{.fragment .fade-in}
+- Now, let's test whether a keyword is present in a list
+```{python}
+#| echo: true
+#| eval: true
+current_month = "September"
+list_summer_months = ["June","July","August"]
+
+print(current_month in list_summer_months)
+print('June' in list_summer_months)
+```
+:::
+:::
+
+# Testing expressions with numbers 🐍 {background-color="#2d4563"}
+
+## Testing expressions with numbers
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+- Tests with numbers
+  - Strictly less than (<), less than or equal (<=)
+  - Equal (==)
+  - Strictly more than (>), greater than or equal to (>=)
+
+- Let's see how this works in Python
+
+```{python}
+#| echo: true
+#| eval: true
+x = 5
+
+print(x < 5)
+print(x <= 5)
+print(x == 5)
+print(x >= 5)
+print(x > 5)
+```
+:::
+
+## Validate a data type 
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+- We can test whether a variable is of a certain data type using the `isinstance()` function
+- For example, `isinstance(5, int)` returns `True`
+- Other data types include `float`, `str`, `list`, `tuple`, `dict`, `set`, `bool`
+
+```{python}
+#| echo: true
+#| eval: true
+y = 10
+
+print(isinstance(y,int))
+print(isinstance(y,float))
+print(isinstance(y,str))
+```
+:::
+
+## Equality of vectors {#sec:question02}
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+- We can test whether two vectors are equal using the `==` operator
+- For example, `[1,2,3] == [1,2,3]` returns `True`
+- Please note that the equality of vectors is [done element-wise](https://numpy.org/doc/stable/reference/generated/numpy.array_equal.html)
+
+```{python}
+#| echo: true
+#| eval: true
+vec_a = np.array([1,2,3])
+vec_b = np.array([1,2,4])
+
+vec_a == vec_b
+```
+:::
+
+## Try it out! 🧠
+
+:::{style="margin-top: 30px; font-size: 26px;"}
+- Define $x= -1$. Check whether $x^2 + 2x + 1 = 0$ is true 
+  - Please remember that $x^2$ is written as `x**2` in Python
+  - Please note the difference between `==` and `=`
+- [[Appendix 03]{.button}](#sec:appendix03)
+:::
+
+# Testing multiple conditions 🐍 {background-color="#2d4563"}
+
+## Testing multiple conditions
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+:::{.columns}
+:::{.column width="50%"}
+- We can test multiple conditions using the `and` and `or` operators
+- The `and` operator returns `True` if both conditions are `True`
+- The `or` operator returns `True` if at least one condition is `True`
+:::
+
+:::{.column width="50%"}
+![](figures/boolean01.jpg){width="100%"}
+:::
+:::
+:::
+
+## `not`: the negation operator
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+:::{.columns}
+:::{.column width="50%"}
+- We can negate a condition using the `not` operator
+- The `not` operator returns `True` if the condition is `False` and vice versa
+  - Yes, it's a bit confusing at first, but it's intuitive once you see it in action
+- For instance, imagine that you want to know whether someone can vote in the US 
+  - Here let's assume the person is a national and we only care about age
+  - The person can vote if they are at least 18 years old
+:::
+
+:::{.column width="50%"}
+```{python}
+#| echo: true
+#| eval: true
+age  = 22
+
+# Can this person legally vote in the US?
+not (age < 18)
+```
+
+- The `not` operator can be separated by a space and parentheses are not necessary
+- But parentheses can be helpful to organize your code logically
+
+```{python}
+#| echo: true
+#| eval: true
+not age < 18
+```
+:::
+:::
+:::
+
+## Condition A and B need to be satisfied: `&` operator
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+- We can test multiple conditions using the `&` operator
+- The `&` operator returns `True` if both conditions are `True`
+- For example, `5 > 3 & 5 < 10` returns `True`
+
+```{python}
+#| echo: true
+#| eval: true
+# We use the "&" symbol to separate "AND" conditions
+age = 31
+
+# Is this age between 20 and 30 (including these ages)?
+( age >= 20 ) & (age <= 30)
+```
+:::
+
+## Condition A or B needs to be satisfied: `|` operator
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+- To test whether at least one condition is `True`, we use the `|` operator
+- For example, `5 > 3 | 5 > 10` returns `True`
+
+```{python}
+#| echo: true
+#| eval: true
+# We use the "|" symbol to separate "OR" conditions.
+age = 31
+
+# Is this age higher than 20 or lower than 30?
+( age >= 20 ) | (age <= 30)
+```
+
+```{python}
+#| echo: true
+#| eval: true
+# Another example
+student_status = "freshman" 
+
+# Is the student in the first two years of undergrad?
+(student_status == "freshman") | (student_status == "sophomore")
+```
+:::
+
+## Try it out! 🚀 {#sec:question03}
+
+:::{style="margin-top: 30px; font-size: 30px;"}
+- Now, let's test whether you can identify the correct expression
+
+:::{style="margin-top: 30px;"}
+- Write code that checks the following conditions:
+  - Whether age is strictly less than 20, or greater than 30
+  - Not in the age range 25-27 
+- [[Appendix 03]{.button}](#sec:appendix03)
+:::
+:::
+
+# And that's all for today! 🥳 {background-color="#2d4563"}
+
+# Thank you very much and see you next time! 🙏 {background-color="#2d4563"}
+
+## Appendix 01 {#sec-appendix-01}
+### Mathematical functions in NumPy
+
+:::{style="margin-top: 40px; font-size: 26px;"}
+- Create a new variable, $x = 5$
+- Compute $\pi x^2$
+- Compute $\frac{1}{\sqrt{2\pi}}e^{-x^2}$
+ 
+```{python}
+#| echo: true
+#| eval: true
+x = 5
+print(np.pi * x ** 2)
+print(1 / np.sqrt(2 * np.pi) * np.exp(-x ** 2))
+```
+
+[[Back to the main text]{.button}](#sec-functions)
+:::
+
+## Appendix 02 {#sec-appendix-02}
+### Summary statistics of an array
+
+:::{style="margin-top: 40px; font-size: 26px;"}
+- Compute the mean of
+- $e = \begin{pmatrix} 10 \\ 8 \\ 15 \\ 0 \\ 24 \end{pmatrix}$
+
+```{python}
+#| echo: true
+#| eval: true
+vec_e = np.array([10, 8, 15, 0, 24])
+print(np.mean(vec_e))
+```
+
+[[Back to the main text]{.button}](#sec-summary)
+:::
+
+## Appendix 03 {#sec:appendix03}
+
+:::{style="margin-top: 30px; font-size: 30px;"}
+- Whether age (`age = 31`) is strictly less than 20, or greater than 30
+- Not in the age range 25-27
+
+```{python}
+#| echo: true
+#| eval: true
+age = 31
+
+(age < 20) | (age > 30) 
+```
+```{python}
+#| echo: true
+#| eval: true
+(age < 25) | (age > 27)
+```
+
+The second answer uses `|` because `&` evaluates both statements at the same time, and [one cannot be less than 25 and greater than 27 at the same time](https://en.wikipedia.org/wiki/Empty_set). Therefore, it must be `|`.
+
+[[Back to the main text]{.button}](#sec:question03)
+:::
