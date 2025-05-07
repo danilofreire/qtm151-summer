@@ -14,4 +14,6 @@ materials available in the [lectures folder in our course repository](https://gi
 
 - Thursday, May 15: [Lecture 03: Maths Operations, Arrays, and Boolean Logic](https://raw.githack.com/danilofreire/qtm151-summer/main/lectures/lecture-03/03-maths-boolean.html).
 
+- Friday, May 16: [Quiz 01 - Based on Lectures 01-03](https://github.com/danilofreire/qtm151-summer-quiz01/). The repository contains the quiz questions and will be made online on the day of the quiz.
+
 Each lecture folder contains an HTML file or a Jupyter notebook (`.ipynb`) with code examples and explanations, along with any additional resources or datasets used in the lecture.

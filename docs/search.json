@@ -151,7 +151,7 @@
     "href": "lectures.html#schedule",
     "title": "Lectures",
     "section": "Schedule",
-    "text": "Schedule\n\nTuesday, May 13: Lecture 01: Welcome to QTM 151 - Introduction and Course Overview. Please make sure to install the necessary software for the course by following the Course Tutorials: How to Install Anaconda, Jupyter, PostgreSQL, VSCode, and Open a Free Educational Account on GitHub.\nWednesday, May 14: Lecture 02: Jupyter Notebooks, Packages, Variables, and Lists.\nThursday, May 15: Lecture 03: Maths Operations, Arrays, and Boolean Logic.\n\nEach lecture folder contains an HTML file or a Jupyter notebook (.ipynb) with code examples and explanations, along with any additional resources or datasets used in the lecture."
+    "text": "Schedule\n\nTuesday, May 13: Lecture 01: Welcome to QTM 151 - Introduction and Course Overview. Please make sure to install the necessary software for the course by following the Course Tutorials: How to Install Anaconda, Jupyter, PostgreSQL, VSCode, and Open a Free Educational Account on GitHub.\nWednesday, May 14: Lecture 02: Jupyter Notebooks, Packages, Variables, and Lists.\nThursday, May 15: Lecture 03: Maths Operations, Arrays, and Boolean Logic.\nFriday, May 16: Quiz 01 - Based on Lectures 01-03. The repository contains the quiz questions and will be made online on the day of the quiz.\n\nEach lecture folder contains an HTML file or a Jupyter notebook (.ipynb) with code examples and explanations, along with any additional resources or datasets used in the lecture."
   },
   {
     "objectID": "assignments.html",
