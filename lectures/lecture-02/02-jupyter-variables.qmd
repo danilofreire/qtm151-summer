@@ -1,0 +1,783 @@
+---
+title: QTM 151 - Introduction to Statistical Computing II
+subtitle: Jupyter Notebooks, Packages, Variables, and Lists
+author:
+  - name: Danilo Freire
+    orcid: 0000-0002-4712-6810
+    email: danilo.freire@emory.edu
+    affiliations: Emory University
+format:
+  clean-revealjs:
+    self-contained: true
+    footer: "Packages, Variables, Lists"
+    slide-number: true
+transition: slide
+transition-speed: default
+scrollable: true
+engine: jupyter
+editor:
+  render-on-save: true
+---
+
+# Nice to see you all again! 😊 {background-color="#2d4563"}
+
+## Today's agenda 
+### Installing packages and working with variables and lists
+
+:::{style="margin-top: 30px; font-size: 26px;"}
+:::{.columns}
+:::{.column width="50%"}
+- Python is a versatile programming language, but [it doesn't come with all the tools we need]{.alert}
+- [Packages]{.alert} are collections of functions that [extend Python's capabilities]{.alert}
+- There are thousands of packages available, and we can install them using [conda install]{.alert}
+:::
+
+:::{.column width="50%"}
+- We will also learn about [variables]{.alert} and [lists]{.alert}
+- [Variables are containers]{.alert} that store data values
+- [Lists are collections of items]{.alert} that can be of different types
+- Today, we will learn how to [create, access, and modify variables and lists]{.alert}
+:::
+:::
+
+:::{style="text-align: center; font-size: 20px; margin-top: -60px;"}
+![](figures/project_flow.png){width="60%"}
+:::
+:::
+
+# Python environments {background-color="#2d4563"}
+
+## What is a Python environment?
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+:::{.columns}
+:::{.column width="50%"}
+- A [Python environment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) is a self-contained directory that contains a specific Python interpreter and a collection of packages
+- It allows you to manage dependencies and avoid conflicts between different projects
+- You can create multiple environments with different versions of Python and packages
+- Each environment is isolated from others, ensuring that changes in one environment do not affect others
+- You can create, activate, and deactivate environments using the command line or Anaconda Navigator
+- The default environment is called `base`, and it is created when you install Anaconda
+:::
+
+:::{.column width="50%"}
+:::{style="text-align: center; margin-top: -30px;"}
+![](figures/env.jpg){width="100%"}
+:::
+:::
+:::
+:::
+
+## {background-image="figures/anaconda_navigator_installed.png" background-size="100%"}
+
+## Creating and managing environments with the command line
+
+:::{style="margin-top: 30px; font-size: 22px;"}
+:::{.columns}
+:::{.column width="50%"}
+- For this course, we will use the `base` environment
+- But you are free to create your own environments if you want!
+- There are two ways to create environments:
+  - Using the command line: `conda create -n qtm151 python=3.12`
+  - Using Anaconda Navigator: Go to the "Environments" tab and click on "Create"
+- After creating an environment in the command line, you can activate it using the command line: `conda activate qtm151`
+- To deactivate an environment, use the command line: `conda deactivate`
+- To remove an environment, use the command line: `conda remove -n qtm151 --all`
+:::
+
+:::{.column width="50%"}
+```{python}
+#| echo: true
+#| eval: false
+# Create a new environment called qtm151
+conda create -n qtm151 python=3.12
+
+# Activate the qtm151 environment
+conda activate qtm151
+
+# Install the required packages
+conda install numpy pandas matplotlib jupyter
+
+# Deactivate the current environment
+conda deactivate
+
+# Remove the qtm151 environment
+conda remove -n qtm151 --all
+```
+:::
+:::
+:::
+
+# Python packages 📦 {background-color="#2d4563"}
+
+## Installing packages
+
+:::{style="margin-top: 30px; font-size: 22px;"}
+:::{.columns}
+:::{.column width="50%"}
+- There are several ways to install packages in Python
+- The two most common ways are [pip]{.alert} and [conda]{.alert}
+- [pip]{.alert} is the Python package installer, which comes pre-installed with Python
+- [conda]{.alert} is the package manager that comes with Anaconda, and it is even more user-friendly
+- We will use [conda]{.alert} to install packages in this course
+- You can install packages using the command `conda install package` in the terminal or go to the Anaconda Navigator and install them from there
+:::
+
+:::{.column width="50%"}
+- In Anaconda Navigator, you can search for packages in the "Environments" tab
+- The main packages we will use are:
+  - [numpy]{.alert}: for numerical computing
+  - [pandas]{.alert}: for data manipulation
+  - [matplotlib]{.alert}: for data visualisation
+
+- You should have them installed already, as they come with the base Anaconda installation
+- If not, please try to install them using the Anaconda Navigator
+:::
+:::
+
+:::{.callout-tip}
+- More information on installing packages can be found at <https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-pkgs.html>
+:::
+:::
+
+## {background-image="figures/anaconda_navigator_notinstalled.png" background-size="100%"}
+
+## Setting up your workspace: VSCode & Jupyter
+
+:::{style="margin-top: 30px; font-size: 22px;"}
+- We will use [Visual Studio Code (VSCode)]{.alert} as our code editor
+- VSCode is a lightweight, open-source code editor that supports many programming languages, including Python
+- It has excellent support for Jupyter Notebooks, making it a great choice for data science projects
+
+- **Ensure VS Code Uses Your Anaconda Python (Kernel Selection):**
+  - When you open or create a `.ipynb` file in VS Code, it needs to know which Python installation (kernel) to use.
+  - Look for the kernel indicator (usually top-right). If it's not set or incorrect (e.g., not pointing to your Anaconda Python), click it.
+  - Choose "Python Environments" and select the Python version associated with your Anaconda installation.
+
+:::{style="text-align: center;"}
+![](figures/python_kernel.png){alt="VS Code Python Kernel Selection" width="900"}
+:::
+:::
+
+## Creating a new Jupyter Notebook in VS Code
+
+:::{style="margin-top: 30px; font-size: 22px;"}
+:::{.columns}
+:::{.column width="50%"}
+**Option 1: Via File Menu**
+- Go to "File" > "New File...".
+- Select "Jupyter Notebook" from the options.
+- Save the new file with a `.ipynb` extension (e.g., `lecture_notes.ipynb`).
+
+![](figures/vscode-new-file.png){alt="VS Code New File Menu" width="100%"}
+:::
+
+:::{.column width="50%"}
+**Option 2: Via Command Palette**
+- Press `Cmd + Shift + P` (macOS) or `Ctrl + Shift + P` (Windows/Linux).
+- Type "Create: New Jupyter Notebook" and select it.
+- Again, ensure the correct kernel is selected for this new notebook.
+
+![](figures/vscode-jupyter.png){alt="VS Code Command Palette for New Jupyter Notebook" width="100%"}
+:::
+:::
+:::
+
+## {background-image="figures/vscode-jupyter02.png" background-size="100%"}
+
+# Let's start coding: importing packages {background-color="#2d4563"}
+
+## Loading Packages: the `import` statement
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+- Before you can use functions from an installed package in your notebook, you must `import` it into your current session
+- It's a strong convention to use common aliases (nicknames) for widely used packages using the `as` keyword. This improves code readability and conciseness
+  - `import pandas as pd`
+  - `import matplotlib.pyplot as plt` (pyplot is the main plotting module from Matplotlib)
+  - `import numpy as np`
+- These nicknames are widely recognised in the data science community, so using them makes your code more understandable to others
+- You can also import specific functions from a package using the `from` keyword
+  - `from pandas import DataFrame`
+  - `from matplotlib.pyplot import plot`
+- This is useful if you only need a few functions from a package and want to avoid loading the entire package
+:::
+
+## Loading packages: in practice
+
+:::{style="margin-top: 30px; font-size: 27px;"}
+- Let's import the "holy trinity" of data science packages in Python:
+
+```{python}
+#| echo: true
+#| eval: true
+
+# "matplotlib.pyplot" is the primary interface for plotting, aliased as 'plt'
+import matplotlib.pyplot as plt
+
+# "pandas" is used for data manipulation and analysis, aliased as 'pd'
+import pandas as pd
+
+# "numpy" is for numerical operations, especially with arrays, aliased as 'np'
+import numpy as np
+
+print("Packages (matplotlib.pyplot, pandas, numpy) loaded successfully!")
+```
+:::
+
+## Opening datasets with pandas: `read_csv()`
+
+:::{style="margin-top: 30px; font-size: 27px;"}
+- Pandas is excellent for working with tabular data
+- The `pd.read_csv()` function is used to load data from a Comma Separated Values (CSV) file into a pandas DataFrame
+
+```{python}
+#| echo: true
+#| eval: true
+
+# The pd.read_csv() function reads a CSV file.
+# The result (a DataFrame) is stored in the variable 'carfeatures'.
+# Ensure 'data/features.csv' is in the correct path relative to your notebook.
+carfeatures = pd.read_csv('data/features.csv')
+
+carfeatures.head()  # Display the first few rows of the DataFrame
+```
+:::
+
+## Viewing Your DataFrame in VS Code
+
+:::{style="margin-top: 30px; font-size: 25px;"}
+:::{.columns}
+:::{.column width="50%"}
+VS Code offers several ways to inspect your DataFrame:
+
+- [Jupyter Variables Tab:]{.alert}
+    - Look for a "Variables" icon or section in the Jupyter interface within VS Code
+    - Clicking it shows active variables; double-clicking a DataFrame (like `carfeatures`) opens it in a new tab for viewing
+    ![](figures/topbar.png){alt="Jupyter Toolbar with Variables button" width="600"}
+    ![](figures/sampledata.png){alt="DataFrame viewed in VS Code tab" width="600"}
+:::
+
+:::{.column width="50%"}
+- [Data Wrangler Extension (if installed):](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.datawrangler)
+    - This extension provides more advanced tools for data viewing and cleaning
+    - You might find a "View Data" button or a right-click option on the DataFrame variable
+    ![](figures/data-wrangler.png){alt="Data Wrangler button" width="600"}
+    ![](figures/data-wrangler02.png){alt="Data Wrangler interface" width="600"}
+:::
+:::
+:::
+
+# Running basic analyses {background-color="#2d4563"}
+
+## Displaying the `carfeatures` dataframe
+
+:::{style="margin-top: 30px; font-size: 23px;"}
+- Typing the name of a DataFrame in a code cell and running it will display its contents
+- For large DataFrames, Jupyter typically shows a summary (the first and last few rows).
+
+```{python}
+#| echo: true
+#| eval: true
+carfeatures
+```
+:::
+
+## Displaying the `carfeatures` dataframe
+
+:::{style="margin-top: 30px; font-size: 21px;"}
+- You can also use the `.head()` method to display the first few rows of a DataFrame
+
+```{python}
+#| echo: true
+#| eval: true
+# Display the first 5 rows of the DataFrame
+carfeatures.head()  # Default is 5 rows
+```
+- To view the last few rows, use `.tail()`
+
+```{python}
+#| echo: true
+#| eval: true
+# Display the last 5 rows of the DataFrame
+carfeatures.tail()  # Default is 5 rows
+```
+:::
+
+## Selecting and displaying a single column
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+:::{.columns}
+:::{.column width="50%"}
+- To select a single column from a DataFrame, use the column name in square brackets `[]`
+- This returns a pandas Series (a one-dimensional array-like object)
+
+```{python}
+#| echo: true
+#| eval: true
+# Extracting the 'cylinders' column.
+carfeatures['cylinders'].head()
+```
+:::
+
+:::{.column width="50%"}
+- You can also use the dot notation (if the column name doesn't contain spaces or special characters)
+
+```{python}
+#| echo: true
+#| eval: true
+# Using dot notation
+carfeatures.cylinders.head()
+```
+- **Note:** Dot notation is less flexible than bracket notation, especially for column names with spaces or special characters
+:::
+:::
+:::
+
+## Example: Computing a frequency table
+
+:::{style="margin-top: 30px; font-size: 22px;"}
+- To count occurrences of unique values in a column, use `pd.crosstab()`
+- This function creates a cross-tabulation of two (or more) variables
+- The first argument is the column to be counted, and the second is a custom title for the resulting table
+
+```{python}
+#| echo: true
+#| eval: true
+
+# crosstab counts how many rows fall into categories
+# "index" is the category
+# "columns" is a custom title
+
+table = pd.crosstab(index = carfeatures['cylinders'], columns = "count")
+table
+```
+:::
+
+## Example: Computing a frequency table
+
+:::{style="margin-top: 30px; font-size: 22px;"}
+- The column name in the crosstab table is set to `col_0` by default
+```{python}
+#| echo: true
+#| eval: true
+
+table.columns.name
+```
+- We can rename the column too
+
+```{python}
+#| echo: true
+#| eval: true
+table.columns.name = 'column name'
+table
+```
+:::
+
+## Example: Generating basic summary statistics
+
+:::{style="margin-top: 30px; font-size: 22px;"}
+- The `.describe()` method on a DataFrame provides key descriptive statistics for all numerical columns
+
+```{python}
+#| echo: true
+#| eval: true
+
+# .describe() computes: count, mean, standard deviation, min, 25th/50th/75th percentiles, and max
+# It automatically ignores non-numeric columns
+carfeatures.describe()
+```
+
+:::{.callout-note}
+The `horsepower` column might be missing from `.describe()` if it was read as non-numeric (e.g., due to placeholder characters like '?'). Data cleaning would be needed to convert it.
+:::
+:::
+
+# Python variables & data types 📊 {background-color="#2d4563"}
+
+## Variables: Named containers for data
+
+:::{style="margin-top: 30px; font-size: 22px;"}
+:::{.columns}
+:::{.column width="40%"}
+- Variables are used to store data values.
+- Python is dynamically typed, meaning you don't need to declare the type of a variable.
+- **Common Data Types:**
+  - [Integers (`int`)]{.alert}: Whole numbers (e.g., `x = 10`).
+  - [Floats (`float`)]{.alert}: Numbers with decimals (e.g., `pi = 3.14`).
+  - [Strings (`str`)]{.alert}: Text, enclosed in single `' '` or double `" "` quotes (e.g., `message = "Hello"`).
+  - [Booleans (`bool`)]{.alert}: Logical values, either `True` or `False`.
+:::
+
+:::{.column width="60%"}
+- Use `type()` to check a variable's data type.
+- Use `print()` to display a variable's value.
+
+```{python}
+#| echo: true
+#| eval: true
+
+age = 30                            # Integer
+price = 19.99                       # Float
+student_name = "Alice"              # String
+is_enrolled = True                  # Boolean
+
+print(f"Value: {age}, Type: {type(age)}")
+print(f"Value: {price}, Type: {type(price)}")
+print(f"Value: {student_name}, Type: {type(student_name)}")
+print(f"Value: {is_enrolled}, Type: {type(is_enrolled)}")
+```
+:::
+:::
+:::
+
+## Storing variables in memory & naming conventions 
+
+:::{style="margin-top: 30px; font-size: 22px;"}
+:::{.columns}
+::::{.column width="50%"}
+- Assignment: Use the `=` operator (e.g., `user_count = 150`).
+- **Naming Rules & Best Practices:**
+  - Must start with a letter or underscore (`_`).
+  - Can contain letters, numbers, and underscores.
+  - Case-sensitive (`myVariable` is different from `myvariable`).
+  - Cannot be a Python keyword (e.g., `if`, `for`, `class`).
+  - Use descriptive names (e.g., `average_score` instead of `avg`).
+  - Convention: `snake_case` (lowercase with underscores) for variables and functions.
+- View active variables in VS Code Jupyter using the "Variables" panel or Data Wrangler.
+:::
+
+:::{.column width="50%"}
+```{python}
+#| echo: true
+#| eval: true
+
+count_apples = 5
+item_price = 2.50
+user_greeting = "Welcome back!"
+
+print(count_apples)
+print(user_greeting)
+```
+
+- [Try it yourself!]{.alert}
+- **Exercise:** Create a variable to store the title of your favourite film and print it!
+:::
+:::
+:::
+
+## Basic operations with variables
+
+:::{style="margin-top: 30px; font-size: 21px;"}
+:::{.columns}
+:::{.column width="50%"}
+**Numeric Operations:**
+
+- Addition: `+`
+- Subtraction: `-`
+- Multiplication: `*`
+- Division: `/` (results in a float)
+- Floor Division: `//` (discards decimal)
+- Modulus: `%` (remainder)
+- Exponentiation: `**` (e.g., `2**3` is 8)
+- Use parentheses `()` to control the order of operations.
+
+```{python}
+#| echo: true
+#| eval: true
+total_cost = 10 * 1.08  # Price * tax
+print(f"Total cost: {total_cost}")
+
+base_number = 4
+calculation = (base_number + 6) / 2
+print(f"Calculation result: {calculation}")
+```
+:::
+
+:::{.column width="50%"}
+**String [Concatenation]{.alert}:**
+
+- Use the `+` operator to join strings.
+```{python}
+#| echo: true
+#| eval: true
+first_name = "Danilo"
+last_name = "Freire"
+full_name = first_name + " " + last_name
+print(full_name)
+```
+
+- [Try it yourself!]{.alert}
+- **Exercise:** Define variables for your name and major, then print a concatenated string introducing yourself
+:::
+:::
+:::
+
+# Python lists 📝 {background-color="#2d4563"}
+
+## Lists: Ordered, mutable collections
+
+:::{style="margin-top: 30px; font-size: 28px;"}
+- Lists are versatile and widely used to store multiple items in a single variable.
+- **Characteristics:**
+    - Created using square brackets `[]`, items separated by commas.
+    - Items can be of [different data types]{.alert} (e.g., numbers, strings, even other lists).
+    - [Ordered]{.alert}: Items maintain their position/sequence.
+    - [Mutable]{.alert}: You can change, add, or remove items after the list is created.
+- Access items using their **index** (position).
+- [Crucial: Python indexing starts at 0!]{.alert} The first item is at index `0`.
+:::
+
+## Lists: Ordered, mutable collections
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+```{python}
+#| echo: true
+#| eval: true
+# List of integers
+prime_numbers = [2, 3, 5, 7, 11]
+
+# List of strings (e.g., survey responses)
+fav_colours = ["blue", "green", "blue", "red", "yellow"]
+print(f"Prime Numbers: {prime_numbers}, Type: {type(prime_numbers)}")
+print(f"Favourite Colours: {fav_colours}")
+
+# List with mixed data types
+mixed_data_list = ["Python", 3.11, 42, True]
+mixed_data_list
+
+# Lists can be nested (a list containing other lists)
+nested_list_example = [[1, 2], ["a", "b"], mixed_data_list]
+nested_list_example
+```
+:::
+
+## Accessing list elements: Indexing
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+- Use square brackets `[]` with the index number after the list's name.
+  - `my_list[0]` gets the first element.
+  - `my_list[1]` gets the second element.
+- **Negative Indexing:**
+  - `my_list[-1]` gets the *last* element.
+  - `my_list[-2]` gets the second-to-last element.
+- For nested lists, use multiple index brackets: `nested_list[outer_index][inner_index]`.
+```{python}
+#| echo: true
+#| eval: true
+# Using prime_numbers = [2, 3, 5, 7, 11]
+print(f"First prime: {prime_numbers[0]}")      # Output: 2
+print(f"Third prime: {prime_numbers[2]}")      # Output: 5
+print(f"Last prime: {prime_numbers[-1]}")     # Output: 11
+```
+:::
+
+## Accessing list elements: Indexing
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+- Using `nested_list_example = [[[1, 2], ["a", "b"], ["Python", 3.11, 42, True]]]`
+- Let's access `Python` from the nested list:
+- The inner list `["Python", 3.11, 42, True]` is at `nested_list_example[2]`
+- `Python` is the first element (index `0`) of that inner list
+
+```{python}
+#| echo: true
+#| eval: true
+nested_list_example[2][0]
+```
+
+- [Try it yourself!]{.alert}
+  - Create a list containing the titles of your three favourite films
+  - Print the last film using both positive and negative indexing
+:::
+
+# Visualising data with matplotlib 📊 {background-color="#2d4563"}
+
+## Visualising list data: histograms 
+
+:::{style="margin-top: 30px; font-size: 22px;"}
+:::{.columns}
+:::{.column width="40%"}
+- `matplotlib.pyplot` (imported as `plt`) is Python's primary plotting library
+- `plt.hist()` creates a histogram. This is useful for visualising the distribution of a single set of numerical data or the frequency of categorical items in a list
+- `plt.show()` displays the generated plot
+- Always add labels and a title for clarity:
+    - `plt.title("My Plot Title")`
+    - `plt.xlabel("X-axis Label")`
+    - `plt.ylabel("Y-axis Label")`
+:::
+
+:::{.column width="60%"}
+```{python}
+#| echo: true
+#| eval: true
+
+# import matplotlib.pyplot as plt
+# fav_colours = ["blue", "green", "blue", "red", "yellow"]
+colour_survey = fav_colours + ['blue', 'green', 'green']
+
+plt.hist(x=colour_survey, color='skyblue')
+plt.title("Frequency of Favourite Colours in Survey")
+plt.xlabel("Colour")
+plt.ylabel("Frequency Count")
+plt.show()
+```
+:::
+:::
+:::
+
+## Try it yourself!
+
+:::{style="margin-top: 30px; font-size: 28px;"}
+- Create a list with repeated string values (e.g., favourite books) and generate a histogram
+- Ensure you add a title, and labels for the x and y axes!
+:::
+
+## Visualising relationships: scatter plots with lists
+
+:::{style="margin-top: 30px; font-size: 22px;"}
+- `plt.scatter()` is used to create a scatter plot.
+- It requires two lists of equal length: one for the x-coordinates and one for the y-coordinates.
+- Scatter plots are excellent for visualising the relationship (or lack thereof) between two numerical variables.
+
+```{python}
+#| echo: true
+#| eval: true
+x_values_list = [1, 2, 3, 4, 5]    
+y_values_list = [1, 4, 9, 16, 25] 
+plt.scatter(x=x_values_list, y=y_values_list, color='purple')
+plt.xlabel("X Value (Input Number)")
+plt.ylabel("Y Value (Squared Number)")
+plt.title("Scatter Plot: Numbers vs. Their Squares (from Lists)")
+plt.grid(True)
+plt.show()
+```
+
+:::
+
+## Scatter plots directly from dataframe columns
+
+:::{style="margin-top: 30px; font-size: 22px;"}
+- You can create scatter plots using columns from your pandas DataFrames
+- The `x` and `y` parameters can be set to the names of the columns you want to plot
+- Ensure the DataFrame is not empty and contains the specified columns!
+
+```{python}
+#| echo: true
+#| eval: true
+
+# Using the 'carfeatures' DataFrame
+plt.scatter(x=carfeatures['weight'], y=carfeatures['mpg'], alpha=0.7, color='green')
+plt.xlabel("Weight of the Car (lbs)")
+plt.ylabel("Miles Per Gallon (MPG)")
+plt.title("Scatter Plot: Car Weight vs. MPG")
+plt.grid(True)
+plt.show()
+```
+
+**Suggestion:** Try another scatter plot using different columns, e.g., `x=carfeatures['acceleration']` vs `y=carfeatures['mpg']`.
+:::
+
+## Try it yourself!
+
+:::{style="margin-top: 30px; font-size: 28px;"}
+- Create two lists of numbers representing, for example, hours studied and exam scores.
+- Generate your own scatter plot from these lists.
+- Ensure you add a title, and labels for the x and y axes.
+
+:::
+
+# And that's all for today! 🎉 {background-color="#2d4563"}
+
+# Any Questions? 🤔 {background-color="#2d4563"}
+
+# See You Next Time! 🚀 {background-color="#2d4563"}
+
+## Appendix - Solutions
+
+:::{style="margin-top: 30px; font-size: 22px;"}
+- Create a variable with your favourite film
+
+```{python}
+#| echo: true
+#| eval: true
+my_favourite_film = "The Godfather"
+print(my_favourite_film) 
+```
+- Define variables for your name and major, then print an introduction
+
+```{python}
+#| echo: true
+#| eval: true
+user_name = "Charlie" # Variable for name
+user_major = "Quantitative Sciences" # Variable for major
+
+# Concatenating strings to form an introduction
+introduction_message = "My name is " + user_name + " and I am majoring in " + user_major + "."
+print(introduction_message)
+
+# Alternative using an f-string (formatted string literal - often preferred for readability)
+print(f"My name is {user_name} and I am majoring in {user_major}.")
+```
+:::
+
+## Appendix - Solutions
+
+:::{style="margin-top: 30px; font-size: 22px;"}
+- Create a list of your three favourite films and print the last one
+
+```{python}
+#| echo: true
+#| eval: true
+favourite_films_list = ["Pulp Fiction", "Blade Runner 2049", "The Godfather"]
+
+# Print the last film using positive indexing
+# Length of the list is 3, so the index of the last element is 2 (3 - 1)
+print(favourite_films_list[2])
+
+# Print the last film using negative indexing (-1 always refers to the last element)
+print(favourite_films_list[-1])
+```
+:::
+
+## Appendix - Solutions
+
+:::{style="margin-top: 30px; font-size: 22px;"}
+- Create a list of your favourite books and generate a histogram
+
+```{python}
+#| echo: true
+#| eval: true
+# A list of favourite books, with some titles repeated
+favourite_books_survey = [
+    "The Illiad", "1984", "Brave New World", "The Illiad",
+    "The Odyssey", "1984", "The Odyssey", "The Illiad"
+]
+
+plt.hist(x=favourite_books_survey, color='teal', edgecolor='black') # rwidth adds spacing
+plt.title("Frequency of Favourite Books Mentioned")
+plt.xlabel("Book Title")
+plt.ylabel("Number of Mentions")
+plt.show()
+```
+:::
+
+## Appendix - Solutions
+
+:::{style="margin-top: 30px; font-size: 22px;"}
+- Create two lists of numbers (e.g., hours studied & exam scores) and make a scatter plot
+```{python}
+#| echo: true
+#| eval: true
+# Example data: hours studied vs. exam scores
+hours_studied_data = [1, 2, 2.5, 3, 4, 4.5, 5, 6, 7, 8]
+exam_scores_data =   [60, 65, 68, 70, 78, 80, 85, 88, 92, 95]
+plt.scatter(x=hours_studied_data, y=exam_scores_data, color='crimson', marker='^') # '^' for triangle markers
+plt.xlabel("Hours Studied This Week")
+plt.ylabel("Exam Score (out of 100)")
+plt.title("Relationship: Study Hours vs. Exam Scores")
+plt.xlim(0, 9) # Set x-axis limits
+plt.ylim(50, 100) # Set y-axis limits
+plt.grid(True, linestyle='--', alpha=0.7) # Add a styled grid
+plt.show()
+```
+:::
