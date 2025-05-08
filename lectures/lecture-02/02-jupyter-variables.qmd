@@ -29,7 +29,7 @@ editor:
 :::{.column width="50%"}
 - Python is a versatile programming language, but [it doesn't come with all the tools we need]{.alert}
 - [Packages]{.alert} are collections of functions that [extend Python's capabilities]{.alert}
-- There are thousands of packages available, and we can install them using [conda install]{.alert}
+- There are thousands of packages available, and we can install them using [conda install]{.alert} or [pip install]{.alert}
 :::
 
 :::{.column width="50%"}
