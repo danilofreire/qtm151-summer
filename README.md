@@ -1,85 +1,31 @@
-# QTM 151 - Introduction to Statistical Computing
+# QTM151 Tutorials
 
-This branch hosts the website for the course [QTM 151 - Introduction to
-Statistical Computing](http://danilofreire.github.io/qtm151) at [Emory
-University](http://www.emory.edu). The course provides an introduction to
-Python and SQL for data management and analysis. Please refer to the `main`
-branch of [this repository](https://github.com/danilofreire/qtm151) for the
-course materials.
+This folder contains several tutorials for the QTM151 course. Below you will find a list of available tutorials with links to both PDF and QMD versions where applicable.
 
-## Building the website
+## Available Tutorials
 
-I used [Quarto](https://quarto.org) to build the website, and the process was
-quite straightforward. To keep the website organised, I created a `gh-pages`
-branch and removed all unnecessary files. Then, I converted some of the course
-materials, such as the syllabus, to `.qmd` format (Quarto Markdown) and added
-them to their respective folders. The tutorials were already in `.qmd` format,
-so I simply moved them to the `tutorials` folder and added a `tutorials.qmd`
-file to list them. Similarly, the lectures are described in the `lectures.qmd`
-file.
+- [01 - VSCode and Anaconda Tutorial](01-vscode-anaconda-tutorial.pdf) ([QMD version](01-vscode-anaconda-tutorial.qmd))
+- [02 - Jupyter Notebook and Markdown Tutorial](02-jupyter-markdown-tutorial.pdf) ([QMD version](02-jupyter-markdown-tutorial.qmd))
+- [03 - GitHub Tutorial](03-github-tutorial.pdf) ([QMD version](03-github-tutorial.qmd))
+- [04 - PostgreSQL Tutorial](04-postgresql-tutorial.pdf) ([QMD version](04-postgresql-tutorial.qmd))
 
-I decided to keep the Jupyter Notebooks, which will be used in the lectures,
-only in the `main` branch. This way, I encourage students to download the
-repository and follow the lectures using their local Jupyter environment.
+## File Formats
 
-The `_quarto.yml` file contains the configuration for the website, including
-the theme, the title, and the navigation bar. The website files are in the
-`docs/` folder, as it is one of the easiest ways to host a website on GitHub. I
-also added a `.nojekyll` file to the root of the repository to prevent GitHub
-from processing the website as a Jekyll project.
+- **PDF files**: These contain the final version of the tutorials with images and complete output. They are ideal for reading and following along.
+- **QMD files**: These include the source code used to write the tutorials. They are [Quarto](https://quarto.org/) files, a Markdown-based document format that allows for code cells and other features. They are provided for those who want to learn more about the Markdown syntax and how to create similar documents for their own projects.
 
-I then built the website with `quarto render docs/` and pushed the changes to the
-`gh-pages` branch with `git push origin gh-pages`.
+## How to Read the PDF Files on GitHub
 
-For further information on how to build a website with Quarto, please refer to
-<https://quarto.org/docs/websites/>.
+You can either read the tutorials directly on GitHub or download them to your computer. To read them on GitHub, click on the links above and you will see them in an embedded viewer. You can also click on the download icon to save the raw files to your computer.
 
-## Jupyter Lite
+![](images/github-pdf-viewer.png)
 
-Creating a Jupyter Lite environment for students to run notebooks without local
-installation proved slightly more challenging. Following the [Jupyter Lite
-documentation](https://jupyterlite.readthedocs.io/en/latest/), I made several
-adjustments to ensure functionality. Much of it was trial and error, as the
-documentation is still in development.
+## Additional Resources
 
-The main issue I had was that I use the `docs/` folder to build the Quarto
-website, and every time I rebuilt the whole website with `quarto render`, the
-`jupyter` folder was deleted. But the commands below solve the issue by
-rebuilding the JupyterLite page after the Quarto website is built:
+- `article-template.latex`: A LaTeX template for articles
+- `python-postgresql-example.ipynb`: A Jupyter Notebook with a PostgreSQL example
+- `testing-ipython`: A Jupyter Notebook for showing Markdown and code cells
+- `testing-anaconda.py`: A Python script for testing Anaconda installation
+- `.gitignore`: Git configuration file to specify intentionally untracked files
 
-```bash
-quarto render
-mkdir -p docs/jupyter 
-cp -r jupyter/* docs/jupyter
-cd docs/jupyter
-pip install -r requirements.txt
-jupyter lite build
-mv _output/* ./
-```
-
-JupyterLite should be ready to be published on GitHub Pages. The
-following commands will push the changes to the repository:
-
-```bash
-git add ../../docs/jupyter -f
-git commit -m "update JupyterLite page"
-git push
-```
-
-After that, I executed `jupyter lite build` to generate the Jupyter Lite
-environment. I then transferred the contents of the `_output/` folder to the
-`jupyter/` folder. To finalise the process, I pushed all changes to the
-`gh-pages` branch using `git push origin gh-pages`. The page is available at
-<https://danilofreire.github.io/qtm151/jupyter>.
-
-## Contributing
-
-If you have any questions, please feel free to [open an
-issue](https://github.com/danilofreire/qtm151/issues) or [create a pull
-request](https://github.com/danilofreire/qtm151/pulls).
-
-## License
-
-The content of this repository is released under the [MIT
-License](LICENSE.qmd). You are free to use, modify or distribute it as long as
-you provide the attribution to the original author.
+For any questions or issues regarding these tutorials, please open an issue in the main repository or email me at [danilo.freire@emory.edu](mailto:danilo.freire@emory.edu). I hope you like the tutorials and find them useful! :smiley:

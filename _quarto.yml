@@ -19,7 +19,7 @@ website:
         text: Syllabus
       - href: lectures.qmd
         text: Lectures
-      - href: tutorials/tutorials.qmd
+      - href: tutorials.qmd
         text: Tutorials
       - href: assignments.qmd
         text: Assignments
