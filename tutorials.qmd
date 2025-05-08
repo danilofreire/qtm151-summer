@@ -12,13 +12,12 @@ install and use the tools we will be using in class.
 - [03 - GitHub Tutorial](03-github-tutorial.qmd)
 - [04 - PostgreSQL Tutorial](04-postgresql-tutorial.qmd)
 
-PDF versions of the tutorials are also available on GitHub: <https://github.com/danilofreire/qtm151/tree/main/tutorials>.
+PDF versions of the tutorials are also available on GitHub: <https://github.com/danilofreire/qtm151-summer/tree/main/tutorials>.
 
 ## Additional Resources
 
 ### Further examples
 
-- [python-postgresql-example.ipynb](python-postgresql-example.ipynb): A Jupyter Notebook with a PostgreSQL example
 - [testing-ipython.ipynb](testing-ipython.ipynb): A Jupyter Notebook for showing Markdown and code cells
 - [testing-anaconda.py](testing-anaconda.py): A Python script for testing Anaconda installation
 
@@ -47,14 +46,6 @@ PDF versions of the tutorials are also available on GitHub: <https://github.com/
 - [Github Guides](https://guides.github.com/)
 
 
-For any questions or issues regarding these tutorials, please [open a GitHub
-issue](https://github.com/danilofreire/qtm151/issues), [submit a pull
-request](https://github.com/danilofreire/qtm151/pulls), or [create a discussion
-post](https://github.com/danilofreire/qtm151/discussions). 
+For any questions or issues regarding these tutorials, please [open a GitHub issue](https://github.com/danilofreire/qtm151-summer/issues), [submit a pull request](https://github.com/danilofreire/qtm151-summer/pulls), or [create a discussion post](https://github.com/danilofreire/qtm151-summer/discussions). 
 
-Please do not forget that, in addition to the tutorials here, the [course
-syllabus](https://danilofreire.github.io/qtm151/syllabus.html#course-outline-and-suggested-readings)
-also contains a list of recommended weekly readings and additional resources.
-
-I hope you like the
-tutorials and find them useful! 
+I hope you like the tutorials and find them useful! 
