@@ -6,13 +6,13 @@ title: "QTM 151 - Introduction to Statistical Computing II"
 
 Welcome to [QTM 151](https://github.com/danilofreire/qtm151)! This course introduces students to data analysis and statistical computing using Python and SQL. It is ideal for those with little or no programming experience who want to develop skills for data-driven decision making.
 
-Over the semester, we will cover version control for collaborative coding, Jupyter Notebooks for reproducible research, Python programming basics, data wrangling and merging in SQL, data visualisation, and introductions to linear modelling and time series analysis.
+Over the next three weeks, we will cover version control for collaborative coding, Jupyter Notebooks for reproducible research, Python programming basics, data wrangling and merging in SQL, data visualisation, and introductions to linear modelling and time series analysis.
 
-Students will work with real-world datasets and problems, gaining practical experience in using these tools to extract insights from data. The course aims to develop both technical skills and critical thinking needed for complex data challenges. By the end, students will be ready for advanced study in quantitative methods and data science.
+You will work with real-world datasets and problems, gaining practical experience in using these tools to extract insights from data. The course aims to develop both technical skills and critical thinking needed for complex data challenges. By the end, you will be ready for advanced study in quantitative methods and data science.
 
 # Learning Objectives
 
-By the end of this course, students will be able to:
+By the end of this course, you will be able to:
 
 1. Perform basic operations and write functions in Python.
 2. Conduct data wrangling and manipulate data using Python libraries such as Pandas.
@@ -57,8 +57,7 @@ This course is designed to be self-contained, providing all the necessary resour
 
 # Course Information
 
-
-We will meet every Monday and Wednesday from 16:00 to 16:50 in the [Anthropology Building, 303](https://maps.app.goo.gl/bgxTfADzf1Vz2z1EA). It is important that you read the materials before class. All information about the course is available on the course's GitHub repository at <https://github.com/danilofreire/qtm151>. While I will try to adhere to the course schedule as much as possible, I also want to adapt to your learning pace and style. The syllabus and course plan may change in the semester. Again, please check [the course repository](https://github.com/danilofreire/qtm151) regularly to check for updates. I will also announce any changes in class and via email.
+We will meet every weekday from May 13th to May 30th, 2025 from 11:30 AM to 12:50 PM. Our meetings will be online via Zoom. The link is <https://emory.zoom.us/j/1234567890> (please check the course website for the correct link). It is important that you read the materials before class. All information about the course is available on the course's GitHub repository at <https://github.com/danilofreire/qtm151-summer>. While I will try to adhere to the course schedule as much as possible, I also want to adapt to your learning pace and style. The syllabus and course plan may change in the semester. Again, please check [the course repository](https://github.com/danilofreire/qtm151-summer) regularly to check for updates. I will also announce any changes in class and via email.
 
 # Software
 
@@ -66,15 +65,17 @@ We will mainly use [Python](https://www.python.org) in this course. Python is a 
 
 You can write your Python code in any text editor, but I recommend [VS Code](https://code.visualstudio.com/) with the [Python extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python). [Pycharm](https://www.jetbrains.com/pycharm/) is also well-regarded by developers. If you are feeling adventurous, you can also use [Neovim](https://neovim.io/) with the [coc-pyright](https://github.com/fannheyward/coc-pyright) plugin. That is, if [you can exit the editor](https://stackoverflow.blog/2017/05/23/stack-overflow-helping-one-million-developers-exit-vim/). :)
 
-We will use [PostgreSQL](https://www.postgresql.org/) for database management. You can download PostgreSQL from the [official website](https://www.postgresql.org/). Please also install [pgAdmin](https://www.pgadmin.org/) and the [VS Code extension](https://marketplace.visualstudio.com/items?itemName=ckolkman.vscode-postgres) for PostgreSQL to interact with the database.
+We will use [SQLite](https://www.sqlite.org/) for database management. SQLite already comes pre-installed in Python, but you can read more about it [here](https://docs.python.org/3/library/sqlite3.html). I recommend you to install the [SQLite extension for VS Code](https://marketplace.visualstudio.com/items?itemName=yy0931.vscode-sqlite3-editor) to make it easier to work with SQLite databases.
 
-We will also use [Jupyter Notebooks](https://jupyter.org/) in class. Jupyter itself comes pre-installed with Anaconda, but please install the [Jupyter extension for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter&ssr=false) as well. We will have a hands-on session to learn how to use Jupyter effectively.
+We will also use [Jupyter Notebooks](https://jupyter.org/) in class. Jupyter itself also comes pre-installed with Anaconda, but please install the [Jupyter extension for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter&ssr=false) as well. We will have a hands-on session to learn how to use Jupyter effectively. It is a good idea to install the [DataWrangler extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.data-wrangler) for VS Code, as it will help you to visualise and clean your data.
 
-To help you get started, I have prepared [a series of tutorials](https://github.com/danilofreire/qtm151/tree/main/tutorials) on how to install Anaconda, Jupyter, PostgreSQL, VS Code, and open a free educational account on GitHub. Please follow these tutorials as soon as possible to ensure that you have all the necessary tools for the course.
+To help you get started, I have prepared [a series of tutorials](https://github.com/danilofreire/qtm151/tree/main/tutorials) on how to install Anaconda, Jupyter, VS Code, and open a free educational account on GitHub. There is also a tutorial for [PostgreSQL](https://www.postgresql.org/), but it is not required for this course. PostgreSQL is another popular database management system that is widely used in the industry. It is a good idea to learn it if you are interested in data science or software development. SQLite is easier and faster to use (that is why we will use it in class), but if you are interested in learning more about SQL, feel free to check out the tutorial.
+
+Please follow these tutorials to ensure that you have all the necessary tools for the course.
 
 # Office Hours
 
-I am very flexible with office hours, but it is easier to contact me via email. Feel free to send me a message any time at [danilo.freire@emory.edu](mailto:danilo.freire@emory.edu), and I will likely reply within a few hours. You can also book an appointment with me on [Calendly](https://calendly.com/danilofreire/office-hours), or just email me your availability. If you prefer, you can meet me in the afternoon at my office. I am in the [Department of Quantitative Theory and Methods](https://qtm.emory.edu) almost every weekday. My office address is in the [Psychology and Interdisciplinary Sciences Building, 36 Eagle Row, 5th Floor, room XXXX](https://maps.app.goo.gl/bGHKwasQyp5MnQND6). If possible, please email me before coming to ensure that no two students book the same time slot.
+I am very flexible with office hours, but it is easier to contact me via email. Feel free to send me a message any time at [danilo.freire@emory.edu](mailto:danilo.freire@emory.edu), and I will likely reply within a few hours. 
 
 # Academic Integrity
 
@@ -94,11 +95,9 @@ Emory University welcomes students from around the country and the world, and th
 
 # Assignments and Grading Policy
 
-**Problem Sets (50%).** There will be ten problem sets throughout the course. These assignments are designed to reinforce concepts covered in lectures and readings, and to provide hands-on practice with statistical programming. Problem sets will include a mix of theoretical questions and practical applications. They will be assigned regularly and must be completed individually. You may discuss your work with other colleagues as long as you do not copy entire sentences, just changing a few words. If you worked with other students, please write down their names on your assignment. Please also acknowledge any sources you used in your work, including textbooks, articles, and AI resources. *Any assignment submitted after the due date/time will automatically be graded for half points*. To accommodate unexpected circumstances, your lowest assignment grade will be automatically dropped at the end of the semester. *The same applies to in-class quizzes*. Please submit all assignments in Jupyter Notebook format (`.ipynb`) via Canvas until midnight on the due date.
+**Problem Sets (50%).** There will be five problem sets throughout the course. These assignments are designed to reinforce concepts covered in lectures and readings, and to provide hands-on practice with statistical programming. Problem sets will include a mix of theoretical questions and practical applications. They will be assigned regularly and must be completed individually. You may discuss your work with other colleagues as long as you do not copy entire sentences, just changing a few words. If you worked with other students, please write down their names on your assignment. Please also acknowledge any sources you used in your work, including textbooks, articles, and AI resources. *Any assignment submitted after the due date/time will automatically be graded for half points*. Please submit all assignments in HTML or PDF format (converted from Jupyter Notebook) on Canvas. You can convert your Jupyter Notebook to HTML or PDF in VS Code. Please check out [this link](https://code.visualstudio.com/docs/datascience/jupyter-notebooks#_export-your-jupyter-notebook) for more information.
 
-**Class Quizzes (30%).** Students will also take five in-class quizzes throughout the semester. These quizzes will be based on the lectures from the previous weeks. They will be designed to test your understanding of the material and your ability to apply the concepts to new problems. Quizzes will be open-book and open-notes, and students have 50 minutes to complete them. You are allowed to use AI tools. They are individual assessments, and students are not allowed to discuss the questions with their colleagues in class. 
-
-**Final Project (20%).** The final project will consist of a short report, created using Jupyter and using one of the datasets shared on the course [GitHub repository](https://github.com/danilofreire/qtm151/tree/main/final-project). Further instructions will be provided in class. The final project will be due on the last day of class.
+**Class Quizzes (50%).** Students will also take three in-class quizzes throughout the semester. These quizzes will be based on the lectures from the previous days. They will be designed to test your understanding of the material and your ability to apply the concepts to new problems. Quizzes will be open-book and open-notes. You are allowed to use AI tools. They are individual assessments, and you are not allowed to discuss the questions with their colleagues in class. 
 
 # Grading Scale
 
