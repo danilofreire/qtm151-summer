@@ -1,6 +1,6 @@
 # QTM 151 - Introduction to Statistical Computing II
 
-Welcome to [QTM 151 - Introduction to Statistical Computing II](https://github.com/danilofreire/qtm151-summer)! This repository contains all the materials for the summer course, including lectures, assignments, quizzes, and tutorials.
+Welcome to [QTM 151 - Introduction to Statistical Computing II](https://github.com/danilofreire/qtm151-summer)! This repository contains all the materials for the summer course, including lectures, assignments, and tutorials.
 
 ## Course Overview
 
@@ -36,12 +36,13 @@ the course. These include:
 ## Course Requirements
 
 - Prerequisites: None, only willingness to learn and explore new tools :smiley:
-- Software: [Anaconda distribution of Python 3.x](https://www.anaconda.com/), [VS Code](https://code.visualstudio.com/), [PostgreSQL](https://www.postgresql.org/), [GitHub Desktop](https://github.com/apps/desktop)
+- Software: [Anaconda distribution of Python 3.x](https://www.anaconda.com/) and [VS Code](https://code.visualstudio.com/)
+- We will use [SQLite](https://www.sqlite.org/index.html) for database management, which is already included in the Anaconda distribution. The PostgreSQL tutorial is here as a reference for those interested in learning about more advanced database management systems, but we will not cover it in class.
 
 ## Grading
 
-- Assignments: 50%
-- Class Quizzes: 50%
+- Assignments (5x): 50%
+- Class Quizzes (3x): 50%
 
 ## Course Policies and Expectations
 
