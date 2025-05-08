@@ -18,7 +18,7 @@
     "href": "tutorials.html#available-tutorials",
     "title": "Tutorials",
     "section": "Available Tutorials",
-    "text": "Available Tutorials\n\n01 - VSCode and Anaconda Tutorial\n02 - Jupyter Notebook and Markdown Tutorial\n03 - GitHub Tutorial\n04 - PostgreSQL Tutorial\n\nPDF versions of the tutorials are also available on GitHub: https://github.com/danilofreire/qtm151-summer/tree/main/tutorials."
+    "text": "Available Tutorials\n\n01 - VSCode and Anaconda Tutorial\n02 - Jupyter Notebook and Markdown Tutorial\n03 - GitHub Tutorial\n04 - PostgreSQL Tutorial\n\nPDF versions of the tutorials are also available on GitHub: https://github.com/danilofreire/qtm151-summer/tree/gh-pages."
   },
   {
     "objectID": "tutorials.html#additional-resources",

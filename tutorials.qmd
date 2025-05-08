@@ -12,7 +12,7 @@ install and use the tools we will be using in class.
 - [03 - GitHub Tutorial](03-github-tutorial.qmd)
 - [04 - PostgreSQL Tutorial](04-postgresql-tutorial.qmd)
 
-PDF versions of the tutorials are also available on GitHub: <https://github.com/danilofreire/qtm151-summer/tree/main/tutorials>.
+PDF versions of the tutorials are also available on GitHub: <https://github.com/danilofreire/qtm151-summer/tree/gh-pages>.
 
 ## Additional Resources
 
