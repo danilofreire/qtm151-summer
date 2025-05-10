@@ -1,0 +1,1031 @@
+---
+title: QTM 151 - Introduction to Statistical Computing II
+subtitle: Lecture 05 - Conditional Statements
+author:
+  - name: Danilo Freire
+    orcid: 0000-0002-4712-6810
+    email: danilo.freire@emory.edu
+    affiliations: Emory University
+format:
+  clean-revealjs:
+    self-contained: true
+    footer: "[Conditional Statements](https://raw.githack.com/danilofreire/qtm151-summer/main/lectures/lecture-05/05-conditional-statements.html)"
+transition: slide
+transition-speed: default
+scrollable: true
+engine: jupyter
+editor:
+  render-on-save: true
+---
+
+# Hello again! 😊 {background-color="#2d4563"}
+
+# Today's class 📚 {background-color="#2d4563"}
+
+## Today's class
+
+:::{style="margin-top: 30px; font-size: 28px;"}
+:::{.columns}
+:::{.column width="50%"}
+Today we will:
+
+- Understand how to use [conditional statements in Python](https://www.w3schools.com/python/python_conditions.asp)
+- Explore the `if`, `elif`, and `else` statements
+- Practice writing conditional statements in Python
+- Learn how to combine conditions using logical operators
+- Understand how to use nested `if` statements
+- Learn more about lists and how to create them
+:::
+
+:::{.column width="50%"}
+![](figures/example.png){width="100%"}
+:::
+:::
+:::
+
+:::{.fragment .fade-in}
+:::{style="font-size: 32px; text-align: center;"}
+[Let's get started!]{.alert} 🚀
+:::
+:::
+
+# Flow control: conditional statements 🐍 {background-color="#2d4563"}
+
+## Flow control: conditional statements
+### If, elif, else
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+:::{.columns}
+:::{.column width="50%"}
+- Conditional statements are used to make decisions in programming
+- The `if` statement is used to execute a block of code if a condition is `True`
+- The `elif` statement is used to execute a block of code if the first condition is `False` and the second condition is `True`
+- The `else` statement is used to execute a block of code if all other conditions are `False`
+- We use this a lot in data cleaning or data analysis to filter out data!
+:::
+
+:::{.column width="50%"}
+![](figures/if.png){width="70%"}
+:::
+:::
+:::
+
+## If statements
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+:::{.columns}
+:::{.column width="50%"}
+- Test expression
+  - We type "if" followed by a logical condition and the ":" symbol.
+  - The ":" says: run the following command 
+- Body of expression
+  - The "body" of the "if" statement needs to [indented with four spaces](https://www.python.org/dev/peps/pep-0008/#indentation)
+  - You can indent text by pressing the "tab" button in your keyboard.
+
+- If the condition is true, a message will appear.
+- If the condition is false, then nothing happens
+:::
+
+:::{.column width="50%"}
+- The `if` statement syntax is as follows:
+
+```{python}
+#| echo: true
+#| eval: false
+if condition:
+    Body
+```
+
+- Another example:
+
+```{python}
+#| echo: true
+#| eval: true
+# We start by defining a string
+any_questions = "yes"
+
+if any_questions == "yes":
+    print("Need to give more explanations")
+```
+:::
+:::
+:::
+
+## If/else statements
+### When you have two possible outcomes
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+:::{.columns}
+:::{.column width="45%"}
+- The `else` statement is used to execute a block of code if the condition is `False`
+- The `else` statement is always used in conjunction with the `if` statement
+- The `else` statement syntax is as follows:
+
+```{python}
+#| echo: true
+#| eval: false
+if condition:
+    Body
+else:
+    Body
+```
+:::
+
+:::{.column width="55%"}
+- For example, let's say you want to know whether someone can vote in the US
+  - First, the person needs to be a national
+  - Second, the person needs to be at least 18 years old
+
+```{python}
+#| echo: true
+#| eval: true
+age = 22
+national = False
+
+if national & (age >= 18):
+    print("This person can vote in the US")
+else:
+    print("This person cannot vote in the US")
+```
+:::
+:::
+:::
+
+## Another example
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+:::{.columns}
+:::{.column width="60%"}
+```{python}
+#| echo: true
+#| eval: false
+# Here we want to change the colour of the histogram 
+# based on a conditional statement
+import numpy as np
+import matplotlib.pyplot as plt
+
+is_graph_red = False
+how_many_classes = np.array([7,1,2,3,3,3,4,5,6])
+
+if is_graph_red:
+    plt.hist(x = how_many_classes, color="red")
+    plt.title("Count of students in each category")
+    plt.xlabel("How many classes are you taking?")
+    plt.show() 
+else:
+    plt.hist(x = how_many_classes, color="purple")
+    plt.title("Count of students in each category")
+    plt.xlabel("How many classes are you taking?")
+    plt.show()
+```
+:::
+
+:::{.column width="40%"}
+- The histogram will be red if `is_graph_red` is `True`, and purple otherwise
+
+```{python}
+#| echo: false
+#| eval: true
+import numpy as np
+import matplotlib.pyplot as plt 
+is_graph_red = False
+how_many_classes = np.array([7,1,2,3,3,3,4,5,6])
+
+if is_graph_red:
+    plt.hist(x = how_many_classes, color="red")
+    plt.title("Count of students in each category")
+    plt.xlabel("How many classes are you taking?")
+    plt.show() 
+else:
+    plt.hist(x = how_many_classes, color="purple")
+    plt.title("Count of students in each category")
+    plt.xlabel("How many classes are you taking?")
+    plt.show()
+```
+:::
+:::
+:::
+
+## Try it out! 🚀 {#sec:question04}
+
+:::{style="margin-top: 30px; font-size: 30px;"}
+What happens if ... ? Try the following:
+<br>
+
+- Rerun the above code but change the value of `is_graph_red`.
+- What happens if you set a non-boolean value of `is_graph_red`?
+- Don't include `:`
+- Don't indent the body of the `if` [[Appendix 04]{.button}](#sec:appendix04)
+:::
+
+## If/elif/else statements
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+:::{.columns}
+:::{.column width="50%"}
+- The last conditional statement is the `elif` statement
+- The `elif` statement is used to execute a block of code if the first condition is `False` and the second condition is `True`
+- It is just like another `if` statement, but it is used when you have more than two possible outcomes
+- The `elif` statement syntax is as follows:
+
+```{python}
+#| echo: true
+#| eval: false
+if condition:
+    Body
+elif condition:
+    Body
+else:
+    Body
+```
+:::
+
+:::{.column width="50%"}
+![](figures/elif.png){width="70%"}
+:::
+:::
+:::
+
+## Example
+
+:::{style="margin-top: 30px; font-size: 26px;"}
+```{python}
+#| echo: true
+#| eval: true
+years_in_program = 1
+
+if years_in_program == 1:
+    print("This student is a freshman")
+elif years_in_program == 2:
+    print("This student is a sophomore")
+elif years_in_program == 3:
+    print("This student is a junior")
+else:
+    print("This student is a senior")
+```
+:::
+
+# Combining conditions and logical operators 🤓 {background-color="#2d4563"}
+
+## Combining conditions and logical operators
+
+:::{style="margin-top: 30px; font-size: 25px;"}
+:::{.columns}
+:::{.column width="35%"}
+- You can combine conditions using logical operators too!
+- Remember what we learned about logical operators?
+- The logical operators are:
+  - `&` (and)
+  - `|` (or)
+  - `~` (not)
+  - `==` (equal)
+  - `!=` (not equal)
+  - `>` (greater than), `<` (less than), etc
+:::
+
+:::{.column width="65%"}
+- For example, let's say you want to know whether someone is a freshman or a sophomore
+
+```{python}
+#| echo: true
+#| eval: true
+years_in_program = 1
+if years_in_program == 1 or years_in_program == 2:
+    print("This student is a freshman or a sophomore")
+else:
+    print("This student is not a freshman or a sophomore")
+```
+:::
+:::
+:::
+
+## Combining conditions and logical operators
+
+:::{style="margin-top: 30px; font-size: 26px;"}
+:::{.columns}
+:::{.column width="40%"}
+- You can combine [several conditions at once]{.alert}
+- It is good practice to use parentheses to group conditions, so that the code is easier to read
+- For example, let's say you want to know if a student is eligible for a program discount
+- The student is eligible if:
+  - They are under 25 years old and a student
+  - Or they have a scholarship
+:::
+
+:::{.column width="60%"}
+```{python}
+#| echo: true
+#| eval: true
+age = 22
+is_student = True
+has_scholarship = False
+
+# Eligible if (under 25 AND a student) OR 
+# if has a scholarship
+if (age < 25 and is_student) or has_scholarship:
+    print("Eligible for program discount.")
+else:
+    print("Not eligible for program discount.")
+```
+:::
+:::
+:::
+
+# Nested if statements 🪆 {background-color="#2d4563"}
+
+## Nested `if` statements
+
+### When one condition depends on another
+
+:::{style="margin-top: 30px; font-size: 22px;"}
+:::{.columns}
+:::{.column width="35%"}
+- An `if` statement can be placed inside another `if` (or `elif`/`else`) statement. This is called nesting.
+- Used for more granular decision-making where one check depends on the outcome of a previous one.
+- **Caution:** Nesting too deeply (more than 2-3 levels) can make code hard to read and debug.
+:::
+
+:::{.column width="65%"}
+- Syntax example:
+
+```{python}
+#| echo: true
+#| eval: false
+if condition1:
+    # Outer if body
+    print("Condition 1 is True")
+    if condition2:
+        # Inner if body 
+        # Executes if condition1 AND condition2 are True
+        print("Condition 2 is also True")
+    else:
+        # Inner else body
+        # Executes if condition1 is True BUT condition2 is False
+        print("Condition 2 is False")
+else:
+    # Outer else body
+    print("Condition 1 is False")
+```
+
+The path is like a tree: 1. Check `condition1` (outer `if`). 2. If `True`, check `condition2` (inner `if`). 3. If `False`, go to the inner `else`. 4. If `condition1` is `False`, go to the outer `else`.
+:::
+:::
+:::
+
+## Nested `if` example: ticket pricing
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+**Scenario:** Ticket price depends on age group, and then on the day of the week for adults.
+
+```{python}
+#| echo: true
+#| eval: true
+age = 30
+day = "Saturday" # Try "Monday"
+price = 0
+
+if age < 18: # Child
+    price = 10
+    category = "Child"
+elif age >= 18 and age < 65: # Adult
+    category = "Adult"
+    if day == "Saturday" or day == "Sunday":
+        price = 20 # Weekend adult price
+    else:
+        price = 15 # Weekday adult price
+else: # Senior
+    price = 12
+    category = "Senior"
+
+print(f"Category: {category}, Day: {day}, Price: ${price}")
+```
+:::
+
+## Try it yourself! 🧠 {#sec:exercise05}
+
+:::{style="margin-top: 30px; font-size: 28px;"}
+Modify the ticket pricing example:
+
+- Add a "student" category: if `age` is between 18 and 25 (inclusive) AND an assumed variable `is_student = True`, their price is always $13. This should take precedence over the standard adult pricing.
+- [[Appendix 05]{.button}](#sec:appendix05)
+:::
+
+# Conditional expressions (ternary operator) ✨ {background-color="\#2d4563"}
+
+## Conditional expressions (ternary operator)
+
+### A concise way to assign based on condition
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+- Python offers a more compact way to write simple `if/else` statements that assign a value to a variable or return a value. This is known as a conditional expression or a "ternary operator".
+- It's a one-liner!
+  - **Syntax:** `value_if_true if condition else value_if_false`
+  - This expression evaluates the `condition`:
+      - If `True`, the whole expression evaluates to `value_if_true`.
+      - If `False`, the whole expression evaluates to `value_if_false`.
+:::
+
+## Conditional expression examples
+
+:::{style="margin-top: 30px; font-size: 22px;"}
+:::{.columns}
+:::{.column width="50%"}
+**Standard `if/else` for assignment:**
+
+```{python}
+#| echo: true
+#| eval: true
+age = 20
+status = ""
+if age >= 18:
+    status = "Adult"
+else:
+    status = "Minor"
+print(f"Status (standard if/else): {status}")
+```
+
+**Using Conditional Expression:**
+
+```{python}
+#| echo: true
+#| eval: true
+age = 20 # Same age
+status_ternary = "Adult" if age >= 18 else "Minor"
+print(f"Status (ternary operator): {status_ternary}")
+```
+
+:::
+:::{.column width="50%"}
+**Another Example (Setting a discount):**
+
+```{python}
+#| echo: true
+#| eval: true
+is_member = True
+# is_member = False # Try this
+base_price = 100
+
+discount_rate = 0.10 if is_member else 0.0
+final_price = base_price * (1 - discount_rate)
+
+print(f"Is member: {is_member}")
+print(f"Discount rate: {discount_rate*100}%")
+print(f"Final price: ${final_price}")
+```
+:::
+:::
+:::
+
+## Pitfall: Order of `elif` Statements
+
+### Specificity Matters
+
+:::{style="margin-top: 30px; font-size: 20px;"}
+
+  - Conditions in an `if...elif...else` chain are evaluated in order from top to bottom
+  - The first condition that evaluates to `True` will have its block of code executed, and the rest of the chain is skipped
+  - Therefore, you should generally place **more specific conditions before more general ones**
+
+:::{.columns}
+:::{.column width="50%"}
+**Problematic Order (Grading):**
+
+```{python}
+#| echo: true
+#| eval: true
+score = 95
+grade = ""
+# This is problematic because score >= 60 is true for 95
+if score >= 60: 
+    grade = "D" 
+elif score >= 70:
+    grade = "C"
+elif score >= 80:
+    grade = "B"
+elif score >= 90:
+    grade = "A" # This will never be reached if score is >= 60
+else:
+    grade = "F"
+print(f"Score: {score}, Problematic Grade: {grade}")
+```
+
+:::
+:::{.column width="50%"}
+**Correct Order (Grading):**
+
+```{python}
+#| echo: true
+#| eval: true
+score = 95 # Same score
+grade = ""
+# More specific conditions first
+if score >= 90:
+    grade = "A"
+elif score >= 80:
+    grade = "B"
+elif score >= 70:
+    grade = "C"
+elif score >= 60:
+    grade = "D"
+else:
+    grade = "F"
+print(f"Score: {score}, Correct Grade: {grade}")
+```
+:::
+:::
+:::
+
+# A bit more about lists in Python 📝 {background-color="#2d4563"}
+
+## Lists with blank elements
+### How to create an empty list?
+
+:::{style="margin-top: 30px; font-size: 20px;"}
+- You can create an empty list using the `None` object
+- `None` is a special object in Python that represents the absence of a value
+- The type of None is NoneType. It is the only instance of this type
+- `None` is often used to represent missing values or, in our case today, placeholders
+- Please note that `None` is not the same as `0`, `False`, or an empty string `''`
+- You should also not use quotes with `None`, as [it is not a string]{.alert}
+- Let's see how to create an empty list using `None`:
+
+```{python}
+#| echo: true
+#| eval: true
+# Simply type "None"
+list_answers = [None,None,None]
+print(list_answers)
+```
+
+:::{.callout-note}
+You can read more about `None` at <https://realpython.com/null-in-python/>.
+:::
+:::
+
+## Assigning or replacing values to lists
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+- You can assign or replace values in a list using the index of the element
+- The index of a list starts at 0
+- We use the following syntax:
+
+```{python}
+#| echo: true
+#| eval: true
+# What's the name of your hometown?
+list_answers[0] = "Nashville"
+
+print(list_answers)
+```
+:::
+
+## Appending values to lists
+### The `list.append()` method
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+- You can add elements to a list using the `list.append()` command
+- This command adds the element to [the end of the list]{.alert}
+- You can only add [one element at a time]{.alert}
+
+```{python}
+#| echo: true
+#| eval: true
+# We can start an empty list with []
+# Use the command "new_list.append(item)" with the function "append()"
+# and an arbitrary value of "item"
+
+new_list = []
+new_list.append("Nashville")
+new_list.append("Bogota")
+# new_list.append()
+
+print(new_list)
+```
+:::
+
+## Extending lists
+### The `list.extend()` method
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+- You can also add multiple elements to a list using the `list.extend()` command
+- Here you can add [multiple elements at once]{.alert}
+
+```{python}
+#| echo: true
+#| eval: true 
+my_list = ["Nashville", "Bogota"]
+my_list.extend(["Atlanta", "São Paulo", "Rio de Janeiro"])
+print(my_list)
+```
+:::
+ 
+
+# Lists with repetition 🔄 {background-color="#2d4563"}
+
+## Lists with repeated values
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+:::{.columns}
+:::{.column width="50%"}
+- You can create a list with repeated values using the `*` operator
+- The syntax is very simple and is as follows:
+  - `list = [value] * n`
+
+```{python}
+#| echo: true
+#| eval: true
+# Check our previous list
+list_answers
+```
+- Now, let's create a list with repeated values
+  - Repeat a single value 30 times
+  - Repeat a list 4 times
+  - Repeat 8 null values
+:::
+
+:::{.column width="50%"}
+
+```{python}
+#| echo: true
+#| eval: true
+# Repeat a single value 30 times
+list_two_rep = [7] * 30
+print(list_two_rep)
+```
+
+```{python}
+#| echo: true
+#| eval: true
+# Repeat a list 4 times
+list_answers_rep = list_answers * 4 
+print(list_answers_rep)
+```
+
+```{python}
+#| echo: true
+#| eval: true
+# Repeat 8 null values
+list_none_rep = [None] * 8 
+print(list_none_rep)
+```
+:::
+:::
+:::
+
+## Common pitfalls with lists
+
+:::{style="margin-top: 30px; font-size: 22px;"}
+- A common mistake is to confuse lists and `np.array` objects when doing operations
+- Lists are not arrays, and you cannot perform operations like addition or multiplication
+- You can only concatenate lists using the `+` operator
+
+```{python}
+#| echo: true
+#| eval: true
+# When you multipy a list times a number you repeat the list
+list_a = [1,2,3]
+print(list_a * 4)
+```
+:::{style="margin-top: 20px;"}
+:::
+```{python}
+#| echo: true
+#| eval: true
+# When you add two lists, you concatenate them
+list_b = [4,5,6]
+print(list_a + list_b)
+```
+
+:::{style="margin-top: 30px;"}
+:::
+```{python}
+#| echo: true
+#| eval: true
+# When you multipy an array times a number, you multiply each element
+import numpy as np
+
+vec_a = np.array(list_a)
+print(vec_a * 4)
+```
+
+- Is that clear? 🤓
+:::
+
+## Counting the length of a list
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+- You can count the length of a list using the `len()` function
+
+```{python}
+#| echo: true
+#| eval: true
+# Count the length of the list
+print(len(list_answers))
+```
+:::{style="margin-top: 20px;"}
+:::
+```{python}
+#| echo: true
+#| eval: true
+print(len(list_two_rep))
+```
+:::{style="margin-top: 20px;"}
+:::
+```{python}
+#| echo: true
+#| eval: true
+print(len(list_answers_rep))
+```
+:::
+
+## Try it yourself! 😊 {#sec:lists}
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+- Create an empty list called "list_personal"
+- Add two more values using ".append"
+- Find the total length of the list
+- Change the last value to "Last element" using the index
+- [[Appendix 06]{.button}](#sec:appendix6)
+:::
+
+# And that's it for today! 🎉 {background-color="#2d4563"}
+
+# Questions? 🤔 {background-color="#2d4563"}
+
+## Try this at home! 🏠
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+- Practice writing conditional statements in Python
+
+:::{style="margin-top: 20px;"}
+- Create a variable called "points" with a value between 0 and 100
+- Write a flow with "if", "elif" and "else" to assign the letter grade
+- In the body, store the output in a new variable called "letter_grade"
+- Print the letter grade at the end
+
+![](figures/grading_scale.png){width="100%"}
+
+:::{.callout-important}
+Check that it works by trying different values of "points"!
+:::
+:::
+:::
+
+# Thank you very much and see you next time! 🙏 {background-color="#2d4563"}
+
+## Appendix 01 {#sec:appendix01}
+
+:::{style="margin-top: 30px; font-size: 30px;"}
+
+```{python}
+#| echo: true
+#| eval: true
+colors = ["red","green","yellow","orange"]
+
+"red" in colors
+```
+
+[[Back to the main text]{.button}](#sec:question01)
+:::
+
+## Appendix 02 {#sec:appendix02}
+
+:::{style="margin-top: 30px; font-size: 30px;"}
+
+```{python}
+#| echo: true
+#| eval: true
+x = -1
+
+x**2 + 2*x + 1 == 0
+```
+
+[[Back to the main text]{.button}](#sec:question02)
+:::
+
+## Appendix 03 {#sec:appendix03}
+
+:::{style="margin-top: 30px; font-size: 30px;"}
+- Whether age (`age = 31`) is strictly less than 20, or greater than 30
+- Not in the age range 25-27
+
+```{python}
+#| echo: true
+#| eval: true
+age = 31
+
+(age < 20) | (age > 30) 
+```
+```{python}
+#| echo: true
+#| eval: true
+(age < 25) | (age > 27)
+```
+
+The second answer uses `|` because `&` evaluates both statements at the same time, and [one cannot be less than 25 and greater than 27 at the same time](https://en.wikipedia.org/wiki/Empty_set). Therefore, it must be `|`.
+
+[[Back to the main text]{.button}](#sec:question03)
+:::
+
+## Appendix 04 {#sec:appendix04}
+
+:::{style="margin-top: 30px; font-size: 30px;"}
+What happens if `is_graph_red` is set to `True`?
+
+```{python}
+#| echo: true
+#| eval: true
+is_graph_red = True
+how_many_classes = np.array([7,1,2,3,3,3,4,5,6])
+
+if is_graph_red:
+    plt.hist(x = how_many_classes, color="red")
+    plt.title("Count of students in each category")
+    plt.xlabel("How many classes are you taking?")
+    plt.show() 
+else:
+    plt.hist(x = how_many_classes, color="purple")
+    plt.title("Count of students in each category")
+    plt.xlabel("How many classes are you taking?")
+    plt.show()
+```
+
+[[Back to the main text]{.button}](#sec:question04)
+:::
+
+## Appendix 04 - Continued
+
+:::{style="margin-top: 30px; font-size: 30px;"}
+What happens if you set a non-boolean value of `is_graph_red`?
+
+[It is considered `True` if it is not zero](https://docs.python.org/3/library/stdtypes.html#truth-value-testing)
+
+```{python}
+#| echo: true
+#| eval: true
+is_graph_red = 39
+how_many_classes = np.array([7,1,2,3,3,3,4,5,6])
+
+if is_graph_red:
+    plt.hist(x = how_many_classes, color="red")
+    plt.title("Count of students in each category")
+    plt.xlabel("How many classes are you taking?")
+    plt.show() 
+else:
+    plt.hist(x = how_many_classes, color="purple")
+    plt.title("Count of students in each category")
+    plt.xlabel("How many classes are you taking?")
+    plt.show()
+```
+
+[[Back to the main text]{.button}](#sec:question04)
+:::
+
+## Appendix 04 - Continued
+
+:::{style="margin-top: 30px; font-size: 30px;"}
+What happens if you don't include `:`?
+
+[You will get a syntax error](https://docs.python.org/3/reference/compound_stmts.html#if)
+
+```{python}
+#| echo: true
+#| eval: false
+is_graph_red = True
+how_many_classes = np.array([7,1,2,3,3,3,4,5,6])
+
+if is_graph_red
+    plt.hist(x = how_many_classes, color="red")
+    plt.title("Count of students in each category")
+    plt.xlabel("How many classes are you taking?")
+    plt.show() 
+else:
+    plt.hist(x = how_many_classes, color="purple")
+    plt.title("Count of students in each category")
+    plt.xlabel("How many classes are you taking?")
+    plt.show()
+```
+  
+[[Back to the main text]{.button}](#sec:question04)
+:::
+
+## Appendix 04 - Continued
+
+:::{style="margin-top: 30px; font-size: 30px;"}
+What happens if you don't indent the body of the `if`?
+
+[You will get another syntax error](https://docs.python.org/3/reference/compound_stmts.html#if)
+
+```{python}
+#| echo: true
+#| eval: false
+is_graph_red = True
+how_many_classes = np.array([7,1,2,3,3,3,4,5,6])
+
+if is_graph_red:
+plt.hist(x = how_many_classes, color="red")
+plt.title("Count of students in each category")
+plt.xlabel("How many classes are you taking?")
+plt.show() 
+else:
+plt.hist(x = how_many_classes, color="purple")
+plt.title("Count of students in each category")
+plt.xlabel("How many classes are you taking?")
+plt.show()
+```
+
+[[Back to the main text]{.button}](#sec:question04)
+:::
+
+## Appendix 05 {#sec:appendix05}
+
+:::{style="margin-top: 30px; font-size: 30px;"}
+```{python}
+#| echo: true
+#| eval: true
+age = 22
+is_student = True
+day = "Saturday" # Try "Monday"
+price = 0
+
+if age < 18: # Child
+    price = 10
+    category = "Child"
+elif (age >= 18 and age <= 25) and is_student: # Student
+    price = 13
+    category = "Student"
+elif age >= 18 and age < 65: # Adult
+    category = "Adult"
+    if day == "Saturday" or day == "Sunday":
+        price = 20 #
+elif age >= 18 and age < 65: # Adult
+    category = "Adult"
+    if day == "Saturday" or day == "Sunday":
+        price = 20 # Weekend adult price
+    else:
+        price = 15 # Weekday adult price
+else: # Senior
+    price = 12
+    category = "Senior"
+
+print(f"Category: {category}, Day: {day}, Price: ${price}")
+```
+
+[[Back to the main text]{.button}](#sec:exercise05)
+:::
+
+## Appendix 06 {#sec:appendix6}
+
+:::{style="margin-top: 30px; font-size: 22px;"}
+- Create an empty list called "list_personal"
+- Add two more values using ".append"
+- Find the total length of the list
+- Change the last value to "Last element"
+
+```{python}
+#| echo: true
+#| eval: true
+list_personal = []
+
+list_personal.append("First element")
+list_personal.append("Second element")
+
+print(len(list_personal))
+```
+
+```{python}
+#| echo: true
+#| eval: true
+# Here I used the index -1 to change the last element
+# You could also use the index 1
+list_personal[-1] = "Last element" 
+print(list_personal)
+```
+
+- Did you get it right? 🤓
+:::
+
+## Appendix 06 - Continued
+
+:::{style="margin-top: 30px; font-size: 22px;"}
+- Here is another way to solve the exercise, now using `list.extend()` and `[1]` index
+
+```{python}
+#| echo: true
+#| eval: true
+list_personal = []
+
+list_personal.extend(["First element", "Second element"])
+print(list_personal)
+print(len(list_personal))
+```
+
+```{python}
+#| echo: true
+#| eval: true
+list_personal[1] = "Last element"
+print(list_personal)
+```
+
+[[Back to the main text]{.button}](#sec:lists)
+:::

@@ -8,7 +8,7 @@ author:
 format:
   clean-revealjs:
     self-contained: true
-    footer: "[Lecture 01](https://danilofreire.github.io/qtm151-summer/lectures/lecture-01/01-introduction.html)"
+    footer: "[Introduction](https://danilofreire.github.io/qtm151-summer/lectures/lecture-01/01-introduction.html)"
 transition: slide
 transition-speed: default
 scrollable: true

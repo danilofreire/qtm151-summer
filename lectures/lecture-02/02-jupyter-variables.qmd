@@ -9,7 +9,7 @@ author:
 format:
   clean-revealjs:
     self-contained: true
-    footer: "Packages, Variables, Lists"
+    footer: "[Packages, Variables, and Lists](https://raw.githack.com/danilofreire/qtm151-summer/main/lectures/lecture-02/02-jupyter-variables.html)"
     slide-number: true
 transition: slide
 transition-speed: default
