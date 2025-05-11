@@ -20,4 +20,6 @@ materials available in the [lectures folder in our course repository](https://gi
 
 - Tuesday, May 20: Lecture 06: While and For Loops. [Lecture Slides](https://raw.githack.com/danilofreire/qtm151-summer/main/lectures/lecture-06/06-loops.html), [Lecture Notebook](https://github.com/danilofreire/qtm151-summer/blob/main/lectures/lecture-06/06-loops.ipynb).
 
+- Wednesday, May 21: Lecture 07: Functions. [Lecture Slides](https://raw.githack.com/danilofreire/qtm151-summer/main/lectures/lecture-07/07-functions.html), [Lecture Notebook](https://github.com/danilofreire/qtm151-summer/blob/main/lectures/lecture-07/07-functions.ipynb).
+
 Each lecture folder contains an HTML file or a Jupyter notebook (`.ipynb`) with code examples and explanations, along with any additional resources or datasets used in the lecture.
