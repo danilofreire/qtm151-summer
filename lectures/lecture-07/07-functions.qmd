@@ -1,6 +1,6 @@
 ---
 title: QTM 151 - Introduction to Statistical Computing II
-subtitle: "Lecture 08 - Custom Functions"
+subtitle: "Lecture 07 - Custom Functions and Variable Scope"
 author:
   - name: Danilo Freire
     email: danilo.freire@emory.edu
