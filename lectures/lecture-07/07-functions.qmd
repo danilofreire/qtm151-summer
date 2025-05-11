@@ -1,0 +1,875 @@
+---
+title: QTM 151 - Introduction to Statistical Computing II
+subtitle: "Lecture 08 - Custom Functions"
+author:
+  - name: Danilo Freire
+    email: danilo.freire@emory.edu
+    affiliations: Emory University
+format:
+  clean-revealjs:
+    self-contained: true
+    footer: "[Functions](https://raw.githack.com/danilofreire/qtm151-summer/main/lectures/lecture-07/07-functions.html)"
+transition: slide
+transition-speed: default
+scrollable: true
+engine: jupyter
+editor:
+  render-on-save: true
+---
+
+# I hope you're having a great day! 😊 {background-color="#2d4563"}
+
+# Today's plan 📋 {background-color="#2d4563"}
+
+## What we will do today:
+
+:::{style="margin-top: 30px; font-size: 25px;"}
+:::{.columns}
+:::{.column width="50%"}
+- Learn about functions in Python
+- Understand the difference between arguments, parameters, and return values
+- Define functions with `def` and `return`
+- Use functions to encapsulate repetitive code
+- Create lambda functions
+- Write a function to calculate the future value of an investment
+- Learn about local and global variables
+:::
+
+:::{.column width="50%"}
+:::{style="text-align: center; margin-top: -30px;"}
+![](figures/functions.webp){width="80%"}
+
+![](figures/lambda.jpg){width="80%"}
+:::
+:::
+:::
+:::
+
+# Functions in Python 🐍 {background-color="#2d4563"}
+
+## What is a function?
+### A function is a block of code that performs a specific task
+
+:::{style="margin-top: 30px; font-size: 25px;"}
+- Functions are used to [organise code, make it readable, and reusable]{.alert}
+- The main idea behind writing and using functions is that, if you have to do the same task multiple times, you can write a function to do that task and then call it whenever you want
+- A (somewhat silly) rule of thumb is that if you do the same task more than three times, you should write a function for it
+- As your code grows, functions will help you keep it maintainable and scalable
+- We have already seen lots of functions in Python
+  - `print()`, `np.mean()`,  `plt.hist()`, `type()`, etc
+- These functions are built-in, but you can also [create your own functions]{.alert} as we will see today
+:::
+
+## What is a function?
+### A function is a block of code that performs a specific task
+
+:::{style="margin-top: 30px; font-size: 25px;"}
+- Functions have [parameters](https://eitca.org/computer-programming/eitc-cp-ppf-python-programming-fundamentals/functions/function-parameters-and-typing/examination-review-function-parameters-and-typing/what-are-function-parameters-in-python-and-how-are-they-used/), which are the variables that the function expects to receive
+  - For example, `np.random.normal()` expects two parameters: the mean (`loc`) and the standard deviation (`scale`). Size is an optional parameter
+- Functions can take [arguments](https://en.wikipedia.org/wiki/Parameter_(computer_programming)) and [return values](https://en.wikipedia.org/wiki/Return_statement)
+  - For example, `np.random.normal(0, 1)` takes two arguments and returns a random number from a normal distribution with mean 0 and standard deviation 1
+- Functions can also have [default arguments](https://en.wikipedia.org/wiki/Default_argument), which are optional
+  - If you don't provide a value for a default argument, the function will use the default value
+  - Example: `np.random.normal()` will provide a sample of 1 number with mean 0 and standard deviation 1 if you don't provide any arguments
+:::
+
+## Some examples 
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+:::{.columns}
+:::{.column width="50%"}
+```{python}
+#| eval: true
+#| echo: true
+# Argument: "Hello" 
+# Return: Showing the message on screen
+
+print("Hello, "+str("QTM151!"))
+```
+:::{style="margin-top: 40px; font-size: 24px;"}
+:::
+
+```{python}
+#| eval: true
+#| echo: true
+# Argument: ABC
+# Return: The type of object, e.g. int, str,
+# boolean, float, etc.
+
+type("ABC")
+```
+:::
+
+:::{.column width="50%"}
+```{python}
+#| eval: true
+#| echo: true
+# First Argument: np.pi (a numeric value)
+# Second Argument: 10 (number of decimals)
+# Return: Round the first argument, 
+# given the number of decimals in the second argument
+import numpy as np
+
+round(np.pi,  10)
+```
+:::{style="margin-top: 40px; font-size: 24px;"}
+:::
+```{python}
+#| eval: true
+#| echo: true
+list_fruits = ["Apple","Orange","Pear"]
+
+# Argument: list_fruits
+# Return: number of elements in the list
+len(list_fruits)
+```
+
+So far, so good? 😊
+:::
+:::
+:::
+
+## Enter arguments by assignment
+
+:::{style="margin-top: 30px; font-size: 27px;"}
+- The most common way to pass arguments to a function is [by assignment]{.alert}
+- You can pass arguments [by position or by name]{.alert}
+- When you pass arguments by name, you can change the order of the arguments
+  - That is the case with many functions in Python, and it makes it easier to remember the arguments
+- You can also use default arguments if you don't want to pass a specific value
+:::
+
+## Enter arguments by assignment
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+```{python}
+#| eval: true
+#| echo: true
+# A function that generates a random number
+vec_x = np.random.chisquare(df = 2, size = 10)
+print(vec_x)
+```
+
+```{python}
+#| eval: true
+#| echo: true
+# Another example
+vec_y = np.random.normal(loc = 2, scale = 1, size = 10)
+print(vec_y)
+```
+
+```{python}
+#| eval: true
+#| echo: true
+vec_z = np.random.uniform(0, 10, 10)
+print(vec_z)
+```
+
+[What are the parameters, arguments, and return values in these examples?]{.alert} 🤓
+:::
+
+# Custom functions in Python 🐍 {background-color="#2d4563"}
+
+## Defining a function
+### You can define a function using the `def` keyword
+
+:::{style="margin-top: 30px; font-size: 22px;"}
+:::{.columns}
+:::{.column width="50%"}
+- You can create your own functions using the `def` keyword
+- The syntax is as follows:
+
+```{python}
+#| eval: false
+#| echo: true
+
+#---- DEFINE
+def my_function(parameter):
+    body
+    return expression
+
+#---- RUN
+my_function(parameter = argument) 
+
+#---- RUN
+my_function(argument)
+```
+:::
+
+:::{.column width="50%"}
+- The function name should be descriptive, that is, its name should reflect what the function does
+- The parameters are the variables that the function expects to receive
+  - In our case, the parameter is `parameter` (duh! 😅)
+- The body is the code that the function will run
+  - Please don't forget that the [body should be indented!]{.alert}
+- The return statement is optional
+  - If you don't provide a return statement, the function will return `None`
+  - So it's a good practice to always return something!
+:::
+:::
+:::
+
+## Let's create a function! {#sec:interest}
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+- Let's create a function that solves this equation for any combination of numbers:
+
+$$V=P\left(1+{\frac {r}{n}}\right)^{nt}$$
+
+To know what each parameter means, click here: [[Appendix 01]{.button}](#sec:appendix01)
+
+:::{style="margin-top: 40px; font-size: 24px;"}
+:::
+
+```{python}
+#| eval: true
+#| echo: true
+def fn_compound_interest(P, r, n, t):
+    V = P*(1 + r/n)**(n*t)
+    return V
+```
+:::
+
+## Let's test our function
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+- Now that we have defined our function, we can use it to calculate the future value of an investment
+
+```{python}
+#| eval: true
+#| echo: true
+# You can know compute the formula with different values
+# Let's see how much one can gain by investing 50k and 100k
+# Earning 10% a year for 10 years
+
+V1 = fn_compound_interest(P = 50000, r = 0.10, n = 12, t = 10)
+V2 = fn_compound_interest(100000, 0.10, 12, 10)
+V3 = fn_compound_interest(r = 0.10, P = 100000, t = 10, n = 12)
+
+print(V1)
+print(V2)
+print(V3)
+```
+:::
+
+## Try it yourself! 🤓 {#sec:equation}
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+- Now it's your turn to try it out!
+- Write a function that calculates
+
+$f(x) = x^2 + 2x + 1$
+
+- Test your function with $x = 2$ and $x = 3$
+- [[Appendix 02]{.button}](#sec:appendix02)
+:::
+
+## Try it yourself! 🤓 {#sec:names}
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+- Write a function with a parameter `numeric_grade`
+- Inside the function write an if/else statement for $grade \ge 55$.
+- If it's true, then assign `status = pass`
+- If it's false, then assign `status = fail`
+- Return the value of `status`
+- Test your function with $numeric\_grade = 60$
+- [[Appendix 03]{.button}](#sec:appendix03)
+:::
+
+# Lambda functions  {background-color="#2d4563"}
+
+## Lambda functions
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+- Lambda functions are [short functions, which you can write in one line]{.alert}
+- They can have any number of arguments but only one expression (no return statement)
+- They are used when you need a simple function for a short period of time
+- They are also known as [anonymous functions](https://en.wikipedia.org/wiki/Anonymous_function), although you can assign them to a variable
+- Format: `my_function = lambda parameters: expression`
+  - Example: `fn_squared = lambda x: x**2`
+
+- More information [here](https://realpython.com/python-lambda/)
+:::
+
+## Lambda functions
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+- Example: calculate $x + y + z$ using a lambda function
+- The function will take three arguments: $x$, $y$, and $z$
+
+```{python}
+#| eval: true
+#| echo: true
+fn_sum = lambda x, y, z: x + y + z
+
+result = fn_sum(1, 2, 3)
+print(result)
+```
+
+:::{style="margin-top: 40px; font-size: 24px;"}
+:::
+
+```{python}
+#| eval: true
+#| echo: true
+fn_v = lambda P, r, n, t: P*(1+(r/n))**(n*t)
+
+result = fn_v(50000, 0.10, 12, 10)
+print(result)
+```
+:::
+
+## Try it yourself! 🤓 {#sec:lambda}
+### Boleean + Functions
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+- Write a function called `fn_iseligible_vote`
+- This functions returns a boolean value that checks whether $age \ge$ 18
+- Test your function with $age = 20$
+- [[Appendix 04]{.button}](#sec:appendix04)
+:::
+
+## Another one! 🤓 {#sec:list}
+### `For` loop + Functions
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+- Create `list_ages = [18,29,15,32,6]`
+- Write a loop that checks whether above ages are eligible to vote
+- Use the above function
+- [[Appendix 05]{.button}](#sec:appendix05)
+:::
+
+# Understanding scope in Python 🧐 {background-color="#2d4563"}
+
+## What is variable scope?
+
+:::{style="margin-top: 30px; font-size: 22px;"}
+:::{.columns}
+:::{.column width="50%"}
+- Scope is the [area of a programme where a variable is accessible]{.alert}
+- Think of scope as a variable's "visibility" in different parts of your code
+- Python uses the [LEGB rule]{.alert} to determine variable scope:
+    - [Local]{.alert}: Inside the current function
+    - [Enclosing]{.alert}: Inside enclosing/nested functions
+    - [Global]{.alert}: At the top level of the module
+    - [Built-in]{.alert}: In the built-in namespace
+
+- The LEGB rule defines the order Python searches for variables
+:::
+
+:::{.column width="50%"}
+:::{style="text-align: center; margin-top: -30px;"}
+![](figures/scope.png){width="60%"}
+:::
+
+- It is easier to understand them with an example:
+
+```python
+x = 10  # Global scope
+
+def print_x():
+    x = 20  # Local scope
+    print(x)  # Prints 20 (local)
+
+print_x()
+
+print(x)  # Prints 10 (global)
+```
+:::
+:::
+:::
+
+## Global scope
+### Variables defined outside a function
+
+:::{style="margin-top: 30px; font-size: 22px;"}
+:::{.columns}
+:::{.column width="50%"}
+- Most variables we have seen so far are in the [global scope]{.alert}
+- They are stored in the [global namespace]{.alert} and are [accessible]{.alert} from anywhere in the code
+
+- Let's create a function that sums 3 numbers
+- $f(x,y,z) = x + y + z$
+- We will pass the numbers as arguments to the function
+
+```{python}
+#| echo: true
+#| eval: true
+# Correct example:
+def fn_add_recommended(x,y,z):
+    return(x + y + z)
+
+print(fn_add_recommended(x = 1, y = 2, z = 5))
+print(fn_add_recommended(x = 1, y = 2, z = 10))
+```
+:::
+
+:::{.column width="50%"}
+- If you do not include the variables as parameters, Python will try to use global variables if they exist
+  
+```{python}
+#| echo: true
+#| eval: true
+# Incorrect example:
+def fn_add_notrecommended(x,y):
+    return(x + y + z)
+
+z = 5
+print(fn_add_notrecommended(x = 1, y = 2))
+z = 10
+print(fn_add_notrecommended(x = 1, y = 2)) 
+```
+
+```python
+del z # Remove variable z from global scope
+print(fn_add_notrecommended(x = 1, y = 2)) 
+```
+```verbatim
+NameError: name 'z' is not defined
+```
+:::
+:::
+:::
+
+## Local scope
+### Variables defined inside a function
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+:::{.columns}
+:::{.column width="50%"}
+- Variables defined inside a function are [local]{.alert} to that function
+- They are [not accessible]{.alert} outside the function
+- Local variables are [destroyed]{.alert} when the function returns
+- If you try to access a local variable outside the function, you will get a `NameError`
+- They include [parameters]{.alert} and [variables created inside the function]{.alert}
+:::
+
+:::{.column width="50%"}
+- Example:
+- In the code below, `x` is a local variable to the function `print_x()`
+
+:::{style="font-size: 21px;"}
+```{python}
+#| echo: true
+#| eval: false 
+def print_x():
+    x = 20  # Local scope
+    print(x)  # Prints 20 (local)
+
+print_x() # Prints 20
+
+print(x)  # NameError: name 'x' is not defined
+```
+```verbatim
+>>> print_x()
+20
+>>> print(x)  # NameError: name 'x' is not defined
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'x' is not defined
+```
+:::
+:::
+:::
+:::
+
+## Local variables supercede global variables
+### Remember the LEGB rule
+
+:::{style="margin-top: 30px; font-size: 22px;"}
+```{python}
+#| echo: true
+#| eval: true
+# This is an example where we define a quadratic function
+# (x,y) are both local variables of the function
+# 
+# When we call the function, only the arguments matter.
+# any intermediate value inside the function
+
+def fn_square(x):
+    y = x**2
+    return(y)
+
+x = 5
+y = -5
+
+print(fn_square(x = 1))
+
+print(x)
+print(y)
+``` 
+:::
+
+## Local variables are not stored in the working environment
+
+:::{style="margin-top: 30px; font-size: 22px;"}
+```{python}
+#| echo: true
+#| eval: true
+# The following code assigns a global variable x
+# Inside the function
+
+x = 5
+y = 4
+
+print("Example 1:")
+print(fn_square(x = 10))
+print(x)
+print(y)
+
+print("Example 2:")
+print(fn_square(x = 20))
+print(x)
+print(y)
+```
+:::
+
+## Permanent changes to global variables
+
+:::{style="margin-top: 30px; font-size: 22px;"}
+:::{.columns}
+:::{.column width="50%"}
+- If you want to change a global variable inside a function, you need to use the `global` keyword
+- The `global` keyword tells Python that you want to use the global variable, not create a new local variable
+
+```{python}
+#| echo: true
+#| eval: true
+def modify_x():
+    global x
+    x = x + 5
+
+x = 1
+
+modify_x()
+print(x)
+```
+:::
+
+:::{.column width="50%"}
+- **Why avoid `global`?**
+  - It makes your code harder to follow. It's not clear where a variable is being changed.
+  - It can lead to unexpected side effects if multiple functions modify the same global variable.
+  - It's generally better for functions to receive data as parameters and return results.
+- Use `global` sparingly, if at all! 😉
+:::
+:::
+:::
+
+## Try it out! 🚀 {#sec:exercise-06}
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+:::{.columns}
+:::{.column width="50%"}
+```{python}
+#| echo: true
+#| eval: true
+def modify_x():
+    global x
+    x = x + 5
+
+x = 1
+
+modify_x()
+print(x)
+```
+:::
+
+:::{.column width="50%"}
+- What happens if we run the function `modify_x()` again?
+- What happens if we add `global y` inside `fn_square`?
+- [[Appendix 06]{.button}](#sec:appendix-06)
+:::
+:::
+:::
+
+## Built-in scope
+### Variables defined in Python
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+:::{.columns}
+:::{.column width="50%"}
+- We have also seen many [built-in functions]{.alert} in Python, like `print()`, `len()`, `sum()`, etc
+- They are available in any part of your code, and you don't need to define them
+- Python has a list of variables that are always available to prevent you from using the same names
+- Most of them are error names
+- Python checks the built-in scope last (after Local, Enclosing, and Global)
+
+```{python}
+#| echo: true
+#| eval: true
+print(len("hello"))
+
+m = min([4, 3, 1, 7])
+print(m)
+```
+:::
+
+:::{.column width="50%"}
+```{python}
+#| echo: true
+#| eval: true
+import builtins
+
+# View a list of attributes of a given 
+# object with dir()
+print(dir(builtins))
+```
+:::
+:::
+:::
+
+## Enclosing scope: functions inside functions (Nested Functions)
+
+:::{style="margin-top: 30px; font-size: 26px;"}
+- Sometimes, you might define a function *inside* another function. This is called a **nested function** (we've spoken about this before!)
+- The "enclosing scope" refers to the variables of the **outer** function that the **inner** (nested) function can "see" and use
+- This is the 'E' in the LEGB rule (Local -> Enclosing -> Global -> Built-in).
+- They are easier to understand once you understand local and global scopes
+- We will not use them much in this course, but they are useful in some cases!
+:::
+
+## Enclosing scope: accessing outer variables
+
+:::{style="margin-top: 30px; font-size: 22px;"}
+Here's how an inner function can access a variable from its enclosing (outer) function:
+
+```{python}
+#| echo: true
+#| eval: true
+def outer_function():
+    outer_variable = "I'm from the outer function!" # Variable in outer_function's local scope
+    
+    def inner_function():
+        # inner_function can 'see' and use outer_variable
+        # because outer_variable is in its enclosing scope.
+        print(f"Inner function says: {outer_variable}")
+    
+    print("Calling inner_function from outer_function...")
+    inner_function() # Call the inner function
+
+# Now, let's call the outer_function to see it in action
+outer_function()
+```
+In this example, `outer_variable` is "enclosing" for `inner_function`.
+:::
+
+## Enclosing scope: what if inner defines its own variable? (shadowing)
+
+:::{style="margin-top: 30px; font-size: 22px;"}
+If the inner function defines a variable with the *same name* as one in the outer function, the inner function will use its *own local* variable. This is called "shadowing".
+
+```{python}
+#| echo: true
+#| eval: true
+def outer_function_shadow():
+    message = "This is the OUTER message." # Variable in outer_function_shadow's scope
+    
+    def inner_function_shadow():
+        message = "This is the INNER message!" # This is a NEW, LOCAL variable for inner_function_shadow
+                                             # It "shadows" the outer 'message'
+        print(f"Inside inner_function_shadow: {message}") 
+    
+    print(f"Before calling inner, outer message is: {message}")
+    inner_function_shadow()
+    print(f"After calling inner, outer message is still: {message}") # Unchanged
+
+outer_function_shadow()
+```
+The `message` inside `inner_function_shadow` is a completely separate variable from the `message` in `outer_function_shadow`.
+:::
+
+## Try it out! 🚀 {#sec:exercise-07}
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+Consider the following code:
+```python
+#| echo: true
+#| eval: false # For students to predict first
+a = 10 # Global variable
+
+def func_one():
+    b = 20 # Local to func_one
+    print(f"Inside func_one: a = {a}, b = {b}")
+
+    def func_two():
+        c = 30 # Local to func_two
+        # 'a' is global, 'b' is from enclosing scope of func_one
+        print(f"Inside func_two: a = {a}, b = {b}, c = {c}")
+    
+    func_two()
+    # print(f"Inside func_one, trying to print c: {c}") # What would happen here?
+
+func_one()
+# print(f"Outside all functions: a = {a}")
+# print(f"Outside all functions, trying to print b: {b}") # What would happen here?
+# print(f"Outside all functions, trying to print c: {c}") # What would happen here?
+```
+1.  Before running, predict what each `print` statement will output, or if it will cause an error.
+2.  Uncomment the lines one by one (those trying to print `b` and `c` outside their scopes) and observe the errors. Why do they occur?
+3.  What is the scope of `a`, `b`, and `c`?
+
+- [[Appendix 07]{.button}](#sec:appendix-07)
+:::
+
+# And that's all for today! 🎉 {background-color="#2d4563"}
+
+# Have a great day! 😊 {background-color="#2d4563"}
+
+## Appendix 01: Compound Interest Equation {#sec:appendix01}
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+- $V$ is the future value of the investment/loan, including interest
+- $P$ is the principal investment amount (the initial deposit or loan amount)
+- $r$ is the annual interest rate (decimal)
+- $n$ is the number of times that interest is compounded per year
+- $t$ is the time the money is invested/borrowed for, in years
+- [More information](https://en.wikipedia.org/wiki/Compound_interest)
+
+[[Back to the function]{.button}](#sec:interest)
+:::
+
+## Appendix 02: Quadratic Equation {#sec:appendix02}
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+```{python}
+#| eval: true
+#| echo: true
+def fn_quadratic(x):
+    f = x**2 + 2*x + 1
+    return f
+
+f1 = fn_quadratic(2)
+f2 = fn_quadratic(3)
+
+print(f1)
+print(f2)
+```
+
+[[Back to the exercise]{.button}](#sec:equation)
+:::
+
+## Appendix 03: Pass/Fail Function {#sec:appendix03}
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+```{python}
+#| eval: true
+#| echo: true
+def fn_pass_fail(numeric_grade):
+    if numeric_grade >= 55:
+        status = "pass"
+    else:
+        status = "fail"
+    return status
+
+status = fn_pass_fail(60)
+print(status)
+```
+
+[[Back to the exercise]{.button}](#sec:names)
+:::
+
+## Appendix 04: Lambda Function {#sec:appendix04}
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+```{python}
+#| eval: true
+#| echo: true
+fn_iseligible_vote = lambda age: age >= 18
+
+result = fn_iseligible_vote(20)
+print(result)
+```
+
+[[Back to the exercise]{.button}](#sec:lambda)
+:::
+
+## Appendix 05: For loop + Function {#sec:appendix05}
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+```{python}
+#| eval: true
+#| echo: true
+list_ages = [18,29,15,32,6]
+
+for age in list_ages:
+    result = fn_iseligible_vote(age)
+    print(f"Age: {age} - Eligible to vote: {result}")
+```
+    
+[[Back to the exercise]{.button}](#sec:list)
+:::
+
+## Appendix 06 {#sec:appendix-06}
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+:::{.columns}
+:::{.column width="50%"}
+```{python}
+#| echo: true
+#| eval: true
+def modify_x():
+    global x
+    x = x + 5
+
+x = 1
+
+# Now, running the function 
+# will permanently increase x by 5.
+
+modify_x()
+print(x)
+modify_x()
+print(x)
+```
+:::
+
+:::{.column width="50%"}
+```{python}
+#| echo: true
+#| eval: true
+def fn_square(x):
+    global y
+    y = x**2
+    return(y)
+
+x = 5
+y = -5
+
+print("Example 1:")
+print(fn_square(x = 10))
+print(x)
+print(y)
+```
+
+[[Back to exercise 06]{.button}](#sec:exercise-06)
+:::
+:::
+:::
+
+## Appendix 07 {#sec:appendix-07}
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+```{python}
+#| echo: true
+#| eval: true
+a = 10 # Global variable
+
+def func_one():
+    b = 20 # Local to func_one
+    print(f"Inside func_one: a = {a}, b = {b}")
+
+    def func_two():
+        c = 30 # Local to func_two
+        # 'a' is global, 'b' is from enclosing scope of func_one
+        print(f"Inside func_two: a = {a}, b = {b}, c = {c}")
+    
+    func_two()
+    # print(f"Inside func_one, trying to print c: {c}") # What would happen here?
+
+func_one()
+print(f"Outside all functions: a = {a}")
+```
+
+- [[Back to exercise 07]{.button}](#sec:exercise-07)
+:::
