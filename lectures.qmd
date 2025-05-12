@@ -32,6 +32,8 @@ materials available in the [lectures folder in our course repository](https://gi
 
 - Wednesday, May 28: Lecture 12: SQL in Python. [Lecture Slides](https://raw.githack.com/danilofreire/qtm151-summer/main/lectures/lecture-12/12-sql-python.html), [Lecture Notebook](https://github.com/danilofreire/qtm151-summer/blob/main/lectures/lecture-12/12-sql-python.ipynb).
 
+- Thursday, May 29: Lecture 13: Merge Tables in SQL. [Lecture Slides](https://raw.githack.com/danilofreire/qtm151-summer/main/lectures/lecture-13/13-sql-tables.html), [Lecture Notebook](https://github.com/danilofreire/qtm151-summer/blob/main/lectures/lecture-13/13-sql-tables.ipynb).
 
+- Friday, May 30: [Lecture 14: Quiz 03 - Based on Lectures 10-13](https://github.com/danilofreire/qtm151-summer-quiz03/). 
 
 Each lecture folder contains an HTML file or a Jupyter notebook (`.ipynb`) with code examples and explanations, along with any additional resources or datasets used in the lecture.
