@@ -28,6 +28,8 @@ materials available in the [lectures folder in our course repository](https://gi
 
 - Monday, May 26: Lecture 10: Subsetting and Filtering Data. [Lecture Slides](https://raw.githack.com/danilofreire/qtm151-summer/main/lectures/lecture-10/10-subsetting-data.html), [Lecture Notebook](https://github.com/danilofreire/qtm151-summer/blob/main/lectures/lecture-10/10-subsetting-data.ipynb).
 
+- Tuesday, May 27: Lecture 11: Introduction to SQL. [Lecture Slides](https://raw.githack.com/danilofreire/qtm151-summer/main/lectures/lecture-11/11-introduction-sql.html), [Lecture Notebook](https://github.com/danilofreire/qtm151-summer/blob/main/lectures/lecture-11/11-introduction-sql.ipynb).
+
 
 
 Each lecture folder contains an HTML file or a Jupyter notebook (`.ipynb`) with code examples and explanations, along with any additional resources or datasets used in the lecture.
