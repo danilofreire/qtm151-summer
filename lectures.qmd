@@ -30,6 +30,8 @@ materials available in the [lectures folder in our course repository](https://gi
 
 - Tuesday, May 27: Lecture 11: Introduction to SQL. [Lecture Slides](https://raw.githack.com/danilofreire/qtm151-summer/main/lectures/lecture-11/11-introduction-sql.html), [Lecture Notebook](https://github.com/danilofreire/qtm151-summer/blob/main/lectures/lecture-11/11-introduction-sql.ipynb).
 
+- Wednesday, May 28: Lecture 12: SQL in Python. [Lecture Slides](https://raw.githack.com/danilofreire/qtm151-summer/main/lectures/lecture-12/12-sql-python.html), [Lecture Notebook](https://github.com/danilofreire/qtm151-summer/blob/main/lectures/lecture-12/12-sql-python.ipynb).
+
 
 
 Each lecture folder contains an HTML file or a Jupyter notebook (`.ipynb`) with code examples and explanations, along with any additional resources or datasets used in the lecture.
