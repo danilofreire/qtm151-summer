@@ -22,4 +22,10 @@ materials available in the [lectures folder in our course repository](https://gi
 
 - Wednesday, May 21: Lecture 07: Functions. [Lecture Slides](https://raw.githack.com/danilofreire/qtm151-summer/main/lectures/lecture-07/07-functions.html), [Lecture Notebook](https://github.com/danilofreire/qtm151-summer/blob/main/lectures/lecture-07/07-functions.ipynb).
 
+- Thursday, May 22: Lecture 08: Data Wrangling with Pandas. [Lecture Slides](https://raw.githack.com/danilofreire/qtm151-summer/main/lectures/lecture-08/08-data-wrangling.html), [Lecture Notebook](https://github.com/danilofreire/qtm151-summer/blob/main/lectures/lecture-08/08-data-wrangling.ipynb).
+
+- Friday, May 23: [Lecture 09: Quiz 02 - Based on Lectures 05-08](https://github.com/danilofreire/qtm151-summer-quiz02/). As with Quiz 01, the repository will be available on the day of the quiz.
+
+
+
 Each lecture folder contains an HTML file or a Jupyter notebook (`.ipynb`) with code examples and explanations, along with any additional resources or datasets used in the lecture.
