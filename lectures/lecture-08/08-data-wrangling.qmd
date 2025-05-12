@@ -1,0 +1,958 @@
+---
+title: QTM 151 - Introduction to Statistical Computing II
+subtitle: "Lecture 08 - Data Wrangling with Pandas"
+author:
+  - name: Danilo Freire
+    email: danilo.freire@emory.edu
+    affiliations: Emory University
+format:
+  clean-revealjs:
+    self-contained: true
+    footer: "[Data Wrangling with Pandas](https://raw.githack.com/danilofreire/qtm151-summer/main/lectures/lecture-08/08-data-wrangling.html)"
+transition: slide
+transition-speed: default
+scrollable: true
+engine: jupyter
+editor:
+  render-on-save: true
+---
+
+# Hello again! 🥳 {background-color="#2d4563"}
+
+# Recap of last class 📚 {background-color="#2d4563"}
+
+## In our last class, we learned
+
+:::{style="margin-top: 30px; font-size: 25px;"}
+:::{.columns}
+:::{.column width="50%"}
+- How to write functions with `def` and `return`
+- What [parameters, arguments, and return values]{.alert} are
+- How to combine functions with `if` statements
+- How to use [lambda](https://realpython.com/python-lambda/) to create quick, throwaway functions
+:::
+
+:::{.column width="50%"}
+:::{style="text-align: center; margin-top: -30px;"}
+![](figures/functions.webp){width="80%"}
+
+![](figures/lambda.jpg){width="80%"}
+:::
+:::
+:::
+:::
+
+## Today's plan 📅 
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+:::{.columns}
+:::{.column width="50%"}
+- Introduction to `pandas`, the main library for data manipulation in Python
+- Learn how to apply functions to many variables at once
+- How to use the `apply` and `map` functions
+- Learn how to recode and replace variables in a dataset
+- Specifically focus on replacing `NaN` values ("Not a Number" - missing data)
+- Cover how to convert variables from one type to another
+- Learn how to create new variables based on existing ones
+- Finally, we will learn about `.py` files and how to import them as modules
+:::
+
+:::{.column width="50%"}
+:::{style="text-align: center; margin-top: -90px;"}
+![](figures/pandas.png){width="100%"}
+:::
+:::
+:::
+:::
+
+# Operations over many variables using Pandas 🐼 {background-color="#2d4563"}
+
+## Pandas 🐼
+
+:::{style="margin-top: 30px; font-size: 29px;"}
+- `pandas` is the main library for [data manipulation]{.alert} in Python 🐼
+- We will use it a lot in this course (and in your life as a data scientist!)
+- It is built on top of `numpy` and `matplotlib`, and has [a gazillion functions to work with data](https://pandas.pydata.org/docs/reference/index.html) 😁
+- If you use `R` already, think about it as the `dplyr` of Python
+  - A list of [equivalences between `dplyr` and `pandas`](https://pandas.pydata.org/docs/getting_started/comparison/comparison_with_r.html)
+- We will learn more about it in the next classes
+:::
+
+## Applying functions to a dataset
+
+:::{style="margin-top: 30px; font-size: 26px;"}
+- The `apply` function is used to [apply a function to a dataset]{.alert}
+  - (This course is full of surprises, isn't it? 😄)
+- It is a [method of a pandas DataFrame]{.alert}
+- It can be used with built-in functions, custom functions, or lambda functions
+  - `df.apply(function)`
+- You can apply functions to rows or columns
+  - `df.apply(function, axis=0)` applies the function to each column (default)
+  - `df.apply(function, axis=1)` applies the function to each row
+:::
+
+## Applying functions to a dataset
+
+:::{style="margin-top: 30px; font-size: 22px;"}
+```{python}
+#| echo: true
+#| eval: true
+import numpy as np
+import pandas as pd
+
+df = pd.DataFrame({
+    'A': [1, 2, 3],
+    'B': [4, 5, 6],
+    'C': [7, 8, 9]
+})
+
+print(df.apply(np.sqrt))
+```
+```{python}
+#| echo: true
+#| eval: true
+print(df.apply(np.sum, axis=1))
+```
+
+```{python}
+#| echo: true
+#| eval: true
+print(df.apply(lambda x: x**2))
+```
+:::
+
+## Applying functions to a dataset
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+- Let's do a quick exercise
+
+```{python}
+#| echo: true
+#| eval: true
+# Create an empty DataFrame
+data = pd.DataFrame()
+
+# Add variables
+data["age"] = [18,29,15,32,6]
+data["num_underage_siblings"] = [0,0,1,1,0]
+data["num_adult_siblings"] = [1,0,0,1,0]
+
+display(data)
+```
+:::
+
+## Applying functions to a dataset
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+- Now let's define some functions
+
+```{python}
+#| echo: true
+#| eval: true
+# The first two functions return True/False depending on age constraints
+# The third function returns the sum of two numbers
+# The fourth function returns a string with the age bracket
+
+fn_iseligible_vote = lambda age: age >= 18
+
+fn_istwenties = lambda age: (age >= 20) & (age < 30)
+
+fn_sum = lambda x,y: x + y
+
+def fn_agebracket(age):
+    if (age >= 18):
+        status = "Adult"
+    elif (age >= 10) & (age < 18):
+        status = "Adolescent"
+    else:
+        status = "Child"
+    return(status)
+```
+:::
+
+## Applying functions to a dataset
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+- Now let's apply the functions to the `data["age"]` column
+
+```{python}
+#| echo: true
+#| eval: true
+data["can_vote"]    = data["age"].apply(fn_iseligible_vote)
+data["in_twenties"] = data["age"].apply(fn_istwenties)
+data["age_bracket"] = data["age"].apply(fn_agebracket)
+
+display(data)
+```
+:::
+
+## Creating a new variable
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+- You can also create a new variable using the `apply` function
+  
+```{python}
+#| echo: true
+#| eval: true
+# Creating a new variable
+data["new_var"] = data["age"].apply(lambda age: age >= 18)
+
+display(data)
+```
+:::
+
+## Deleting a variable
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+- You can also delete a variable using the `drop` function
+
+```{python}
+#| echo: true
+#| eval: true
+data = data.drop(columns = ["new_var"])
+
+display(data)
+```
+:::
+
+## Mapping functions to a list, array, or series
+
+:::{style="margin-top: 30px; font-size: 22px;"}
+- The `map` function is used to [apply a function to a list, an array, or a series]{.alert}
+  - A series is a single column of a pandas DataFrame
+- [In pandas]{.alert}, `map` works very similarly to the `apply` function, and they are interchangeable when working with series
+- `map` can be faster than `apply` for simple functions, but `apply` is more flexible as it can be used with DataFrames (many columns)
+- However, if you are using regular lists (e.g., `list01 = [1,2,3]`), you should use `map` instead of `apply`
+  - `apply` is not a built-in Python function
+  
+:::{style="font-size: 20px;"}
+:::{.columns}
+:::{.column width="50%"}
+```{python}
+#| echo: true
+#| eval: true
+data["age_bracket01"] = data["age"].map(fn_agebracket)
+
+display(data[["age","age_bracket01"]])
+```
+:::
+
+:::{.column width="50%"}
+```{python}
+#| echo: true
+#| eval: true
+data["age_bracket02"] = data["age"].apply(fn_agebracket)
+
+display(data[["age","age_bracket02"]])
+```
+:::
+:::
+:::
+:::
+
+## Mapping functions to a list, array, or series
+
+:::{style="margin-top: 30px; font-size: 21px;"}
+:::{.columns}
+:::{.column width="50%"}
+- Using `map` with a list and an array
+```{python}
+#| echo: true
+#| eval: true
+# Create a list
+list01 = [1,2,3,4,5]
+
+# Map a function to the list
+list02 = list(map(lambda x: x**2, list01))
+
+print(list02)
+```
+```{python}
+#| echo: true
+#| eval: true
+# Create a numpy array
+array01 = np.array([1,2,3,4,5])
+
+# Map a function to the array
+array02 = np.array(list(map(lambda x: x**2, array01)))
+
+print(array02)
+```
+:::
+
+:::{.column width="50%"}
+- Trying to use `apply` with a list or an array will raise an error
+```{python}
+#| echo: true
+#| eval: false
+# Create a list
+list01 = [1,2,3,4,5]
+
+# Apply a function to the list
+list02 = list(apply(lambda x: x**2, list01))
+
+print(list02)
+```
+
+```{verbatim}
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+Cell In[168], line 5
+      2 list01 = [1,2,3,4,5]
+      4 # Apply a function to the list
+----> 5 list02 = list(apply(lambda x: x**2, list01))
+      7 print(list02)
+
+NameError: name 'apply' is not defined
+```
+:::
+:::
+:::
+
+## Try it yourself! 🚀 {#sec:exercise-02}
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+- Write a lambda function checking whether `num_siblings` $\ge 1$
+- Add a variable to the dataset called `has_siblings`
+- Assign True/False to this variable using `apply()`
+- [[Appendix 02]{.button}](#sec:appendix-02)
+:::
+
+# Importing modules 📦 {background-color="#2d4563"}
+
+## Importing modules
+### What is a module?
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+:::{.columns}
+:::{.column width="50%"}
+- While `.ipynb` files are great for learning and teaching, they are not the best for sharing code
+- When you write a lot of functions, you should save them in a `.py` file, which is a [Python script]{.alert}
+- A Python script, or module, is just a file containing Python code
+- This code can be functions, classes, or variables
+- A folder containing Python scripts is called a [package]{.alert}
+- You can import modules to use their code in your own code
+:::
+
+:::{.column width="50%"}
+- We can import functions into the working environment from a file 
+
+```{python}
+#| echo: true
+#| eval: true
+# Import the folder `scripts` as a package
+# And the file `example_functions.py` as `ef`
+import scripts.example_functions as ef
+
+print(ef.fn_quadratic(2))
+print(ef.fn_cubic(3))
+
+ef.message_hello("Juan")
+```
+:::
+:::
+:::
+
+## Importing modules
+### Importing variables
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+:::{.columns}
+:::{.column width="50%"}
+- You can also import variables from a module
+- However, it is not recommended to import variables
+- It is better to import functions and use them to create variables
+- This is because variables can be changed in the module, leading to unexpected results
+:::
+
+:::{.column width="50%"}
+- Example:
+
+```{python}
+#| echo: true
+#| eval: true
+import scripts.example_variables as ev
+
+# When we run this code
+# the value of alpha will be overwritten
+
+alpha = 1
+print(alpha)
+print(ev.alpha)
+
+from scripts.example_variables import *
+
+print(alpha)
+print(beta)
+print(gamma)
+print(delta)
+```
+:::
+:::
+:::
+
+# Loading packages and dataset 📦 {background-color="#2d4563"}
+
+## Our dataset: Formula 1 World Championships 🏁🏎️
+
+:::{style="margin-top: 30px; font-size: 25px;"}
+- First, we will load the packages we need
+
+```{python}
+#| echo: true
+#| eval: true
+import pandas as pd
+import numpy as np
+```
+
+- Then, we will load the dataset
+
+```{python}
+#| echo: true
+#| eval: true
+circuits = pd.read_csv("data_raw/circuits.csv")
+
+# Or download it from the internet
+# circuits = pd.read_csv("https://raw.githubusercontent.com/danilofreire/qtm151-summer/main/lectures/lecture-08/data_raw/circuits.csv")
+display(circuits.head(2))
+```
+:::
+
+## Our dataset: Formula 1 World Championships 🏁🏎️
+
+:::{style="margin-top: 30px; font-size: 25px;"}
+- The dataset contains information about F1 circuits, such as its name, location, latitude, longitude, and more
+- You can find more information about the dataset [here](https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020/data)
+- The dataset is available in the course's GitHub repository [here](https://github.com/danilofreire/qtm151-summer/blob/main/lectures/lecture-08/data_raw/circuits.csv)
+  - Or you can download it using the command above
+- Let's see how the codebook looks like
+- More information about [Formula 1 here](https://en.wikipedia.org/wiki/Formula_One)
+:::
+
+## Codebook 📚
+
+:::{style="margin-top: 30px; font-size: 23px;"}
+:::{.columns}
+:::{.column width="50%"}
+![](figures/codebook.png)
+
+- `Field` - Name of the variable
+- `Type` - Type of the variable
+  - Integer (`int`), string (`str` - `varchart`), and float (`float`)
+- `Description` - Label with a description of the variable
+- [Quick discussion]{.alert}: What does `varchart(255)` mean?
+:::
+
+:::{.column width="50%"}
+- The dataset has `{python} circuits.shape[1]` columns (variables) and `{python} circuits.shape[0]`  rows (observations)
+- The columns are:
+  - `circuitId`: Unique identifier for the circuit
+  - `circuitRef`: Unique reference for the circuit
+  - `name`: Name of the circuit
+  - `location`: Location 
+  - `country`: Country where the circuit is located
+  - `lat`: Latitude 
+  - `lng`: Longitude
+  - `alt`: Altitude
+  - `url`: URL of the circuit's Wikipedia page
+:::
+:::
+:::
+
+# NaN values 🚫 {background-color="#2d4563"}
+
+## What is a `NaN` value?
+
+:::{style="margin-top: 30px; font-size: 25px;"}
+:::{.columns}
+:::{.column width="50%"}
+- `NaN` stands for "Not a Number"
+- It is a special value in Python that represents missing data
+- `NaN` values can be found in datasets for various reasons
+  - Data entry errors
+  - Data cleaning and processing errors
+  - Data collection errors
+  - Data transformation errors
+- We (often) need to handle `NaN` values before we can analyse the data
+:::
+
+:::{.column width="50%"}
+- `NaN` values can be found in different types of variables
+  - Numeric variables
+  - Categorical variables
+  - Date variables
+  - Text variables
+- We will focus on numeric variables today
+- `pandas` and `numpy` have functions to handle `NaN` values
+  - Note: they handle `NaN` values differently!
+:::
+:::
+:::
+
+## Operations with `NaN` values
+
+:::{style="margin-top: 30px; font-size: 25px;"}
+:::{.columns}
+:::{.column width="50%"}
+- `NaN` is a special number, available in `numpy`
+
+```{python}
+#| echo: true
+#| eval: true
+np.nan
+```
+
+- Often, we cannot perform operations with `NaN` values
+- Thus, we need to handle them before we can analyse the data
+:::
+
+:::{.column width="50%"}
+- Let's see some examples. We start with `numpy` arrays
+
+```{python}
+#| echo: true
+#| eval: true
+# Create two array with and without "NaNs"
+# The "np.array()" functions converts 
+# a list to an array
+
+vec_without_nans = np.array([1,1,1])
+vec_with_nans    = np.array([np.nan,4,5])
+
+# When you add the vectors
+# you will produce a NaN 
+# on any entries with "NaNs"
+print(vec_without_nans * vec_with_nans)
+print(vec_without_nans / vec_with_nans)
+print(vec_without_nans + vec_with_nans)
+print(vec_without_nans - vec_with_nans)
+```
+:::
+:::
+:::
+
+## Summary statistics with `NaN` values
+### Arrays
+
+:::{style="margin-top: 30px; font-size: 25px;"}
+:::{.columns}
+:::{.column width="50%"}
+- Some summary statistics functions will not work with `NaN` values
+- For example, the `mean()` function
+
+```{python}
+#| echo: true
+#| eval: true
+print(np.mean(vec_with_nans))
+```
+
+- The `mean()` function will return `NaN` if there are `NaN` values in the array
+:::
+
+:::{.column width="50%"}
+- To calculate the mean without `NaN` values, we can use the `nanmean()` function
+
+```{python}
+#| echo: true
+#| eval: true
+print(np.nanmean(vec_with_nans))
+```
+
+- The `nanmean()` function will ignore `NaN` values and calculate the mean with the remaining values
+:::
+:::
+:::
+
+## Summary statistics with `NaN` values
+### Pandas DataFrames
+
+:::{style="margin-top: 30px; font-size: 25px;"}
+:::{.columns}
+:::{.column width="50%"}
+- Let's create an empty DataFrame and create a new column `x` with `NaN` values
+
+```{python}
+#| echo: true
+#| eval: true
+dataset = pd.DataFrame()
+dataset["x"] = vec_with_nans
+dataset
+```
+:::
+
+:::{.column width="50%"}
+- You will see that `pandas` will handle `NaN` values differently: it will [ignore them]{.alert}
+
+```{python}
+#| echo: true
+#| eval: true
+print(dataset["x"].mean())
+```
+
+- [For R users]{.alert}: This is the same as `na.rm = TRUE` in R. `pandas` does that by default
+:::
+:::
+:::
+
+# Data Cleaning 🧹🧽 {background-color="#2d4563"}
+
+## Data cleaning
+
+:::{style="margin-top: 30px; font-size: 25px;"}
+:::{.columns}
+:::{.column width="50%"}
+- Data cleaning is the process of preparing data for analysis
+- It involves identifying and handling missing data, outliers, and other data quality issues
+- [You guys have no idea]{.alert} how much time you will spend cleaning data in your life 😅
+- According to a [Forbes survey](https://www.forbes.com/sites/gilpress/2016/03/23/data-preparation-most-time-consuming-least-enjoyable-data-science-task-survey-says/), data scientists spend 60% of their time cleaning and preparing data, and 57% say it's the least enjoyable part of their work
+  - I can [really]{.alert} relate to that 😂
+- But remember that [clean data are good data]{.alert} 🥳
+:::
+
+:::{.column width="50%"}
+- Let's get the data types of the columns in the `circuits` dataset
+- We use the command `dtypes` for that
+- `object` means that the variable is a string or a variable with mixed types (e.g., numbers and strings)
+
+```{python}
+#| echo: true
+#| eval: true
+circuits.dtypes
+```
+:::
+:::
+:::
+
+## Check rows with numeric values
+
+:::{style="margin-top: 30px; font-size: 25px;"}
+:::{.columns}
+:::{.column width="50%"}
+- Here we will use the `.str.isnumeric()` function
+- This function actually combines two functions: `.str` and `.isnumeric()`
+- The `.str` function is used to check if the variable is a string
+- The `.isnumeric()` part is used to check if the string is numeric
+- [Why do we need both?]{.alert} Because DataFrame columns often contain mixed data types (e.g., numbers and strings), and we need to check if the variable is a string before we can check if it is numeric
+- If we used only `.isnumeric()`, we would get an error (trust me, I tried 😅)
+:::
+
+:::{.column width="50%"}
+- The two dots between the functions are called [method chaining]{.alert}
+- It is a way to call multiple functions in a single line of code
+- If you use `R`, this is similar to the `%>%` operator in `dplyr`
+- Let's see how it works
+
+```{python}
+#| echo: true
+#| eval: true
+# Check if the variable "alt" is numeric
+circuits["alt"].str.isnumeric()
+```
+:::
+:::
+:::
+
+## Other examples of chaining methods
+
+:::{style="margin-top: 30px; font-size: 25px;"}
+:::{.columns}
+:::{.column width="50%"}
+```{python}
+#| echo: true
+#| eval: true
+# Check if the variable 
+# "circuitRef" is numeric
+circuits["circuitRef"].str.isnumeric()
+```
+:::
+
+:::{.column width="50%"}
+```{python}
+#| echo: true
+#| eval: true
+# Convert the variable 
+# `location` to lowercase
+circuits["location"].str.lower()
+```
+:::
+:::
+:::
+
+## Extract list of non-numeric values
+
+:::{style="margin-top: 30px; font-size: 25px;"}
+- We can use the function `query()` to reference subattributes of a variable
+  - `query()` is a method of a pandas DataFrame and it has [many useful functions](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.query.html)!
+  - We will use it more in the future!
+- Here we will combine `query()` with `pd.unique()` to extract a list of non-numeric values
+- The `pd.unique()` function will return a list of unique values in a variable
+
+```{python}
+#| echo: true
+#| eval: true
+# Extract a list of non-numeric values
+# The pd.unique() function extracts unique values from a list
+# Check each value in the alt column to see if it is not numeric
+# True if it is not numeric, False if it is numeric
+subset = circuits.query("alt.str.isnumeric() == False")
+list_unique = pd.unique(subset["alt"])
+print(list_unique)
+```
+:::
+
+## Replace certain values
+
+:::{style="margin-top: 30px; font-size: 25px;"}
+- The `replace` function is used to replace values in a variable
+- The syntax is `dataframe["variable"].replace(list_old, list_new)`
+- More information about the function can be found [here](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.replace.html)
+```{python}
+#| echo: true
+#| eval: true
+# "list_old" encodes values we want to change
+# From the list_unique, we see that the values we want to change are '\N' and '-7'
+# "list_new" encodes the values that will replace the old
+list_old = ['\\N','-7']
+list_new = [np.nan, -7]
+
+# This command replaces the values of the "alt" column
+circuits["alt"] = circuits["alt"].replace(list_old, list_new)
+```
+
+- After the cleaning process is done, you may want to store the dataset again
+- It's [strongly recommended]{.alert} to do this in a separate file from the original
+- Use `to_csv()` to save the dataset as a `.csv` file
+
+```{python}
+#| echo: true
+#| eval: false
+circuits.to_csv("data_clean/circuits_clean.csv", index=False)
+```
+:::
+
+## Try it yourself! 🧠 {#sec:exercise-04}
+
+:::{style="margin-top: 30px; font-size: 25px;"}
+- Use `.replace()` with the "country" column
+- Replace "UK" with "United Kingdom"
+- [[Appendix 04]{.button}](#sec:appendix-04)
+:::
+
+## Try it yourself! 🧠 {#sec:exercise-05}
+
+:::{style="margin-top: 30px; font-size: 25px;"}
+- What is the column type of "lat" or "lng"?
+- Does it have any string variables?
+- Can we use ```str.isnumeric()``` here?
+- [[Appendix 05]{.button}](#sec:appendix-05)
+:::
+
+# Recoding Numeric Variables 🔄 {background-color="#2d4563"}
+
+## Recoding numeric variables
+
+:::{style="margin-top: 30px; font-size: 25px;"}
+:::{.columns}
+:::{.column width="50%"}
+- Recoding is the process of changing the values of a variable
+- We can recode variables for various reasons
+  - To create new variables
+  - To standardise variables
+  - To simplify the analysis
+- Please remember to convert the variable to the correct type before recoding
+
+```{python}
+#| echo: true
+#| eval: true
+# Check the data type of the "alt" column
+circuits["alt"].dtype
+```
+:::
+
+
+:::{.column width="50%"}
+- `pd.to_numeric()` is used to convert a variable to a numeric type
+```{python}
+#| echo: true
+#| eval: true
+# pd.to_numeric() converts 
+# a column to numeric
+# Before you use this option, 
+# make sure to "clean" the variable
+# as we did before by checking what
+# the non-numeric values are
+circuits["alt_numeric"] = pd.to_numeric(circuits["alt"])
+print(circuits["alt_numeric"].mean())
+```
+
+```{python}
+#| echo: true
+#| eval: true
+print(circuits["alt_numeric"].min())
+print(circuits["alt_numeric"].max())
+```
+:::
+:::
+:::
+
+## Recode variables based on an interval {#sec:recoding}
+
+:::{style="margin-top: 30px; font-size: 25px;"}
+- Imagine that we want to recode the `alt` variable into an interval
+
+$$x_{bin} = \begin{cases} "A" &\text{ if } x_1 < x \le x_2 \\
+                                  "B" &\text{ if } x_2 < x \le x_3 \end{cases} $$
+
+- We can use the `pd.cut()` function to do this
+- The syntax is `df["new_variable"] = pd.cut(df["variable"], bins = [x1, x2, x3], labels = ["A", "B"])`
+- Where `bins` are the intervals and `labels` are the new values
+- More information about the function can be found [here](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.cut.html)
+
+```{python}
+#| echo: true
+#| eval: true
+# Recode the "alt" variable into an interval
+bins_x = [0, 2500, 5000]
+labels_x = ["Between 0 and 2500",
+            "Between 2500 and 5000"]
+
+circuits["bins_alt"] = pd.cut(circuits["alt_numeric"],
+                              bins = bins_x,
+                              right = True,
+                              labels = labels_x)
+np.random.seed(2014)
+display(circuits.sample(5))
+```
+:::
+
+# And that's it for today! 🎉 {background-color="#2d4563"}
+
+# Thanks very much! 😊 {background-color="#2d4563"}
+
+## Appendix 01 {#sec:appendix-01}
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+:::{.columns}
+:::{.column width="50%"}
+```{python}
+#| echo: true
+#| eval: true
+def modify_x():
+    global x
+    x = x + 5
+
+x = 1
+
+# Now, running the function 
+# will permanently increase x by 5.
+
+modify_x()
+print(x)
+modify_x()
+print(x)
+```
+:::
+
+:::{.column width="50%"}
+```{python}
+#| echo: true
+#| eval: true
+def fn_square(x):
+    global y
+    y = x**2
+    return(y)
+
+x = 5
+y = -5
+
+print("Example 1:")
+print(fn_square(x = 10))
+print(x)
+print(y)
+```
+:::
+:::
+
+[[Back to exercise 01]{.button}](#sec:exercise-01)
+:::
+
+## Appendix 02 {#sec:appendix-02}
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+- Write a lambda function checking whether `num_siblings` $\ge 1$
+- Add a variable to the dataset called `has_siblings`
+- Assign True/False to this variable using `apply()`
+ 
+```{python}
+#| echo: true
+#| eval: true
+fn_has_siblings = lambda num_siblings: num_siblings >= 1
+
+data["has_siblings"] = data["num_adult_siblings"].apply(fn_has_siblings)
+
+display(data[["num_adult_siblings","has_siblings"]])
+```
+
+[[Back to exercise 02]{.button}](#sec:exercise-02)
+:::
+
+## Appendix 03 {#sec:appendix-03}
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+- Read the car dataset `data_raw/features.csv`
+- Create a function that tests whether `mpg` $\ge$ 29
+- Add a variable `mpg_above_29` which is `True/False` if `mpg` $\ge$ 29
+- Store the new dataset to `data_clean/features.csv`
+
+```{python}
+#| echo: true
+#| eval: true
+data_raw = pd.read_csv("data_raw/features.csv")
+
+data_raw["mpg_above_29"] = data_raw["mpg"].apply(lambda mpg: mpg >= 29)
+
+display(data_raw[["mpg","mpg_above_29"]])
+
+data_raw.to_csv("data_clean/features.csv", index = False)
+```
+
+[[Back to exercise 03]{.button}](#sec:exercise-03)
+:::
+
+## Appendix 04 {#sec:appendix-04}
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+- Use `.replace()` with the "country" column
+- Replace "UK" with "United Kingdom"
+
+```{python}
+#| echo: true
+#| eval: true
+# Replace "UK" with "United Kingdom"
+circuits["country"] = circuits["country"].replace("UK", "United Kingdom")
+display(circuits[["country"]])
+```
+
+[[Back to exercise 04]{.button}](#sec:exercise-04)
+:::
+
+## Appendix 05 {#sec:appendix-05}
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+```{python}
+#| echo: true
+#| eval: true
+# Check the data type of the "lat" column
+print(circuits["lat"].dtype)
+
+# Check if the variable "lat" is numeric
+# print(circuits["lat"].str.isnumeric())
+# It will raise an error because "lat" is a float
+
+# Check if the variable "lng" is numeric
+# print(circuits["lng"].str.isnumeric())
+# It will also raise an error
+```
+
+[[Back to exercise 05]{.button}](#sec:exercise-05)
+:::
