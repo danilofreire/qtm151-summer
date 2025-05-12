@@ -43,7 +43,7 @@ editor:
 :::{.column width="50%"}
 ### Today we will learn: 
 
-- How to connect SQLite with Python, because we love Python! 🐍 😂 
+- How to connect SQLite with Python
 - We will use the built-in `sqlite3` library together with `pandas` 
 - Other SQL commands, such as `LIKE`, `IN`, `BETWEEN`, `CASE`, window functions, and string functions like `SUBSTR` and `LENGTH` 
 - How to fill missing data with `COALESCE` 
@@ -68,7 +68,7 @@ editor:
 #| eval: true
 import sqlite3
 
-db_file = 'lecture18.db' # Database filename
+db_file = 'lecture12.db' # Database filename
 
 # 1. Connect to the database (creates file if needed)
 conn = sqlite3.connect(db_file) 
@@ -781,7 +781,7 @@ if 'conn' in locals() and conn:
 #| echo: true
 #| eval: true
 import sqlite3 
-db_file = 'lecture18.db' 
+db_file = 'lecture12.db' 
 conn = sqlite3.connect(db_file) 
 cur = conn.cursor() 
 
@@ -820,7 +820,7 @@ conn.close()
 #| echo: true
 #| eval: true
 import sqlite3
-db_file = 'lecture18.db'
+db_file = 'lecture12.db'
 conn = sqlite3.connect(db_file)
 cur = conn.cursor() 
 
@@ -853,7 +853,7 @@ conn.close()
 #| echo: true
 #| eval: true
 import sqlite3
-db_file = 'lecture18.db'
+db_file = 'lecture12.db'
 conn = sqlite3.connect(db_file)
 cur = conn.cursor()
 
@@ -891,7 +891,7 @@ import pandas as pd
 import sqlite3
 import os
 
-db_file = 'lecture18.db' 
+db_file = 'lecture12.db' 
 conn = sqlite3.connect(db_file)
 cur = conn.cursor() 
 
@@ -922,8 +922,6 @@ print(df_employees)
 avg_salary_dept = df_employees.groupby('department')['salary'].mean()
 print("\n--- Average salary by department (pandas) ---")
 print(avg_salary_dept)
-
-conn.close()
 ```
 
 [[Back to exercise]{.button}](#sec:exercise04)
@@ -933,13 +931,13 @@ conn.close()
 ### Cleaning an SQLite Database
 
 :::{style="margin-top: 50px; font-size: 22px;"}
-- **Option 1 (Easiest)**: [Delete the database file]{.alert}. Find `.db` file (`lecture18.db`) or use code:
+- **Option 1 (Easiest)**: [Delete the database file]{.alert}. Find `.db` file (`lecture12.db`) or use code:
 
 ```{python}
 #| echo: true
 #| eval: false 
 import os
-db_file_to_delete = 'lecture18.db' 
+db_file_to_delete = 'lecture12.db' 
 if os.path.exists(db_file_to_delete):
     try:
         # Ensure connection is closed first!
@@ -955,7 +953,7 @@ if os.path.exists(db_file_to_delete):
 #| echo: true
 #| eval: false 
 import sqlite3
-db_file_to_clean = 'lecture18.db' 
+db_file_to_clean = 'lecture12.db' 
 conn_clean = sqlite3.connect(db_file_to_clean)
 cur_clean = conn_clean.cursor()
 cur_clean.execute("SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite_%';")
