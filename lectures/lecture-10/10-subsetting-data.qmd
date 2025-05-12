@@ -1,0 +1,733 @@
+---
+title: QTM 151 - Introduction to Statistical Computing II
+subtitle: Lecture 10 - Subsetting Data
+author:
+  - name: Danilo Freire
+    email: danilo.freire@emory.edu
+    affiliations: Emory University
+format:
+  clean-revealjs:
+    self-contained: true
+    footer: "[Subsetting Data](https://raw.githack.com/danilofreire/qtm151-summer/main/lectures/lecture-10/10-subsetting-data.html)"
+transition: slide
+transition-speed: default
+scrollable: true
+engine: jupyter
+editor:
+  render-on-save: true
+---
+
+# I hope you all had a very nice weekend! 😊 {background-color="#2d4563"}
+
+## Today's lecture
+
+:::{style="margin-top: 30px; font-size: 22px;"}
+:::{.columns}
+:::{.column width="50%"}
+- Today we will dive a little deeper into the `pandas` library
+- More specifically, we will learn how to [subset data]{.alert}
+- This is a [very important skill]{.alert} to have when working with data
+- We will look into four ways to subset data
+  - Using VS Code's [`Data Wrangler` extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.datawrangler)
+  - Using `[]`
+  - Using `.iloc[]`
+  - Using `.query()`
+- We will also learn how to [sort data]{.alert} with `.sort_values()`
+:::
+
+:::{.column width="50%"}
+:::{style="text-align: center;"}
+![](/figures/pandas.png)
+:::
+:::
+:::
+:::
+
+## Subsetting data with `Data Wrangler`
+
+:::{style="margin-top: 30px; font-size: 21px;"}
+:::{.columns}
+:::{.column width="50%"}
+- You can visualise data in VS Code by using the [`Data Wrangler` extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.datawrangler)
+- It allows you to see the data in a table format and gives you some basic statistics
+- You can also filter the data, sort it, fill missing values, and more 
+- This new extension is _super convienent_ when you are working with data you are not familiar with
+- It also has the advantage of using a [sandboxed environment]{.alert}, so you can interact with the data without changing the original file (unless you explicitly save them)
+- Install the extension by going to the Extensions view (`Ctrl+Shift+X`) and searching for `Data Wrangler`, or click [here](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.datawrangler)
+- [Full documentation](https://code.visualstudio.com/docs/datascience/data-wrangler)
+:::
+
+:::{.column width="50%"}
+:::{style="text-align: center;"}
+![](/figures/data-wrangler01.png)
+:::
+
+- The extension is automatically integrated with the Jupyter extension, so you can open a `.csv` file and start wrangling the data
+- Or you can open a Jupyter notebook, load your dataset with `pandas`, and start wrangling the data from there
+:::
+:::
+:::
+
+## Subsetting data with `Data Wrangler`
+
+:::{style="margin-top: 30px; font-size: 20px;"}
+:::{.columns}
+:::{.column width="50%"}
+- Let's see a quick example!
+- The quickest way to open the `Data Wrangler` is by right-clicking on a `.csv` file and selecting `Open in Data Wrangler`
+- Let's visualise the `features.csv` dataset. It is located in the `data_raw` folder
+- The dataset is about cars and has the following variables:
+  - `mpg`: Miles per gallon - Fuel efficiency of the car
+  - `cylinders`: Number of cylinders 
+  - `displacement`: Volume of all the cylinders in the engine 
+  - `horsepower`: Power of the engine in horsepower
+  - `weight`: Weight in pounds 
+  - `acceleration`: Acceleration from 0 to 60 mph
+  - `vehicle_id`: Unique identifier for each car
+:::
+
+:::{.column width="50%"}
+:::{style="text-align: center;"}
+![](/figures/data-wrangler02.png){width="70%"}
+:::
+:::
+:::
+:::
+
+## Subsetting data with `Data Wrangler`
+
+:::{style="margin-top: 30px; text-align: center;"}
+![](/figures/data-wrangler03.png){width="85%"}
+:::
+
+## Subsetting data with `Data Wrangler`
+
+:::{style="margin-top: 30px; text-align: center;"}
+![](/figures/data-wrangler04.png){width="85%"}
+:::
+
+## Subsetting data with `Data Wrangler`
+
+:::{style="margin-top: 30px; text-align: center;"}
+![](/figures/data-wrangler05.png){width="85%"}
+:::
+
+# Any questions so far? 🤔 {background-color="#2d4563"}
+
+## Subsetting data with `Data Wrangler`
+
+:::{style="margin-top: 30px; font-size: 20px;"}
+:::{.columns}
+:::{.column width="50%"}
+- When you click on `Filter`, you will see a menu like this:
+
+![](/figures/data-wrangler06.png){width="85%"}
+
+- Select the column you want to filter, and click on `Add Filter`
+- Then you can select the condition you want to filter by and click on `Apply`
+
+![](/figures/data-wrangler07.png){width="85%"}
+
+- You can also sort the data by clicking on `Sort` and selecting the column you want to sort by
+:::
+
+:::{.column width="50%"}
+:::{style="text-align: center;"}
+![](/figures/data-wrangler08.png)
+:::
+
+- `Data Wrangler` will also show the Python code that corresponds to the operations you are doing!
+- This is a great way to learn how to use `pandas`! 🐼
+- You can then `Export to notebook` and continue working on your data in a Jupyter notebook, `Export as file`, or `Copy all code` and paste it in your Python script 
+:::
+:::
+:::
+
+## Let's practice!
+
+:::{style="margin-top: 30px; font-size: 20px;"}
+:::{.columns}
+:::{.column width="50%"}
+- Please open the `features.csv` dataset in the `Data Wrangler`
+- We will filter the data to show only cars with 6 or more `cylinders`
+- And sort the data by `mpg` in descending order
+- Finally, we will export the code to a Jupyter notebook
+- Let's do it together!
+
+- [Download the dataset](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-11/data_raw/features.csv) if you don't have it (click on `Download Raw File`)
+- Open the dataset in the `Data Wrangler` and do the following:
+  - Click on `Filter`
+  - Select `cylinders` in `Choose column`
+  - Select `Greater than or equal to` in `condition`
+  - Type `6` in `Value`
+  - Click on `Apply`
+:::
+
+:::{.column width="50%"}
+:::{style="text-align: center;"}
+![](/figures/data-wrangler09.png){width="70%"}
+
+![](/figures/data-wrangler10.png){width="70%"}
+:::
+:::
+:::
+:::
+
+## Try it yourself! 🚗 {#sec:exercise-01}
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+- Now, let's add two more conditions to the filter
+- We want to find the fastest, less fuel-efficient cars with 6 or more cylinders
+- Add a new condition to the filter:
+  - Select `acceleration` in `Choose column`
+  - Select `Less than or equal to` in `condition`
+  - Type `15` in `Value`
+- Then, add the second condition:
+  - Select `mpg` in `Choose column`
+  - Select `Less than or equal to` in `condition`
+  - Type `12` in `Value`
+  - Click on `Apply`
+  
+- [How many cars are left?]{.alert} [[Appendix 01]{.button}](#sec:appendix-01)
+:::
+
+## Subsetting data with `pandas`
+### The `[]` operator
+
+:::{style="margin-top: 30px; font-size: 22px;"}
+:::{.columns}
+:::{.column width="50%"}
+- We saw how `pandas` can be used to subset data in the `Data Wrangler`
+- Now, let's see how we can do the same in a Jupyter notebook or directly in a Python script
+- Let's start with the `[]` operator
+- This is the most common way to subset data in `pandas`, and we can use it to select columns by name, or to select rows by index
+- To select rows by name, we type `df['column']`
+- But what if we don't know the name of the column? We can use the `.columns` attribute to see all the columns in the dataset
+:::
+
+:::{.column width="50%"}
+- Let's load the dataset and see the columns
+- We can do so by typing the name of the dataset and use a period (`.`) to extract 
+the attribute "columns"
+- If you want to add many columns, it is often a good idea to store the column names in a separate variable, as we will do below
+
+```{python}
+#| echo: true
+#| eval: true
+import pandas as pd
+carfeatures = pd.read_csv('data_raw/features.csv')
+car_colnames = carfeatures.columns
+print(car_colnames)
+```
+:::
+:::
+:::
+
+## Subsetting data with `pandas`
+### The `[]` operator
+
+:::{style="margin-top: 30px; font-size: 22px;"}
+:::{.columns}
+:::{.column width="50%"}
+- We can either subset the data by typing the column name or the column index
+
+- With the index (note the brackets):
+
+```{python}
+#| echo: true
+#| eval: true
+carfeatures[car_colnames[0]]
+```
+:::
+
+:::{.column width="50%"}
+- With the name:
+
+```{python}
+#| echo: true
+#| eval: true
+carfeatures['mpg']
+```
+:::
+:::
+:::
+
+## Selecting multiple columns
+
+:::{style="margin-top: 30px; font-size: 19px;"}
+:::{.columns}
+:::{.column width="50%"}
+- We can select multiple columns by passing a list of column names
+- Let's say we want to select the columns `mpg` and `weight`
+- We can do so by typing:
+
+```{python}
+#| echo: true
+#| eval: true
+carfeatures[['mpg', 'weight']]
+```
+:::
+
+:::{.column width="50%"}
+- We can also store the columns in a variable and pass it to the `[]` operator
+
+```{python}
+#| echo: true
+#| eval: true
+list_subsetcols = ["mpg", "weight"]
+subcols_carfeatures = carfeatures[list_subsetcols]
+subcols_carfeatures
+```
+:::
+:::
+:::
+
+## Subsetting data with `pandas`
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+- Note that `pandas` uses [double brackets]{.alert} when selecting multiple columns
+- This is because `pandas` [interprets a single bracket as a series]{.alert} (a single column)
+- So we need two brackets to pass a list of columns
+- An explanation for this behavior is that `pandas` is trying to avoid ambiguity
+- Using `df['col1', 'col2']` would be interpreted as trying to access a single column with the name `('col1', 'col2')` 
+- Yes, it's a bizarre name, but it could happen if you, say, merged two columns and named it like that (which is not a good idea!)
+- More on this [here](https://www.reddit.com/r/learnpython/comments/yl9htk/pandas_module_double_square_brackets_purpose/) and [here](https://stackoverflow.com/questions/33417991/pandas-why-are-double-brackets-needed-to-select-column-after-boolean-indexing)
+:::
+
+## Try it yourself! 🚗 {#sec:exercise-02}
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+- Extract the `weight` and `acceleration` columns
+- [[Appendix 02]{.button}](#sec:appendix-02)
+:::
+
+## Filtering whole dataframes with `[]`
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+:::{.columns}
+:::{.column width="50%"}
+- We can also use the `[]` operator to filter the whole dataframe, not just the columns
+- For example, we can filter the dataframe to show only cars with `mpg` greater than 25
+
+```{python}
+#| echo: true
+#| eval: true
+carfeatures[carfeatures['mpg'] >= 25]
+```
+:::
+
+:::{.column width="50%"}
+- This will return a new dataframe with only the rows that satisfy the condition
+- Note that we are using the `[]` operator twice
+- The first `[]` is used to select the rows, and the second `[]` is used to select the columns, all in one go
+:::
+:::
+:::
+
+## Filtering whole dataframes with `[]`
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+- One can make more complex queries by combining multiple conditions
+
+```{python}
+#| echo: true
+#| eval: true
+carfeatures[(carfeatures['acceleration']>=10) & (carfeatures['acceleration']<18)]
+```
+:::
+
+## Subsetting by row/column position 
+### The `.iloc[]` (integer location) method
+
+:::{style="margin-top: 30px; font-size: 20px;"}
+- We use `.iloc[]` to select data by row and column position
+- `.iloc[]` can be used to select a single row
+  - `df.iloc[0]` first row
+- Or multiple rows
+  - `df.iloc[[0, 1, 2]]` first three rows
+- Multiple rows and columns
+  - `df.iloc[[0, 1, 2], [0, 1, 2]]` first three rows and columns
+- The `:` is used to select all rows or columns, or a range of rows or columns
+  - `df.iloc[:, 0]` all rows, first column
+- Or multiple columns
+  - `df.iloc[:, 0:3]` all rows, first three columns
+- A range of rows and columns
+  - `df.iloc[0:3, 0:3]` first three rows and columns
+- Remember that Python is zero-indexed and the last index is not included in lists
+:::
+
+## Subsetting by row/column position 
+### The `.iloc[]` method
+
+:::{style="margin-top: 30px; font-size: 20px;"}
+:::{.columns}
+:::{.column width="50%"}
+- Let's see some examples!
+- We can combine `.iloc[]` with `sort_values(by = 'variable')` to sort the data
+```{python}
+#| echo: true
+#| eval: true
+carsorted = carfeatures.sort_values(by = "mpg", ascending = False)
+print(carsorted.head())
+```
+:::
+
+:::{.column width="50%"}
+- For example, to select the first three rows and the first three columns:
+```{python}
+#| echo: true
+#| eval: true
+# Select the first three rows 
+print(carsorted.iloc[[0, 1, 2]])
+```
+
+```{python}
+#| echo: true
+#| eval: true
+# Select the first three rows and columns
+print(carsorted.iloc[0:3, 0:3])
+```
+
+```{python}
+#| echo: true
+#| eval: true
+# Compare with the original dataset
+print(carfeatures.iloc[0:3, 0:3])
+```
+:::
+:::
+:::
+
+## The `.iloc[]` method
+
+:::{style="margin-top: 30px; font-size: 19px;"}
+- The following command extracts all columns for row zero
+- In this first example, we will show the car with the highest `mpg` value
+
+```{python}
+#| echo: true
+#| eval: true
+# Select the first row, all columns
+display(carsorted.iloc[0,:])
+```
+
+```{python}
+#| echo: true
+#| eval: true
+# Select the first three rows, all columns
+display(carsorted.iloc[[0,1,2],:])
+```
+
+```{python}
+#| echo: true
+#| eval: true
+# The `:` can be omitted when selecting all columns
+display(carsorted.iloc[[0,1,2]])
+```
+:::
+
+## Subset blocks of data
+
+:::{style="margin-top: 30px; font-size: 21px;"}
+:::{.columns}
+:::{.column width="50%"}
+```{python}
+#| echo: true
+#| eval: true
+# Extract rows 0 to 5
+display(carfeatures.iloc[0:5,:])
+```
+:::
+
+:::{.column width="50%"}
+```{python}
+#| echo: true
+#| eval: true
+# Extract rows 8 onwards
+display(carfeatures.iloc[:8,:])
+```
+:::
+:::
+:::
+
+## Try it yourself! 🚗 {#sec:exercise-03}
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+- Create a new datate called `car_ascendingmpg` which sorts cars from lowest to highest mpg
+- Subset the data of 5 cars with the lowest "mpg"
+- [[Appendix 03]{.button}](#sec:appendix-03)
+:::
+
+## The `.query()` method
+
+:::{style="margin-top: 30px; font-size: 20px;"}
+:::{.columns}
+:::{.column width="50%"}
+- The `.query()` method is a powerful way to subset data in `pandas`
+- It allows you to filter data using a string expression, similar to natural language and SQL
+- The syntax is `df.query('expression')`
+- The expression is written as if you were writing a sentence
+- For example, to filter cars with more than 6 cylinders, we would write:
+  - `df.query('cylinders > 6')`
+  - `df.query('cylinders > 6 & acceleration < 15 & mpg < 12')`
+:::
+
+:::{.column width="50%"}
+```{python}
+#| echo: true
+#| eval: true
+carfeatures.query("mpg >= 25")
+```
+:::
+:::
+:::
+
+## Let's see more examples!
+
+:::{style="margin-top: 30px; font-size: 23px;"}
+- Combine multiple conditions with `and`, `&`, `or`, `|`
+
+```{python}
+#| echo: true
+#| eval: true
+carfeatures.query("(acceleration >= 10) and (acceleration < 18)")
+```
+:::
+
+## Let's see more examples!
+
+:::{style="margin-top: 30px; font-size: 23px;"}
+- Use `.query()` and `sort_values` together
+```{python}
+#| echo: true
+#| eval: true
+carfeatures.query("(cylinders == 8) & (mpg <= 15) & (acceleration <= 12)").sort_values(by = "mpg")
+```
+:::
+
+## Let's see more examples!
+
+:::{style="margin-top: 30px; font-size: 21px;"}
+- Use `.query()` and select columns
+- Note that we are using the `[[]]` operator to select the columns
+- Also note that we don't need parentheses when using `&` and `|` in the expression, but it is a good practice to use them
+```{python}
+#| echo: true
+#| eval: true
+carfeatures.query("(cylinders == 8) & (mpg <= 15) and acceleration <= 12")[["mpg", "cylinders", "acceleration"]]
+```
+:::
+
+## Let's see more examples!
+
+:::{style="margin-top: 30px; font-size: 23px;"}
+- Combine `.query()` with global variables
+
+```{python}
+#| echo: true
+#| eval: true
+threshold = 25
+data_varthreshold_mpg = carfeatures.query("mpg >= @threshold")
+data_varthreshold_mpg
+```
+:::
+
+## Let's see more examples!
+
+:::{style="margin-top: 30px; font-size: 23px;"}
+- Expression with variable names that contain spaces
+- Use backticks (``` ` ` ```) to refer to the variable name
+
+```{python}
+#| echo: true
+#| eval: true
+carfeatures["new variable"] = carfeatures["mpg"]
+data_spacesthreshold_mpg = carfeatures.query("`new variable` >= 25")
+data_spacesthreshold_mpg
+```
+:::
+
+## Try it yourself! 🚗 {#sec:exercise-04}
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+- Subset the data with mpg $\ge$ 25 and cylinders == 8
+- Select the columns `mpg` and `cylinders`
+- [[Appendix 04]{.button}](#sec:appendix-04)
+:::
+
+## Plotting Subsets
+
+:::{style="margin-top: 30px; font-size: 21px;"}
+:::{.columns}
+:::{.column width="50%"}
+- `matplotlib` can also be used to plot subsets of data
+- The syntax is similar to what we have seen before
+- For example, you can just add other `plt.scatter()` or `plt.hist()` commands to the same cell
+- Or you can create a `for` loop to plot multiple subsets
+- Let's see an example using `cylynders`
+:::
+
+:::{.column width="50%"}
+- First, we need to import `matplotlib` and use `pd.unique()` to extract a list with the unique elements in that column
+
+```{python}
+#| echo: true
+#| eval: true
+import matplotlib.pyplot as plt
+
+list_unique_cylinders = pd.unique(carfeatures["cylinders"])
+print(list_unique_cylinders)
+```
+:::
+:::
+:::
+
+## Plotting Subsets
+
+:::{style="margin-top: 30px; font-size: 21px;"}
+```{python}
+#| echo: true
+#| eval: true
+# If we call plt.scatter() twice, it will display both plots on the same graph
+# We also include include plt.show() at the very end.
+df_8 = carfeatures.query("cylinders == 8")
+df_4 = carfeatures.query("cylinders == 4")
+
+plt.scatter(x = df_8["weight"],y = df_8["acceleration"])
+plt.scatter(x = df_4["weight"],y = df_4["acceleration"])
+plt.legend(labels = ["8","4"],
+           title  = "Cylinders")
+
+plt.show()
+
+# Note: If we put plt.show() in between the plots, then the results will
+# be shown on separate graphs instead.
+```
+:::
+
+## Plotting Subsets
+
+:::{style="margin-top: 30px; font-size: 21px;"}
+- Using a `for` loop to plot multiple subsets
+
+```{python}
+#| echo: true
+#| eval: true
+# Compute number of unique categories
+list_unique_cylinders = pd.unique(carfeatures["cylinders"])
+
+# Use a for loop to plot a scatter plot between "weight" and "acceleration"
+# for each category. Each plot  will have a different color
+
+for category in list_unique_cylinders:
+    df   = carfeatures.query("cylinders == @category")
+    plt.scatter(x = df["weight"],y = df["acceleration"])
+    
+# Add labels and a legends    
+plt.xlabel("Weight")
+plt.ylabel("Acceleration")
+plt.legend(labels = list_unique_cylinders,
+           title  = "Cylinders")
+plt.show()
+```
+:::
+
+## Try it yourself! 🚗 {#sec:exercise-05}
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+- Compute a histogram of "mpg" by cylinder count
+- Make the histograms transparent by adjusting `alpha` in `plt.hist(x = ..., alpha = 0.5)` 
+- [[Appendix 05]{.button}](#sec:appendix-05)
+:::
+
+# And that's it for today! 🎉 {background-color="#2d4563"}
+
+# See you next time! 🚀 {background-color="#2d4563"}
+
+## Appendix 01 {#sec:appendix-01}
+
+:::{style="margin-top: 30px; font-size: 20px;"}
+```{python}
+#| echo: true
+#| eval: true
+import pandas as pd
+df = pd.read_csv('data_raw/features.csv')
+df_filtered = df[(df['cylinders'] >= 6) & (df['acceleration'] <= 15) & (df['mpg'] <= 12)]
+print(df_filtered.shape)
+df_filtered
+```
+
+- There are 12 cars left (number of rows)
+
+[[Back to exercise]{.button}](#sec:exercise-01)
+:::
+
+## Appendix 02 {#sec:appendix-02}
+
+:::{style="margin-top: 30px; font-size: 22px;"}
+```{python}
+#| echo: true
+#| eval: true
+import pandas as pd
+df = pd.read_csv('data_raw/features.csv')
+df[['weight', 'acceleration']]
+```
+
+[[Back to exercise]{.button}](#sec:exercise-02)
+:::
+
+## Appendix 03 {#sec:appendix-03}
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+```{python}
+#| echo: true
+#| eval: true
+import pandas as pd
+df = pd.read_csv('data_raw/features.csv')
+car_ascendingmpg = df.sort_values(by = "mpg")
+car_ascendingmpg.iloc[0:5]
+```
+
+[[Back to exercise]{.button}](#sec:exercise-03)
+:::
+
+## Appendix 04 {#sec:appendix-04}
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+```{python}
+#| echo: true
+#| eval: true
+import pandas as pd
+df = pd.read_csv('data_raw/features.csv')
+df.query("(mpg >= 25) & (cylinders == 8)")[["mpg", "cylinders"]]
+```
+
+[[Back to exercise]{.button}](#sec:exercise-04)
+:::
+
+## Appendix 05 {#sec:appendix-05}
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+```{python}
+#| echo: true
+#| eval: true
+import matplotlib.pyplot as plt
+import pandas as pd
+
+df = pd.read_csv('data_raw/features.csv')
+list_unique_cylinders = pd.unique(df["cylinders"])
+
+for category in list_unique_cylinders:
+    df_category = df.query("cylinders == @category")
+    plt.hist(x = df_category["mpg"], alpha = 0.5, bins = 10)
+
+plt.xlabel("Miles per gallon")
+plt.ylabel("Frequency")
+
+plt.legend(labels = list_unique_cylinders,
+           title  = "Cylinders")
+plt.show()
+```
+
+[[Back to exercise]{.button}](#sec:exercise-05)
+:::
