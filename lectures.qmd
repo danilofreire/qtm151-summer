@@ -26,6 +26,8 @@ materials available in the [lectures folder in our course repository](https://gi
 
 - Friday, May 23: [Lecture 09: Quiz 02 - Based on Lectures 05-08](https://github.com/danilofreire/qtm151-summer-quiz02/). As with Quiz 01, the repository will be available on the day of the quiz.
 
+- Monday, May 26: Lecture 10: Subsetting and Filtering Data. [Lecture Slides](https://raw.githack.com/danilofreire/qtm151-summer/main/lectures/lecture-10/10-subsetting-data.html), [Lecture Notebook](https://github.com/danilofreire/qtm151-summer/blob/main/lectures/lecture-10/10-subsetting-data.ipynb).
+
 
 
 Each lecture folder contains an HTML file or a Jupyter notebook (`.ipynb`) with code examples and explanations, along with any additional resources or datasets used in the lecture.
