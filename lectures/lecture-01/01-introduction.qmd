@@ -65,7 +65,7 @@ lapply(packages, install_if_missing)
 
 `r fa('globe')` Course website: <https://danilofreire.github.io/qtm151-summer>
 
-- This course is hosted on [GitHub](https://github.com), where you will find lecture materials, code samples, our discussion space, assignments, and final project instructions. 
+- This course is hosted on [GitHub](https://github.com), where you will find lecture materials, code samples, our discussion space, tutorials, and assignments. 
 - Canvas will be used for course management, including assignment submissions, grades, and announcements. Please familiarise yourself with both platforms, and reach out if you have any questions.
 
 ::: {.callout-note}
