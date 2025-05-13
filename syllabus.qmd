@@ -122,11 +122,9 @@ Emory University welcomes students from around the country and the world, and th
 
 # Assignments and Grading Policy
 
-**Problem Sets (50%).** There will be ten problem sets throughout the course. These assignments are designed to reinforce concepts covered in lectures and readings, and to provide hands-on practice with statistical programming. Problem sets will include a mix of theoretical questions and practical applications. They will be assigned regularly and must be completed individually. You may discuss your work with other colleagues as long as you do not copy entire sentences, just changing a few words. If you worked with other students, please write down their names on your assignment. Please also acknowledge any sources you used in your work, including textbooks, articles, and AI resources. *Any assignment submitted after the due date/time will automatically be graded for half points*. To accommodate unexpected circumstances, your lowest assignment grade will be automatically dropped at the end of the semester. *The same applies to in-class quizzes*. Please submit all assignments in Jupyter Notebook format (`.ipynb`) via Canvas until midnight on the due date.
+**Problem Sets (50%).** There will be five problem sets throughout the course. These assignments are designed to reinforce concepts covered in lectures and readings, and to provide hands-on practice with statistical programming. Problem sets will include a mix of theoretical questions and practical applications. They will be assigned regularly and must be completed individually. You may discuss your work with other colleagues as long as you do not copy entire sentences, just changing a few words. If you worked with other students, please write down their names on your assignment. Please also acknowledge any sources you used in your work, including textbooks, articles, and AI resources. *Any assignment submitted after the due date/time will automatically be graded for half points*. To accommodate unexpected circumstances, your lowest assignment grade will be automatically dropped at the end of the semester. *The same applies to in-class quizzes*. Please submit all assignments in PDF format via Canvas until midnight on the due date.
 
 **Class Quizzes (30%).** Students will also take five in-class quizzes throughout the semester. These quizzes will be based on the lectures from the previous weeks. They will be designed to test your understanding of the material and your ability to apply the concepts to new problems. Quizzes will be open-book and open-notes, and students have 50 minutes to complete them. You are **not** allowed to use AI tools. They are individual assessments, and students are not allowed to discuss the questions with their colleagues in class. 
-
-**Final Project (20%).** The final project will consist of a short report, created using Jupyter and using one of the datasets shared on the course [GitHub repository](https://github.com/danilofreire/qtm151/tree/main/final-project). Further instructions will be provided in class. The final project will be due on the last day of class.
 
 # Grading Scale
 
@@ -138,257 +136,50 @@ Each student's final grade will be based on the following after rounding up to t
 
 # Course Outline and Suggested Readings
 
-The lecture notes cover all the necessary material for the course, and the weekly suggested readings are recommended for those who want to deepen their understanding of the course topics. As mentioned above, the course outline is subject to change, and I will update the syllabus if needed. Please remember to check the course [GitHub repository](https://github.com/danilofreire/qtm151) regularly.
+The lecture notes cover all the necessary material for the course, and the weekly suggested readings are recommended for those who want to deepen their understanding of the course topics. As mentioned above, the course outline is subject to change, and I will update the syllabus if needed. Please remember to check the course [GitHub repository](https://github.com/danilofreire/qtm151-summer) regularly.
 
-## Module 01: Introduction to Python, Jupyter, and GitHub
 
-### Lecture 01 
+- Tuesday, May 13: [Lecture 01: Welcome to QTM 151 - Introduction and Course Overview](https://raw.githack.com/danilofreire/qtm151-summer/main/lectures/lecture-01/01-introduction.html).
+  Please make sure to install the necessary software for the course by following the [Course Tutorials: How to Install Anaconda, Jupyter, PostgreSQL, VSCode, and Open a Free Educational Account on GitHub](https://danilofreire.github.io/qtm151/tutorials/tutorials.html).
 
-- Syllabus and course repository: <https://github.com/danilofreire/qtm151>.
-- Lecture 01: [Welcome to QTM 151 - Introduction](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-01/01-introduction.html).
-- [Course Tutorials: How to Install Anaconda, Jupyter, PostgreSQL, VSCode, and Open a Free Educational Account on GitHub](https://github.com/danilofreire/qtm151/tutorials).
+- Wednesday, May 14: Lecture 02: Jupyter Notebooks, Packages, Variables, and Lists. [Lecture Slides](https://raw.githack.com/danilofreire/qtm151-summer/main/lectures/lecture-02/02-jupyter-variables.html), [Lecture Notebook](https://github.com/danilofreire/qtm151-summer/blob/main/lectures/lecture-02/02-jupyter-variables.ipynb). 
 
-Weekly suggested readings:
+- Thursday, May 15: Lecture 03: Maths Operations, Arrays, and Boolean Logic. [Lecture Slides](https://raw.githack.com/danilofreire/qtm151-summer/main/lectures/lecture-03/03-maths-boolean.html), [Lecture Notebook](https://github.com/danilofreire/qtm151-summer/blob/main/lectures/lecture-03/03-maths-boolean.ipynb)
+  - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=b9d95c73-826e-411a-99c3-1b5cc87780f2&hostId=05eb977d-4f8a-440e-9e45-95212b29d103). The quiz is optional and will not be graded. We will do it in class! It is a fun way to review the material covered in the lecture.
 
-- [DataCamp: SQL vs Python: Which Should You Learn?](https://www.datacamp.com/blog/sql-vs-python-which-to-learn) (Note: *both!*)
-- Cao, L. (2017). [Data Science: A Comprehensive Overview](https://dl.acm.org/doi/pdf/10.1145/3076253). ACM Computing Surveys (CSUR), 50(3), 1-42.
-- Brady, H. E. (2019). [The Challenge of Big Data and Data Science](https://www.annualreviews.org/content/journals/10.1146/annurev-polisci-090216-023229). Annual Review of Political Science, 22(1), 297-323.
-- Zitnik, M., Nguyen, F., Wang, B., Leskovec, J., Goldenberg, A., & Hoffman, M. M. (2019). [Machine Learning for Integrating Data in Biology and Medicine: Principles, Practice, and Opportunities](https://www.sciencedirect.com/science/article/abs/pii/S1566253518304482). Information Fusion, 50, 71-91.
+- Friday, May 16: [Lecture 04: Quiz 01 - Based on Lectures 01-03](https://github.com/danilofreire/qtm151-summer-quiz01/). The repository contains the quiz questions and will be made online on the day of the quiz.
+  - [Assignment 01 due](https://github.com/danilofreire/qtm151-summer/tree/main/assignments/01-assignment).
 
-### Lecture 02
+- Monday, May 19: Lecture 05: Conditional Statements. [Lecture Slides](https://raw.githack.com/danilofreire/qtm151-summer/main/lectures/lecture-05/05-conditional-statements.html), [Lecture Notebook](https://github.com/danilofreire/qtm151-summer/blob/main/lectures/lecture-05/05-conditional-statements.ipynb).
+  - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=d8d3593a-52c8-4d6c-b938-d880edb69745&hostId=05eb977d-4f8a-440e-9e45-95212b29d103).
 
-- [Lecture 02: GitHub Review](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-02/02-github-jupyter.html), [Introduction to Jupyter Notebooks](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-02/02-jupyter.ipynb).
-- Extra lecture: [Lecture Slides](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-02/02-github-jupyter.html#/title-slide).  [Video Recording](https://emory-my.sharepoint.com/:v:/g/personal/dafreir_emory_edu/EaTyfePUASBJlUyB-0HuGKkB9YyPc0kS3DARtdAzVst8PQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZERpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=5BO5Zi).
-- **Assignment 01:** [Problem Set 01](https://github.com/danilofreire/qtm151/blob/main/assignments/01-assignment.ipynb).
+- Tuesday, May 20: Lecture 06: While and For Loops. [Lecture Slides](https://raw.githack.com/danilofreire/qtm151-summer/main/lectures/lecture-06/06-loops.html), [Lecture Notebook](https://github.com/danilofreire/qtm151-summer/blob/main/lectures/lecture-06/06-loops.ipynb).
+  - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=de289cbf-f886-4d4a-bd4c-91f1b2cc01c2&hostId=05eb977d-4f8a-440e-9e45-95212b29d103).
 
-Weekly suggested readings:
+- Wednesday, May 21: Lecture 07: Functions. [Lecture Slides](https://raw.githack.com/danilofreire/qtm151-summer/main/lectures/lecture-07/07-functions.html), [Lecture Notebook](https://github.com/danilofreire/qtm151-summer/blob/main/lectures/lecture-07/07-functions.ipynb).
+  - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=0219d3ce-d690-4c88-9396-3ce6330bbfdb&hostId=05eb977d-4f8a-440e-9e45-95212b29d103).
+  - [Assignment 02 due](https://github.com/danilofreire/qtm151-summer/tree/main/assignments/02-assignment).
 
-- [Microsoft: Jupyter Notebooks in VSCode](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).
-- VanderPlas, J. (2016). Python Data Science Handbook: Essential Tools for Working with Data. O'Reilly Media. [Chapter 01: IPython: Beyond Normal Python](https://jakevdp.github.io/PythonDataScienceHandbook/index.html).
-- McKinney, W. (2022). Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython (3rd ed.). O'Reilly Media. [Chapter 02: Python Language Basics, IPython, and Jupyter Notebooks](https://wesmckinney.com/book/python-basics).
-- [Corey Schafer: Jupyter Notebook Tutorial - Introduction, Setup, and Walkthrough](https://www.youtube.com/watch?v=HW29067qVWk). (Note: Corey Schafer is a great Python instructor on YouTube. Check out his other videos as well.)
-- [Markdown Guide](https://www.markdownguide.org/basic-syntax/).
+- Thursday, May 22: Lecture 08: Data Wrangling with Pandas. [Lecture Slides](https://raw.githack.com/danilofreire/qtm151-summer/main/lectures/lecture-08/08-data-wrangling.html), [Lecture Notebook](https://github.com/danilofreire/qtm151-summer/blob/main/lectures/lecture-08/08-data-wrangling.ipynb).
+  - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=1b854633-5911-431d-8ae3-fb3535c40266&hostId=05eb977d-4f8a-440e-9e45-95212b29d103).
 
-## Module 02: Python Data Types and Controlling Flows
+- Friday, May 23: [Lecture 09: Quiz 02 - Based on Lectures 05-08](https://github.com/danilofreire/qtm151-summer-quiz02/). As with Quiz 01, the repository will be available on the day of the quiz.
+  - [Assignment 03 due](https://github.com/danilofreire/qtm151-summer/tree/main/assignments/03-assignment).
 
-### Lecture 03
+- Monday, May 26: Lecture 10: Subsetting and Filtering Data. [Lecture Slides](https://raw.githack.com/danilofreire/qtm151-summer/main/lectures/lecture-10/10-subsetting-data.html), [Lecture Notebook](https://github.com/danilofreire/qtm151-summer/blob/main/lectures/lecture-10/10-subsetting-data.ipynb).
+  - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=0479c8ec-6e88-43b7-9d65-fa41b23d60c1&hostId=05eb977d-4f8a-440e-9e45-95212b29d103).
 
--  Lecture 03: Variables and Lists. [Jupyter Notebook](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-03/03-variables-lists.ipynb). [Lecture Slides](https://rawcdn.githack.com/danilofreire/qtm151/4c85d539a1a386e76a2e105625b780d44830dc2d/lectures/lecture-03/03-variables-lists.html)
+- Tuesday, May 27: Lecture 11: Introduction to SQL. [Lecture Slides](https://raw.githack.com/danilofreire/qtm151-summer/main/lectures/lecture-11/11-introduction-sql.html), [Lecture Notebook](https://github.com/danilofreire/qtm151-summer/blob/main/lectures/lecture-11/11-introduction-sql.ipynb).
+  - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=29a7984b-c6ed-4e87-91bd-cd5e4bf38094&hostId=05eb977d-4f8a-440e-9e45-95212b29d103).
 
-### Lecture 04
+- Wednesday, May 28: Lecture 12: SQL in Python. [Lecture Slides](https://raw.githack.com/danilofreire/qtm151-summer/main/lectures/lecture-12/12-sql-python.html), [Lecture Notebook](https://github.com/danilofreire/qtm151-summer/blob/main/lectures/lecture-12/12-sql-python.ipynb).
+  - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=8e782b35-ddb5-41a5-91e9-233fd7b01fbf&hostId=05eb977d-4f8a-440e-9e45-95212b29d103).
+  - [Assignment 04 due](https://github.com/danilofreire/qtm151-summer/tree/main/assignments/04-assignment).
 
-- Lecture 04: Mathematical Operations, Arrays, and Random Numbers. [Jupyter Notebook](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-04/04-maths-arrays-random.ipynb).
-- **Assignment 01 due (5%).**
-- **Assignment 02:** [Problem Set 02](https://github.com/danilofreire/qtm151/blob/main/assignments/02-assignment.ipynb).
+- Thursday, May 29: Lecture 13: Merge Tables in SQL. [Lecture Slides](https://raw.githack.com/danilofreire/qtm151-summer/main/lectures/lecture-13/13-sql-tables.html), [Lecture Notebook](https://github.com/danilofreire/qtm151-summer/blob/main/lectures/lecture-13/13-sql-tables.ipynb).
+  - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=762c7a39-ee91-4977-a119-d3f34bc5a4f2&hostId=05eb977d-4f8a-440e-9e45-95212b29d103).
 
-Weekly suggested readings:
+- Friday, May 30: [Lecture 14: Quiz 03 - Based on Lectures 10-13](https://github.com/danilofreire/qtm151-summer-quiz03/). 
+  - [Assignment 05 due](https://github.com/danilofreire/qtm151-summer/tree/main/assignments/05-assignment).
 
-- [Real Python: Python Data Types](https://realpython.com/python-data-types/).
-- [Python Documentation: An Informal Introduction to Python](https://docs.python.org/3/tutorial/introduction.html).
-- [NumPy Documentation: Quickstart Tutorial](https://numpy.org/doc/stable/user/quickstart.html).
-- [Programiz: Math Operations in Python](https://www.programiz.com/python-programming/operators).
-- Matthes, E. (2019). Python Crash Course: A Hands-On, Project-Based Introduction to Programming (2nd ed.). No Starch Press. [Chapter 02](https://nostarch.com/download/PCC3e_ch2sample_8.17.22.pdf).
-- Severance, C. (2016). Python for Everybody: Exploring Data in Python 3. CreateSpace Independent Publishing Platform. [Chapters 3-11](https://www.py4e.com/lessons) (Note: Read only the chapters which interest you).
-
-### Lecture 05
-
-- Lecture 05: Boolean Variables and If/Else Statements. [Jupyter Notebook](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-05/05-boolean-if-else.ipynb), [Lecture Slides](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-05/05-boolean-if-else.html).
-
-### Lecture 06
-
-- Lecture 06: While Loops and For Loops. [Jupyter Notebook](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-06/06-while-for.ipynb), [Lecture Slides](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-06/06-while-for.html)
-- **Assignment 02 due (5%).**
-- **Assignment 03:** [Problem Set 03](https://github.com/danilofreire/qtm151/blob/main/assignments/03-assignment.ipynb).
-
-Weekly suggested readings:
-
-- [Real Python: Conditional Statements in Python](https://realpython.com/python-conditional-statements/).
-- [Python Official Documentation: More Control Flow Tools](https://docs.python.org/3/tutorial/controlflow.html).
-- [Python Official Documentation: Compound Statements](https://docs.python.org/3/reference/compound_stmts.html).
-- [Real Python: Python 'while' Loops (Indefinite Iteration)](https://realpython.com/python-while-loop/). 
-- [Real Python: Python 'for' Loops (Definite Iteration)](https://realpython.com/python-for-loop/).
-- [W3Schools: Python While Loops](https://www.w3schools.com/python/python_while_loops.asp).
-- Sweigart, A. (2019). Automate the Boring Stuff with Python: Practical Programming for Total Beginners (2nd ed.). No Starch Press. [Chapter 02: Flow Control](https://automatetheboringstuff.com/2e/chapter2/).
-
-## Module 03: Writing and Running Functions
-
-### Lecture 07
-
-- Lecture 07: Applications 1: Simulation Studies. [Jupyter Notebook](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-07/07-applications-simulation.ipynb). [Lecture Slides](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-07/07-applications-simulation.html).
-
-### Lecture 08
-
-- Lecture 08: [Functions and Arguments](https://danilofreire.github.io/qtm151/lectures/lecture-08/08-functions-arguments.ipynb).
-- **Assignment 03 due (5%).**
-- **Assignment 04:** [Problem Set 04](https://github.com/danilofreire/qtm151/blob/main/assignments/04-assignment.ipynb).
-
-Weekly suggested readings:
-
-- [NumPy Random Module Tutorial](https://www.w3schools.com/python/numpy/numpy_random.asp).
-- [Python Functions](https://www.w3schools.com/python/python_functions.asp).
-- [Real Python: Defining Functions in Python](https://realpython.com/defining-your-own-python-function/).
-- [Python Tutorial for Beginners: Functions](https://www.youtube.com/watch?v=9Os0o3wzS_I).
-
-### Lecture 09
-
-- Lecture 09: Global and Local Variables. [Jupyter Notebook](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-09/09-global-local.ipynb). [Lecture Slides](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-09/09-global-local.html).
-  - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=e5422be1-4423-436b-9d99-895879b4d906&hostId=05eb977d-4f8a-440e-9e45-95212b29d103)
-
-### Lecture 10
-
-- Lecture 10: [**Quiz 01: Application 02 - Operations over Multiple Datasets (6%)**](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-10/10-operations-multiple-datasets.ipynb).
-- **Assignment 05:** [Problem Set 05](https://github.com/danilofreire/qtm151/blob/main/assignments/05-assignment.ipynb).
-- **Assignment 04 due (5%).**
-
-Weekly suggested readings:
-
-- [Programiz: Python Variable Scope (With Examples)](https://www.programiz.com/python-programming/global-local-nonlocal-variables).
-- [NumPy Documentation: Indexing on `ndarrays`](https://numpy.org/doc/stable/user/basics.indexing.html).
-- [Pandas Documentation: How do I Select a Subset of a `DataFrame`?](https://pandas.pydata.org/pandas-docs/stable/getting_started/intro_tutorials/03_subset_data.html).
-
-### Lecture 11
-
-- Lecture 11: Subsetting Data. [Jupyter Notebook](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-11/11-subsetting-data.ipynb). [Lecture Slides](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-11/11-subsetting-data.html)
-
-Weekly suggested readings:
-
-- McKinney, W. (2022). Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython (3rd ed.). O'Reilly Media. [Chapter 05: Getting Started with Pandas](https://wesmckinney.com/book/pandas-basics).
-- VanderPlas, J. (2016). Python Data Science Handbook: Essential Tools for Working with Data. O'Reilly Media. [Section 3.2: Data Indexing and Selection](https://jakevdp.github.io/PythonDataScienceHandbook/03.02-data-indexing-and-selection.html).
-- [Real Python: Linear Regression in Python](https://realpython.com/linear-regression-in-python/)
-- [Towards Data Science: Linear Regression in Python](https://towardsdatascience.com/linear-regression-using-python-b136c91bf0a2).
-- Sheppard, K. (2023). Introduction to Python for Econometrics, Statistics and Data Analysis (5th ed.). University of Oxford. [Chapter 21: Statistical Analysis with `statsmodels`](https://www.kevinsheppard.com/files/teaching/python/notes/python_introduction_2021.pdf).
-
-## Module 04: Data Manipulation with Pandas
-
-### Lecture 12
-
-- Lecture 12: Application 03: Linear Models. [Jupyter Notebook](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-12/12-linear-models.ipynb). [Lecture Slides](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-12/12-linear-models.html).
-- **Assignment 05 due (5%).**
-- **Assignment 06:** [Problem Set 06](https://github.com/danilofreire/qtm151/blob/main/assignments/06-assignment.ipynb).
-
-### Lecture 13
-
-- Lecture 13: Replacing and Recoding Variables. [Jupyter Notebook](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-13/13-replacing-recoding-variables.ipynb). [Lecture Slides](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-13/13-replacing-recoding-variables.html).
-- **Assignment 06 due (5%).**
-- **Assignment 07:** [Problem Set 07](https://github.com/danilofreire/qtm151/blob/main/assignments/07-assignment.ipynb).
-
-Weekly suggested readings:
-
-- [Python for Data Analysis: Data Cleaning and Preparation](https://wesmckinney.com/book/data-cleaning).
-- [Codedamn: How to use the Replace function in Python](https://codedamn.com/news/python/how-to-use-the-replace-function-in-python).
-
-### Lecture 14
-
-- Lecture 14: [**Quiz 2: Application 4: Random Assignment (6%)**](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-14/14-random-assignment.ipynb).
-
-### Lecture 15
-
-- Lecture 15: Aggregating Data. [Jupyter Notebook](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-15/15-aggregating-data.ipynb). [Lecture Slides](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-15/15-aggregating-data.html).
-- **Assignment 07 due (5%).**
-- **Assignment 08:** [Problem Set 08](https://github.com/danilofreire/qtm151/blob/main/assignments/08-assignment.ipynb).
-
-Weekly suggested readings:
-
-- VanderPlas, J. (2016). Python Data Science Handbook: Essential Tools for Working with Data. O'Reilly Media. [Chapter 3: Data Manipulation with Pandas](https://jakevdp.github.io/PythonDataScienceHandbook/03.00-introduction-to-pandas.html).
-- McKinney, W. (2022). Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython (3rd ed.). O'Reilly Media. [Chapter 07: Data Cleaning and Preparation](https://wesmckinney.com/book/data-cleaning).
-- [DataCamp: Pandas Tutorial: DataFrames in Python](https://www.datacamp.com/tutorial/pandas-tutorial-dataframe-python).
-- [Real Python: Pandas Tutorial: DataFrames in Python](https://realpython.com/pandas-dataframe/).
-
-## Module 05: Data Manipulation with SQL
-
-### Lecture 16
-
-- Lecture 16: Merging Data. [Jupyter Notebook](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-16/16-merging-data.ipynb). [Lecture Slides](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-16/16-merging-data.html).
-- [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=2f7a071d-61d4-4069-bed3-ff283a7bd1c3&hostId=05eb977d-4f8a-440e-9e45-95212b29d103).
-
-### Lecture 17
-
-- Lecture 17: Introduction to SQL. [SQL file](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-17/17-introduction-sql.sql). [Lecture Slides](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-17/17-introduction-sql.html).
-- [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=be2a60bb-9c17-49d0-b291-a916be65d5f5&hostId=05eb977d-4f8a-440e-9e45-95212b29d103).
-- **Assignment 08 due (5%).**
-- **Assignment 09:** [Problem Set 09](https://github.com/danilofreire/qtm151/blob/main/assignments/09-assignment.sql).
-- **Instructions for the Final Project:** [Final Project](https://github.com/danilofreire/qtm151/blob/main/final-project).
-
-Weekly suggested readings:
-
-- [Mode Analytics: SQL Tutorial](https://mode.com/sql-tutorial/).
-- [Real Python: SQL Databases and SQLite](https://realpython.com/python-sql-libraries/).
-- [Khan Academy: SQL Basics](https://www.khanacademy.org/computing/computer-programming/sql). (Note: Khan Academy is a great resource for learning SQL and other programming languages).
-- [Coursera: PostgreSQL for Everybody](https://www.coursera.org/specializations/postgresql-for-everybody).
-- [PostgreSQL Tutorial](https://www.postgresqltutorial.com/).
-- [PostgreSQL Documentation: SQL Commands](https://www.postgresql.org/docs/current/sql-commands.html). (Note: For reference only).
-
-### Lecture 18
-
-- Lecture 18: [**Quiz 3: Application 5: Practicing Chaining (6%)**](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-18/18-chaining.ipynb).
-
-### Lecture 19
-
-- Lecture 19: Import SQL Data into Python. [Jupyter Notebook](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-19/19-sql-python.ipynb). [Lecture Slides](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-19/19-sql-python.html).
-- **Assignment 09 due (5%).**
-- **Assignment 10:** [Problem Set 10](https://github.com/danilofreire/qtm151/tree/main/assignments/10-assignment).
-
-Weekly suggested readings:
-
-- [Pandas Documentation: SQL Databases](https://pandas.pydata.org/docs/user_guide/io.html#sql-queries).
-- [Real Python: Working with SQLite Databases Using Python and Pandas](https://realpython.com/python-sql-libraries/).
-- [Mode Analytics: SQL Joins](https://mode.com/sql-tutorial/sql-joins/).
-- [PostgreSQL Documentation: Joins Between Tables](https://www.postgresql.org/docs/current/tutorial-join.html).
-
-## Module 06: Time Series and Panel Data
-
-### Lecture 20
-
-- Lecture 20: Merging Tables in SQL. [Jupyter Notebook](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-20/20-sql-merging.ipynb). [Lecture Slides](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-20/20-sql-merging.html).
-- [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=6e601286-2112-4bdb-b2da-609dce9d8a26&hostId=05eb977d-4f8a-440e-9e45-95212b29d103).
-
-### Lecture 21
-
-- Lecture 21: Time Series Analysis. [Jupyter Notebook](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-21/21-time-series.ipynb). [Lecture Slides](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-21/21-time-series.html).
-- **Assignment 10 due (5%).**
-
-Weekly suggested readings:
-
-- [W3 School: SQL Joins](https://www.w3schools.com/sql/sql_join.asp).
-- VanderPlas, J. (2016). Python Data Science Handbook: Essential Tools for Working with Data. O'Reilly Media. [Section 3.11: Working with Time Series](https://jakevdp.github.io/PythonDataScienceHandbook/03.11-working-with-time-series.html).
-- McKinney, W. (2022). Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython (3rd ed.). O'Reilly Media. [Chapter 11: Time Series](https://wesmckinney.com/book/time-series).
-- [Pandas Documentation: Time Series / Date functionality](https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html).
-
-### Lecture 22
-
-- Lecture 22: [**Quiz 4: Application 6: Practice SQL Queries (6%)**](https://github.com/danilofreire/qtm151-quiz04).
-
-### Lecture 23
-
-- Lecture 23: Pivot Tables. [Jupyter Notebook](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-23/23-pivot-tables.ipynb). [Lecture Slides](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-23/23-pivot-tables.html).
-
-Weekly suggested readings:
-
-- VanderPlas, J. (2016). Python Data Science Handbook: Essential Tools for Working with Data. O'Reilly Media. [Section 3.9: Pivot Tables](https://jakevdp.github.io/PythonDataScienceHandbook/03.09-pivot-tables.html).
-- [Pandas Documentation: Reshaping and Pivot Tables](https://pandas.pydata.org/pandas-docs/stable/user_guide/reshaping.html).
-- [Analytics Vidhya: Create Pivot Table Using Pandas in Python](https://www.analyticsvidhya.com/blog/2020/03/pivot-table-pandas-python/).
-- [Real Python: How to Create Pivot Tables With `pandas`](https://realpython.com/how-to-pandas-pivot-table/).
-
-## Module 07: Text Data and Advanced Plots
-
-### Lecture 24
-
-- Lecture 24: Manipulating Text Data. [Jupyter Notebook](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-24/24-text-data.ipynb). [Lecture Slides](https://raw.githack.com/danilofreire/qtm151/main/lectures/lecture-24/24-text-data.html).
-
-### Wednesday, November 27: Thanksgiving Break (no class)
-
-### Lecture 25
-
-- Lecture 25: [**Quiz 5: Application 8: Time Data, Panel Data, and Plots (6%)**](https://github.com/danilofreire/qtm151/blob/main/lectures/lecture-25/25-time-panel-plots.ipynb).
-
-### Lecture 26
-
-- Lecture 26: Drop-in Session for the Final Project. No readings.
-
-Weekly suggested readings:
-
-- [Real Python: Python String Formatting Best Practices](https://realpython.com/python-string-formatting/).
-
-### Lecture 27
-
-- **Final Project due (20%).**
+Each lecture folder contains an HTML file or a Jupyter notebook (`.ipynb`) with code examples and explanations, along with any additional resources or datasets used in the lecture.
