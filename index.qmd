@@ -29,7 +29,7 @@ Please also refer to the Discussion tab on the repository for any questions or c
 
 ### Lectures
 
-We will meet every weekday from May 13th to May 30th, 2025 from 11:30 AM to 12:50 PM. Our meetings will be online via Zoom. The link is <https://emory.zoom.us/j/1234567890> (please check the course website for the correct link).  Please check the [course schedule](https://danilofreire.github.io/qtm151-summer/lectures/lectures.html) for the full list of topics and dates. Lecture materials are available in the [lectures folder](https://github.com/danilofreire/qtm151-summer/tree/main/lectures) in the repository.
+We will meet every weekday from May 13th to May 30th, 2025 from 11:30 AM to 12:50 PM. Our meetings will be online via Zoom. Please check our Canvas page for the link.  Please check the [course schedule](https://danilofreire.github.io/qtm151-summer/lectures/lectures.html) for the full list of topics and dates. Lecture materials are available in the [lectures folder](https://github.com/danilofreire/qtm151-summer/tree/main/lectures) in the repository.
 
 Each folder contains an HTML presentation or a Jupyter notebook (`.ipynb`) with code examples and explanations, along with any additional resources or datasets used in the lecture.
 
