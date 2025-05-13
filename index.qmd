@@ -4,7 +4,7 @@ title: "QTM 151 - Introduction to Statistical Computing II"
 
 ## Course Overview
 
-Welcome to [QTM 151](https://github.com/danilofreire/qtm151-summer)! This course introduces students to data analysis and statistical computing using Python and SQL. Please have a look at [the course syllabus](https://danilofreire.github.io/qtm151-summer/syllabus.html) and the [lecture schedule](https://danilofreire.github.io/qtm151-summer/lectures/lectures.html) for more information. A brief overview of the course content is provided below.
+Welcome to [QTM 151](https://github.com/danilofreire/qtm151-summer)! This course introduces students to data analysis and statistical computing using Python and SQL. Please have a look at [the course syllabus](https://danilofreire.github.io/qtm151-summer/syllabus.html) and the [lecture schedule](https://danilofreire.github.io/qtm151-summer/lectures.html) for more information. A brief overview of the course content is provided below.
 
 ## Contact Information
 
