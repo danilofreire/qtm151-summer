@@ -255,9 +255,8 @@ print("Welcome to QTM151!")
 
 ::: {.column width=50%}
 ::: {style="font-size: 28px;"}
-- All materials will be available on the course website​ and GitHub​ repository
+- All materials are available on the course website​ and GitHub​ repository
 - Late assignments will automatically be graded for half-credit​
-- To account for unforeseen circumstances, we will drop the worst assignment and the worst quiz​
 - Watch out for the assignments to install software. You will need these to be able to use the lectures notes
 :::
 :::
