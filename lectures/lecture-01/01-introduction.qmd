@@ -243,10 +243,10 @@ print("Welcome to QTM151!")
 :::: {.columns}
 ::: {.column width=50%}
 ::: {style="font-size: 28px;"}
-- Assignments (x10): [50%]{.alert}​
+- Assignments (x5): [50%]{.alert}​
   - Practice class concepts​
 
-- Quizzes (x4): [50%]{.alert}​
+- Quizzes (x3): [50%]{.alert}​
   - Questions are based on the lecture notes and assignments
   - Quizzes are open-book and open-notes (including the internet)
 
