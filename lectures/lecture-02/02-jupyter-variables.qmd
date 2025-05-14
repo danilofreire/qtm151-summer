@@ -72,7 +72,7 @@ editor:
 
 ## Creating and managing environments with the command line
 
-:::{style="margin-top: 30px; font-size: 22px;"}
+:::{style="margin-top: 30px; font-size: 20px;"}
 :::{.columns}
 :::{.column width="50%"}
 - For this course, we will use the `base` environment
@@ -81,6 +81,7 @@ editor:
   - Using the command line: `conda create -n qtm151 python=3.12`
   - Using Anaconda Navigator: Go to the "Environments" tab and click on "Create"
 - After creating an environment in the command line, you can activate it using the command line: `conda activate qtm151`
+- To remove a package from an environment, use the command line: `conda remove package_name`
 - To deactivate an environment, use the command line: `conda deactivate`
 - To remove an environment, use the command line: `conda remove -n qtm151 --all`
 :::
@@ -103,6 +104,14 @@ conda deactivate
 
 # Remove the qtm151 environment
 conda remove -n qtm151 --all
+```
+
+- Windows users, please open the [Anaconda PowerShell Prompt](https://powershellcommands.com/anaconda-powershell-prompt) instead of the regular command line. [More info here.](https://www.anaconda.com/docs/tools/working-with-conda/ide-tutorials/vscode)
+- You can also run the  following command in VSCode's terminal: 
+
+```{verbatim}
+conda update conda
+conda init
 ```
 :::
 :::
@@ -226,9 +235,10 @@ print("Packages (matplotlib.pyplot, pandas, numpy) loaded successfully!")
 
 ## Opening datasets with pandas: `read_csv()`
 
-:::{style="margin-top: 30px; font-size: 27px;"}
+:::{style="margin-top: 30px; font-size: 23px;"}
 - Pandas is excellent for working with tabular data
 - The `pd.read_csv()` function is used to load data from a Comma Separated Values (CSV) file into a pandas DataFrame
+- Windows users, if you encounter issues with your file path, try using double backslashes `\\` or a raw string `r'path'` to avoid escape character issues (e.g., `'C:\\path\\to\\file.csv'` or `r'C:\path\to\file.csv'`)
 
 ```{python}
 #| echo: true
