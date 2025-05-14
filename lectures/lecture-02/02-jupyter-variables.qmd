@@ -524,7 +524,7 @@ print(full_name)
     - [Ordered]{.alert}: Items maintain their position/sequence.
     - [Mutable]{.alert}: You can change, add, or remove items after the list is created.
 - Access items using their **index** (position).
-- [Crucial: Python indexing starts at 0!]{.alert} The first item is at index `0`.
+- [Very important: Python indexing starts at 0!]{.alert} The first item is at index `0`.
 :::
 
 ## Lists: Ordered, mutable collections
