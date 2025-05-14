@@ -179,7 +179,7 @@
     "href": "01-vscode-anaconda-tutorial.html#getting-started",
     "title": "Installing VS Code and Connecting it with Anaconda",
     "section": "Getting Started",
-    "text": "Getting Started\nMicrosoft has published a series of introductory videos to help you get started with VS Code. You can also read the official documentation for more detailed information."
+    "text": "Getting Started\nMicrosoft has published a series of introductory videos to help you get started with VS Code. You can also read the official documentation for more detailed information.\nYou should also install the Jupyter and the Python extensions for VS Code. These extensions will allow you to work with Jupyter notebooks and Python code directly in the editor.\nTo install the extensions, click on the Extensions view icon on the left sidebar (it looks like four squares) and search for “Jupyter” and “Python”. Click “Install” for both extensions. Or just click on the links above to install them directly."
   },
   {
     "objectID": "01-vscode-anaconda-tutorial.html#download-anaconda",

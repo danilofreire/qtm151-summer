@@ -82,6 +82,10 @@ With that said, let us start the installation process.
 
 Microsoft has published a series of [introductory videos](https://code.visualstudio.com/docs/introvideos/basics) to help you get started with VS Code. You can also read the [official documentation](https://code.visualstudio.com/docs) for more detailed information.
 
+You should also install the [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) and the [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) extensions for VS Code. These extensions will allow you to work with Jupyter notebooks and Python code directly in the editor.
+
+To install the extensions, click on the Extensions view icon on the left sidebar (it looks like four squares) and search for "Jupyter" and "Python". Click "Install" for both extensions. Or just click on the links above to install them directly.
+
 # Installing Anaconda
 
 Anaconda is a distribution of Python that includes many popular packages for data science and scientific computing. It also provides a convenient way to manage different Python environments.
