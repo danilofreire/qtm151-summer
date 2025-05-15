@@ -553,7 +553,6 @@ print(f"Favourite Colours: {fav_colours}")
 
 # List with mixed data types
 mixed_data_list = ["Python", 3.11, 42, True]
-mixed_data_list
 
 # Lists can be nested (a list containing other lists)
 nested_list_example = [[1, 2], ["a", "b"], mixed_data_list]

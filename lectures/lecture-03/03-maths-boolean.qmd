@@ -273,7 +273,7 @@ print(np.max(vec_a))
 
 $e = \begin{pmatrix} 10 \\ 8 \\ 15 \\ 0 \\ 24 \end{pmatrix}$
 
-- [[Appendix 02]{.button}](#sec:appendix-02)
+- [[Appendix 02]{.button}](#sec:appendix02)
 :::
 
 ## Common pitfall
