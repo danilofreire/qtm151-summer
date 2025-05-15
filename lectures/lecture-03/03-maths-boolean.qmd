@@ -20,8 +20,6 @@ editor:
 
 # Welcome to another lecture! 😊 {background-color="#2d4563"}
 
-# Brief recap 📚 {background-color="#2d4563"}
-
 ## Today's agenda 
 ### Introducing NumPy, `random`, and Boolean logic
 
@@ -90,7 +88,7 @@ print(np.sqrt(1))
 ::: 
 :::
 
-## Try it yourself! 🧠 {#sec-functions}
+## Try it yourself! 🧠 {#sec:functions}
 
 :::{style="margin-top: 40px; font-size: 26px;"}
 - Create a new variable, $x = 5$
@@ -108,7 +106,7 @@ x ** 5
 
 # Not x^5
 ``` 
-- [[Appendix 01]{.button}](#sec-appendix-01)
+- [[Appendix 01]{.button}](#sec:appendix01)
 :::
 
 # Vector arrays with NumPy 📊 {background-color="#2d4563"}
@@ -268,14 +266,14 @@ print(np.max(vec_a))
 ```
 :::
 
-## Try it yourself! 🧠 {#sec-summary} 
+## Try it yourself! 🧠 {#sec:summary} 
 
 :::{style="margin-top: 40px; font-size: 26px;"}
 - Compute the mean of:
 
 $e = \begin{pmatrix} 10 \\ 8 \\ 15 \\ 0 \\ 24 \end{pmatrix}$
 
-- [[Appendix 02]{.button}](#sec-appendix-02)
+- [[Appendix 02]{.button}](#sec:appendix-02)
 :::
 
 ## Common pitfall
@@ -329,9 +327,9 @@ ValueError: operands could not be broadcast together with shapes (3,) (5,)
 :::
 
 :::{.column width="60%"}
-- This code creates a vector of random variables generated from a normal distribution 
-- It has the mean "loc" (location) and standard deviation "scale"
-- The number of distinct variabels is "size"
+- This code creates a vector of random variables generated from a normal distribution
+- It has the mean `loc` (location) and standard deviation `scale`
+- The number of distinct variables is `size`
 
 ```{python}
 #| echo: true
@@ -384,7 +382,7 @@ plt.show()
 ```
 :::
 
-## Try it yourself! {#sec-histogram}
+## Try it yourself! {#sec:histogram}
 
 :::{style="margin-top: 40px; font-size: 26px;"}
 - Try this again with $size = 100, 1000, 10000$ and see how the histogram changes 
@@ -419,7 +417,7 @@ plt.show()
 :::{style="margin-top: 30px; font-size: 22px;"}
 - We can test whether two values are equal using the `==` operator ([two equal signs]{.alert})
 - For example, `5 == 5` returns `True`
-- We can also test whether two values are not equal using the `!=` operator ([exclamation mark followed by an equal sign]{.alert})
+- We can also test whether two values are not equal using the &#33;= operator ([exclamation mark followed by an equal sign]{.alert}, rendered as `!=` here)
 - Let's see how this works in Python
 
 - First, let's load the `matplotlib` and `numpy` libraries
@@ -571,7 +569,7 @@ vec_a == vec_b
 ```
 :::
 
-## Try it out! 🧠
+## Try it out! 🧠 {#sec:equality}
 
 :::{style="margin-top: 30px; font-size: 26px;"}
 - Define $x= -1$. Check whether $x^2 + 2x + 1 = 0$ is true 
@@ -647,7 +645,7 @@ not age < 18
 age = 31
 
 # Is this age between 20 and 30 (including these ages)?
-( age >= 20 ) & (age <= 30)
+(age >= 20) & (age <= 30)
 ```
 :::
 
@@ -664,7 +662,7 @@ age = 31
 age = 31
 
 # Is this age higher than 20 or lower than 30?
-( age >= 20 ) | (age <= 30)
+(age >= 20) | (age <= 30)
 ```
 
 ```{python}
@@ -678,7 +676,7 @@ student_status = "freshman"
 ```
 :::
 
-## Try it out! 🚀 {#sec:question03}
+## Try it out! 🚀 {#sec:question04}
 
 :::{style="margin-top: 30px; font-size: 30px;"}
 - Now, let's test whether you can identify the correct expression
@@ -687,7 +685,7 @@ student_status = "freshman"
 - Write code that checks the following conditions:
   - Whether age is strictly less than 20, or greater than 30
   - Not in the age range 25-27 
-- [[Appendix 03]{.button}](#sec:appendix03)
+- [[Appendix 04]{.button}](#sec:appendix04)
 :::
 :::
 
@@ -695,7 +693,7 @@ student_status = "freshman"
 
 # Thank you very much and see you next time! 🙏 {background-color="#2d4563"}
 
-## Appendix 01 {#sec-appendix-01}
+## Appendix 01 {#sec:appendix01}
 ### Mathematical functions in NumPy
 
 :::{style="margin-top: 40px; font-size: 26px;"}
@@ -711,10 +709,10 @@ print(np.pi * x ** 2)
 print(1 / np.sqrt(2 * np.pi) * np.exp(-x ** 2))
 ```
 
-[[Back to the main text]{.button}](#sec-functions)
+[[Back to the main text]{.button}](#sec:functions)
 :::
 
-## Appendix 02 {#sec-appendix-02}
+## Appendix 02 {#sec:appendix02}
 ### Summary statistics of an array
 
 :::{style="margin-top: 40px; font-size: 26px;"}
@@ -728,10 +726,26 @@ vec_e = np.array([10, 8, 15, 0, 24])
 print(np.mean(vec_e))
 ```
 
-[[Back to the main text]{.button}](#sec-summary)
+[[Back to the main text]{.button}](#sec:summary)
 :::
 
 ## Appendix 03 {#sec:appendix03}
+
+:::{style="margin-top: 30px; font-size: 30px;"}
+- Whether $x = -1$ is a solution to the equation $x^2 + 2x + 1 = 0$
+- Please remember that $x^2$ is written as `x**2` in Python
+
+```{python}
+#| echo: true
+#| eval: true
+x = -1
+print(x ** 2 + 2 * x + 1 == 0)
+```
+
+[[Back to the main text]{.button}](#sec:equality)
+:::
+
+## Appendix 04 {#sec:appendix04}
 
 :::{style="margin-top: 30px; font-size: 30px;"}
 - Whether age (`age = 31`) is strictly less than 20, or greater than 30
@@ -752,5 +766,5 @@ age = 31
 
 The second answer uses `|` because `&` evaluates both statements at the same time, and [one cannot be less than 25 and greater than 27 at the same time](https://en.wikipedia.org/wiki/Empty_set). Therefore, it must be `|`.
 
-[[Back to the main text]{.button}](#sec:question03)
+[[Back to the main text]{.button}](#sec:question04)
 :::
