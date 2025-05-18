@@ -32,17 +32,12 @@ editor:
 - In simpler terms, NumPy arrays are a "super-powered list of numbers"
 - NumPy is the backbone of many other libraries in Python, such as `pandas` and `scikit-learn`
 - We will also learn about the `random` module, which generates random numbers
+- Then, we will see how to use [Boolean logic](https://en.wikipedia.org/wiki/Boolean_data_type) in Python
 :::
 
 :::{.column width="50%"}
-- Then, we will learn about [Boolean logic](https://en.wikipedia.org/wiki/Boolean_data_type)
-- Discuss the importance of [conditional statements in programming](https://en.wikipedia.org/wiki/Conditional_(computer_programming))
-- Understand how to use [conditional statements in Python](https://www.w3schools.com/python/python_conditions.asp)
-- Explore the `if`, `elif`, and `else` statements
-- Practice writing conditional statements in Python
-
 :::{style="text-align: center;"}
-![](figures/boolean02.png){width="90%"}
+![](figures/boolean03.jpg){width="90%"}
 :::
 :::
 :::

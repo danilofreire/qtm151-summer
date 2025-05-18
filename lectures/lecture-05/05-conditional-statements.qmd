@@ -24,7 +24,7 @@ editor:
 
 ## Today's class
 
-:::{style="margin-top: 30px; font-size: 28px;"}
+:::{style="margin-top: 30px; font-size: 26px;"}
 :::{.columns}
 :::{.column width="50%"}
 Today we will:
@@ -76,13 +76,13 @@ Today we will:
 :::{.columns}
 :::{.column width="50%"}
 - Test expression
-  - We type "if" followed by a logical condition and the ":" symbol.
-  - The ":" says: run the following command 
+  - We type `if` followed by a logical condition and the `:` symbol.
+  - The `:` says: run the following command 
 - Body of expression
-  - The "body" of the "if" statement needs to [indented with four spaces](https://www.python.org/dev/peps/pep-0008/#indentation)
-  - You can indent text by pressing the "tab" button in your keyboard.
+  - The "body" of the `if` statement needs to [indented with four spaces](https://www.python.org/dev/peps/pep-0008/#indentation)
+  - You can indent text by pressing `tab` in your keyboard
 
-- If the condition is true, a message will appear.
+- If the condition is true, a message will appear
 - If the condition is false, then nothing happens
 :::
 
@@ -215,7 +215,7 @@ What happens if ... ? Try the following:
 - Rerun the above code but change the value of `is_graph_red`.
 - What happens if you set a non-boolean value of `is_graph_red`?
 - Don't include `:`
-- Don't indent the body of the `if` [[Appendix 04]{.button}](#sec:appendix04)
+- Don't indent the body of the `if` [[Appendix 01]{.button}](#sec:appendix01)
 :::
 
 ## If/elif/else statements
@@ -407,7 +407,7 @@ print(f"Category: {category}, Day: {day}, Price: ${price}")
 Modify the ticket pricing example:
 
 - Add a "student" category: if `age` is between 18 and 25 (inclusive) AND an assumed variable `is_student = True`, their price is always $13. This should take precedence over the standard adult pricing.
-- [[Appendix 05]{.button}](#sec:appendix05)
+- [[Appendix 02]{.button}](#sec:appendix02)
 :::
 
 # Conditional expressions (ternary operator) ✨ {background-color="\#2d4563"}
@@ -579,6 +579,51 @@ print(list_answers)
 ```
 :::
 
+## Finding values in a list
+
+:::{style="margin-top: 30px; font-size: 24px;"}
+:::{.columns}
+:::{.column width="50%"}
+- You can find the index of a value in a list using the `list.index()` method
+- This method returns the index of [the first occurrence]{.alert} of the value in the list
+- If the value is not in the list, it will raise a `ValueError`
+- The syntax is as follows:
+```{python}
+#| echo: true
+#| eval: true
+cities = ["Nashville", "Bogota", "Atlanta"]
+cities.index("Bogota")
+```
+- You can also use the `in` operator to check if a value is in a list, as we saw before
+
+```{python}
+#| echo: true
+#| eval: true
+cities = ["Nashville", "Bogota", "Atlanta"]
+"Bogota" in cities
+```
+:::
+
+:::{.column width="50%"}
+- How to list _all_ values that match a search term?
+- [There is]{.alert}, but it's a bit more complicated
+- We will learn about `for` loops soon, but for those who are curious... 🤓
+
+```{python}
+#| echo: true
+#| eval: true
+cities = ["Nashville", "Bogota", "Atlanta", "Nashville"]
+matching_cities_loop = []
+
+for index, city in enumerate(cities):
+    if city.startswith("Nash"):
+        matching_cities_loop.append((index, city))
+print(matching_cities_loop)
+```
+:::
+:::
+:::
+
 ## Appending values to lists
 ### The `list.append()` method
 
@@ -741,11 +786,11 @@ print(len(list_answers_rep))
 ## Try it yourself! 😊 {#sec:lists}
 
 :::{style="margin-top: 30px; font-size: 24px;"}
-- Create an empty list called "list_personal"
-- Add two more values using ".append"
+- Create an empty list called `list_personal`
+- Add two more values using `.append()`
 - Find the total length of the list
-- Change the last value to "Last element" using the index
-- [[Appendix 06]{.button}](#sec:appendix6)
+- Change the last value to `"Last element"` using the index
+- [[Appendix 03]{.button}](#sec:appendix03)
 :::
 
 # And that's it for today! 🎉 {background-color="#2d4563"}
@@ -776,60 +821,6 @@ Check that it works by trying different values of "points"!
 ## Appendix 01 {#sec:appendix01}
 
 :::{style="margin-top: 30px; font-size: 30px;"}
-
-```{python}
-#| echo: true
-#| eval: true
-colors = ["red","green","yellow","orange"]
-
-"red" in colors
-```
-
-[[Back to the main text]{.button}](#sec:question01)
-:::
-
-## Appendix 02 {#sec:appendix02}
-
-:::{style="margin-top: 30px; font-size: 30px;"}
-
-```{python}
-#| echo: true
-#| eval: true
-x = -1
-
-x**2 + 2*x + 1 == 0
-```
-
-[[Back to the main text]{.button}](#sec:question02)
-:::
-
-## Appendix 03 {#sec:appendix03}
-
-:::{style="margin-top: 30px; font-size: 30px;"}
-- Whether age (`age = 31`) is strictly less than 20, or greater than 30
-- Not in the age range 25-27
-
-```{python}
-#| echo: true
-#| eval: true
-age = 31
-
-(age < 20) | (age > 30) 
-```
-```{python}
-#| echo: true
-#| eval: true
-(age < 25) | (age > 27)
-```
-
-The second answer uses `|` because `&` evaluates both statements at the same time, and [one cannot be less than 25 and greater than 27 at the same time](https://en.wikipedia.org/wiki/Empty_set). Therefore, it must be `|`.
-
-[[Back to the main text]{.button}](#sec:question03)
-:::
-
-## Appendix 04 {#sec:appendix04}
-
-:::{style="margin-top: 30px; font-size: 30px;"}
 What happens if `is_graph_red` is set to `True`?
 
 ```{python}
@@ -853,7 +844,7 @@ else:
 [[Back to the main text]{.button}](#sec:question04)
 :::
 
-## Appendix 04 - Continued
+## Appendix 01 - Continued
 
 :::{style="margin-top: 30px; font-size: 30px;"}
 What happens if you set a non-boolean value of `is_graph_red`?
@@ -881,7 +872,7 @@ else:
 [[Back to the main text]{.button}](#sec:question04)
 :::
 
-## Appendix 04 - Continued
+## Appendix 01 - Continued
 
 :::{style="margin-top: 30px; font-size: 30px;"}
 What happens if you don't include `:`?
@@ -909,7 +900,7 @@ else:
 [[Back to the main text]{.button}](#sec:question04)
 :::
 
-## Appendix 04 - Continued
+## Appendix 01 - Continued
 
 :::{style="margin-top: 30px; font-size: 30px;"}
 What happens if you don't indent the body of the `if`?
@@ -937,9 +928,9 @@ plt.show()
 [[Back to the main text]{.button}](#sec:question04)
 :::
 
-## Appendix 05 {#sec:appendix05}
+## Appendix 02 {#sec:appendix02}
 
-:::{style="margin-top: 30px; font-size: 30px;"}
+:::{style="margin-top: 30px; font-size: 18px;"}
 ```{python}
 #| echo: true
 #| eval: true
@@ -974,7 +965,7 @@ print(f"Category: {category}, Day: {day}, Price: ${price}")
 [[Back to the main text]{.button}](#sec:exercise05)
 :::
 
-## Appendix 06 {#sec:appendix6}
+## Appendix 03 {#sec:appendix03}
 
 :::{style="margin-top: 30px; font-size: 22px;"}
 - Create an empty list called "list_personal"
@@ -1005,7 +996,7 @@ print(list_personal)
 - Did you get it right? 🤓
 :::
 
-## Appendix 06 - Continued
+## Appendix 03 - Continued
 
 :::{style="margin-top: 30px; font-size: 22px;"}
 - Here is another way to solve the exercise, now using `list.extend()` and `[1]` index
