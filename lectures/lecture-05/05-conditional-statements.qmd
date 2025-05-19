@@ -948,10 +948,6 @@ elif (age >= 18 and age <= 25) and is_student: # Student
 elif age >= 18 and age < 65: # Adult
     category = "Adult"
     if day == "Saturday" or day == "Sunday":
-        price = 20 #
-elif age >= 18 and age < 65: # Adult
-    category = "Adult"
-    if day == "Saturday" or day == "Sunday":
         price = 20 # Weekend adult price
     else:
         price = 15 # Weekday adult price
