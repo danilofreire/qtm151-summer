@@ -19,7 +19,7 @@ editor:
 
 # Nice to see you all! 😊 {background-color="#2d4563"}
 
-# Brief recap of the last class {background-color="#2d4563"}
+# Brief recap 📚 {background-color="#2d4563"}
 
 ## Recap: conditional statements
 
@@ -31,6 +31,7 @@ In our last lecture, we covered conditional statements:
 -   **`else` statement:** Executes a block of code if all preceding `if` and `elif` conditions were `False`.
 
 We also looked at:
+
 -   **Combining Conditions:** Using logical operators `and`, `or`, `not`.
 -   **Nested `if` statements:** Placing one `if` statement inside another for more complex decision-making.
 :::
@@ -40,7 +41,7 @@ We also looked at:
 :::{style="margin-top: 30px; font-size: 22px;"}
 Remember this kind of structure?
 
-```python
+```{python}
 #| echo: true
 #| eval: false
 age = 22
@@ -55,7 +56,7 @@ else:
     print("Not eligible for program discount.")
 ```
 
-This ability to control program flow based on conditions is fundamental, and loops will build upon this by allowing us to repeat actions.
+The ability to control program flow based on conditions is very important, and [loops will build upon this by allowing us to repeat actions]{.alert}.
 :::
 
 # For loops in Python 🔄🐍 {background-color="#2d4563"}
@@ -139,7 +140,7 @@ print("Dear customer, we are writing about your " + list_ids[3] + " car.")
 ```
 
 :::{.fragment .fade-in}
-- This is a very boring! 🥱
+- This is boring! 🥱
 :::
 
 :::{style="margin-top: 20px;"}
@@ -157,7 +158,7 @@ for i in list_ids:
 :::
 
 :::{.fragment .fade-in}
-- This is much better! 😎
+- This is better! 😎
 :::
 :::
 
@@ -233,7 +234,7 @@ for index, fruit in enumerate(fruits):
 You can also specify a starting index for `enumerate()`: `enumerate(fruits, start=1)`
 :::
 
-## Customised messages + numbering {#sec:for}
+## Customised messages + numbering
 
 :::{style="margin-top: 30px; font-size: 24px;"}
 - You can also include numbers in your messages
@@ -255,7 +256,7 @@ for id in list_ids:
 ```
 :::
 
-## Another example
+## Another example {#sec:for}
 
 :::{style="margin-top: 30px; font-size: 24px;"}
 ```{python}
@@ -313,8 +314,7 @@ carfeatures = pd.read_csv("data/features.csv")
 list_vars = ["acceleration","weight"]
 
 for variable_name in list_vars:
-    plt.scatter(x = carfeatures[variable_name],
-                y = carfeatures["mpg"])
+    plt.scatter(x = carfeatures[variable_name], y = carfeatures["mpg"])
     plt.ylabel("mpg")
     plt.xlabel(variable_name)
     plt.show()
@@ -332,7 +332,7 @@ list_vars   = ["acceleration","weight"]
 
 index = 1
 for variable_name in list_vars:
-    plt.scatter(x= carfeatures[variable_name], y = carfeatures["mpg"])
+    plt.scatter(x = carfeatures[variable_name], y = carfeatures["mpg"])
     plt.ylabel("mpg")
     plt.xlabel(variable_name)
     plt.title("Figure " + str(index))
@@ -416,7 +416,7 @@ plt.ylabel("Y-axis")
 
 :::{style="margin-top: 30px; font-size: 24px;"}
 :::{.columns}
-:::{.column width="50%"}
+:::{.column width="70%"}
 - A `while` loop is used to iterate over a block of code as long as the test expression (condition) is `True`
 - We use `while` loops when we don't know the number of times to iterate beforehand, or when the iteration depends on a condition being met
 - Syntax:
@@ -426,7 +426,7 @@ while test_expression:
     (must include logic to eventually make test_expression False)
 ```
 :::
-:::{.column width="50%"}
+:::{.column width="30%"}
 ![](figures/while.png)
 :::
 :::
@@ -508,20 +508,21 @@ while count < 5:
 ## Try it yourself! {#sec:exercise_for_break_simple}
 
 :::{style="margin-top: 30px; font-size: 24px;"}
-- You have the following list of sports: `list_sports = ["tennis","golf","golf","tennis","golf","golf"]`
+- You have the following list of fruits: `list_fruits = ["apple", "banana", "cherry", "date", "elderberry"]`
 - Write a `while` loop to find the second occurrence of "tennis" in the list
 - You can start with the following code:
+
 ```{python}
 #| echo: true
 #| eval: false
-list_sports = ["tennis","golf","golf","tennis","golf","golf"]
-candidate_list = []
-num_candidates = 0
+list_fruits = ["apple", "banana", "cherry", "date", "elderberry"]
+index = 0 # Remember, lists are 0-indexed!
 
-while...
-    # Add your code here
-    # Use candidate_list.append() to add the found elements
-    # Use num_candidates to count the number of occurrences
+# while ... :
+    # Add your code here to:
+    # 1. Access the fruit at the current index
+    # 2. Print the fruit
+    # 3. IMPORTANT: Update the index to move to the next fruit!
 ```
 
 - [[Appendix 03]{.button}](#sec:appendix3_for_break_simple)
@@ -559,7 +560,6 @@ Example: Find the first non-integer element in a list and stop the loop
 #| echo: true
 #| eval: true
 list_mixed = [1, 2, "text_message", 5, 10.5]
-print(f"Original list: {list_mixed}")
 
 for value in list_mixed:
     if not isinstance(value, int): # Check if value is NOT an integer
@@ -580,7 +580,6 @@ Example: Print only integers from a list and skip non-integer elements
 #| echo: true
 #| eval: true
 list_mixed = [1, 2, "text_message", 5, 10.5, "another_string", 7]
-print(f"Original list: {list_mixed}\nPrinting only integers:")
 
 for value in list_mixed:
     if not isinstance(value, int):
@@ -632,6 +631,7 @@ else:
   `new_list = [expression for item in iterable]`
 
 Advantages:
+
 -   More compact and often easier to read for simple list generations
 -   Can be more efficient than using a `for` loop with `append()`
 :::
@@ -644,7 +644,7 @@ Advantages:
 #| echo: true
 #| eval: true
 id_list = ["KIA", "Ferrari", "Ford", "Tesla"]
-message_list = ["Your car model is: " + car_id for car_id in id_list]
+message_list = ["Your car model is: " + i for i in id_list]
 print(message_list)
 ```
 
@@ -746,18 +746,14 @@ for dataset in list_datasets:
 ```{python}
 #| echo: true
 #| eval: true
-list_sports = ["tennis","golf","golf","tennis","golf","golf"]
-candidate_list = []
-num_candidates = 0
-index = 0
-while index < len(list_sports):
-    if list_sports[index] == "tennis":
-        candidate_list.append(list_sports[index])
-        num_candidates = num_candidates + 1
-        if num_candidates == 2:
-            break
-    index = index + 1
-print(f"Second occurrence of 'tennis': {candidate_list}")
+list_fruits = ["apple", "banana", "cherry", "date", "elderberry"]
+index = 0 
+
+while index < len(list_fruits): 
+    current_fruit = list_fruits[index]
+    print(current_fruit)
+    index = index + 1 # or index += 1
+
 ```
 
 - [[Back to the main text]{.button}](#sec:exercise_for_break_simple)
