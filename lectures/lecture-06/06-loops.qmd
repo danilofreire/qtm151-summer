@@ -509,7 +509,7 @@ while count < 5:
 
 :::{style="margin-top: 30px; font-size: 24px;"}
 - You have the following list of fruits: `list_fruits = ["apple", "banana", "cherry", "date", "elderberry"]`
-- Write a `while` loop to find the second occurrence of "tennis" in the list
+- Write a `while` loop to access the fruit at the current index and print the fruit name
 - You can start with the following code:
 
 ```{python}
