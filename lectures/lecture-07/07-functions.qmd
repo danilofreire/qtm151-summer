@@ -484,7 +484,6 @@ NameError: name 'x' is not defined
 # (x,y) are both local variables of the function
 # 
 # When we call the function, only the arguments matter.
-# any intermediate value inside the function
 
 def fn_square(x):
     y = x**2
@@ -683,9 +682,10 @@ The `message` inside `inner_function_shadow` is a completely separate variable f
 
 :::{style="margin-top: 30px; font-size: 24px;"}
 Consider the following code:
-```python
+
+```{python}
 #| echo: true
-#| eval: false # For students to predict first
+#| eval: false
 a = 10 # Global variable
 
 def func_one():
