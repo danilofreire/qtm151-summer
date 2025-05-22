@@ -56,7 +56,7 @@ editor:
 - A (somewhat silly) rule of thumb is that if you do the same task more than three times, you should write a function for it
 - As your code grows, functions will help you keep it maintainable and scalable
 - We have already seen lots of functions in Python
-  - `print()`, `np.mean()`,  `plt.hist()`, `type()`, etc
+  - `print()`, `len()`, `str()`, `type()`, etc
 - These functions are built-in, but you can also [create your own functions]{.alert} as we will see today
 :::
 
