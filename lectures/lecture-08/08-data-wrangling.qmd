@@ -820,7 +820,7 @@ circuits["bins_alt"] = pd.cut(circuits["alt_numeric"],
                               bins = bins_x,
                               right = True,
                               labels = labels_x)
-np.random.seed(2014)
+np.random.seed(1)
 display(circuits.sample(5))
 ```
 :::
